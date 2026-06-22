@@ -43,3 +43,29 @@ By default the runner uses deterministic synthetic data so CI can test the full 
 ## Important limitation
 
 The included synthetic fixture is only for software validation. Evidence-driven conclusions require real historical data with documented coverage, exchange methodology, delistings where available, and survivorship-bias assessment.
+
+## Installation
+
+This repository is runnable in two modes:
+
+1. **Full research mode** (recommended locally):
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python -m pytest -q
+python -m src.run_demo
+```
+
+2. **Restricted-environment fallback mode**: `python -m src.run_demo` uses only the Python standard library and produces deterministic synthetic reports under `reports/`. This fallback is for execution validation only; it is not evidence that a live crypto strategy is profitable.
+
+Advanced boosted-tree packages are optional. If XGBoost or LightGBM is unavailable, the framework falls back to scikit-learn gradient boosting for model-comparison plumbing.
+
+## CPCV validation
+
+The project implements Combinatorial Purged Cross Validation in `crypto_mlsystem.cpcv`. Random K-fold is invalid for this research because financial observations are temporally ordered, serially correlated, and often have overlapping forward-return labels. CPCV forms chronological group combinations inside each walk-forward training window, purges training labels that overlap validation labels, and embargoes observations immediately after validation samples. CPCV is used for hyperparameter tuning only inside the historical training window; the outer walk-forward test period is never used for tuning.
+
+## Environment limitation observed here
+
+The provided execution environment did not have `numpy`, `pandas`, or `scikit-learn` available for the active interpreter, and network installation was blocked with a 403 tunnel error. The standard-library demo and CPCV tests were run successfully here. To run the full pandas/scikit-learn pipeline, install `requirements.txt` in a local environment with package-index access.

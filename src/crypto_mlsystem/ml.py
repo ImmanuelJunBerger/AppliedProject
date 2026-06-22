@@ -1,14 +1,25 @@
 import pandas as pd
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
-from sklearn.linear_model import LogisticRegression
-from sklearn.pipeline import make_pipeline
-from sklearn.preprocessing import StandardScaler
+try:
+    from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+    from sklearn.linear_model import LogisticRegression
+    from sklearn.pipeline import make_pipeline
+    from sklearn.preprocessing import StandardScaler
+    SKLEARN_AVAILABLE = True
+except ImportError:  # documented fallback for restricted environments
+    RandomForestClassifier = GradientBoostingClassifier = LogisticRegression = None
+    make_pipeline = StandardScaler = None
+    SKLEARN_AVAILABLE = False
+
+
+def _require_sklearn():
+    if not SKLEARN_AVAILABLE:
+        raise ImportError("scikit-learn is required for ML models; use equal_weight or install requirements.txt")
 
 MODELS = {
     "equal_weight": None,
-    "logistic_regression": lambda: make_pipeline(StandardScaler(), LogisticRegression(max_iter=1000, multi_class="auto")),
-    "random_forest": lambda: RandomForestClassifier(n_estimators=150, min_samples_leaf=10, random_state=42),
-    "gradient_boosting": lambda: GradientBoostingClassifier(random_state=42),
+    "logistic_regression": lambda: (_require_sklearn() or make_pipeline(StandardScaler(), LogisticRegression(max_iter=1000))),
+    "random_forest": lambda: (_require_sklearn() or RandomForestClassifier(n_estimators=150, min_samples_leaf=10, random_state=42)),
+    "gradient_boosting": lambda: (_require_sklearn() or GradientBoostingClassifier(random_state=42)),
 }
 
 def walk_forward_allocations(features, targets, strategy_names, train_min_days=365, prediction_frequency="W-FRI", model_name="logistic_regression"):

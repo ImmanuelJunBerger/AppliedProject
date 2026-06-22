@@ -1,3 +1,8 @@
+import pytest
+pytest.importorskip("numpy")
+pytest.importorskip("pandas")
+pytest.importorskip("sklearn")
+
 from crypto_mlsystem.data import DataIngestion, UniverseBuilder
 from crypto_mlsystem.strategies import strategy_return_frame
 from crypto_mlsystem.features import build_features, make_strategy_targets

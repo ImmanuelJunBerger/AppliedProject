@@ -1,0 +1,10 @@
+# Model Comparison
+
+Selected hyperparameters are stored in `reports/artifacts/selected_hyperparameters.csv`. Performance is stored in `reports/artifacts/performance_table.csv`.
+
+| Model | CAGR | Sharpe | Sortino | Calmar | Max Drawdown | Volatility | Turnover | Exposure | Cost impact |
+|---|---|---|---|---|---|---|---|---|---|
+| equal_weight | 1.8854 | 4.6777 | 12.7352 | 27.6069 | -0.0683 | 0.2326 | 0.0019 | 1.0 | 0.0025 |
+| logistic_regression | 93.6769 | 10.3233 | 26.5695 | 1152.9395 | -0.0813 | 0.4533 | 0.0162 | 1.0 | 0.0217 |
+| random_forest | 124.308 | 10.3311 | 27.2059 | 1507.7634 | -0.0824 | 0.4817 | 0.0116 | 1.0 | 0.0155 |
+| gradient_boosting_fallback | 113.351 | 10.3361 | 26.9178 | 1379.1004 | -0.0822 | 0.4721 | 0.0134 | 1.0 | 0.018 |

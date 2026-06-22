@@ -1,0 +1,10 @@
+[project]
+name = "crypto-ml-allocation"
+version = "0.1.0"
+description = "Walk-forward ML strategy allocation research framework for cryptocurrency markets"
+requires-python = ">=3.10"
+dependencies = ["numpy", "pandas", "scikit-learn", "pyyaml", "matplotlib"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

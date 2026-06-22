@@ -1,0 +1,15 @@
+universe_sizes: [10, 20, 30]
+exclude_symbols: [USDT, USDC, DAI, BUSD, TUSD, FDUSD, WBTC, WETH, STETH]
+min_history_days: 365
+initial_capital: 1.0
+rebalance: W-FRI
+prediction_frequency: W-FRI
+retrain_frequency: ME
+train_min_days: 365
+transaction_cost_bps: [0, 10, 25, 50, 100]
+strategy_names: [trend_following, cross_sectional_momentum, mean_reversion, volatility_breakout, defensive_cash]
+position_limit: 0.25
+strategy_limit: 0.45
+target_volatility: 0.35
+turnover_limit: 0.75
+cash_symbol: CASH

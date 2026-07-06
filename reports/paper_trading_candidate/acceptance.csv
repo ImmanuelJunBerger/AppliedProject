@@ -1,0 +1,5 @@
+name,family,primary,holdout_sharpe,holdout_cagr,holdout_max_drawdown,annual_turnover,passes,failures
+A_market_gate_k5_dd20_vp65,A_market_gated_momentum,False,0.0,0.0,0.0,0.0,False,holdout Sharpe is not above 0.5; holdout CAGR is not positive; performance collapses at 50 bps
+B_defensive_rotation_dd25_vp70_vt35,B_defensive_top_asset_rotation,False,-0.41747035412397887,-0.06133532917993734,-0.14238943753368027,5.3273531361679485,False,holdout Sharpe is not above 0.5; holdout CAGR is not positive; performance collapses at 50 bps
+C_cash_floor_k5_vt35_brake10,C_momentum_cash_floor,False,-1.859026764254769,-0.08151751669499141,-0.13433328329434446,1.7140597269638427,False,holdout Sharpe is not above 0.5; holdout CAGR is not positive; performance collapses at 50 bps
+D_btc_eth_biweekly_vt25,D_low_turnover_btc_eth_trend,True,0.02298696336426747,-0.005204930850912115,-0.11191411187642064,3.2012356590452167,False,holdout Sharpe is not above 0.5; holdout CAGR is not positive; performance collapses at 50 bps

@@ -1,0 +1,7 @@
+portfolio,reference,lower,median,upper
+breakout_risk_off_sizing,standalone_volatility_breakout,-0.04222118394006368,0.036140651646284265,0.10100458590364053
+breakout_activation,standalone_volatility_breakout,-2.34525632173793,-0.8920551234301418,0.7151711169513365
+breakout_volatility_targeted,standalone_volatility_breakout,-0.0534684958461723,0.06650000086865246,0.26450596544650345
+trend_risk_off_sizing,standalone_trend_following,-0.3927498545988215,0.07973480784338281,0.4980702762983779
+trend_volatility_targeted,standalone_trend_following,-0.18222434236679516,0.23458714576871745,0.64217228098587
+volatility_regime_switching,standalone_volatility_breakout,-1.4650924086550465,-0.14147939508927268,1.390483571198759

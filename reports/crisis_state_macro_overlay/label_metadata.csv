@@ -1,0 +1,6 @@
+target,definition,development_positive_rate,holdout_positive_rate
+target_a_30d_loss_gt_20,BTC/ETH 50-50 loses more than 20% over next 30 days,0.077727952167414,0.1234309623430962
+target_b_60d_loss_gt_30,BTC/ETH 50-50 loses more than 30% over next 60 days,0.0617837568510214,0.0648535564853556
+target_c_forward_vol_top20,Forward 30d realized volatility exceeds development 80th percentile,0.2002989536621823,0.0983263598326359
+target_d_future_drawdown_gt_25,BTC/ETH portfolio enters >25% drawdown from rolling 90d high,0.4255107125062282,0.5941422594142259
+target_e_frozen_future_dd_gt_20,Frozen macro strategy has >20% forward drawdown over next 60 days,0.1449925261584454,0.0

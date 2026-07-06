@@ -1,0 +1,27 @@
+feature,feature_tier,tier_reason,primary_ic,primary_t_stat,holdout_ic,stable_across_regimes,holdout_sign_consistent
+credit_spread_change_21d,Tier 2,development/full-sample evidence exists but holdout or stability evidence is weaker,-0.06003155731268123,-3.572177151010227,-0.007698307174564505,True,False
+credit_spread_level,Tier 2,development/full-sample evidence exists but holdout or stability evidence is weaker,0.08611063044754075,4.852257624706271,-0.046103341749992026,True,False
+dow_vol_level,Tier 1,"significant, economically meaningful, stable, and holdout-consistent",0.0794344964613681,6.388667330808294,0.13709286039655308,True,True
+equity_drawdown_252d,Tier 3,"unstable, insignificant, redundant, or no holdout support",0.017670127155844012,-2.8628187913686087,-0.10807410632385604,False,False
+equity_momentum_21d,Tier 1,"significant, economically meaningful, stable, and holdout-consistent",0.09535755618413605,8.557825820125716,0.021242548780946263,True,True
+equity_momentum_63d,Tier 2,development/full-sample evidence exists but holdout or stability evidence is weaker,0.03316861648952615,-4.970207674335731,-0.13065024368209296,False,False
+equity_realized_vol_21d,Tier 1,"significant, economically meaningful, stable, and holdout-consistent",0.08905819700818113,10.086147098398293,0.06665482305830725,True,True
+fed_funds_level,Tier 3,"unstable, insignificant, redundant, or no holdout support",-0.0683280910592446,1.0068240945836762,,False,False
+macro_risk_on_composite,Tier 3,"unstable, insignificant, redundant, or no holdout support",0.05580130567574063,1.344047033151814,-0.026192754613807243,True,False
+nasdaq_vol_level,Tier 3,"unstable, insignificant, redundant, or no holdout support",0.03703059779122926,1.0974111632869117,0.0710467675632699,True,True
+rates_10y_change_21d,Tier 3,"unstable, insignificant, redundant, or no holdout support",-0.02958317062512401,-1.2026298514115032,-0.0639265712985778,True,True
+rates_10y_change_63d,Tier 3,"unstable, insignificant, redundant, or no holdout support",0.009347972201945871,0.2110582322105806,-0.010386305314919951,True,False
+rates_10y_level,Tier 3,"unstable, insignificant, redundant, or no holdout support",-0.11160635256800631,-0.8853548734523984,-0.05674482329532944,False,True
+real_yield_10y_change_21d,Tier 2,development/full-sample evidence exists but holdout or stability evidence is weaker,-0.08041048133396995,-3.002386065932857,0.13555947018275866,True,False
+real_yield_10y_level,Tier 3,"unstable, insignificant, redundant, or no holdout support",-0.08661926739578937,0.0903572344389579,-0.20979576587769788,False,True
+sofr_level,Tier 3,"unstable, insignificant, redundant, or no holdout support",-0.08121920325538314,-0.44858778400990407,-0.137846576938872,True,True
+usd_change_5d,Tier 2,development/full-sample evidence exists but holdout or stability evidence is weaker,-0.05174388278202316,-3.817676296521975,-0.1891201761450212,False,True
+usd_trend_21d,Tier 3,"unstable, insignificant, redundant, or no holdout support",-0.02940882424334571,-0.9096861026892509,-0.08740989285549823,False,True
+usd_trend_63d,Tier 3,"unstable, insignificant, redundant, or no holdout support",-0.0004048770575589525,5.133132736546059,-0.07789618742995678,False,True
+vix_change_21d,Tier 1,"significant, economically meaningful, stable, and holdout-consistent",-0.08672805228989354,-8.726749445766202,-0.11345258682826091,True,True
+vix_change_5d,Tier 1,"significant, economically meaningful, stable, and holdout-consistent",-0.07291836598958003,-4.847444631166803,-0.16088151270588572,True,True
+vix_level,Tier 1,"significant, economically meaningful, stable, and holdout-consistent",0.05823357832171433,3.9092014934844497,0.08362497952488734,True,True
+vix_percentile_252d,Tier 3,"unstable, insignificant, redundant, or no holdout support",-0.03529359007325454,-0.33016893565421424,0.029765038350464682,False,False
+yield_curve_slope_10y2y,Tier 3,"unstable, insignificant, redundant, or no holdout support",0.07793390424305378,1.8259166955598147,-0.20975997276867014,False,False
+yield_curve_slope_10y3m,Tier 3,"unstable, insignificant, redundant, or no holdout support",0.03491647025562649,-0.4186638827399821,0.1439089341107596,False,True
+yield_curve_slope_change_21d,Tier 2,development/full-sample evidence exists but holdout or stability evidence is weaker,0.027341481435328795,-2.626279959577951,0.015250443959738543,False,True

@@ -1,0 +1,361 @@
+candidate,target,model,feature_set,refit_date,split,parameters,cpcv_brier,train_rows,max_train_label_end
+risk_adjusted_sign__logistic__price_only,risk_adjusted_sign,logistic,price_only,2021-01-01,development,"{""C"": 0.1}",0.29292119147228124,1448,2020-12-31
+risk_adjusted_sign__logistic__price_only,risk_adjusted_sign,logistic,price_only,2022-01-01,development,"{""C"": 0.1}",0.2596746120747605,2178,2021-12-31
+risk_adjusted_sign__logistic__price_only,risk_adjusted_sign,logistic,price_only,2023-01-01,development,"{""C"": 0.1}",0.2515487938442314,2908,2022-12-31
+risk_adjusted_sign__logistic__price_only,risk_adjusted_sign,logistic,price_only,2024-01-01,development,"{""C"": 0.1}",0.2495571752051201,3638,2023-12-31
+risk_adjusted_sign__logistic__price_only,risk_adjusted_sign,logistic,price_only,2025-01-01,holdout,"{""C"": 0.1}",0.25157033661128,4370,2024-12-31
+risk_adjusted_sign__elastic_net__price_only,risk_adjusted_sign,elastic_net,price_only,2021-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2894980590744008,1448,2020-12-31
+risk_adjusted_sign__elastic_net__price_only,risk_adjusted_sign,elastic_net,price_only,2022-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2593579188202829,2178,2021-12-31
+risk_adjusted_sign__elastic_net__price_only,risk_adjusted_sign,elastic_net,price_only,2023-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2514411964240753,2908,2022-12-31
+risk_adjusted_sign__elastic_net__price_only,risk_adjusted_sign,elastic_net,price_only,2024-01-01,development,"{""C"": 1.0, ""l1_ratio"": 0.75}",0.24966103894340086,3638,2023-12-31
+risk_adjusted_sign__elastic_net__price_only,risk_adjusted_sign,elastic_net,price_only,2025-01-01,holdout,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2513656635007397,4370,2024-12-31
+risk_adjusted_sign__logistic__derivatives_only,risk_adjusted_sign,logistic,derivatives_only,2021-01-01,development,"{""C"": 0.1}",0.25766553596694075,1448,2020-12-31
+risk_adjusted_sign__logistic__derivatives_only,risk_adjusted_sign,logistic,derivatives_only,2022-01-01,development,"{""C"": 0.1}",0.2549846165062983,2178,2021-12-31
+risk_adjusted_sign__logistic__derivatives_only,risk_adjusted_sign,logistic,derivatives_only,2023-01-01,development,"{""C"": 0.1}",0.2629142486280916,2908,2022-12-31
+risk_adjusted_sign__logistic__derivatives_only,risk_adjusted_sign,logistic,derivatives_only,2024-01-01,development,"{""C"": 0.1}",0.2671835213124437,3638,2023-12-31
+risk_adjusted_sign__logistic__derivatives_only,risk_adjusted_sign,logistic,derivatives_only,2025-01-01,holdout,"{""C"": 0.1}",0.2596154128811393,4370,2024-12-31
+risk_adjusted_sign__elastic_net__derivatives_only,risk_adjusted_sign,elastic_net,derivatives_only,2021-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.25759292118894817,1448,2020-12-31
+risk_adjusted_sign__elastic_net__derivatives_only,risk_adjusted_sign,elastic_net,derivatives_only,2022-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2544328874482628,2178,2021-12-31
+risk_adjusted_sign__elastic_net__derivatives_only,risk_adjusted_sign,elastic_net,derivatives_only,2023-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.26092051858252735,2908,2022-12-31
+risk_adjusted_sign__elastic_net__derivatives_only,risk_adjusted_sign,elastic_net,derivatives_only,2024-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2657955197910037,3638,2023-12-31
+risk_adjusted_sign__elastic_net__derivatives_only,risk_adjusted_sign,elastic_net,derivatives_only,2025-01-01,holdout,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2588232503831579,4370,2024-12-31
+risk_adjusted_sign__random_forest__derivatives_only,risk_adjusted_sign,random_forest,derivatives_only,2021-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.2683819283845087,1448,2020-12-31
+risk_adjusted_sign__random_forest__derivatives_only,risk_adjusted_sign,random_forest,derivatives_only,2022-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.26863405829665676,2178,2021-12-31
+risk_adjusted_sign__random_forest__derivatives_only,risk_adjusted_sign,random_forest,derivatives_only,2023-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.26168306989886425,2908,2022-12-31
+risk_adjusted_sign__random_forest__derivatives_only,risk_adjusted_sign,random_forest,derivatives_only,2024-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.25964856942921666,3638,2023-12-31
+risk_adjusted_sign__random_forest__derivatives_only,risk_adjusted_sign,random_forest,derivatives_only,2025-01-01,holdout,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.2560115681437413,4370,2024-12-31
+risk_adjusted_sign__gradient_boosting__derivatives_only,risk_adjusted_sign,gradient_boosting,derivatives_only,2021-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2713357187101404,1448,2020-12-31
+risk_adjusted_sign__gradient_boosting__derivatives_only,risk_adjusted_sign,gradient_boosting,derivatives_only,2022-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.26272055844517456,2178,2021-12-31
+risk_adjusted_sign__gradient_boosting__derivatives_only,risk_adjusted_sign,gradient_boosting,derivatives_only,2023-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.26602194262534185,2908,2022-12-31
+risk_adjusted_sign__gradient_boosting__derivatives_only,risk_adjusted_sign,gradient_boosting,derivatives_only,2024-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2582310907797015,3638,2023-12-31
+risk_adjusted_sign__gradient_boosting__derivatives_only,risk_adjusted_sign,gradient_boosting,derivatives_only,2025-01-01,holdout,"{""n_estimators"": 75, ""max_depth"": 2}",0.2580708040716798,4370,2024-12-31
+risk_adjusted_sign__boosted_tree__derivatives_only,risk_adjusted_sign,boosted_tree,derivatives_only,2021-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.27470143139362335,1448,2020-12-31
+risk_adjusted_sign__boosted_tree__derivatives_only,risk_adjusted_sign,boosted_tree,derivatives_only,2022-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.26282118260860443,2178,2021-12-31
+risk_adjusted_sign__boosted_tree__derivatives_only,risk_adjusted_sign,boosted_tree,derivatives_only,2023-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2663872167468071,2908,2022-12-31
+risk_adjusted_sign__boosted_tree__derivatives_only,risk_adjusted_sign,boosted_tree,derivatives_only,2024-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2587878704071045,3638,2023-12-31
+risk_adjusted_sign__boosted_tree__derivatives_only,risk_adjusted_sign,boosted_tree,derivatives_only,2025-01-01,holdout,"{""n_estimators"": 75, ""max_depth"": 2}",0.25633616745471954,4370,2024-12-31
+risk_adjusted_sign__logistic__price_derivatives,risk_adjusted_sign,logistic,price_derivatives,2021-01-01,development,"{""C"": 0.1}",0.29385581565510144,1448,2020-12-31
+risk_adjusted_sign__logistic__price_derivatives,risk_adjusted_sign,logistic,price_derivatives,2022-01-01,development,"{""C"": 0.1}",0.25627931500047396,2178,2021-12-31
+risk_adjusted_sign__logistic__price_derivatives,risk_adjusted_sign,logistic,price_derivatives,2023-01-01,development,"{""C"": 0.1}",0.26253240223405194,2908,2022-12-31
+risk_adjusted_sign__logistic__price_derivatives,risk_adjusted_sign,logistic,price_derivatives,2024-01-01,development,"{""C"": 0.1}",0.2644732629761641,3638,2023-12-31
+risk_adjusted_sign__logistic__price_derivatives,risk_adjusted_sign,logistic,price_derivatives,2025-01-01,holdout,"{""C"": 0.1}",0.26027104012226754,4370,2024-12-31
+risk_adjusted_sign__elastic_net__price_derivatives,risk_adjusted_sign,elastic_net,price_derivatives,2021-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2899586129099782,1448,2020-12-31
+risk_adjusted_sign__elastic_net__price_derivatives,risk_adjusted_sign,elastic_net,price_derivatives,2022-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2563492471310927,2178,2021-12-31
+risk_adjusted_sign__elastic_net__price_derivatives,risk_adjusted_sign,elastic_net,price_derivatives,2023-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2615325846171642,2908,2022-12-31
+risk_adjusted_sign__elastic_net__price_derivatives,risk_adjusted_sign,elastic_net,price_derivatives,2024-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.26369516243210306,3638,2023-12-31
+risk_adjusted_sign__elastic_net__price_derivatives,risk_adjusted_sign,elastic_net,price_derivatives,2025-01-01,holdout,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.25955540678498074,4370,2024-12-31
+risk_adjusted_sign__random_forest__price_derivatives,risk_adjusted_sign,random_forest,price_derivatives,2021-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.28251913887118774,1448,2020-12-31
+risk_adjusted_sign__random_forest__price_derivatives,risk_adjusted_sign,random_forest,price_derivatives,2022-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.2577431661757817,2178,2021-12-31
+risk_adjusted_sign__random_forest__price_derivatives,risk_adjusted_sign,random_forest,price_derivatives,2023-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.26039310584528336,2908,2022-12-31
+risk_adjusted_sign__random_forest__price_derivatives,risk_adjusted_sign,random_forest,price_derivatives,2024-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.25348532534484847,3638,2023-12-31
+risk_adjusted_sign__random_forest__price_derivatives,risk_adjusted_sign,random_forest,price_derivatives,2025-01-01,holdout,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.25555689169173024,4370,2024-12-31
+risk_adjusted_sign__gradient_boosting__price_derivatives,risk_adjusted_sign,gradient_boosting,price_derivatives,2021-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2881883598903356,1448,2020-12-31
+risk_adjusted_sign__gradient_boosting__price_derivatives,risk_adjusted_sign,gradient_boosting,price_derivatives,2022-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.25471964275419245,2178,2021-12-31
+risk_adjusted_sign__gradient_boosting__price_derivatives,risk_adjusted_sign,gradient_boosting,price_derivatives,2023-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.26475483600148914,2908,2022-12-31
+risk_adjusted_sign__gradient_boosting__price_derivatives,risk_adjusted_sign,gradient_boosting,price_derivatives,2024-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2584865003919738,3638,2023-12-31
+risk_adjusted_sign__gradient_boosting__price_derivatives,risk_adjusted_sign,gradient_boosting,price_derivatives,2025-01-01,holdout,"{""n_estimators"": 75, ""max_depth"": 2}",0.2556490149425293,4370,2024-12-31
+risk_adjusted_sign__boosted_tree__price_derivatives,risk_adjusted_sign,boosted_tree,price_derivatives,2021-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2906276285648346,1448,2020-12-31
+risk_adjusted_sign__boosted_tree__price_derivatives,risk_adjusted_sign,boosted_tree,price_derivatives,2022-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2535327635705471,2178,2021-12-31
+risk_adjusted_sign__boosted_tree__price_derivatives,risk_adjusted_sign,boosted_tree,price_derivatives,2023-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2639446072280407,2908,2022-12-31
+risk_adjusted_sign__boosted_tree__price_derivatives,risk_adjusted_sign,boosted_tree,price_derivatives,2024-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2564208060503006,3638,2023-12-31
+risk_adjusted_sign__boosted_tree__price_derivatives,risk_adjusted_sign,boosted_tree,price_derivatives,2025-01-01,holdout,"{""n_estimators"": 75, ""max_depth"": 2}",0.25540999323129654,4370,2024-12-31
+drawdown_5__logistic__price_only,drawdown_5,logistic,price_only,2021-01-01,development,"{""C"": 0.1}",0.2735731963325725,1448,2020-12-31
+drawdown_5__logistic__price_only,drawdown_5,logistic,price_only,2022-01-01,development,"{""C"": 0.1}",0.25837931506660156,2178,2021-12-31
+drawdown_5__logistic__price_only,drawdown_5,logistic,price_only,2023-01-01,development,"{""C"": 0.1}",0.251108349655216,2908,2022-12-31
+drawdown_5__logistic__price_only,drawdown_5,logistic,price_only,2024-01-01,development,"{""C"": 0.1}",0.24797203925858846,3638,2023-12-31
+drawdown_5__logistic__price_only,drawdown_5,logistic,price_only,2025-01-01,holdout,"{""C"": 0.1}",0.2480418030419888,4370,2024-12-31
+drawdown_5__elastic_net__price_only,drawdown_5,elastic_net,price_only,2021-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2728091369313244,1448,2020-12-31
+drawdown_5__elastic_net__price_only,drawdown_5,elastic_net,price_only,2022-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.25700139370706737,2178,2021-12-31
+drawdown_5__elastic_net__price_only,drawdown_5,elastic_net,price_only,2023-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2502884190014704,2908,2022-12-31
+drawdown_5__elastic_net__price_only,drawdown_5,elastic_net,price_only,2024-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.24740441884588035,3638,2023-12-31
+drawdown_5__elastic_net__price_only,drawdown_5,elastic_net,price_only,2025-01-01,holdout,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2476875147069038,4370,2024-12-31
+drawdown_5__logistic__derivatives_only,drawdown_5,logistic,derivatives_only,2021-01-01,development,"{""C"": 0.1}",0.2528992018790545,1448,2020-12-31
+drawdown_5__logistic__derivatives_only,drawdown_5,logistic,derivatives_only,2022-01-01,development,"{""C"": 0.1}",0.2484027781566337,2178,2021-12-31
+drawdown_5__logistic__derivatives_only,drawdown_5,logistic,derivatives_only,2023-01-01,development,"{""C"": 0.1}",0.2603240823072177,2908,2022-12-31
+drawdown_5__logistic__derivatives_only,drawdown_5,logistic,derivatives_only,2024-01-01,development,"{""C"": 0.1}",0.2619128445093736,3638,2023-12-31
+drawdown_5__logistic__derivatives_only,drawdown_5,logistic,derivatives_only,2025-01-01,holdout,"{""C"": 0.1}",0.2544605118963509,4370,2024-12-31
+drawdown_5__elastic_net__derivatives_only,drawdown_5,elastic_net,derivatives_only,2021-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.252961016526122,1448,2020-12-31
+drawdown_5__elastic_net__derivatives_only,drawdown_5,elastic_net,derivatives_only,2022-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2482317518406934,2178,2021-12-31
+drawdown_5__elastic_net__derivatives_only,drawdown_5,elastic_net,derivatives_only,2023-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.25852472817803673,2908,2022-12-31
+drawdown_5__elastic_net__derivatives_only,drawdown_5,elastic_net,derivatives_only,2024-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2603022887265312,3638,2023-12-31
+drawdown_5__elastic_net__derivatives_only,drawdown_5,elastic_net,derivatives_only,2025-01-01,holdout,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.25360371451512537,4370,2024-12-31
+drawdown_5__random_forest__derivatives_only,drawdown_5,random_forest,derivatives_only,2021-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.27127240631308935,1448,2020-12-31
+drawdown_5__random_forest__derivatives_only,drawdown_5,random_forest,derivatives_only,2022-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.26112195013353656,2178,2021-12-31
+drawdown_5__random_forest__derivatives_only,drawdown_5,random_forest,derivatives_only,2023-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.25879679448080206,2908,2022-12-31
+drawdown_5__random_forest__derivatives_only,drawdown_5,random_forest,derivatives_only,2024-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.2646088854960217,3638,2023-12-31
+drawdown_5__random_forest__derivatives_only,drawdown_5,random_forest,derivatives_only,2025-01-01,holdout,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.24997581513285067,4370,2024-12-31
+drawdown_5__gradient_boosting__derivatives_only,drawdown_5,gradient_boosting,derivatives_only,2021-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.250498446106827,1448,2020-12-31
+drawdown_5__gradient_boosting__derivatives_only,drawdown_5,gradient_boosting,derivatives_only,2022-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2472504176575063,2178,2021-12-31
+drawdown_5__gradient_boosting__derivatives_only,drawdown_5,gradient_boosting,derivatives_only,2023-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2553781634261135,2908,2022-12-31
+drawdown_5__gradient_boosting__derivatives_only,drawdown_5,gradient_boosting,derivatives_only,2024-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.24229658545156202,3638,2023-12-31
+drawdown_5__gradient_boosting__derivatives_only,drawdown_5,gradient_boosting,derivatives_only,2025-01-01,holdout,"{""n_estimators"": 75, ""max_depth"": 2}",0.22990818897609605,4370,2024-12-31
+drawdown_5__boosted_tree__derivatives_only,drawdown_5,boosted_tree,derivatives_only,2021-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.24757613986730576,1448,2020-12-31
+drawdown_5__boosted_tree__derivatives_only,drawdown_5,boosted_tree,derivatives_only,2022-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.24663922935724258,2178,2021-12-31
+drawdown_5__boosted_tree__derivatives_only,drawdown_5,boosted_tree,derivatives_only,2023-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.25584767013788223,2908,2022-12-31
+drawdown_5__boosted_tree__derivatives_only,drawdown_5,boosted_tree,derivatives_only,2024-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.24470312520861626,3638,2023-12-31
+drawdown_5__boosted_tree__derivatives_only,drawdown_5,boosted_tree,derivatives_only,2025-01-01,holdout,"{""n_estimators"": 75, ""max_depth"": 2}",0.22925126552581787,4370,2024-12-31
+drawdown_5__logistic__price_derivatives,drawdown_5,logistic,price_derivatives,2021-01-01,development,"{""C"": 0.1}",0.26336368884960726,1448,2020-12-31
+drawdown_5__logistic__price_derivatives,drawdown_5,logistic,price_derivatives,2022-01-01,development,"{""C"": 0.1}",0.25376120134626207,2178,2021-12-31
+drawdown_5__logistic__price_derivatives,drawdown_5,logistic,price_derivatives,2023-01-01,development,"{""C"": 0.1}",0.26201249017297684,2908,2022-12-31
+drawdown_5__logistic__price_derivatives,drawdown_5,logistic,price_derivatives,2024-01-01,development,"{""C"": 0.1}",0.2659504813106852,3638,2023-12-31
+drawdown_5__logistic__price_derivatives,drawdown_5,logistic,price_derivatives,2025-01-01,holdout,"{""C"": 0.1}",0.25628304836777865,4370,2024-12-31
+drawdown_5__elastic_net__price_derivatives,drawdown_5,elastic_net,price_derivatives,2021-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.26469082524015236,1448,2020-12-31
+drawdown_5__elastic_net__price_derivatives,drawdown_5,elastic_net,price_derivatives,2022-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.25315657529326996,2178,2021-12-31
+drawdown_5__elastic_net__price_derivatives,drawdown_5,elastic_net,price_derivatives,2023-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.25983947589024875,2908,2022-12-31
+drawdown_5__elastic_net__price_derivatives,drawdown_5,elastic_net,price_derivatives,2024-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2642399831244836,3638,2023-12-31
+drawdown_5__elastic_net__price_derivatives,drawdown_5,elastic_net,price_derivatives,2025-01-01,holdout,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2551765711168372,4370,2024-12-31
+drawdown_5__random_forest__price_derivatives,drawdown_5,random_forest,price_derivatives,2021-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.2620810716382953,1448,2020-12-31
+drawdown_5__random_forest__price_derivatives,drawdown_5,random_forest,price_derivatives,2022-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.2565111549152465,2178,2021-12-31
+drawdown_5__random_forest__price_derivatives,drawdown_5,random_forest,price_derivatives,2023-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.25982196982106764,2908,2022-12-31
+drawdown_5__random_forest__price_derivatives,drawdown_5,random_forest,price_derivatives,2024-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.2454133577706921,3638,2023-12-31
+drawdown_5__random_forest__price_derivatives,drawdown_5,random_forest,price_derivatives,2025-01-01,holdout,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.24187249409744208,4370,2024-12-31
+drawdown_5__gradient_boosting__price_derivatives,drawdown_5,gradient_boosting,price_derivatives,2021-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.23875985420163257,1448,2020-12-31
+drawdown_5__gradient_boosting__price_derivatives,drawdown_5,gradient_boosting,price_derivatives,2022-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.24317735256099948,2178,2021-12-31
+drawdown_5__gradient_boosting__price_derivatives,drawdown_5,gradient_boosting,price_derivatives,2023-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.25473363177126385,2908,2022-12-31
+drawdown_5__gradient_boosting__price_derivatives,drawdown_5,gradient_boosting,price_derivatives,2024-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.22760488906618576,3638,2023-12-31
+drawdown_5__gradient_boosting__price_derivatives,drawdown_5,gradient_boosting,price_derivatives,2025-01-01,holdout,"{""n_estimators"": 75, ""max_depth"": 2}",0.22057092731694944,4370,2024-12-31
+drawdown_5__boosted_tree__price_derivatives,drawdown_5,boosted_tree,price_derivatives,2021-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2379242293536663,1448,2020-12-31
+drawdown_5__boosted_tree__price_derivatives,drawdown_5,boosted_tree,price_derivatives,2022-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.24177177995443344,2178,2021-12-31
+drawdown_5__boosted_tree__price_derivatives,drawdown_5,boosted_tree,price_derivatives,2023-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2541794739663601,2908,2022-12-31
+drawdown_5__boosted_tree__price_derivatives,drawdown_5,boosted_tree,price_derivatives,2024-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.22797925770282745,3638,2023-12-31
+drawdown_5__boosted_tree__price_derivatives,drawdown_5,boosted_tree,price_derivatives,2025-01-01,holdout,"{""n_estimators"": 75, ""max_depth"": 2}",0.22054152563214302,4370,2024-12-31
+drawdown_10__logistic__price_only,drawdown_10,logistic,price_only,2021-01-01,development,"{""C"": 0.1}",0.2623549844637603,1448,2020-12-31
+drawdown_10__logistic__price_only,drawdown_10,logistic,price_only,2022-01-01,development,"{""C"": 0.1}",0.26474978880111394,2178,2021-12-31
+drawdown_10__logistic__price_only,drawdown_10,logistic,price_only,2023-01-01,development,"{""C"": 0.1}",0.2504206481189151,2908,2022-12-31
+drawdown_10__logistic__price_only,drawdown_10,logistic,price_only,2024-01-01,development,"{""C"": 0.1}",0.2591026060776854,3638,2023-12-31
+drawdown_10__logistic__price_only,drawdown_10,logistic,price_only,2025-01-01,holdout,"{""C"": 0.1}",0.24660556212654758,4370,2024-12-31
+drawdown_10__elastic_net__price_only,drawdown_10,elastic_net,price_only,2021-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2618966209483019,1448,2020-12-31
+drawdown_10__elastic_net__price_only,drawdown_10,elastic_net,price_only,2022-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2642904442002913,2178,2021-12-31
+drawdown_10__elastic_net__price_only,drawdown_10,elastic_net,price_only,2023-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2496491559408512,2908,2022-12-31
+drawdown_10__elastic_net__price_only,drawdown_10,elastic_net,price_only,2024-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2586831414014371,3638,2023-12-31
+drawdown_10__elastic_net__price_only,drawdown_10,elastic_net,price_only,2025-01-01,holdout,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.24645770742229295,4370,2024-12-31
+drawdown_10__logistic__derivatives_only,drawdown_10,logistic,derivatives_only,2021-01-01,development,"{""C"": 0.1}",0.22232808928009778,1448,2020-12-31
+drawdown_10__logistic__derivatives_only,drawdown_10,logistic,derivatives_only,2022-01-01,development,"{""C"": 0.1}",0.22878470819594948,2178,2021-12-31
+drawdown_10__logistic__derivatives_only,drawdown_10,logistic,derivatives_only,2023-01-01,development,"{""C"": 0.1}",0.2330316867392534,2908,2022-12-31
+drawdown_10__logistic__derivatives_only,drawdown_10,logistic,derivatives_only,2024-01-01,development,"{""C"": 0.1}",0.24988604907621684,3638,2023-12-31
+drawdown_10__logistic__derivatives_only,drawdown_10,logistic,derivatives_only,2025-01-01,holdout,"{""C"": 0.1}",0.24096356274806027,4370,2024-12-31
+drawdown_10__elastic_net__derivatives_only,drawdown_10,elastic_net,derivatives_only,2021-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.22523613066628764,1448,2020-12-31
+drawdown_10__elastic_net__derivatives_only,drawdown_10,elastic_net,derivatives_only,2022-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.22955222974914435,2178,2021-12-31
+drawdown_10__elastic_net__derivatives_only,drawdown_10,elastic_net,derivatives_only,2023-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2316145799543429,2908,2022-12-31
+drawdown_10__elastic_net__derivatives_only,drawdown_10,elastic_net,derivatives_only,2024-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.24866018005967921,3638,2023-12-31
+drawdown_10__elastic_net__derivatives_only,drawdown_10,elastic_net,derivatives_only,2025-01-01,holdout,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.24002735410032938,4370,2024-12-31
+drawdown_10__random_forest__derivatives_only,drawdown_10,random_forest,derivatives_only,2021-01-01,development,"{""max_depth"": 7, ""min_samples_leaf"": 10}",0.238836393478889,1448,2020-12-31
+drawdown_10__random_forest__derivatives_only,drawdown_10,random_forest,derivatives_only,2022-01-01,development,"{""max_depth"": 7, ""min_samples_leaf"": 10}",0.2147575339434467,2178,2021-12-31
+drawdown_10__random_forest__derivatives_only,drawdown_10,random_forest,derivatives_only,2023-01-01,development,"{""max_depth"": 7, ""min_samples_leaf"": 10}",0.20691991482037486,2908,2022-12-31
+drawdown_10__random_forest__derivatives_only,drawdown_10,random_forest,derivatives_only,2024-01-01,development,"{""max_depth"": 7, ""min_samples_leaf"": 10}",0.22583762819414188,3638,2023-12-31
+drawdown_10__random_forest__derivatives_only,drawdown_10,random_forest,derivatives_only,2025-01-01,holdout,"{""max_depth"": 7, ""min_samples_leaf"": 10}",0.21557106519804167,4370,2024-12-31
+drawdown_10__gradient_boosting__derivatives_only,drawdown_10,gradient_boosting,derivatives_only,2021-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.13081566109383239,1448,2020-12-31
+drawdown_10__gradient_boosting__derivatives_only,drawdown_10,gradient_boosting,derivatives_only,2022-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.13935888125867887,2178,2021-12-31
+drawdown_10__gradient_boosting__derivatives_only,drawdown_10,gradient_boosting,derivatives_only,2023-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.1550071363308251,2908,2022-12-31
+drawdown_10__gradient_boosting__derivatives_only,drawdown_10,gradient_boosting,derivatives_only,2024-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.134412800049743,3638,2023-12-31
+drawdown_10__gradient_boosting__derivatives_only,drawdown_10,gradient_boosting,derivatives_only,2025-01-01,holdout,"{""n_estimators"": 75, ""max_depth"": 2}",0.12834423254295302,4370,2024-12-31
+drawdown_10__boosted_tree__derivatives_only,drawdown_10,boosted_tree,derivatives_only,2021-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.12439963780343533,1448,2020-12-31
+drawdown_10__boosted_tree__derivatives_only,drawdown_10,boosted_tree,derivatives_only,2022-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.13928329944610596,2178,2021-12-31
+drawdown_10__boosted_tree__derivatives_only,drawdown_10,boosted_tree,derivatives_only,2023-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.15451004169881344,2908,2022-12-31
+drawdown_10__boosted_tree__derivatives_only,drawdown_10,boosted_tree,derivatives_only,2024-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.13454756326973438,3638,2023-12-31
+drawdown_10__boosted_tree__derivatives_only,drawdown_10,boosted_tree,derivatives_only,2025-01-01,holdout,"{""n_estimators"": 75, ""max_depth"": 2}",0.12719190120697021,4370,2024-12-31
+drawdown_10__logistic__price_derivatives,drawdown_10,logistic,price_derivatives,2021-01-01,development,"{""C"": 0.1}",0.22541051811186386,1448,2020-12-31
+drawdown_10__logistic__price_derivatives,drawdown_10,logistic,price_derivatives,2022-01-01,development,"{""C"": 0.1}",0.24066939757401934,2178,2021-12-31
+drawdown_10__logistic__price_derivatives,drawdown_10,logistic,price_derivatives,2023-01-01,development,"{""C"": 0.1}",0.2385229632024987,2908,2022-12-31
+drawdown_10__logistic__price_derivatives,drawdown_10,logistic,price_derivatives,2024-01-01,development,"{""C"": 0.1}",0.2683105802209675,3638,2023-12-31
+drawdown_10__logistic__price_derivatives,drawdown_10,logistic,price_derivatives,2025-01-01,holdout,"{""C"": 0.1}",0.24728502195216667,4370,2024-12-31
+drawdown_10__elastic_net__price_derivatives,drawdown_10,elastic_net,price_derivatives,2021-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.22815560748215205,1448,2020-12-31
+drawdown_10__elastic_net__price_derivatives,drawdown_10,elastic_net,price_derivatives,2022-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.23991441854505688,2178,2021-12-31
+drawdown_10__elastic_net__price_derivatives,drawdown_10,elastic_net,price_derivatives,2023-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.23715342032000572,2908,2022-12-31
+drawdown_10__elastic_net__price_derivatives,drawdown_10,elastic_net,price_derivatives,2024-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.267854879237032,3638,2023-12-31
+drawdown_10__elastic_net__price_derivatives,drawdown_10,elastic_net,price_derivatives,2025-01-01,holdout,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.24682147227385787,4370,2024-12-31
+drawdown_10__random_forest__price_derivatives,drawdown_10,random_forest,price_derivatives,2021-01-01,development,"{""max_depth"": 7, ""min_samples_leaf"": 10}",0.20786532489041254,1448,2020-12-31
+drawdown_10__random_forest__price_derivatives,drawdown_10,random_forest,price_derivatives,2022-01-01,development,"{""max_depth"": 7, ""min_samples_leaf"": 10}",0.19662005135833813,2178,2021-12-31
+drawdown_10__random_forest__price_derivatives,drawdown_10,random_forest,price_derivatives,2023-01-01,development,"{""max_depth"": 7, ""min_samples_leaf"": 10}",0.21563169556848444,2908,2022-12-31
+drawdown_10__random_forest__price_derivatives,drawdown_10,random_forest,price_derivatives,2024-01-01,development,"{""max_depth"": 7, ""min_samples_leaf"": 10}",0.20866048781879842,3638,2023-12-31
+drawdown_10__random_forest__price_derivatives,drawdown_10,random_forest,price_derivatives,2025-01-01,holdout,"{""max_depth"": 7, ""min_samples_leaf"": 10}",0.2021332203201183,4370,2024-12-31
+drawdown_10__gradient_boosting__price_derivatives,drawdown_10,gradient_boosting,price_derivatives,2021-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.127700020695799,1448,2020-12-31
+drawdown_10__gradient_boosting__price_derivatives,drawdown_10,gradient_boosting,price_derivatives,2022-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.14751114827539374,2178,2021-12-31
+drawdown_10__gradient_boosting__price_derivatives,drawdown_10,gradient_boosting,price_derivatives,2023-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.15553227095151267,2908,2022-12-31
+drawdown_10__gradient_boosting__price_derivatives,drawdown_10,gradient_boosting,price_derivatives,2024-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.13835266336472438,3638,2023-12-31
+drawdown_10__gradient_boosting__price_derivatives,drawdown_10,gradient_boosting,price_derivatives,2025-01-01,holdout,"{""n_estimators"": 75, ""max_depth"": 2}",0.13079598055587183,4370,2024-12-31
+drawdown_10__boosted_tree__price_derivatives,drawdown_10,boosted_tree,price_derivatives,2021-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.12357331812381744,1448,2020-12-31
+drawdown_10__boosted_tree__price_derivatives,drawdown_10,boosted_tree,price_derivatives,2022-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.14336879923939705,2178,2021-12-31
+drawdown_10__boosted_tree__price_derivatives,drawdown_10,boosted_tree,price_derivatives,2023-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.15700306743383408,2908,2022-12-31
+drawdown_10__boosted_tree__price_derivatives,drawdown_10,boosted_tree,price_derivatives,2024-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.1328428043052554,3638,2023-12-31
+drawdown_10__boosted_tree__price_derivatives,drawdown_10,boosted_tree,price_derivatives,2025-01-01,holdout,"{""n_estimators"": 75, ""max_depth"": 2}",0.12462837435305119,4370,2024-12-31
+drawdown_15__logistic__price_only,drawdown_15,logistic,price_only,2021-01-01,development,"{""C"": 0.1}",0.28900982891822763,1448,2020-12-31
+drawdown_15__logistic__price_only,drawdown_15,logistic,price_only,2022-01-01,development,"{""C"": 0.1}",0.2664728985037239,2178,2021-12-31
+drawdown_15__logistic__price_only,drawdown_15,logistic,price_only,2023-01-01,development,"{""C"": 0.1}",0.251581352191108,2908,2022-12-31
+drawdown_15__logistic__price_only,drawdown_15,logistic,price_only,2024-01-01,development,"{""C"": 0.1}",0.2664578858050611,3638,2023-12-31
+drawdown_15__logistic__price_only,drawdown_15,logistic,price_only,2025-01-01,holdout,"{""C"": 0.1}",0.24431019639235788,4370,2024-12-31
+drawdown_15__elastic_net__price_only,drawdown_15,elastic_net,price_only,2021-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2870688987108626,1448,2020-12-31
+drawdown_15__elastic_net__price_only,drawdown_15,elastic_net,price_only,2022-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2646007495128865,2178,2021-12-31
+drawdown_15__elastic_net__price_only,drawdown_15,elastic_net,price_only,2023-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2512991077387742,2908,2022-12-31
+drawdown_15__elastic_net__price_only,drawdown_15,elastic_net,price_only,2024-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2658094333775674,3638,2023-12-31
+drawdown_15__elastic_net__price_only,drawdown_15,elastic_net,price_only,2025-01-01,holdout,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2443024585955864,4370,2024-12-31
+drawdown_15__logistic__derivatives_only,drawdown_15,logistic,derivatives_only,2021-01-01,development,"{""C"": 0.1}",0.20324343130769415,1448,2020-12-31
+drawdown_15__logistic__derivatives_only,drawdown_15,logistic,derivatives_only,2022-01-01,development,"{""C"": 0.1}",0.20006417025729484,2178,2021-12-31
+drawdown_15__logistic__derivatives_only,drawdown_15,logistic,derivatives_only,2023-01-01,development,"{""C"": 1.0}",0.18570919299500882,2908,2022-12-31
+drawdown_15__logistic__derivatives_only,drawdown_15,logistic,derivatives_only,2024-01-01,development,"{""C"": 0.1}",0.22591832108068777,3638,2023-12-31
+drawdown_15__logistic__derivatives_only,drawdown_15,logistic,derivatives_only,2025-01-01,holdout,"{""C"": 0.1}",0.2365040297525441,4370,2024-12-31
+drawdown_15__elastic_net__derivatives_only,drawdown_15,elastic_net,derivatives_only,2021-01-01,development,"{""C"": 1.0, ""l1_ratio"": 0.75}",0.20648320289048838,1448,2020-12-31
+drawdown_15__elastic_net__derivatives_only,drawdown_15,elastic_net,derivatives_only,2022-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.19347672660871074,2178,2021-12-31
+drawdown_15__elastic_net__derivatives_only,drawdown_15,elastic_net,derivatives_only,2023-01-01,development,"{""C"": 1.0, ""l1_ratio"": 0.75}",0.18531490167279063,2908,2022-12-31
+drawdown_15__elastic_net__derivatives_only,drawdown_15,elastic_net,derivatives_only,2024-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.22324312711882605,3638,2023-12-31
+drawdown_15__elastic_net__derivatives_only,drawdown_15,elastic_net,derivatives_only,2025-01-01,holdout,"{""C"": 1.0, ""l1_ratio"": 0.75}",0.23549634339926417,4370,2024-12-31
+drawdown_15__random_forest__derivatives_only,drawdown_15,random_forest,derivatives_only,2021-01-01,development,"{""max_depth"": 7, ""min_samples_leaf"": 10}",0.20950702032390595,1448,2020-12-31
+drawdown_15__random_forest__derivatives_only,drawdown_15,random_forest,derivatives_only,2022-01-01,development,"{""max_depth"": 7, ""min_samples_leaf"": 10}",0.20149470325508592,2178,2021-12-31
+drawdown_15__random_forest__derivatives_only,drawdown_15,random_forest,derivatives_only,2023-01-01,development,"{""max_depth"": 7, ""min_samples_leaf"": 10}",0.14204627062243724,2908,2022-12-31
+drawdown_15__random_forest__derivatives_only,drawdown_15,random_forest,derivatives_only,2024-01-01,development,"{""max_depth"": 7, ""min_samples_leaf"": 10}",0.17161129516437035,3638,2023-12-31
+drawdown_15__random_forest__derivatives_only,drawdown_15,random_forest,derivatives_only,2025-01-01,holdout,"{""max_depth"": 7, ""min_samples_leaf"": 10}",0.1667585836008961,4370,2024-12-31
+drawdown_15__gradient_boosting__derivatives_only,drawdown_15,gradient_boosting,derivatives_only,2021-01-01,development,"{""n_estimators"": 125, ""max_depth"": 2}",0.06504648837366706,1448,2020-12-31
+drawdown_15__gradient_boosting__derivatives_only,drawdown_15,gradient_boosting,derivatives_only,2022-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.0669861924595826,2178,2021-12-31
+drawdown_15__gradient_boosting__derivatives_only,drawdown_15,gradient_boosting,derivatives_only,2023-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.08034973573008292,2908,2022-12-31
+drawdown_15__gradient_boosting__derivatives_only,drawdown_15,gradient_boosting,derivatives_only,2024-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.06892396379777843,3638,2023-12-31
+drawdown_15__gradient_boosting__derivatives_only,drawdown_15,gradient_boosting,derivatives_only,2025-01-01,holdout,"{""n_estimators"": 75, ""max_depth"": 2}",0.061546927959958746,4370,2024-12-31
+drawdown_15__boosted_tree__derivatives_only,drawdown_15,boosted_tree,derivatives_only,2021-01-01,development,"{""n_estimators"": 125, ""max_depth"": 3}",0.06031825207173824,1448,2020-12-31
+drawdown_15__boosted_tree__derivatives_only,drawdown_15,boosted_tree,derivatives_only,2022-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.06724172923713923,2178,2021-12-31
+drawdown_15__boosted_tree__derivatives_only,drawdown_15,boosted_tree,derivatives_only,2023-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.08021174743771553,2908,2022-12-31
+drawdown_15__boosted_tree__derivatives_only,drawdown_15,boosted_tree,derivatives_only,2024-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.0661415159702301,3638,2023-12-31
+drawdown_15__boosted_tree__derivatives_only,drawdown_15,boosted_tree,derivatives_only,2025-01-01,holdout,"{""n_estimators"": 75, ""max_depth"": 2}",0.061722458340227604,4370,2024-12-31
+drawdown_15__logistic__price_derivatives,drawdown_15,logistic,price_derivatives,2021-01-01,development,"{""C"": 1.0}",0.22801789238951448,1448,2020-12-31
+drawdown_15__logistic__price_derivatives,drawdown_15,logistic,price_derivatives,2022-01-01,development,"{""C"": 0.1}",0.22171850182624664,2178,2021-12-31
+drawdown_15__logistic__price_derivatives,drawdown_15,logistic,price_derivatives,2023-01-01,development,"{""C"": 1.0}",0.20235044352713077,2908,2022-12-31
+drawdown_15__logistic__price_derivatives,drawdown_15,logistic,price_derivatives,2024-01-01,development,"{""C"": 0.1}",0.25575500649677074,3638,2023-12-31
+drawdown_15__logistic__price_derivatives,drawdown_15,logistic,price_derivatives,2025-01-01,holdout,"{""C"": 0.1}",0.2461190580657871,4370,2024-12-31
+drawdown_15__elastic_net__price_derivatives,drawdown_15,elastic_net,price_derivatives,2021-01-01,development,"{""C"": 1.0, ""l1_ratio"": 0.75}",0.23289286513038765,1448,2020-12-31
+drawdown_15__elastic_net__price_derivatives,drawdown_15,elastic_net,price_derivatives,2022-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.21728789454563424,2178,2021-12-31
+drawdown_15__elastic_net__price_derivatives,drawdown_15,elastic_net,price_derivatives,2023-01-01,development,"{""C"": 1.0, ""l1_ratio"": 0.75}",0.20085190084601867,2908,2022-12-31
+drawdown_15__elastic_net__price_derivatives,drawdown_15,elastic_net,price_derivatives,2024-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2549030865872999,3638,2023-12-31
+drawdown_15__elastic_net__price_derivatives,drawdown_15,elastic_net,price_derivatives,2025-01-01,holdout,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.24618520899200996,4370,2024-12-31
+drawdown_15__random_forest__price_derivatives,drawdown_15,random_forest,price_derivatives,2021-01-01,development,"{""max_depth"": 7, ""min_samples_leaf"": 10}",0.16625025723608203,1448,2020-12-31
+drawdown_15__random_forest__price_derivatives,drawdown_15,random_forest,price_derivatives,2022-01-01,development,"{""max_depth"": 7, ""min_samples_leaf"": 10}",0.1427904496781125,2178,2021-12-31
+drawdown_15__random_forest__price_derivatives,drawdown_15,random_forest,price_derivatives,2023-01-01,development,"{""max_depth"": 7, ""min_samples_leaf"": 10}",0.14768669226814266,2908,2022-12-31
+drawdown_15__random_forest__price_derivatives,drawdown_15,random_forest,price_derivatives,2024-01-01,development,"{""max_depth"": 7, ""min_samples_leaf"": 10}",0.14886566517736843,3638,2023-12-31
+drawdown_15__random_forest__price_derivatives,drawdown_15,random_forest,price_derivatives,2025-01-01,holdout,"{""max_depth"": 7, ""min_samples_leaf"": 10}",0.1474812525974575,4370,2024-12-31
+drawdown_15__gradient_boosting__price_derivatives,drawdown_15,gradient_boosting,price_derivatives,2021-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.07771519274811012,1448,2020-12-31
+drawdown_15__gradient_boosting__price_derivatives,drawdown_15,gradient_boosting,price_derivatives,2022-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.07644448465893158,2178,2021-12-31
+drawdown_15__gradient_boosting__price_derivatives,drawdown_15,gradient_boosting,price_derivatives,2023-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.08404507979109739,2908,2022-12-31
+drawdown_15__gradient_boosting__price_derivatives,drawdown_15,gradient_boosting,price_derivatives,2024-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.07357096988697094,3638,2023-12-31
+drawdown_15__gradient_boosting__price_derivatives,drawdown_15,gradient_boosting,price_derivatives,2025-01-01,holdout,"{""n_estimators"": 75, ""max_depth"": 2}",0.06876909268244738,4370,2024-12-31
+drawdown_15__boosted_tree__price_derivatives,drawdown_15,boosted_tree,price_derivatives,2021-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.06155138835310936,1448,2020-12-31
+drawdown_15__boosted_tree__price_derivatives,drawdown_15,boosted_tree,price_derivatives,2022-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.07472584675997496,2178,2021-12-31
+drawdown_15__boosted_tree__price_derivatives,drawdown_15,boosted_tree,price_derivatives,2023-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.08139833156019449,2908,2022-12-31
+drawdown_15__boosted_tree__price_derivatives,drawdown_15,boosted_tree,price_derivatives,2024-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.06488086050376296,3638,2023-12-31
+drawdown_15__boosted_tree__price_derivatives,drawdown_15,boosted_tree,price_derivatives,2025-01-01,holdout,"{""n_estimators"": 75, ""max_depth"": 2}",0.05970441782847047,4370,2024-12-31
+volatility_expansion__logistic__price_only,volatility_expansion,logistic,price_only,2021-01-01,development,"{""C"": 0.1}",0.2016297583523988,1448,2020-12-31
+volatility_expansion__logistic__price_only,volatility_expansion,logistic,price_only,2022-01-01,development,"{""C"": 0.1}",0.21043404404187516,2178,2021-12-31
+volatility_expansion__logistic__price_only,volatility_expansion,logistic,price_only,2023-01-01,development,"{""C"": 0.1}",0.20586954972673777,2908,2022-12-31
+volatility_expansion__logistic__price_only,volatility_expansion,logistic,price_only,2024-01-01,development,"{""C"": 0.1}",0.20797955985915995,3638,2023-12-31
+volatility_expansion__logistic__price_only,volatility_expansion,logistic,price_only,2025-01-01,holdout,"{""C"": 0.1}",0.2068075318018574,4370,2024-12-31
+volatility_expansion__elastic_net__price_only,volatility_expansion,elastic_net,price_only,2021-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.20132154783963419,1448,2020-12-31
+volatility_expansion__elastic_net__price_only,volatility_expansion,elastic_net,price_only,2022-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2099242163940016,2178,2021-12-31
+volatility_expansion__elastic_net__price_only,volatility_expansion,elastic_net,price_only,2023-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.20550709743769158,2908,2022-12-31
+volatility_expansion__elastic_net__price_only,volatility_expansion,elastic_net,price_only,2024-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.207889194041649,3638,2023-12-31
+volatility_expansion__elastic_net__price_only,volatility_expansion,elastic_net,price_only,2025-01-01,holdout,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.20680271233369424,4370,2024-12-31
+volatility_expansion__logistic__derivatives_only,volatility_expansion,logistic,derivatives_only,2021-01-01,development,"{""C"": 0.1}",0.2677343240058376,1448,2020-12-31
+volatility_expansion__logistic__derivatives_only,volatility_expansion,logistic,derivatives_only,2022-01-01,development,"{""C"": 0.1}",0.2545465258189348,2178,2021-12-31
+volatility_expansion__logistic__derivatives_only,volatility_expansion,logistic,derivatives_only,2023-01-01,development,"{""C"": 0.1}",0.24886022281635573,2908,2022-12-31
+volatility_expansion__logistic__derivatives_only,volatility_expansion,logistic,derivatives_only,2024-01-01,development,"{""C"": 0.1}",0.25379620566824507,3638,2023-12-31
+volatility_expansion__logistic__derivatives_only,volatility_expansion,logistic,derivatives_only,2025-01-01,holdout,"{""C"": 0.1}",0.25594582211677624,4370,2024-12-31
+volatility_expansion__elastic_net__derivatives_only,volatility_expansion,elastic_net,derivatives_only,2021-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.26436109454400125,1448,2020-12-31
+volatility_expansion__elastic_net__derivatives_only,volatility_expansion,elastic_net,derivatives_only,2022-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.25337650535896167,2178,2021-12-31
+volatility_expansion__elastic_net__derivatives_only,volatility_expansion,elastic_net,derivatives_only,2023-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.24844557797081313,2908,2022-12-31
+volatility_expansion__elastic_net__derivatives_only,volatility_expansion,elastic_net,derivatives_only,2024-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.25310177456932226,3638,2023-12-31
+volatility_expansion__elastic_net__derivatives_only,volatility_expansion,elastic_net,derivatives_only,2025-01-01,holdout,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2553704855219256,4370,2024-12-31
+volatility_expansion__random_forest__derivatives_only,volatility_expansion,random_forest,derivatives_only,2021-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.2592773782341557,1448,2020-12-31
+volatility_expansion__random_forest__derivatives_only,volatility_expansion,random_forest,derivatives_only,2022-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.26039549330535805,2178,2021-12-31
+volatility_expansion__random_forest__derivatives_only,volatility_expansion,random_forest,derivatives_only,2023-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.24823440748376402,2908,2022-12-31
+volatility_expansion__random_forest__derivatives_only,volatility_expansion,random_forest,derivatives_only,2024-01-01,development,"{""max_depth"": 7, ""min_samples_leaf"": 10}",0.24697744119197873,3638,2023-12-31
+volatility_expansion__random_forest__derivatives_only,volatility_expansion,random_forest,derivatives_only,2025-01-01,holdout,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.2492546772647178,4370,2024-12-31
+volatility_expansion__gradient_boosting__derivatives_only,volatility_expansion,gradient_boosting,derivatives_only,2021-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.26119293613808875,1448,2020-12-31
+volatility_expansion__gradient_boosting__derivatives_only,volatility_expansion,gradient_boosting,derivatives_only,2022-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2599907137279075,2178,2021-12-31
+volatility_expansion__gradient_boosting__derivatives_only,volatility_expansion,gradient_boosting,derivatives_only,2023-01-01,development,"{""n_estimators"": 125, ""max_depth"": 2}",0.249532833952556,2908,2022-12-31
+volatility_expansion__gradient_boosting__derivatives_only,volatility_expansion,gradient_boosting,derivatives_only,2024-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.24895326946426222,3638,2023-12-31
+volatility_expansion__gradient_boosting__derivatives_only,volatility_expansion,gradient_boosting,derivatives_only,2025-01-01,holdout,"{""n_estimators"": 75, ""max_depth"": 2}",0.2516525057261564,4370,2024-12-31
+volatility_expansion__boosted_tree__derivatives_only,volatility_expansion,boosted_tree,derivatives_only,2021-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.26276278123259544,1448,2020-12-31
+volatility_expansion__boosted_tree__derivatives_only,volatility_expansion,boosted_tree,derivatives_only,2022-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2619023472070694,2178,2021-12-31
+volatility_expansion__boosted_tree__derivatives_only,volatility_expansion,boosted_tree,derivatives_only,2023-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2485419102013111,2908,2022-12-31
+volatility_expansion__boosted_tree__derivatives_only,volatility_expansion,boosted_tree,derivatives_only,2024-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.24826429784297943,3638,2023-12-31
+volatility_expansion__boosted_tree__derivatives_only,volatility_expansion,boosted_tree,derivatives_only,2025-01-01,holdout,"{""n_estimators"": 75, ""max_depth"": 2}",0.251179825514555,4370,2024-12-31
+volatility_expansion__logistic__price_derivatives,volatility_expansion,logistic,price_derivatives,2021-01-01,development,"{""C"": 0.1}",0.2113907278994467,1448,2020-12-31
+volatility_expansion__logistic__price_derivatives,volatility_expansion,logistic,price_derivatives,2022-01-01,development,"{""C"": 0.1}",0.21430817348284092,2178,2021-12-31
+volatility_expansion__logistic__price_derivatives,volatility_expansion,logistic,price_derivatives,2023-01-01,development,"{""C"": 0.1}",0.20684543134870997,2908,2022-12-31
+volatility_expansion__logistic__price_derivatives,volatility_expansion,logistic,price_derivatives,2024-01-01,development,"{""C"": 0.1}",0.21112472625970696,3638,2023-12-31
+volatility_expansion__logistic__price_derivatives,volatility_expansion,logistic,price_derivatives,2025-01-01,holdout,"{""C"": 0.1}",0.2161017804866957,4370,2024-12-31
+volatility_expansion__elastic_net__price_derivatives,volatility_expansion,elastic_net,price_derivatives,2021-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.20867597138360192,1448,2020-12-31
+volatility_expansion__elastic_net__price_derivatives,volatility_expansion,elastic_net,price_derivatives,2022-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.21206668820039962,2178,2021-12-31
+volatility_expansion__elastic_net__price_derivatives,volatility_expansion,elastic_net,price_derivatives,2023-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.20596074985105012,2908,2022-12-31
+volatility_expansion__elastic_net__price_derivatives,volatility_expansion,elastic_net,price_derivatives,2024-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.210421840577098,3638,2023-12-31
+volatility_expansion__elastic_net__price_derivatives,volatility_expansion,elastic_net,price_derivatives,2025-01-01,holdout,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.21561052131100875,4370,2024-12-31
+volatility_expansion__random_forest__price_derivatives,volatility_expansion,random_forest,price_derivatives,2021-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.20801968861900577,1448,2020-12-31
+volatility_expansion__random_forest__price_derivatives,volatility_expansion,random_forest,price_derivatives,2022-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.21065387432481328,2178,2021-12-31
+volatility_expansion__random_forest__price_derivatives,volatility_expansion,random_forest,price_derivatives,2023-01-01,development,"{""max_depth"": 7, ""min_samples_leaf"": 10}",0.21029477386010748,2908,2022-12-31
+volatility_expansion__random_forest__price_derivatives,volatility_expansion,random_forest,price_derivatives,2024-01-01,development,"{""max_depth"": 7, ""min_samples_leaf"": 10}",0.2110206259763699,3638,2023-12-31
+volatility_expansion__random_forest__price_derivatives,volatility_expansion,random_forest,price_derivatives,2025-01-01,holdout,"{""max_depth"": 7, ""min_samples_leaf"": 10}",0.21017937787626806,4370,2024-12-31
+volatility_expansion__gradient_boosting__price_derivatives,volatility_expansion,gradient_boosting,price_derivatives,2021-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2050511620086411,1448,2020-12-31
+volatility_expansion__gradient_boosting__price_derivatives,volatility_expansion,gradient_boosting,price_derivatives,2022-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.21008769646895742,2178,2021-12-31
+volatility_expansion__gradient_boosting__price_derivatives,volatility_expansion,gradient_boosting,price_derivatives,2023-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2049803882462393,2908,2022-12-31
+volatility_expansion__gradient_boosting__price_derivatives,volatility_expansion,gradient_boosting,price_derivatives,2024-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2063940414731792,3638,2023-12-31
+volatility_expansion__gradient_boosting__price_derivatives,volatility_expansion,gradient_boosting,price_derivatives,2025-01-01,holdout,"{""n_estimators"": 75, ""max_depth"": 2}",0.20661998370881196,4370,2024-12-31
+volatility_expansion__boosted_tree__price_derivatives,volatility_expansion,boosted_tree,price_derivatives,2021-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.20348824560642242,1448,2020-12-31
+volatility_expansion__boosted_tree__price_derivatives,volatility_expansion,boosted_tree,price_derivatives,2022-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.20708411931991577,2178,2021-12-31
+volatility_expansion__boosted_tree__price_derivatives,volatility_expansion,boosted_tree,price_derivatives,2023-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.20410231128335,2908,2022-12-31
+volatility_expansion__boosted_tree__price_derivatives,volatility_expansion,boosted_tree,price_derivatives,2024-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.20541426166892052,3638,2023-12-31
+volatility_expansion__boosted_tree__price_derivatives,volatility_expansion,boosted_tree,price_derivatives,2025-01-01,holdout,"{""n_estimators"": 75, ""max_depth"": 2}",0.20638341829180717,4370,2024-12-31
+eth_outperforms_btc__logistic__price_only,eth_outperforms_btc,logistic,price_only,2021-01-01,development,"{""C"": 0.1}",0.27047399300190306,724,2020-12-31
+eth_outperforms_btc__logistic__price_only,eth_outperforms_btc,logistic,price_only,2022-01-01,development,"{""C"": 0.1}",0.26478217009908483,1089,2021-12-31
+eth_outperforms_btc__logistic__price_only,eth_outperforms_btc,logistic,price_only,2023-01-01,development,"{""C"": 0.1}",0.2747235773043524,1454,2022-12-31
+eth_outperforms_btc__logistic__price_only,eth_outperforms_btc,logistic,price_only,2024-01-01,development,"{""C"": 0.1}",0.26206615794950266,1819,2023-12-31
+eth_outperforms_btc__logistic__price_only,eth_outperforms_btc,logistic,price_only,2025-01-01,holdout,"{""C"": 0.1}",0.2680099116987271,2185,2024-12-31
+eth_outperforms_btc__elastic_net__price_only,eth_outperforms_btc,elastic_net,price_only,2021-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.27169270303909837,724,2020-12-31
+eth_outperforms_btc__elastic_net__price_only,eth_outperforms_btc,elastic_net,price_only,2022-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2618362780190762,1089,2021-12-31
+eth_outperforms_btc__elastic_net__price_only,eth_outperforms_btc,elastic_net,price_only,2023-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.27217256848543137,1454,2022-12-31
+eth_outperforms_btc__elastic_net__price_only,eth_outperforms_btc,elastic_net,price_only,2024-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2612613458068932,1819,2023-12-31
+eth_outperforms_btc__elastic_net__price_only,eth_outperforms_btc,elastic_net,price_only,2025-01-01,holdout,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2671146508616343,2185,2024-12-31
+eth_outperforms_btc__logistic__derivatives_only,eth_outperforms_btc,logistic,derivatives_only,2021-01-01,development,"{""C"": 0.1}",0.24813870417322548,724,2020-12-31
+eth_outperforms_btc__logistic__derivatives_only,eth_outperforms_btc,logistic,derivatives_only,2022-01-01,development,"{""C"": 0.1}",0.27323521722932365,1089,2021-12-31
+eth_outperforms_btc__logistic__derivatives_only,eth_outperforms_btc,logistic,derivatives_only,2023-01-01,development,"{""C"": 0.1}",0.2560029949469574,1454,2022-12-31
+eth_outperforms_btc__logistic__derivatives_only,eth_outperforms_btc,logistic,derivatives_only,2024-01-01,development,"{""C"": 0.1}",0.2556413664450644,1819,2023-12-31
+eth_outperforms_btc__logistic__derivatives_only,eth_outperforms_btc,logistic,derivatives_only,2025-01-01,holdout,"{""C"": 0.1}",0.261817567016715,2185,2024-12-31
+eth_outperforms_btc__elastic_net__derivatives_only,eth_outperforms_btc,elastic_net,derivatives_only,2021-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.24697081388419673,724,2020-12-31
+eth_outperforms_btc__elastic_net__derivatives_only,eth_outperforms_btc,elastic_net,derivatives_only,2022-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2687812105883731,1089,2021-12-31
+eth_outperforms_btc__elastic_net__derivatives_only,eth_outperforms_btc,elastic_net,derivatives_only,2023-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2540262527479778,1454,2022-12-31
+eth_outperforms_btc__elastic_net__derivatives_only,eth_outperforms_btc,elastic_net,derivatives_only,2024-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.25421315934214617,1819,2023-12-31
+eth_outperforms_btc__elastic_net__derivatives_only,eth_outperforms_btc,elastic_net,derivatives_only,2025-01-01,holdout,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2601258896479774,2185,2024-12-31
+eth_outperforms_btc__random_forest__derivatives_only,eth_outperforms_btc,random_forest,derivatives_only,2021-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.25944110885977806,724,2020-12-31
+eth_outperforms_btc__random_forest__derivatives_only,eth_outperforms_btc,random_forest,derivatives_only,2022-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.2612800455245007,1089,2021-12-31
+eth_outperforms_btc__random_forest__derivatives_only,eth_outperforms_btc,random_forest,derivatives_only,2023-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.25658430453401215,1454,2022-12-31
+eth_outperforms_btc__random_forest__derivatives_only,eth_outperforms_btc,random_forest,derivatives_only,2024-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.2570453228911007,1819,2023-12-31
+eth_outperforms_btc__random_forest__derivatives_only,eth_outperforms_btc,random_forest,derivatives_only,2025-01-01,holdout,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.2611572831731554,2185,2024-12-31
+eth_outperforms_btc__gradient_boosting__derivatives_only,eth_outperforms_btc,gradient_boosting,derivatives_only,2021-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2877804168891353,724,2020-12-31
+eth_outperforms_btc__gradient_boosting__derivatives_only,eth_outperforms_btc,gradient_boosting,derivatives_only,2022-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2804135669845894,1089,2021-12-31
+eth_outperforms_btc__gradient_boosting__derivatives_only,eth_outperforms_btc,gradient_boosting,derivatives_only,2023-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.25968016817798156,1454,2022-12-31
+eth_outperforms_btc__gradient_boosting__derivatives_only,eth_outperforms_btc,gradient_boosting,derivatives_only,2024-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.26142749829030487,1819,2023-12-31
+eth_outperforms_btc__gradient_boosting__derivatives_only,eth_outperforms_btc,gradient_boosting,derivatives_only,2025-01-01,holdout,"{""n_estimators"": 75, ""max_depth"": 2}",0.26592339717717844,2185,2024-12-31
+eth_outperforms_btc__boosted_tree__derivatives_only,eth_outperforms_btc,boosted_tree,derivatives_only,2021-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.28098660334944725,724,2020-12-31
+eth_outperforms_btc__boosted_tree__derivatives_only,eth_outperforms_btc,boosted_tree,derivatives_only,2022-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2710808701813221,1089,2021-12-31
+eth_outperforms_btc__boosted_tree__derivatives_only,eth_outperforms_btc,boosted_tree,derivatives_only,2023-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.25736404210329056,1454,2022-12-31
+eth_outperforms_btc__boosted_tree__derivatives_only,eth_outperforms_btc,boosted_tree,derivatives_only,2024-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2596244215965271,1819,2023-12-31
+eth_outperforms_btc__boosted_tree__derivatives_only,eth_outperforms_btc,boosted_tree,derivatives_only,2025-01-01,holdout,"{""n_estimators"": 75, ""max_depth"": 2}",0.26420290768146515,2185,2024-12-31
+eth_outperforms_btc__logistic__price_derivatives,eth_outperforms_btc,logistic,price_derivatives,2021-01-01,development,"{""C"": 0.1}",0.25722450117210266,724,2020-12-31
+eth_outperforms_btc__logistic__price_derivatives,eth_outperforms_btc,logistic,price_derivatives,2022-01-01,development,"{""C"": 0.1}",0.2760665159305029,1089,2021-12-31
+eth_outperforms_btc__logistic__price_derivatives,eth_outperforms_btc,logistic,price_derivatives,2023-01-01,development,"{""C"": 0.1}",0.2696495597628352,1454,2022-12-31
+eth_outperforms_btc__logistic__price_derivatives,eth_outperforms_btc,logistic,price_derivatives,2024-01-01,development,"{""C"": 0.1}",0.25693818863134443,1819,2023-12-31
+eth_outperforms_btc__logistic__price_derivatives,eth_outperforms_btc,logistic,price_derivatives,2025-01-01,holdout,"{""C"": 0.1}",0.27776623126895233,2185,2024-12-31
+eth_outperforms_btc__elastic_net__price_derivatives,eth_outperforms_btc,elastic_net,price_derivatives,2021-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2576261719594719,724,2020-12-31
+eth_outperforms_btc__elastic_net__price_derivatives,eth_outperforms_btc,elastic_net,price_derivatives,2022-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2698256588191425,1089,2021-12-31
+eth_outperforms_btc__elastic_net__price_derivatives,eth_outperforms_btc,elastic_net,price_derivatives,2023-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.26599699790777365,1454,2022-12-31
+eth_outperforms_btc__elastic_net__price_derivatives,eth_outperforms_btc,elastic_net,price_derivatives,2024-01-01,development,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.2550795510858069,1819,2023-12-31
+eth_outperforms_btc__elastic_net__price_derivatives,eth_outperforms_btc,elastic_net,price_derivatives,2025-01-01,holdout,"{""C"": 0.1, ""l1_ratio"": 0.25}",0.27630877596021114,2185,2024-12-31
+eth_outperforms_btc__random_forest__price_derivatives,eth_outperforms_btc,random_forest,price_derivatives,2021-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.2589722570981265,724,2020-12-31
+eth_outperforms_btc__random_forest__price_derivatives,eth_outperforms_btc,random_forest,price_derivatives,2022-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.2593947807753075,1089,2021-12-31
+eth_outperforms_btc__random_forest__price_derivatives,eth_outperforms_btc,random_forest,price_derivatives,2023-01-01,development,"{""max_depth"": 7, ""min_samples_leaf"": 10}",0.2562941712252856,1454,2022-12-31
+eth_outperforms_btc__random_forest__price_derivatives,eth_outperforms_btc,random_forest,price_derivatives,2024-01-01,development,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.25232093238178915,1819,2023-12-31
+eth_outperforms_btc__random_forest__price_derivatives,eth_outperforms_btc,random_forest,price_derivatives,2025-01-01,holdout,"{""max_depth"": 4, ""min_samples_leaf"": 20}",0.2600846632834217,2185,2024-12-31
+eth_outperforms_btc__gradient_boosting__price_derivatives,eth_outperforms_btc,gradient_boosting,price_derivatives,2021-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.273358812008331,724,2020-12-31
+eth_outperforms_btc__gradient_boosting__price_derivatives,eth_outperforms_btc,gradient_boosting,price_derivatives,2022-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.26733850818104277,1089,2021-12-31
+eth_outperforms_btc__gradient_boosting__price_derivatives,eth_outperforms_btc,gradient_boosting,price_derivatives,2023-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.257499401520537,1454,2022-12-31
+eth_outperforms_btc__gradient_boosting__price_derivatives,eth_outperforms_btc,gradient_boosting,price_derivatives,2024-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2516389677346089,1819,2023-12-31
+eth_outperforms_btc__gradient_boosting__price_derivatives,eth_outperforms_btc,gradient_boosting,price_derivatives,2025-01-01,holdout,"{""n_estimators"": 75, ""max_depth"": 2}",0.2656312802281917,2185,2024-12-31
+eth_outperforms_btc__boosted_tree__price_derivatives,eth_outperforms_btc,boosted_tree,price_derivatives,2021-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2638218216598034,724,2020-12-31
+eth_outperforms_btc__boosted_tree__price_derivatives,eth_outperforms_btc,boosted_tree,price_derivatives,2022-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2623007893562317,1089,2021-12-31
+eth_outperforms_btc__boosted_tree__price_derivatives,eth_outperforms_btc,boosted_tree,price_derivatives,2023-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.2561556249856949,1454,2022-12-31
+eth_outperforms_btc__boosted_tree__price_derivatives,eth_outperforms_btc,boosted_tree,price_derivatives,2024-01-01,development,"{""n_estimators"": 75, ""max_depth"": 2}",0.25106969848275185,1819,2023-12-31
+eth_outperforms_btc__boosted_tree__price_derivatives,eth_outperforms_btc,boosted_tree,price_derivatives,2025-01-01,holdout,"{""n_estimators"": 75, ""max_depth"": 2}",0.2652958668768406,2185,2024-12-31

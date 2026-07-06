@@ -1,0 +1,1138 @@
+{
+  "coverage": {
+    "start_date": "2019-01-01",
+    "end_date": "2026-06-22",
+    "assets": 415,
+    "observations": 524164,
+    "calendar_days": 2730,
+    "missing_percentage_full_rectangular_panel": 0.5373458669844212,
+    "missing_percentage_within_listing_spans": 0.0009396615312480344,
+    "assets_available_2019": 50,
+    "assets_available_2020": 108
+  },
+  "main_configuration": {
+    "universe": 20,
+    "rebalance": "W-FRI",
+    "cost_bps": 25,
+    "min_asset_history_days": 90,
+    "allocator_train_days": 180,
+    "triple_barrier": {
+      "profit_taking": 1.5,
+      "stop_loss": 1.0,
+      "vertical_days": 14
+    }
+  },
+  "main_experiments": {
+    "base_equal_strategy_mix": {
+      "metrics": {
+        "CAGR": 0.052865591447346816,
+        "Sharpe": 0.3539946298077307,
+        "Maximum Drawdown": -0.42408580694249787,
+        "Annualized Volatility": 0.2054558390293118,
+        "Turnover": 0.01586268735781714,
+        "Exposure": 0.9844798657718121,
+        "Transaction Costs": 0.09454161665259014
+      },
+      "diagnostics": {
+        "number_of_trades": 3158,
+        "hit_rate": 0.5033557046979866,
+        "average_win": 0.006578595893352114,
+        "average_loss": -0.006468419229860977,
+        "turnover": 0.01586268735781714,
+        "exposure": 0.9823825503355704,
+        "average_gross_exposure": 0.20255442004510632,
+        "transaction_costs": 0.09454161665259014
+      }
+    },
+    "ml_strategy_allocation": {
+      "metrics": {
+        "CAGR": 0.030441456728832916,
+        "Sharpe": 0.2524742107689846,
+        "Maximum Drawdown": -0.45720655016728906,
+        "Annualized Volatility": 0.19323852204044722,
+        "Turnover": 0.01905028248835516,
+        "Exposure": 0.9844798657718121,
+        "Transaction Costs": 0.11353968363059674
+      },
+      "diagnostics": {
+        "number_of_trades": 4588,
+        "hit_rate": 0.4974832214765101,
+        "average_win": 0.005656788428019808,
+        "average_loss": -0.0055041288508427735,
+        "turnover": 0.01905028248835516,
+        "exposure": 0.9823825503355704,
+        "average_gross_exposure": 0.16691100118363653,
+        "transaction_costs": 0.11353968363059674
+      }
+    },
+    "triple_barrier_meta_labeling": {
+      "metrics": {
+        "CAGR": 0.01723393945589846,
+        "Sharpe": 0.2103934062720086,
+        "Maximum Drawdown": -0.23890428740075476,
+        "Annualized Volatility": 0.11032442579030245,
+        "Turnover": 0.008422827940950636,
+        "Exposure": 0.5373322147651006,
+        "Transaction Costs": 0.050200054528065786
+      },
+      "diagnostics": {
+        "number_of_trades": 1618,
+        "hit_rate": 0.2638422818791946,
+        "average_win": 0.00444590041036172,
+        "average_loss": -0.004056541533119707,
+        "turnover": 0.008422827940950636,
+        "exposure": 0.527265100671141,
+        "average_gross_exposure": 0.06610731050192652,
+        "transaction_costs": 0.050200054528065786
+      }
+    },
+    "ml_plus_triple_barrier": {
+      "metrics": {
+        "CAGR": 0.009836791884916929,
+        "Sharpe": 0.1452122977836084,
+        "Maximum Drawdown": -0.2397433829056238,
+        "Annualized Volatility": 0.10736771892442333,
+        "Turnover": 0.008784078731219414,
+        "Exposure": 0.5373322147651006,
+        "Transaction Costs": 0.05235310923806771
+      },
+      "diagnostics": {
+        "number_of_trades": 2061,
+        "hit_rate": 0.2596476510067114,
+        "average_win": 0.0037655262600424875,
+        "average_loss": -0.0033671107137306787,
+        "turnover": 0.008784078731219414,
+        "exposure": 0.527265100671141,
+        "average_gross_exposure": 0.05645209379572832,
+        "transaction_costs": 0.05235310923806771
+      }
+    }
+  },
+  "benchmarks": {
+    "BTC_buy_and_hold": {
+      "metrics": {
+        "CAGR": 0.4009518795540865,
+        "Sharpe": 0.8642044025605631,
+        "Maximum Drawdown": -0.7662925431645936,
+        "Annualized Volatility": 0.6095382875855139,
+        "Turnover": 0.0,
+        "Exposure": 1.0,
+        "Transaction Costs": 0.0
+      },
+      "diagnostics": {
+        "number_of_trades": 0,
+        "hit_rate": 0.5075503355704698,
+        "average_win": 0.022441715306924574,
+        "average_loss": -0.020199235033171458,
+        "turnover": 0.0,
+        "exposure": 1.0,
+        "average_gross_exposure": 1.0,
+        "transaction_costs": 0.0
+      }
+    },
+    "ETH_buy_and_hold": {
+      "metrics": {
+        "CAGR": 0.4663137143634464,
+        "Sharpe": 0.8837089707657775,
+        "Maximum Drawdown": -0.7930253453633335,
+        "Annualized Volatility": 0.8170889547384298,
+        "Turnover": 0.0,
+        "Exposure": 1.0,
+        "Transaction Costs": 0.0
+      },
+      "diagnostics": {
+        "number_of_trades": 0,
+        "hit_rate": 0.5159395973154363,
+        "average_win": 0.03015536201058973,
+        "average_loss": -0.028054504076264464,
+        "turnover": 0.0,
+        "exposure": 1.0,
+        "average_gross_exposure": 1.0,
+        "transaction_costs": 0.0
+      }
+    },
+    "50_50_BTC_ETH": {
+      "metrics": {
+        "CAGR": 0.47196208267078665,
+        "Sharpe": 0.9163148103935566,
+        "Maximum Drawdown": -0.7625369100009567,
+        "Annualized Volatility": 0.6814440281393231,
+        "Turnover": 0.0,
+        "Exposure": 1.0,
+        "Transaction Costs": 0.0
+      },
+      "diagnostics": {
+        "number_of_trades": 0,
+        "hit_rate": 0.5213926174496645,
+        "average_win": 0.025039149724718344,
+        "average_loss": -0.02370313543128755,
+        "turnover": 0.0,
+        "exposure": 1.0,
+        "average_gross_exposure": 1.0,
+        "transaction_costs": 0.0
+      }
+    },
+    "equal_weight_top_20": {
+      "metrics": {
+        "CAGR": 0.005271909398037344,
+        "Sharpe": 0.44003441299177326,
+        "Maximum Drawdown": -0.9314869279428925,
+        "Annualized Volatility": 0.8397419212831787,
+        "Turnover": 0.01153523489932886,
+        "Exposure": 1.0,
+        "Transaction Costs": 0.06875
+      },
+      "diagnostics": {
+        "number_of_trades": 550,
+        "hit_rate": 0.5293624161073825,
+        "average_win": 0.030450112261234875,
+        "average_loss": -0.03209852912420467,
+        "turnover": 0.01153523489932886,
+        "exposure": 1.0,
+        "average_gross_exposure": 1.0,
+        "transaction_costs": 0.06875
+      }
+    },
+    "standalone_trend_following": {
+      "metrics": {
+        "CAGR": 0.09213083138836775,
+        "Sharpe": 0.44949349407849737,
+        "Maximum Drawdown": -0.531680402712283,
+        "Annualized Volatility": 0.29073286043599267,
+        "Turnover": 0.022479816134533672,
+        "Exposure": 0.8624161073825504,
+        "Transaction Costs": 0.1339797041618207
+      },
+      "diagnostics": {
+        "number_of_trades": 2321,
+        "hit_rate": 0.44211409395973156,
+        "average_win": 0.010063607065493163,
+        "average_loss": -0.009734019972002359,
+        "turnover": 0.022479816134533672,
+        "exposure": 0.8561241610738255,
+        "average_gross_exposure": 0.2722335698177898,
+        "transaction_costs": 0.1339797041618207
+      }
+    },
+    "standalone_cross_sectional_momentum": {
+      "metrics": {
+        "CAGR": 0.01208291661644001,
+        "Sharpe": 0.18142367400970102,
+        "Maximum Drawdown": -0.612572830466024,
+        "Annualized Volatility": 0.27207522088661706,
+        "Turnover": 0.017645523227179924,
+        "Exposure": 0.9672818791946308,
+        "Transaction Costs": 0.10516731843399235
+      },
+      "diagnostics": {
+        "number_of_trades": 1213,
+        "hit_rate": 0.48783557046979864,
+        "average_win": 0.0097575287408438,
+        "average_loss": -0.009646198564677834,
+        "turnover": 0.017645523227179924,
+        "exposure": 0.964765100671141,
+        "average_gross_exposure": 0.26622621011499153,
+        "transaction_costs": 0.10516731843399235
+      }
+    },
+    "standalone_mean_reversion": {
+      "metrics": {
+        "CAGR": -0.029870926588612567,
+        "Sharpe": -0.1982152097541811,
+        "Maximum Drawdown": -0.24795122112119083,
+        "Annualized Volatility": 0.11783772129371867,
+        "Turnover": 0.018149797096463992,
+        "Exposure": 0.45176174496644295,
+        "Transaction Costs": 0.10817279069492539
+      },
+      "diagnostics": {
+        "number_of_trades": 866,
+        "hit_rate": 0.19924496644295303,
+        "average_win": 0.005253009407786053,
+        "average_loss": -0.004398234829837846,
+        "turnover": 0.018149797096463992,
+        "exposure": 0.4198825503355705,
+        "average_gross_exposure": 0.06719459185104679,
+        "transaction_costs": 0.10817279069492539
+      }
+    },
+    "standalone_volatility_breakout": {
+      "metrics": {
+        "CAGR": 0.05381223137925706,
+        "Sharpe": 1.0199317256457923,
+        "Maximum Drawdown": -0.06990882007676702,
+        "Annualized Volatility": 0.05275333804548735,
+        "Turnover": 0.005243288590604027,
+        "Exposure": 0.2445469798657718,
+        "Transaction Costs": 0.03125
+      },
+      "diagnostics": {
+        "number_of_trades": 250,
+        "hit_rate": 0.11325503355704698,
+        "average_win": 0.004518904608066696,
+        "average_loss": -0.0027753284478054226,
+        "turnover": 0.005243288590604027,
+        "exposure": 0.2231543624161074,
+        "average_gross_exposure": 0.019819630872483222,
+        "transaction_costs": 0.03125
+      }
+    },
+    "standalone_defensive_cash": {
+      "metrics": {
+        "CAGR": -0.02150573741826467,
+        "Sharpe": 0.1006781683550294,
+        "Maximum Drawdown": -0.6835010594617728,
+        "Annualized Volatility": 0.3294810819953231,
+        "Turnover": 0.026795148903671975,
+        "Exposure": 0.3183724832214765,
+        "Transaction Costs": 0.15969908746588501
+      },
+      "diagnostics": {
+        "number_of_trades": 2321,
+        "hit_rate": 0.15981543624161074,
+        "average_win": 0.02242838066075139,
+        "average_loss": -0.02203320850180376,
+        "turnover": 0.026795148903671975,
+        "exposure": 0.3053691275167785,
+        "average_gross_exposure": 0.2493618885210736,
+        "transaction_costs": 0.15969908746588501
+      }
+    },
+    "equal_weight_strategy_mix": {
+      "metrics": {
+        "CAGR": 0.052865591447346816,
+        "Sharpe": 0.3539946298077307,
+        "Maximum Drawdown": -0.42408580694249787,
+        "Annualized Volatility": 0.2054558390293118,
+        "Turnover": 0.01586268735781714,
+        "Exposure": 0.9844798657718121,
+        "Transaction Costs": 0.09454161665259014
+      },
+      "diagnostics": {
+        "number_of_trades": 3158,
+        "hit_rate": 0.5033557046979866,
+        "average_win": 0.006578595893352114,
+        "average_loss": -0.006468419229860977,
+        "turnover": 0.01586268735781714,
+        "exposure": 0.9823825503355704,
+        "average_gross_exposure": 0.20255442004510632,
+        "transaction_costs": 0.09454161665259014
+      }
+    }
+  },
+  "subperiods": {
+    "2020-2021 bull market": {
+      "base_equal_strategy_mix": {
+        "observations": 731,
+        "CAGR": 0.41269762326233606,
+        "Sharpe": 1.4574560625518431,
+        "Maximum Drawdown": -0.20204411683721424,
+        "Annualized Volatility": 0.260637784682371,
+        "Turnover": 0.017144564296593934,
+        "Exposure": 1.0,
+        "Transaction Costs": 0.03133169125202541
+      },
+      "ml_strategy_allocation": {
+        "observations": 731,
+        "CAGR": 0.3536167029937174,
+        "Sharpe": 1.3955926960220075,
+        "Maximum Drawdown": -0.1934697217214708,
+        "Annualized Volatility": 0.23723278208812362,
+        "Turnover": 0.022609412118410895,
+        "Exposure": 1.0,
+        "Transaction Costs": 0.0413187006463959
+      },
+      "triple_barrier_meta_labeling": {
+        "observations": 731,
+        "CAGR": 0.17206056428497352,
+        "Sharpe": 1.0890085256989643,
+        "Maximum Drawdown": -0.11674343222642614,
+        "Annualized Volatility": 0.15720863836554433,
+        "Turnover": 0.013378932968536253,
+        "Exposure": 0.7004103967168263,
+        "Transaction Costs": 0.024450000000000006
+      },
+      "ml_plus_triple_barrier": {
+        "observations": 731,
+        "CAGR": 0.17055243586984314,
+        "Sharpe": 1.1631942375247086,
+        "Maximum Drawdown": -0.09203177265427209,
+        "Annualized Volatility": 0.1443040354803788,
+        "Turnover": 0.012781434541950479,
+        "Exposure": 0.7004103967168263,
+        "Transaction Costs": 0.0233580716254145
+      },
+      "BTC_buy_and_hold": {
+        "observations": 731,
+        "CAGR": 1.5311955913440047,
+        "Sharpe": 1.594428290616487,
+        "Maximum Drawdown": -0.5359790262519866,
+        "Annualized Volatility": 0.7831575401884943,
+        "Turnover": 0.0,
+        "Exposure": 1.0,
+        "Transaction Costs": 0.0
+      },
+      "ETH_buy_and_hold": {
+        "observations": 731,
+        "CAGR": 4.322830090615782,
+        "Sharpe": 2.153549904005748,
+        "Maximum Drawdown": -0.6218832193582327,
+        "Annualized Volatility": 1.036771155390688,
+        "Turnover": 0.0,
+        "Exposure": 1.0,
+        "Transaction Costs": 0.0
+      },
+      "50_50_BTC_ETH": {
+        "observations": 731,
+        "CAGR": 2.844685034378616,
+        "Sharpe": 2.013002439264974,
+        "Maximum Drawdown": -0.5795339689737634,
+        "Annualized Volatility": 0.8647349084993915,
+        "Turnover": 0.0,
+        "Exposure": 1.0,
+        "Transaction Costs": 0.0
+      },
+      "equal_weight_top_20": {
+        "observations": 731,
+        "CAGR": 2.1896939602441865,
+        "Sharpe": 1.6837473612339842,
+        "Maximum Drawdown": -0.6489046086510508,
+        "Annualized Volatility": 1.0110443349034601,
+        "Turnover": 0.010259917920656635,
+        "Exposure": 1.0,
+        "Transaction Costs": 0.01875
+      }
+    },
+    "2022 bear market": {
+      "base_equal_strategy_mix": {
+        "observations": 365,
+        "CAGR": -0.27755598364377165,
+        "Sharpe": -2.9207781858715145,
+        "Maximum Drawdown": -0.2822096164625367,
+        "Annualized Volatility": 0.10921189091498858,
+        "Turnover": 0.01008219178082192,
+        "Exposure": 0.9643835616438357,
+        "Transaction Costs": 0.0092
+      },
+      "ml_strategy_allocation": {
+        "observations": 365,
+        "CAGR": -0.3718450879273666,
+        "Sharpe": -2.876118611591024,
+        "Maximum Drawdown": -0.37914185666337585,
+        "Annualized Volatility": 0.1572128153238701,
+        "Turnover": 0.014195267519613268,
+        "Exposure": 0.9643835616438357,
+        "Transaction Costs": 0.012953181611647107
+      },
+      "triple_barrier_meta_labeling": {
+        "observations": 365,
+        "CAGR": -0.02047967593396749,
+        "Sharpe": -1.293671184177687,
+        "Maximum Drawdown": -0.02387153397606323,
+        "Annualized Volatility": 0.0158968085039126,
+        "Turnover": 0.0011506849315068496,
+        "Exposure": 0.1232876712328767,
+        "Transaction Costs": 0.0010500000000000002
+      },
+      "ml_plus_triple_barrier": {
+        "observations": 365,
+        "CAGR": -0.032981137032467855,
+        "Sharpe": -1.420306434458247,
+        "Maximum Drawdown": -0.03688860606269384,
+        "Annualized Volatility": 0.02341802836826467,
+        "Turnover": 0.0016632888739444556,
+        "Exposure": 0.1232876712328767,
+        "Transaction Costs": 0.0015177510974743159
+      },
+      "BTC_buy_and_hold": {
+        "observations": 365,
+        "CAGR": -0.64207055726116,
+        "Sharpe": -1.2879200468654253,
+        "Maximum Drawdown": -0.669312370541033,
+        "Annualized Volatility": 0.63739255975001,
+        "Turnover": 0.0,
+        "Exposure": 1.0,
+        "Transaction Costs": 0.0
+      },
+      "ETH_buy_and_hold": {
+        "observations": 365,
+        "CAGR": -0.6746313478754051,
+        "Sharpe": -0.8563914097552372,
+        "Maximum Drawdown": -0.7400575194539575,
+        "Annualized Volatility": 0.8673373486735634,
+        "Turnover": 0.0,
+        "Exposure": 1.0,
+        "Transaction Costs": 0.0
+      },
+      "50_50_BTC_ETH": {
+        "observations": 365,
+        "CAGR": -0.6514813743156169,
+        "Sharpe": -1.0672916673431003,
+        "Maximum Drawdown": -0.6829597616582306,
+        "Annualized Volatility": 0.7325508846524856,
+        "Turnover": 0.0,
+        "Exposure": 1.0,
+        "Transaction Costs": 0.0
+      },
+      "equal_weight_top_20": {
+        "observations": 365,
+        "CAGR": -0.8402503733831749,
+        "Sharpe": -1.6103873121946677,
+        "Maximum Drawdown": -0.8480854759093265,
+        "Annualized Volatility": 0.884985529892355,
+        "Turnover": 0.009863013698630138,
+        "Exposure": 1.0,
+        "Transaction Costs": 0.009000000000000001
+      }
+    },
+    "2023 recovery": {
+      "base_equal_strategy_mix": {
+        "observations": 365,
+        "CAGR": 0.1695175696798088,
+        "Sharpe": 0.928192819385856,
+        "Maximum Drawdown": -0.2067438583323027,
+        "Annualized Volatility": 0.1876102911071106,
+        "Turnover": 0.018997417998003377,
+        "Exposure": 1.0,
+        "Transaction Costs": 0.01733514392317808
+      },
+      "ml_strategy_allocation": {
+        "observations": 365,
+        "CAGR": 0.18230851742574727,
+        "Sharpe": 1.599627681392026,
+        "Maximum Drawdown": -0.11883715384974047,
+        "Annualized Volatility": 0.10836985723011418,
+        "Turnover": 0.018143126355985653,
+        "Exposure": 1.0,
+        "Transaction Costs": 0.016555602799836908
+      },
+      "triple_barrier_meta_labeling": {
+        "observations": 365,
+        "CAGR": 0.02268605993267725,
+        "Sharpe": 0.6213966130537386,
+        "Maximum Drawdown": -0.030631123186202314,
+        "Annualized Volatility": 0.037209673273864555,
+        "Turnover": 0.0044383561643835615,
+        "Exposure": 0.3835616438356164,
+        "Transaction Costs": 0.004050000000000001
+      },
+      "ml_plus_triple_barrier": {
+        "observations": 365,
+        "CAGR": 0.008726417441797807,
+        "Sharpe": 0.2731065639085461,
+        "Maximum Drawdown": -0.03295217440067477,
+        "Annualized Volatility": 0.03391211246955272,
+        "Turnover": 0.004215174523146757,
+        "Exposure": 0.3835616438356164,
+        "Transaction Costs": 0.0038463467523714157
+      },
+      "BTC_buy_and_hold": {
+        "observations": 365,
+        "CAGR": 1.5560728793887235,
+        "Sharpe": 2.3490687612923047,
+        "Maximum Drawdown": -0.20002746848357156,
+        "Annualized Volatility": 0.44064479619189373,
+        "Turnover": 0.0,
+        "Exposure": 1.0,
+        "Transaction Costs": 0.0
+      },
+      "ETH_buy_and_hold": {
+        "observations": 365,
+        "CAGR": 0.9077107003419391,
+        "Sharpe": 1.6113859291543082,
+        "Maximum Drawdown": -0.2733129746491899,
+        "Annualized Volatility": 0.4685083667391674,
+        "Turnover": 0.0,
+        "Exposure": 1.0,
+        "Transaction Costs": 0.0
+      },
+      "50_50_BTC_ETH": {
+        "observations": 365,
+        "CAGR": 1.2274260586353956,
+        "Sharpe": 2.0600732666290704,
+        "Maximum Drawdown": -0.2185960912656456,
+        "Annualized Volatility": 0.4344633621560565,
+        "Turnover": 0.0,
+        "Exposure": 1.0,
+        "Transaction Costs": 0.0
+      },
+      "equal_weight_top_20": {
+        "observations": 365,
+        "CAGR": 0.811395964054876,
+        "Sharpe": 1.3011012960330863,
+        "Maximum Drawdown": -0.48009753360623997,
+        "Annualized Volatility": 0.5909721332808283,
+        "Turnover": 0.013150684931506852,
+        "Exposure": 1.0,
+        "Transaction Costs": 0.012
+      }
+    },
+    "2024-2026 recent period": {
+      "base_equal_strategy_mix": {
+        "observations": 904,
+        "CAGR": -0.0697942582949278,
+        "Sharpe": -0.27947103289269515,
+        "Maximum Drawdown": -0.32076445688055777,
+        "Annualized Volatility": 0.19239617864086564,
+        "Turnover": 0.016083974105038343,
+        "Exposure": 0.9734513274336283,
+        "Transaction Costs": 0.03634978147738666
+      },
+      "ml_strategy_allocation": {
+        "observations": 904,
+        "CAGR": -0.043305776774175686,
+        "Sharpe": -0.12911871322705865,
+        "Maximum Drawdown": -0.32338505116587335,
+        "Annualized Volatility": 0.19457217721207817,
+        "Turnover": 0.018831040160619615,
+        "Exposure": 0.9734513274336283,
+        "Transaction Costs": 0.042558150763000326
+      },
+      "triple_barrier_meta_labeling": {
+        "observations": 904,
+        "CAGR": -0.0805886013013506,
+        "Sharpe": -0.7328987698429877,
+        "Maximum Drawdown": -0.22062800155642714,
+        "Annualized Volatility": 0.10677874684615332,
+        "Turnover": 0.009137192269055655,
+        "Exposure": 0.6460176991150443,
+        "Transaction Costs": 0.02065005452806578
+      },
+      "ml_plus_triple_barrier": {
+        "observations": 904,
+        "CAGR": -0.08743132537801124,
+        "Sharpe": -0.7500201549089656,
+        "Maximum Drawdown": -0.23974338290562502,
+        "Annualized Volatility": 0.11323013172987105,
+        "Turnover": 0.010456168036640477,
+        "Exposure": 0.6460176991150443,
+        "Transaction Costs": 0.02363093976280748
+      },
+      "BTC_buy_and_hold": {
+        "observations": 904,
+        "CAGR": 0.19033314320015604,
+        "Sharpe": 0.6015782495906681,
+        "Maximum Drawdown": -0.5115888570490238,
+        "Annualized Volatility": 0.4815619232550284,
+        "Turnover": 0.0,
+        "Exposure": 1.0,
+        "Transaction Costs": 0.0
+      },
+      "ETH_buy_and_hold": {
+        "observations": 904,
+        "CAGR": -0.09855313205129168,
+        "Sharpe": 0.19397409532103285,
+        "Maximum Drawdown": -0.6751516430846412,
+        "Annualized Volatility": 0.6938608732853999,
+        "Turnover": 0.0,
+        "Exposure": 1.0,
+        "Transaction Costs": 0.0
+      },
+      "50_50_BTC_ETH": {
+        "observations": 904,
+        "CAGR": 0.05730852189310487,
+        "Sharpe": 0.37833799009164865,
+        "Maximum Drawdown": -0.592112053484964,
+        "Annualized Volatility": 0.5607264207497286,
+        "Turnover": 0.0,
+        "Exposure": 1.0,
+        "Transaction Costs": 0.0
+      },
+      "equal_weight_top_20": {
+        "observations": 904,
+        "CAGR": -0.3222781959736952,
+        "Sharpe": -0.14408642934534657,
+        "Maximum Drawdown": -0.7924797357659754,
+        "Annualized Volatility": 0.7480530012446709,
+        "Turnover": 0.012831858407079648,
+        "Exposure": 1.0,
+        "Transaction Costs": 0.029
+      }
+    }
+  },
+  "robustness": {
+    "universe": {
+      "20": {
+        "metrics": {
+          "CAGR": 0.009836791884916929,
+          "Sharpe": 0.1452122977836084,
+          "Maximum Drawdown": -0.2397433829056238,
+          "Annualized Volatility": 0.10736771892442333,
+          "Turnover": 0.008784078731219414,
+          "Exposure": 0.5373322147651006,
+          "Transaction Costs": 0.05235310923806771
+        },
+        "diagnostics": {
+          "number_of_trades": 2061,
+          "hit_rate": 0.2596476510067114,
+          "average_win": 0.0037655262600424875,
+          "average_loss": -0.0033671107137306787,
+          "turnover": 0.008784078731219414,
+          "exposure": 0.527265100671141,
+          "average_gross_exposure": 0.05645209379572832,
+          "transaction_costs": 0.05235310923806771
+        }
+      },
+      "10": {
+        "metrics": {
+          "CAGR": 0.05089026137969088,
+          "Sharpe": 0.49149461193627964,
+          "Maximum Drawdown": -0.19875563504550897,
+          "Annualized Volatility": 0.11427594870259386,
+          "Turnover": 0.01091719253815442,
+          "Exposure": 0.5906357388316151,
+          "Transaction Costs": 0.06353806057205871
+        },
+        "diagnostics": {
+          "number_of_trades": 1207,
+          "hit_rate": 0.2925257731958763,
+          "average_win": 0.003938335476295177,
+          "average_loss": -0.0033483789793484816,
+          "turnover": 0.01091719253815442,
+          "exposure": 0.5760309278350515,
+          "average_gross_exposure": 0.0658195041541422,
+          "transaction_costs": 0.06353806057205871
+        }
+      },
+      "50": {
+        "metrics": {
+          "CAGR": 0.015493616572092916,
+          "Sharpe": 0.1998213632563002,
+          "Maximum Drawdown": -0.1702299360617069,
+          "Annualized Volatility": 0.1042037621356937,
+          "Turnover": 0.009072253361536727,
+          "Exposure": 0.55998322147651,
+          "Transaction Costs": 0.054070630034758885
+        },
+        "diagnostics": {
+          "number_of_trades": 4736,
+          "hit_rate": 0.27390939597315433,
+          "average_win": 0.003467984594027078,
+          "average_loss": -0.0031211055780056693,
+          "turnover": 0.009072253361536727,
+          "exposure": 0.5478187919463087,
+          "average_gross_exposure": 0.05358823198265837,
+          "transaction_costs": 0.054070630034758885
+        }
+      }
+    },
+    "frequency": {
+      "W-FRI": {
+        "metrics": {
+          "CAGR": 0.009836791884916929,
+          "Sharpe": 0.1452122977836084,
+          "Maximum Drawdown": -0.2397433829056238,
+          "Annualized Volatility": 0.10736771892442333,
+          "Turnover": 0.008784078731219414,
+          "Exposure": 0.5373322147651006,
+          "Transaction Costs": 0.05235310923806771
+        },
+        "diagnostics": {
+          "number_of_trades": 2061,
+          "hit_rate": 0.2596476510067114,
+          "average_win": 0.0037655262600424875,
+          "average_loss": -0.0033671107137306787,
+          "turnover": 0.008784078731219414,
+          "exposure": 0.527265100671141,
+          "average_gross_exposure": 0.05645209379572832,
+          "transaction_costs": 0.05235310923806771
+        }
+      },
+      "2W-FRI": {
+        "metrics": {
+          "CAGR": 0.007099780374814735,
+          "Sharpe": 0.12211058115930344,
+          "Maximum Drawdown": -0.25822635698781793,
+          "Annualized Volatility": 0.09591332440804458,
+          "Turnover": 0.007753480432866107,
+          "Exposure": 0.5721671693235675,
+          "Transaction Costs": 0.04498957021170559
+        },
+        "diagnostics": {
+          "number_of_trades": 1760,
+          "hit_rate": 0.2774666092201637,
+          "average_win": 0.0033921121690817665,
+          "average_loss": -0.0030848604529872523,
+          "turnover": 0.007753480432866107,
+          "exposure": 0.5657044377423525,
+          "average_gross_exposure": 0.05720713819918104,
+          "transaction_costs": 0.04498957021170559
+        }
+      },
+      "ME": {
+        "metrics": {
+          "CAGR": -0.003170727589729694,
+          "Sharpe": 0.014304576465641285,
+          "Maximum Drawdown": -0.18178919373723412,
+          "Annualized Volatility": 0.09487903056602445,
+          "Turnover": 0.0026870425545762167,
+          "Exposure": 0.4381868131868132,
+          "Transaction Costs": 0.014671252347986143
+        },
+        "diagnostics": {
+          "number_of_trades": 445,
+          "hit_rate": 0.21703296703296704,
+          "average_win": 0.0034152705996828275,
+          "average_loss": -0.00333481852664971,
+          "turnover": 0.0026870425545762167,
+          "exposure": 0.429029304029304,
+          "average_gross_exposure": 0.04237701302919813,
+          "transaction_costs": 0.014671252347986143
+        }
+      }
+    },
+    "cost": {
+      "10": {
+        "metrics": {
+          "CAGR": 0.014715255319496912,
+          "Sharpe": 0.1901525900865124,
+          "Maximum Drawdown": -0.23044294459027204,
+          "Annualized Volatility": 0.1072843460552462,
+          "Turnover": 0.008784078731219414,
+          "Exposure": 0.5373322147651006,
+          "Transaction Costs": 0.020941243695227086
+        },
+        "diagnostics": {
+          "number_of_trades": 2061,
+          "hit_rate": 0.26048657718120805,
+          "average_win": 0.003770847052149396,
+          "average_loss": -0.0033461374111596115,
+          "turnover": 0.008784078731219414,
+          "exposure": 0.527265100671141,
+          "average_gross_exposure": 0.05645209379572832,
+          "transaction_costs": 0.020941243695227086
+        }
+      },
+      "25": {
+        "metrics": {
+          "CAGR": 0.009836791884916929,
+          "Sharpe": 0.1452122977836084,
+          "Maximum Drawdown": -0.2397433829056238,
+          "Annualized Volatility": 0.10736771892442333,
+          "Turnover": 0.008784078731219414,
+          "Exposure": 0.5373322147651006,
+          "Transaction Costs": 0.05235310923806771
+        },
+        "diagnostics": {
+          "number_of_trades": 2061,
+          "hit_rate": 0.2596476510067114,
+          "average_win": 0.0037655262600424875,
+          "average_loss": -0.0033671107137306787,
+          "turnover": 0.008784078731219414,
+          "exposure": 0.527265100671141,
+          "average_gross_exposure": 0.05645209379572832,
+          "transaction_costs": 0.05235310923806771
+        }
+      },
+      "50": {
+        "metrics": {
+          "CAGR": 0.0017546947689248693,
+          "Sharpe": 0.07044720243851489,
+          "Maximum Drawdown": -0.25958904280229445,
+          "Annualized Volatility": 0.10753643960772342,
+          "Turnover": 0.008784078731219414,
+          "Exposure": 0.5373322147651006,
+          "Transaction Costs": 0.10470621847613543
+        },
+        "diagnostics": {
+          "number_of_trades": 2061,
+          "hit_rate": 0.25838926174496646,
+          "average_win": 0.0037547613683504358,
+          "average_loss": -0.0034036881949854815,
+          "turnover": 0.008784078731219414,
+          "exposure": 0.527265100671141,
+          "average_gross_exposure": 0.05645209379572832,
+          "transaction_costs": 0.10470621847613543
+        }
+      },
+      "100": {
+        "metrics": {
+          "CAGR": -0.014228495888638393,
+          "Sharpe": -0.07830083730342872,
+          "Maximum Drawdown": -0.3048767907851532,
+          "Annualized Volatility": 0.10798482679243016,
+          "Turnover": 0.008784078731219414,
+          "Exposure": 0.5373322147651006,
+          "Transaction Costs": 0.20941243695227085
+        },
+        "diagnostics": {
+          "number_of_trades": 2061,
+          "hit_rate": 0.2520973154362416,
+          "average_win": 0.003796077132996803,
+          "average_loss": -0.003436276797306899,
+          "turnover": 0.008784078731219414,
+          "exposure": 0.527265100671141,
+          "average_gross_exposure": 0.05645209379572832,
+          "transaction_costs": 0.20941243695227085
+        }
+      }
+    },
+    "feature_ablation": {
+      "all_features": {
+        "metrics": {
+          "CAGR": 0.009836791884916929,
+          "Sharpe": 0.1452122977836084,
+          "Maximum Drawdown": -0.2397433829056238,
+          "Annualized Volatility": 0.10736771892442333,
+          "Turnover": 0.008784078731219414,
+          "Exposure": 0.5373322147651006,
+          "Transaction Costs": 0.05235310923806771
+        },
+        "diagnostics": {
+          "number_of_trades": 2061,
+          "hit_rate": 0.2596476510067114,
+          "average_win": 0.0037655262600424875,
+          "average_loss": -0.0033671107137306787,
+          "turnover": 0.008784078731219414,
+          "exposure": 0.527265100671141,
+          "average_gross_exposure": 0.05645209379572832,
+          "transaction_costs": 0.05235310923806771
+        }
+      },
+      "without_market_state": {
+        "metrics": {
+          "CAGR": 0.014204201574869346,
+          "Sharpe": 0.18517119318645794,
+          "Maximum Drawdown": -0.2658225508890498,
+          "Annualized Volatility": 0.107786785624326,
+          "Turnover": 0.008619557676101265,
+          "Exposure": 0.5373322147651006,
+          "Transaction Costs": 0.05137256374956353
+        },
+        "diagnostics": {
+          "number_of_trades": 2071,
+          "hit_rate": 0.2588087248322148,
+          "average_win": 0.0037787971146941214,
+          "average_loss": -0.003314993108800362,
+          "turnover": 0.008619557676101265,
+          "exposure": 0.527265100671141,
+          "average_gross_exposure": 0.054974919688556736,
+          "transaction_costs": 0.05137256374956353
+        }
+      },
+      "without_strategy_health": {
+        "metrics": {
+          "CAGR": 0.03916190753100657,
+          "Sharpe": 0.3663170019980889,
+          "Maximum Drawdown": -0.2980110764646231,
+          "Annualized Volatility": 0.1270302767695579,
+          "Turnover": 0.009568133551098876,
+          "Exposure": 0.5373322147651006,
+          "Transaction Costs": 0.0570260759645493
+        },
+        "diagnostics": {
+          "number_of_trades": 2117,
+          "hit_rate": 0.2646812080536913,
+          "average_win": 0.004604376877205499,
+          "average_loss": -0.004002198329685409,
+          "turnover": 0.009568133551098876,
+          "exposure": 0.527265100671141,
+          "average_gross_exposure": 0.06504865326821663,
+          "transaction_costs": 0.0570260759645493
+        }
+      }
+    },
+    "strategy_ablation": {
+      "without_trend_following": {
+        "metrics": {
+          "CAGR": 0.00813222595554075,
+          "Sharpe": 0.13275419785732526,
+          "Maximum Drawdown": -0.22474422050081544,
+          "Annualized Volatility": 0.09563082974069832,
+          "Turnover": 0.007282333577597762,
+          "Exposure": 0.511744966442953,
+          "Transaction Costs": 0.04340270812248266
+        },
+        "diagnostics": {
+          "number_of_trades": 1693,
+          "hit_rate": 0.24328859060402686,
+          "average_win": 0.0033435279141229746,
+          "average_loss": -0.002900509588625599,
+          "turnover": 0.007282333577597762,
+          "exposure": 0.5008389261744967,
+          "average_gross_exposure": 0.04676446477354524,
+          "transaction_costs": 0.04340270812248266
+        }
+      },
+      "without_cross_sectional_momentum": {
+        "metrics": {
+          "CAGR": 0.0016234389948501793,
+          "Sharpe": 0.06553488055519878,
+          "Maximum Drawdown": -0.2743223854106348,
+          "Annualized Volatility": 0.0966673001886194,
+          "Turnover": 0.00810825161220702,
+          "Exposure": 0.48573825503355705,
+          "Transaction Costs": 0.048325179608753835
+        },
+        "diagnostics": {
+          "number_of_trades": 1810,
+          "hit_rate": 0.23615771812080538,
+          "average_win": 0.003284672676521763,
+          "average_loss": -0.003038475796062584,
+          "turnover": 0.00810825161220702,
+          "exposure": 0.47441275167785235,
+          "average_gross_exposure": 0.04670802495879239,
+          "transaction_costs": 0.048325179608753835
+        }
+      },
+      "without_mean_reversion": {
+        "metrics": {
+          "CAGR": 0.03504636179850551,
+          "Sharpe": 0.33809756855347617,
+          "Maximum Drawdown": -0.29181066224950647,
+          "Annualized Volatility": 0.1251869750971919,
+          "Turnover": 0.009478577555476085,
+          "Exposure": 0.5088087248322147,
+          "Transaction Costs": 0.056492322230637465
+        },
+        "diagnostics": {
+          "number_of_trades": 1901,
+          "hit_rate": 0.24412751677852348,
+          "average_win": 0.005031183492354801,
+          "average_loss": -0.004202377297715862,
+          "turnover": 0.009478577555476085,
+          "exposure": 0.4979026845637584,
+          "average_gross_exposure": 0.0671708394494979,
+          "transaction_costs": 0.056492322230637465
+        }
+      },
+      "without_volatility_breakout": {
+        "metrics": {
+          "CAGR": 0.008736505181065946,
+          "Sharpe": 0.13248329386416977,
+          "Maximum Drawdown": -0.3027450315112794,
+          "Annualized Volatility": 0.1295128668224336,
+          "Turnover": 0.011175278930465628,
+          "Exposure": 0.5285234899328859,
+          "Transaction Costs": 0.06660466242557514
+        },
+        "diagnostics": {
+          "number_of_trades": 2052,
+          "hit_rate": 0.2609060402684564,
+          "average_win": 0.004763782935769742,
+          "average_loss": -0.0044686575071940975,
+          "turnover": 0.011175278930465628,
+          "exposure": 0.5184563758389261,
+          "average_gross_exposure": 0.07278619605638596,
+          "transaction_costs": 0.06660466242557514
+        }
+      },
+      "without_defensive_cash": {
+        "metrics": {
+          "CAGR": 0.015384214953849229,
+          "Sharpe": 0.2020795281952299,
+          "Maximum Drawdown": -0.228281954372626,
+          "Annualized Volatility": 0.10082575890023024,
+          "Turnover": 0.008545647929013763,
+          "Exposure": 0.5239093959731543,
+          "Transaction Costs": 0.05093206165692203
+        },
+        "diagnostics": {
+          "number_of_trades": 1676,
+          "hit_rate": 0.2525167785234899,
+          "average_win": 0.0040906241995591185,
+          "average_loss": -0.003600428871823074,
+          "turnover": 0.008545647929013763,
+          "exposure": 0.5125838926174496,
+          "average_gross_exposure": 0.056075883996598165,
+          "transaction_costs": 0.05093206165692203
+        }
+      }
+    }
+  },
+  "triple_barrier": {
+    "events": 7485,
+    "rejected_percentage": 0.6797634136037178,
+    "confidence_distribution": {
+      "count": 7101,
+      "mean": 0.4831875953008654,
+      "p10": 0.2921762303817016,
+      "p25": 0.38064800706184615,
+      "median": 0.4771252773311713,
+      "p75": 0.5910402934846382,
+      "p90": 0.695207050332802
+    },
+    "feature_importance": {
+      "market_dispersion_30": 0.4015125071209449,
+      "market_volatility_30": 0.38268434371433113,
+      "market_drawdown": 0.26424832395264225,
+      "market_breadth_30": 0.25182756561217334,
+      "market_correlation_60": 0.2357391710712672,
+      "strategy_health_return_28": 0.22957190560494517,
+      "asset_momentum_90": 0.164984921848804,
+      "strategy_health_drawdown": 0.14360474408316812,
+      "signal_strength": 0.13453429070757586,
+      "strategy_defensive_cash": 0.12877623181459122,
+      "asset_momentum_30": 0.12436072054177544,
+      "strategy_health_volatility_28": 0.10144151771892795,
+      "strategy_mean_reversion": 0.09321075466872908,
+      "asset_momentum_7": 0.09185388774869545,
+      "asset_volume_growth_30": 0.0812385900992839,
+      "asset_drawdown_90": 0.06860126649678715,
+      "strategy_volatility_breakout": 0.06753966362675898,
+      "strategy_cross_sectional_momentum": 0.06264995590179816,
+      "volatility_at_entry": 0.037078735855831525,
+      "asset_volatility_20": 0.03707873585583138
+    },
+    "event_diagnostics": {
+      "cross_sectional_momentum": {
+        "events": 2059,
+        "positive_label_rate": 0.3904808159300631,
+        "average_barrier_return": -0.002397718732423087
+      },
+      "defensive_cash": {
+        "events": 2180,
+        "positive_label_rate": 0.3743119266055046,
+        "average_barrier_return": -0.004346524023672739
+      },
+      "mean_reversion": {
+        "events": 503,
+        "positive_label_rate": 0.39363817097415504,
+        "average_barrier_return": -0.0036274024968301227
+      },
+      "trend_following": {
+        "events": 2601,
+        "positive_label_rate": 0.39254133025759325,
+        "average_barrier_return": -0.0017526103566584852
+      },
+      "volatility_breakout": {
+        "events": 142,
+        "positive_label_rate": 0.4788732394366197,
+        "average_barrier_return": 0.008807521976141569
+      }
+    }
+  },
+  "diagnostics": {
+    "allocator_confidence_distribution": {
+      "count": 339,
+      "mean": 0.5921306414753567,
+      "p10": 0.35439714002605294,
+      "p25": 0.43072094150696455,
+      "median": 0.5508311796727408,
+      "p75": 0.7396329490415184,
+      "p90": 0.9409397574327347
+    },
+    "allocator_feature_importance": {
+      "strategy_drawdown__cross_sectional_momentum": 0.8174787786338766,
+      "market_drawdown": 0.7771442316224938,
+      "market_volatility_30": 0.6311620190955589,
+      "market_dispersion_30": 0.6111068157628166,
+      "strategy_volatility_28__trend_following": 0.6107493978113648,
+      "market_correlation_60": 0.5562750523841823,
+      "strategy_hit_rate_28__trend_following": 0.45001697068553687,
+      "strategy_drawdown__defensive_cash": 0.4493180611321766,
+      "strategy_drawdown__trend_following": 0.43267333457416274,
+      "strategy_hit_rate_28__defensive_cash": 0.4246859658896101,
+      "strategy_drawdown__volatility_breakout": 0.390369802178399,
+      "strategy_volatility_28__cross_sectional_momentum": 0.36917673593809813,
+      "strategy_return_28__defensive_cash": 0.3676676441265694,
+      "market_momentum_90": 0.36490518916686976,
+      "market_breadth_30": 0.3551735748770625,
+      "strategy_volatility_28__mean_reversion": 0.3377410766245828,
+      "strategy_hit_rate_28__cross_sectional_momentum": 0.3363786331604898,
+      "strategy_return_28__trend_following": 0.3361175306631133,
+      "strategy_hit_rate_28__volatility_breakout": 0.33295988146601185,
+      "strategy_return_28__cross_sectional_momentum": 0.32609160440329965
+    }
+  }
+}

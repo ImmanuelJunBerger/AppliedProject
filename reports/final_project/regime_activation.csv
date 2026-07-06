@@ -1,0 +1,6 @@
+macro_regime,allocation,weeks,average_exposure,average_cash,average_favourable_features
+neutral,BTC/ETH,89,0.5,0.5,3.0
+neutral,cash,3,0.0,1.0,3.0
+risk_off,cash,183,0.0,1.0,1.360655737704918
+risk_on,BTC/ETH,112,1.0,0.0,4.669642857142857
+risk_on,cash,3,0.0,1.0,4.0

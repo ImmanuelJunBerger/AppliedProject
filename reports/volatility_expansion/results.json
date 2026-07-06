@@ -1,0 +1,340 @@
+{
+  "protocol": {
+    "run_date": "2026-06-22",
+    "prediction_target": "future 7-day basket realized variance exceeds trailing 7-day basket realized variance",
+    "holdout_start": "2025-01-01",
+    "holdout_end": "2026-06-22",
+    "holdout_training_rule": "all labels end before holdout start; no holdout outcomes used for tuning",
+    "outer_validation": "expanding walk-forward with 6-month test blocks",
+    "inner_tuning": "6-group CPCV, one test group, 7-observation purge horizon and embargo",
+    "selection_metric": "minimum mean CPCV Brier score",
+    "classification_threshold": 0.5,
+    "models": [
+      "har",
+      "elastic_net",
+      "boosted_tree"
+    ],
+    "trading_strategy_built": false
+  },
+  "dataset": {
+    "target": "future 7-day basket realized variance exceeds trailing 7-day basket realized variance",
+    "top_n": 10,
+    "start": "2019-07-30",
+    "end": "2026-06-15",
+    "observations": 2513,
+    "positive_rate": 0.5069637883008357,
+    "universe_rebalances": 365,
+    "unique_assets": 54,
+    "raw_derivative_columns": [
+      "funding_rate"
+    ],
+    "raw_option_columns": [],
+    "alternative_data_lag_days": 1,
+    "holdout_start": "2025-01-01",
+    "holdout_end": "2026-06-22",
+    "frequency": "daily close prediction; weekly point-in-time universe refresh"
+  },
+  "availability": [
+    {
+      "feature_set": "price_only",
+      "available": true,
+      "feature_count": 17,
+      "reason": "available"
+    },
+    {
+      "feature_set": "price_liquidity",
+      "available": true,
+      "feature_count": 25,
+      "reason": "available"
+    },
+    {
+      "feature_set": "price_derivatives",
+      "available": true,
+      "feature_count": 23,
+      "reason": "available"
+    },
+    {
+      "feature_set": "price_derivatives_options",
+      "available": false,
+      "feature_count": 0,
+      "reason": "derivative and/or options columns are absent or below 20% development coverage"
+    }
+  ],
+  "metrics": [
+    {
+      "split": "development",
+      "model": "boosted_tree",
+      "feature_set": "price_derivatives",
+      "observations": 1252,
+      "positive_rate": 0.5191693290734825,
+      "auc": 0.7517122412471249,
+      "precision": 0.6731770833333334,
+      "recall": 0.7953846153846154,
+      "brier_score": 0.20434723598000784,
+      "mean_probability": 0.5492885614664981
+    },
+    {
+      "split": "development",
+      "model": "boosted_tree",
+      "feature_set": "price_liquidity",
+      "observations": 1252,
+      "positive_rate": 0.5191693290734825,
+      "auc": 0.753435982622029,
+      "precision": 0.6717752234993615,
+      "recall": 0.8092307692307692,
+      "brier_score": 0.20425791532061377,
+      "mean_probability": 0.5668309143961618
+    },
+    {
+      "split": "development",
+      "model": "boosted_tree",
+      "feature_set": "price_only",
+      "observations": 1252,
+      "positive_rate": 0.5191693290734825,
+      "auc": 0.7583439815997955,
+      "precision": 0.6774193548387096,
+      "recall": 0.8076923076923077,
+      "brier_score": 0.20145313585196614,
+      "mean_probability": 0.5607389772173982
+    },
+    {
+      "split": "development",
+      "model": "elastic_net",
+      "feature_set": "price_derivatives",
+      "observations": 1252,
+      "positive_rate": 0.5191693290734825,
+      "auc": 0.7659851776130846,
+      "precision": 0.7063037249283668,
+      "recall": 0.7584615384615384,
+      "brier_score": 0.1984609578172882,
+      "mean_probability": 0.5545151092286731
+    },
+    {
+      "split": "development",
+      "model": "elastic_net",
+      "feature_set": "price_liquidity",
+      "observations": 1252,
+      "positive_rate": 0.5191693290734825,
+      "auc": 0.7620853565039611,
+      "precision": 0.6906377204884667,
+      "recall": 0.7830769230769231,
+      "brier_score": 0.2012158772117758,
+      "mean_probability": 0.5731962508004061
+    },
+    {
+      "split": "development",
+      "model": "elastic_net",
+      "feature_set": "price_only",
+      "observations": 1252,
+      "positive_rate": 0.5191693290734825,
+      "auc": 0.7672323025811398,
+      "precision": 0.7037037037037037,
+      "recall": 0.76,
+      "brier_score": 0.19764468703784316,
+      "mean_probability": 0.5502854121289982
+    },
+    {
+      "split": "development",
+      "model": "har",
+      "feature_set": "price_only",
+      "observations": 1252,
+      "positive_rate": 0.5191693290734825,
+      "auc": 0.7641707130079222,
+      "precision": 0.6879334257975035,
+      "recall": 0.7630769230769231,
+      "brier_score": 0.1996181079616607,
+      "mean_probability": 0.5568247752382501
+    },
+    {
+      "split": "holdout",
+      "model": "boosted_tree",
+      "feature_set": "price_derivatives",
+      "observations": 531,
+      "positive_rate": 0.5103578154425612,
+      "auc": 0.8400369003690038,
+      "precision": 0.7371794871794872,
+      "recall": 0.8487084870848709,
+      "brier_score": 0.17154185107445924,
+      "mean_probability": 0.5377458112837007
+    },
+    {
+      "split": "holdout",
+      "model": "boosted_tree",
+      "feature_set": "price_liquidity",
+      "observations": 531,
+      "positive_rate": 0.5103578154425612,
+      "auc": 0.8371487368719842,
+      "precision": 0.6878612716763006,
+      "recall": 0.8782287822878229,
+      "brier_score": 0.17859163744403542,
+      "mean_probability": 0.5621844881026534
+    },
+    {
+      "split": "holdout",
+      "model": "boosted_tree",
+      "feature_set": "price_only",
+      "observations": 531,
+      "positive_rate": 0.5103578154425612,
+      "auc": 0.8388802157252342,
+      "precision": 0.7272727272727273,
+      "recall": 0.8856088560885609,
+      "brier_score": 0.1731240071759733,
+      "mean_probability": 0.561186469165282
+    },
+    {
+      "split": "holdout",
+      "model": "elastic_net",
+      "feature_set": "price_derivatives",
+      "observations": 531,
+      "positive_rate": 0.5103578154425612,
+      "auc": 0.8574084586999716,
+      "precision": 0.7762237762237763,
+      "recall": 0.8191881918819188,
+      "brier_score": 0.1610619175873288,
+      "mean_probability": 0.5268959110403213
+    },
+    {
+      "split": "holdout",
+      "model": "elastic_net",
+      "feature_set": "price_liquidity",
+      "observations": 531,
+      "positive_rate": 0.5103578154425612,
+      "auc": 0.8579193868861766,
+      "precision": 0.7483870967741936,
+      "recall": 0.8560885608856088,
+      "brier_score": 0.16242576065216316,
+      "mean_probability": 0.552770313238219
+    },
+    {
+      "split": "holdout",
+      "model": "elastic_net",
+      "feature_set": "price_only",
+      "observations": 531,
+      "positive_rate": 0.5103578154425612,
+      "auc": 0.8566988362191315,
+      "precision": 0.7785714285714286,
+      "recall": 0.8044280442804428,
+      "brier_score": 0.15922804921063569,
+      "mean_probability": 0.526132796513045
+    },
+    {
+      "split": "holdout",
+      "model": "har",
+      "feature_set": "price_only",
+      "observations": 531,
+      "positive_rate": 0.5103578154425612,
+      "auc": 0.8219699120068125,
+      "precision": 0.7245901639344262,
+      "recall": 0.8154981549815498,
+      "brier_score": 0.1779483549158467,
+      "mean_probability": 0.5398282346240761
+    }
+  ],
+  "comparisons": [
+    {
+      "split": "development",
+      "model": "elastic_net",
+      "alternative_feature_set": "price_derivatives",
+      "matched_observations": 1252,
+      "price_auc": 0.7672323025811398,
+      "alternative_auc": 0.7659851776130846,
+      "delta_auc": -0.0012471249680552354,
+      "price_brier": 0.19764468703784316,
+      "alternative_brier": 0.1984609578172882,
+      "delta_brier": 0.0008162707794450441,
+      "improves_both": false
+    },
+    {
+      "split": "development",
+      "model": "elastic_net",
+      "alternative_feature_set": "price_liquidity",
+      "matched_observations": 1252,
+      "price_auc": 0.7672323025811398,
+      "alternative_auc": 0.7620853565039611,
+      "delta_auc": -0.0051469460771786935,
+      "price_brier": 0.19764468703784316,
+      "alternative_brier": 0.2012158772117758,
+      "delta_brier": 0.003571190173932648,
+      "improves_both": false
+    },
+    {
+      "split": "development",
+      "model": "boosted_tree",
+      "alternative_feature_set": "price_derivatives",
+      "matched_observations": 1252,
+      "price_auc": 0.7583439815997955,
+      "alternative_auc": 0.7517122412471249,
+      "delta_auc": -0.0066317403526706675,
+      "price_brier": 0.20145313585196614,
+      "alternative_brier": 0.20434723598000784,
+      "delta_brier": 0.002894100128041699,
+      "improves_both": false
+    },
+    {
+      "split": "development",
+      "model": "boosted_tree",
+      "alternative_feature_set": "price_liquidity",
+      "matched_observations": 1252,
+      "price_auc": 0.7583439815997955,
+      "alternative_auc": 0.753435982622029,
+      "delta_auc": -0.004907998977766503,
+      "price_brier": 0.20145313585196614,
+      "alternative_brier": 0.20425791532061377,
+      "delta_brier": 0.002804779468647628,
+      "improves_both": false
+    },
+    {
+      "split": "holdout",
+      "model": "elastic_net",
+      "alternative_feature_set": "price_derivatives",
+      "matched_observations": 531,
+      "price_auc": 0.8566988362191315,
+      "alternative_auc": 0.8574084586999716,
+      "delta_auc": 0.0007096224808401663,
+      "price_brier": 0.15922804921063569,
+      "alternative_brier": 0.1610619175873288,
+      "delta_brier": 0.0018338683766931096,
+      "improves_both": false
+    },
+    {
+      "split": "holdout",
+      "model": "elastic_net",
+      "alternative_feature_set": "price_liquidity",
+      "matched_observations": 531,
+      "price_auc": 0.8566988362191315,
+      "alternative_auc": 0.8579193868861766,
+      "delta_auc": 0.0012205506670451838,
+      "price_brier": 0.15922804921063569,
+      "alternative_brier": 0.16242576065216316,
+      "delta_brier": 0.0031977114415274732,
+      "improves_both": false
+    },
+    {
+      "split": "holdout",
+      "model": "boosted_tree",
+      "alternative_feature_set": "price_derivatives",
+      "matched_observations": 531,
+      "price_auc": 0.8388802157252342,
+      "alternative_auc": 0.8400369003690038,
+      "delta_auc": 0.0011566846437696121,
+      "price_brier": 0.1731240071759733,
+      "alternative_brier": 0.17154185107445924,
+      "delta_brier": -0.0015821561015140484,
+      "improves_both": true
+    },
+    {
+      "split": "holdout",
+      "model": "boosted_tree",
+      "alternative_feature_set": "price_liquidity",
+      "matched_observations": 531,
+      "price_auc": 0.8388802157252342,
+      "alternative_auc": 0.8371487368719842,
+      "delta_auc": -0.0017314788532499792,
+      "price_brier": 0.1731240071759733,
+      "alternative_brier": 0.17859163744403542,
+      "delta_brier": 0.005467630268062129,
+      "improves_both": false
+    }
+  ],
+  "conclusion": "The price-history volatility signal survives the untouched holdout. No derivatives/options feature set improved both AUC and Brier score consistently in development and holdout; the boosted-tree funding improvement was holdout-only."
+}

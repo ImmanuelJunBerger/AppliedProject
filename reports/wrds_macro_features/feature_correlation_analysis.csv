@@ -1,0 +1,36 @@
+row_type,feature,feature_2,correlation,cluster_id,vif,interpretation
+high_correlation_pair,vix_level,nasdaq_vol_level,0.9738844044429706,1,,potential duplicate information content
+high_correlation_pair,vix_level,dow_vol_level,0.9451587421963165,1,,potential duplicate information content
+high_correlation_pair,nasdaq_vol_level,dow_vol_level,0.9195781909962476,1,,potential duplicate information content
+high_correlation_pair,rates_10y_level,fed_funds_level,0.8610979679641058,2,,potential duplicate information content
+high_correlation_pair,rates_10y_level,real_yield_10y_level,0.920036220943075,2,,potential duplicate information content
+high_correlation_pair,fed_funds_level,sofr_level,0.974353865104535,2,,potential duplicate information content
+high_correlation_pair,fed_funds_level,real_yield_10y_level,0.8700251292640958,2,,potential duplicate information content
+high_correlation_pair,sofr_level,real_yield_10y_level,0.8704369724105689,2,,potential duplicate information content
+high_correlation_pair,sofr_level,yield_curve_slope_10y3m,-0.8528566169138683,2,,potential duplicate information content
+vif,equity_momentum_21d,,,0,8.814417785439396,acceptable
+vif,equity_momentum_63d,,,0,4.686045701190357,acceptable
+vif,equity_drawdown_252d,,,0,15.421321668293078,high multicollinearity
+vif,equity_realized_vol_21d,,,0,12.518408435049244,high multicollinearity
+vif,vix_level,,,1,96.93354058316376,high multicollinearity
+vif,vix_change_5d,,,0,3.328051519098872,acceptable
+vif,vix_change_21d,,,0,7.8911055131389505,acceptable
+vif,vix_percentile_252d,,,0,3.2151069259414666,acceptable
+vif,nasdaq_vol_level,,,1,29.94968242018099,high multicollinearity
+vif,dow_vol_level,,,1,34.272914919063396,high multicollinearity
+vif,rates_10y_level,,,2,186.69575408014438,high multicollinearity
+vif,rates_10y_change_21d,,,0,6.538050801007212,acceptable
+vif,rates_10y_change_63d,,,0,3.5893192168251056,acceptable
+vif,fed_funds_level,,,2,12553.479517379688,high multicollinearity
+vif,sofr_level,,,2,12139.038946572206,high multicollinearity
+vif,real_yield_10y_level,,,2,98.76335929477229,high multicollinearity
+vif,real_yield_10y_change_21d,,,0,6.3302798653055445,acceptable
+vif,yield_curve_slope_10y2y,,,0,15.447287780066196,high multicollinearity
+vif,yield_curve_slope_change_21d,,,0,1.9066126769184855,acceptable
+vif,yield_curve_slope_10y3m,,,2,122.3363386862457,high multicollinearity
+vif,credit_spread_level,,,0,17.774526582192504,high multicollinearity
+vif,credit_spread_change_21d,,,0,7.782332055556627,acceptable
+vif,usd_trend_21d,,,0,4.325009133785981,acceptable
+vif,usd_trend_63d,,,0,4.788986218082774,acceptable
+vif,usd_change_5d,,,0,2.0319656140018867,acceptable
+vif,macro_risk_on_composite,,,0,11.29388902850956,high multicollinearity

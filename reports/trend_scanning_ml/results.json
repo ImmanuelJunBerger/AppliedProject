@@ -1,0 +1,154 @@
+{
+  "protocol": {
+    "title": "Trend-Scanning Labels and Meta-Models for Macro-Regime Cryptocurrency Allocation",
+    "development_period": "2019-07-05 to 2024-12-31",
+    "locked_holdout": "2025-01-01 onward",
+    "baseline": "btc_eth_macro_gate_balanced",
+    "selection_rule": "Trend-label thresholds, models, meta-models, and strategy candidates are selected by development-only CPCV. Holdout is reported only after selection."
+  },
+  "winner": "trend_scanning_meta_model_biweekly",
+  "selected_predictions": [
+    {
+      "target": "btc_eth_upward_trend",
+      "config": "btc_eth_upward_trend__t1_0__elastic_net_logistic",
+      "model": "elastic_net_logistic",
+      "label_tstat_threshold": 1.0,
+      "probability_threshold": 0.4
+    },
+    {
+      "target": "btc_upward_trend",
+      "config": "btc_upward_trend__t1_0__random_forest",
+      "model": "random_forest",
+      "label_tstat_threshold": 1.0,
+      "probability_threshold": 0.4
+    },
+    {
+      "target": "eth_upward_trend",
+      "config": "eth_upward_trend__t1_0__elastic_net_logistic",
+      "model": "elastic_net_logistic",
+      "label_tstat_threshold": 1.0,
+      "probability_threshold": 0.4
+    },
+    {
+      "target": "eth_vs_btc_relative_trend",
+      "config": "eth_vs_btc_relative_trend__t1_0__random_forest",
+      "model": "random_forest",
+      "label_tstat_threshold": 1.0,
+      "probability_threshold": 0.4
+    },
+    {
+      "target": "top20_upward_trend",
+      "config": "top20_upward_trend__t1_0__elastic_net_logistic",
+      "model": "elastic_net_logistic",
+      "label_tstat_threshold": 1.0,
+      "probability_threshold": 0.4
+    }
+  ],
+  "selected_meta": "meta_btc_eth_upward_trend__sgd_classifier",
+  "frozen_development": {
+    "CAGR": 0.1918769115264498,
+    "Sharpe": 0.6180598853907883,
+    "Sortino": 0.5747037963256828,
+    "Calmar": 0.2589837260725055,
+    "Annualized Volatility": 0.48519746043817996,
+    "Maximum Drawdown": -0.7408840487248671,
+    "Hit Rate": 0.32336821126058796,
+    "Turnover": 0.030642750373692077,
+    "Exposure": 0.47085201793721976,
+    "Transaction Costs": 0.15375,
+    "Cash Allocation": 0.5291479820627802,
+    "Annual Turnover": 11.184603886397607,
+    "Worst Month": -0.4329294666098096,
+    "Best Month": 0.44949275810729517,
+    "Average Holdings": 1.234678624813154
+  },
+  "frozen_holdout": {
+    "CAGR": 0.2506806098543801,
+    "Sharpe": 0.9700672636549106,
+    "Sortino": 1.2341802107524358,
+    "Calmar": 1.3610143521675673,
+    "Annualized Volatility": 0.26610866572870884,
+    "Maximum Drawdown": -0.1841866027754544,
+    "Hit Rate": 0.23048327137546468,
+    "Turnover": 0.027881040892193308,
+    "Exposure": 0.2894981412639405,
+    "Transaction Costs": 0.037500000000000006,
+    "Cash Allocation": 0.7105018587360594,
+    "Annual Turnover": 10.176579925650557,
+    "Worst Month": -0.05983982286898448,
+    "Best Month": 0.2445206579453003,
+    "Average Holdings": 0.8847583643122676
+  },
+  "winner_development": {
+    "CAGR": 0.6896542288478287,
+    "Sharpe": 1.2929366287923143,
+    "Sortino": 1.7056452307910588,
+    "Calmar": 0.9677324884998924,
+    "Annualized Volatility": 0.5036028732495627,
+    "Maximum Drawdown": -0.7126496599456735,
+    "Hit Rate": 0.4190333831589437,
+    "Turnover": 0.014449427005480818,
+    "Exposure": 0.6983059292476332,
+    "Transaction Costs": 0.07250000000000001,
+    "Cash Allocation": 0.30169407075236676,
+    "Annual Turnover": 5.2740408570004975,
+    "Worst Month": -0.4105176007687238,
+    "Best Month": 0.5171626168136121,
+    "Average Holdings": 1.595416043846537
+  },
+  "winner_holdout": {
+    "CAGR": -0.041576043225435955,
+    "Sharpe": 0.10246328872421367,
+    "Sortino": 0.1381714670033903,
+    "Calmar": -0.10922284812320271,
+    "Annualized Volatility": 0.41434371264991265,
+    "Maximum Drawdown": -0.38065335174686554,
+    "Hit Rate": 0.3996282527881041,
+    "Turnover": 0.022769516728624536,
+    "Exposure": 0.633364312267658,
+    "Transaction Costs": 0.030625,
+    "Cash Allocation": 0.366635687732342,
+    "Annual Turnover": 8.310873605947956,
+    "Worst Month": -0.16150911697096204,
+    "Best Month": 0.25013806817888184,
+    "Average Holdings": 1.58364312267658
+  },
+  "winner_holdout_50bps": {
+    "CAGR": -0.06139554758850263,
+    "Sharpe": 0.0522831124734662,
+    "Sortino": 0.07071838014693062,
+    "Calmar": -0.1602948114325937,
+    "Annualized Volatility": 0.4146240424466359,
+    "Maximum Drawdown": -0.3830164372745175,
+    "Hit Rate": 0.39776951672862454,
+    "Turnover": 0.022769516728624536,
+    "Exposure": 0.633364312267658,
+    "Transaction Costs": 0.06125,
+    "Cash Allocation": 0.366635687732342,
+    "Annual Turnover": 8.310873605947956,
+    "Worst Month": -0.16312387892116298,
+    "Best Month": 0.2469953042575399,
+    "Average Holdings": 1.58364312267658
+  },
+  "pbo": 0.2714285714285714,
+  "deflated_sharpe_probability": 0.006709942625981754,
+  "bootstrap_sharpe_ci": {
+    "lower": -1.5150994337532953,
+    "median": -0.02112150983958995,
+    "upper": 1.512937379742592
+  },
+  "paired_sharpe_test": {
+    "sharpe_delta": -0.8676039749306967,
+    "jobson_korkie_z_approx": -0.9148930538482277,
+    "jobson_korkie_p_approx": 0.3602477769739869
+  },
+  "passes_guardrails": false,
+  "tested_configurations": {
+    "label_thresholds": 3,
+    "prediction_configs": 105,
+    "meta_configs": 6,
+    "strategy_configs": 10,
+    "total": 121
+  },
+  "final_conclusion": "Trend-scanning does not beat the frozen macro strategy after locked-holdout evaluation."
+}

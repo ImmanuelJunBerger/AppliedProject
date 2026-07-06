@@ -1,0 +1,5 @@
+Model,Selected hyperparameters
+equal_weight,none
+logistic_regression,"{'lookback': 56, 'temperature': 8}"
+random_forest,"{'lookback': 56, 'temperature': 12}"
+gradient_boosting_fallback,"{'lookback': 56, 'temperature': 10}"

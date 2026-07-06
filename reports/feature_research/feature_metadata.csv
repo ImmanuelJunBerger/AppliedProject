@@ -1,0 +1,41 @@
+feature,family,level,rationale
+momentum_7d,momentum,asset,7-day lagged price momentum
+momentum_21d,momentum,asset,21-day lagged price momentum
+momentum_63d,momentum,asset,63-day lagged price momentum
+momentum_126d,momentum,asset,126-day lagged price momentum
+momentum_acceleration,momentum,asset,short momentum minus medium-term momentum
+momentum_consistency_63d,momentum,asset,fraction of positive daily returns
+distance_to_50dma,trend,asset,distance from medium-term moving average
+distance_to_200dma,trend,asset,distance from long-term trend
+trend_slope_63d,trend,asset,log-price slope over 63 days
+trend_persistence_63d,trend,asset,positive-return persistence
+realized_volatility_30d,volatility,asset,annualized trailing realized volatility
+downside_volatility_30d,volatility,asset,annualized downside volatility
+upside_volatility_30d,volatility,asset,annualized upside volatility
+volatility_of_volatility_30d,volatility,asset,volatility instability
+jump_intensity_30d,volatility,asset,frequency of large daily moves
+amihud_illiquidity_30d,liquidity,asset,price impact proxy
+turnover_30d,liquidity,asset,median dollar turnover
+volume_acceleration,liquidity,asset,short-term volume expansion
+volume_concentration_7_30,liquidity,asset,recent share of monthly volume
+relative_strength_rank,cross_sectional,asset,point-in-time momentum rank
+percentile_momentum_63d,cross_sectional,asset,cross-sectional percentile momentum
+volatility_adjusted_momentum_63d,cross_sectional,asset,momentum scaled by risk
+market_breadth,market_regime,market,share of liquid universe in positive trend
+cross_sectional_dispersion,market_regime,market,dispersion of asset returns
+average_correlation_30d,market_regime,market,average pairwise correlation
+market_drawdown,market_regime,market,liquid-universe drawdown
+volatility_expansion_probability,market_regime,market,fixed volatility-expansion forecast
+stablecoin_supply_change_7d,external_new_data,market,public crypto-native feature: stablecoin_supply_change_7d
+stablecoin_supply_change_30d,external_new_data,market,public crypto-native feature: stablecoin_supply_change_30d
+stablecoin_supply_change_90d,external_new_data,market,public crypto-native feature: stablecoin_supply_change_90d
+stablecoin_supply_z_90,external_new_data,market,public crypto-native feature: stablecoin_supply_z_90
+stablecoin_supply_growth_30d,external_new_data,market,public crypto-native feature: stablecoin_supply_growth_30d
+tvl_growth_30d,external_new_data,market,public crypto-native feature: tvl_growth_30d
+tvl_momentum_90d,external_new_data,market,public crypto-native feature: tvl_momentum_90d
+trend_4h_7d,external_new_data,asset,Binance 4h lagged daily feature: trend_4h_7d
+trend_4h_14d,external_new_data,asset,Binance 4h lagged daily feature: trend_4h_14d
+volatility_4h_7d,external_new_data,asset,Binance 4h lagged daily feature: volatility_4h_7d
+volatility_4h_30d,external_new_data,asset,Binance 4h lagged daily feature: volatility_4h_30d
+drawdown_4h_30d,external_new_data,asset,Binance 4h lagged daily feature: drawdown_4h_30d
+volume_shock_4h,external_new_data,asset,Binance 4h lagged daily feature: volume_shock_4h

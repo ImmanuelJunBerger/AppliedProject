@@ -1,0 +1,11 @@
+target,description,split,observations,positive_events,prevalence
+target_a_btc_30d_upside,BTC 30-day forward return > +15%,development,287,77,0.2682926829268293
+target_a_btc_30d_upside,BTC 30-day forward return > +15%,holdout,73,5,0.0684931506849315
+target_b_eth_30d_upside,ETH 30-day forward return > +20%,development,287,75,0.2613240418118467
+target_b_eth_30d_upside,ETH 30-day forward return > +20%,holdout,73,11,0.1506849315068493
+target_c_btc_eth_50_50_30d_upside,BTC/ETH 50-50 30-day forward return > +15%,development,287,84,0.2926829268292683
+target_c_btc_eth_50_50_30d_upside,BTC/ETH 50-50 30-day forward return > +15%,holdout,73,10,0.136986301369863
+target_d_eth_beats_btc_30d,ETH beats BTC over next 30 days by > +5%,development,287,91,0.3170731707317073
+target_d_eth_beats_btc_30d,ETH beats BTC over next 30 days by > +5%,holdout,73,16,0.2191780821917808
+target_e_top20_leadership,Top-20 equal-weight basket beats BTC/ETH 50-50 by > +5%,development,287,71,0.24738675958188153
+target_e_top20_leadership,Top-20 equal-weight basket beats BTC/ETH 50-50 by > +5%,holdout,73,10,0.136986301369863

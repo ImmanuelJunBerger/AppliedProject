@@ -1,0 +1,5 @@
+feature_set,description,features,observations,development_observations,feature_to_development_observation_ratio,auto_selection
+macro_tier1,Macro Tier-1 only.,6,390,261,0.022988505747126436,False
+macro_plus_crypto_tier1,Macro Tier-1 plus existing crypto Tier-1.,10,390,261,0.038314176245210725,False
+all_accepted,All accepted point-in-time-safe features.,31,390,261,0.11877394636015326,False
+all_accepted_auto_selection,All accepted features with train-fold-only automatic selection/regularisation.,31,390,261,0.11877394636015326,True

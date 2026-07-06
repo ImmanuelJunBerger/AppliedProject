@@ -1,0 +1,227 @@
+{
+  "status": {
+    "baseline": "btc_eth_macro_gate_balanced",
+    "baseline_holdout": {
+      "Sharpe": 0.9700672636549106,
+      "CAGR": 0.2506806098543801,
+      "Maximum Drawdown": -0.1841866027754544,
+      "Annual Turnover": 10.176579925650557,
+      "Exposure": 0.2894981412639405
+    },
+    "baseline_status": "Frozen strongest out-of-sample paper-monitoring candidate; not modified by this roadmap.",
+    "v3_decision": "keep current strategy",
+    "new_data_strategy_ran": false,
+    "new_data_tier1_features": [],
+    "new_data_conclusion": "New data does not yet provide enough independently validated Tier-1 upside features to justify a strategy test.",
+    "expansion_tier1_conclusion": "Expansion Tier-1 overlay does not improve the frozen strategy economically."
+  },
+  "data_priorities": [
+    {
+      "priority": 1,
+      "family": "Institutional flows",
+      "examples": "Spot BTC/ETH ETF flows; CME positioning; CFTC positioning; CoinShares flow reports; exchange reserve changes",
+      "new_information": "Regulated/institutional demand and inventory pressure not captured by Binance OHLCV or macro gates.",
+      "minimum_history": "Daily or weekly 2019-2026 preferred; ETF flows start 2024, so require explicit limited-sample treatment.",
+      "point_in_time_requirements": "Publication timestamp, fund identifier mapping, AUM denominator vintage, holiday handling, and no revised backfill without vintage labels.",
+      "first_test": "Feature research against upside targets before any overlay.",
+      "current_status": "Not acquired in usable structured form; prior module found no usable ETF-flow time series."
+    },
+    {
+      "priority": 2,
+      "family": "Professional on-chain data",
+      "examples": "MVRV; realized cap; NVT; SOPR; exchange inflows/outflows; whale activity; active entities; long-term holder metrics",
+      "new_information": "Holder cost basis, exchange saleable inventory, network usage, accumulation/distribution, and valuation state.",
+      "minimum_history": "Daily BTC/ETH 2019-2026 with metric methodology documentation.",
+      "point_in_time_requirements": "Provider revision policy, entity-label vintage, chain split/token migration handling, and timestamped availability.",
+      "first_test": "Tiered feature validation; exchange-flow and MVRV features must beat public active-address/transaction proxies.",
+      "current_status": "Only public BTC active-address/transaction proxies available; these were Tier 2, not Tier 1."
+    },
+    {
+      "priority": 3,
+      "family": "Options-implied information",
+      "examples": "Implied volatility; skew; risk reversals; put/call ratios; volatility term structure",
+      "new_information": "Forward-looking risk premia, crash insurance demand, upside call demand, and term-structure stress.",
+      "minimum_history": "Daily BTC/ETH constant-maturity surfaces through development and holdout.",
+      "point_in_time_requirements": "Quote timestamp, stale quote filters, expiry/strike survivorship, settlement convention, and surface construction reproducibility.",
+      "first_test": "Calibration and AUC for upside/leadership targets; compare with realized-volatility controls.",
+      "current_status": "Public Deribit historical-vol endpoint was reachable but too short for 2019-2026; no options feature accepted."
+    },
+    {
+      "priority": 4,
+      "family": "Cross-sectional market structure",
+      "examples": "Sector leadership; breadth expansion; correlation regimes; dominance measures; relative-strength leadership",
+      "new_information": "Rotation, breadth diffusion, and leadership state across the crypto universe.",
+      "minimum_history": "Point-in-time universe with liquidity, sector taxonomy, and delisting/survivorship controls.",
+      "point_in_time_requirements": "Lagged universe construction, sector taxonomy vintage, stable/wrapped exclusion, and reconstitution audit.",
+      "first_test": "Feature research and regime-specific IC before portfolio overlay.",
+      "current_status": "Existing crypto-native leadership features were researched; prior expansion overlay did not improve the frozen strategy economically."
+    }
+  ],
+  "model_hierarchy": [
+    {
+      "level": "Level 1",
+      "models": "Logistic Regression; Elastic Net Logistic Regression; Random Forest; Gradient Boosting; XGBoost; LightGBM",
+      "allowed_when": "Always first model family for tabular datasets.",
+      "acceptance_requirement": "Must improve holdout Sharpe, CAGR, and max drawdown simultaneously without trivial exposure reduction.",
+      "complexity_status": "Primary candidate set."
+    },
+    {
+      "level": "Level 2",
+      "models": "MLP; shallow neural networks; TabNet; Temporal Fusion Transformer",
+      "allowed_when": "Only after genuinely new datasets provide enough observations and Level 1 models show non-random signal.",
+      "acceptance_requirement": "Better calibration, holdout economic value, and stable CPCV; not just better in-sample fit.",
+      "complexity_status": "Conditional; not justified by current small new-data sample."
+    },
+    {
+      "level": "Level 3",
+      "models": "LSTM; GRU; Transformer architectures",
+      "allowed_when": "Exploratory only, with dense timestamped sequence data and enough non-overlapping episodes.",
+      "acceptance_requirement": "Better calibration, holdout performance, and economic performance versus Level 1 and frozen baseline.",
+      "complexity_status": "Research-only until data density materially improves."
+    },
+    {
+      "level": "Level 4",
+      "models": "Reinforcement Learning; PPO; SAC; DQN",
+      "allowed_when": "Research-only after deterministic policy/action space and realistic cost/exposure constraints are locked.",
+      "acceptance_requirement": "Holdout Sharpe and CAGR improve, drawdown remains controlled, turnover remains realistic, and policy is interpretable.",
+      "complexity_status": "Not acceptable unless it beats the frozen strategy under strict out-of-sample controls."
+    },
+    {
+      "level": "LLM research",
+      "models": "Sentiment extraction; topic classification; event detection; regime classification",
+      "allowed_when": "Only when timestamped text data exists with reliable publication times.",
+      "acceptance_requirement": "Text-derived features must pass independent feature validation; LLMs cannot generate discretionary trades.",
+      "complexity_status": "Permitted as feature extraction only."
+    }
+  ],
+  "validation_protocol": [
+    {
+      "control": "Frozen benchmark",
+      "requirement": "btc_eth_macro_gate_balanced remains unchanged; every candidate compares to it."
+    },
+    {
+      "control": "Development period",
+      "requirement": "Fixed development period ending 2024-12-31 unless a dataset starts later, in which case the limited sample must be labelled."
+    },
+    {
+      "control": "Locked holdout",
+      "requirement": "2025-01-01 onward; never used for feature/model/threshold selection."
+    },
+    {
+      "control": "Feature gate",
+      "requirement": "No strategy test unless new data passes independent development-only feature validation."
+    },
+    {
+      "control": "CPCV",
+      "requirement": "Combinatorial purged cross-validation inside development with purging and embargo."
+    },
+    {
+      "control": "No best-cell selection",
+      "requirement": "Report all tested configurations; do not promote highest holdout Sharpe."
+    },
+    {
+      "control": "Statistical controls",
+      "requirement": "PBO, deflated Sharpe probability, bootstrap confidence intervals where feasible, and configuration count."
+    },
+    {
+      "control": "Economic controls",
+      "requirement": "Cost sensitivity at 10/25/50/100 bps, turnover, exposure, cash allocation, drawdown, and worst-month diagnostics."
+    },
+    {
+      "control": "False improvement flag",
+      "requirement": "Reject improvements caused only by going mostly to cash or reducing exposure dramatically."
+    },
+    {
+      "control": "Acceptance rule",
+      "requirement": "A candidate is interesting only if holdout Sharpe, CAGR, and max drawdown improve simultaneously."
+    }
+  ],
+  "study_templates": [
+    {
+      "study": "Institutional-flow expansion overlay",
+      "new_information_added": "ETF/CME/CFTC/CoinShares/exchange-reserve flow series.",
+      "feature_validation": "Net flow, flow/AUM, flow acceleration, flow percentile, inflow streak, outflow shock versus upside targets.",
+      "model_path": "Start with Level 1 classifiers; only use Level 2 if daily observations are sufficient.",
+      "economic_test": "Layer on frozen macro gate; risk-on weeks can increase exposure or tilt ETH only if probabilities pass development thresholds.",
+      "reject_if": "Flow data is delayed/revised, insufficiently mapped to BTC/ETH, or improves only by reducing exposure."
+    },
+    {
+      "study": "Professional on-chain upside model",
+      "new_information_added": "MVRV, realized cap, NVT, SOPR, exchange flows, whale/holder/entity metrics.",
+      "feature_validation": "Development-only AUC/IC/Newey-West/CPCV stability; compare against public active-address and transaction proxies.",
+      "model_path": "Level 1 first; sequence models only if dense daily multi-metric history is available.",
+      "economic_test": "Only Tier-1 on-chain features may enter expansion overlays.",
+      "reject_if": "Entity-label revisions or metric methodology create lookahead risk, or holdout effect disappears."
+    },
+    {
+      "study": "Crypto options-implied expansion model",
+      "new_information_added": "Constant-maturity IV, skew, risk reversal, put/call ratio, and term-structure data.",
+      "feature_validation": "Test whether implied information improves upside/leadership targets after realized-volatility controls.",
+      "model_path": "Level 1 first; shallow sequence models only if option-surface panel is sufficiently dense.",
+      "economic_test": "Use options state to increase upside participation only when macro gate allows exposure.",
+      "reject_if": "Signal is stale, surface construction is unstable, or it only restates realized volatility."
+    },
+    {
+      "study": "Cross-sectional leadership expansion model",
+      "new_information_added": "Sector leadership, breadth expansion, dominance, correlation and dispersion states.",
+      "feature_validation": "Universe-vintage-aware feature research across top 10/20/30; no survivorship-biased sector labels.",
+      "model_path": "Level 1 classifiers and interpretable ensemble scores.",
+      "economic_test": "Allow top-universe sleeves only if leadership target passes development CPCV.",
+      "reject_if": "Turnover is high, leadership is unstable, or top-universe sleeve fails holdout drawdown controls."
+    },
+    {
+      "study": "LLM timestamped event features",
+      "new_information_added": "News/regulatory/social/research-report sentiment and event tags.",
+      "feature_validation": "Timestamp audit, event-label stability, and independent AUC/IC versus upside/risk targets.",
+      "model_path": "LLMs extract features only; trading model remains conventional and predeclared.",
+      "economic_test": "Text features must improve frozen-strategy overlay after costs.",
+      "reject_if": "Text publication time is ambiguous or feature extraction is not reproducible."
+    }
+  ],
+  "evidence_matrix": [
+    {
+      "item": "btc_eth_macro_gate_balanced",
+      "type": "frozen benchmark strategy",
+      "new_information_added": "Tier-1 macro regime features.",
+      "statistically_significant": "Moderate; PBO and DSR concerns remain.",
+      "economically_meaningful": "Yes: holdout Sharpe about 0.97, CAGR about 25%, max DD about -18%.",
+      "survives_holdout": "Yes, as paper-monitoring candidate.",
+      "improves_frozen_strategy": "N/A benchmark.",
+      "complexity_justified": "Yes for paper monitoring; not proven live alpha.",
+      "decision": "Keep frozen."
+    },
+    {
+      "item": "New public ETF/on-chain/options data",
+      "type": "new data source test",
+      "new_information_added": "Public BTC on-chain activity proxies; inventory of ETF/options/on-chain sources.",
+      "statistically_significant": "No Tier-1 features; 3 Tier-2 features only.",
+      "economically_meaningful": "Not tested because feature gate failed.",
+      "survives_holdout": "Holdout diagnostic only; no accepted feature.",
+      "improves_frozen_strategy": "No strategy run.",
+      "complexity_justified": "No, until licensed/structured data is added.",
+      "decision": "New data does not yet provide enough independently validated Tier-1 upside features to justify a strategy test."
+    },
+    {
+      "item": "Expansion Tier-1 overlay",
+      "type": "crypto-native expansion overlay",
+      "new_information_added": "Previously validated expansion features.",
+      "statistically_significant": "Not enough: PBO high and DSR low.",
+      "economically_meaningful": "No: selected overlay underperformed frozen holdout Sharpe/CAGR.",
+      "survives_holdout": "No replacement evidence.",
+      "improves_frozen_strategy": "No.",
+      "complexity_justified": "No.",
+      "decision": "Expansion Tier-1 overlay does not improve the frozen strategy economically."
+    },
+    {
+      "item": "Simplified macro gates",
+      "type": "simplification/model-risk test",
+      "new_information_added": "No new data; simpler macro variants.",
+      "statistically_significant": "Development-selected simplified candidate failed holdout.",
+      "economically_meaningful": "No replacement evidence.",
+      "survives_holdout": "No.",
+      "improves_frozen_strategy": "No.",
+      "complexity_justified": "Keep current frozen strategy instead.",
+      "decision": "keep current strategy"
+    }
+  ]
+}

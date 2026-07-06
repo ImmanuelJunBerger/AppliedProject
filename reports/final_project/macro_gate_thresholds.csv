@@ -1,0 +1,7 @@
+feature,threshold,orientation,gate_profile
+equity_realized_vol_21d,0.1406289261638587,high is favourable,balanced
+equity_momentum_21d,0.0157027249562728,high is favourable,balanced
+dow_vol_level,17.84,high is favourable,balanced
+vix_level,19.54,high is favourable,balanced
+vix_change_5d,-0.1600000000000001,low/rising less is favourable,balanced
+vix_change_21d,-0.1799999999999997,low/rising less is favourable,balanced

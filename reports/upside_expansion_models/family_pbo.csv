@@ -1,0 +1,6 @@
+family,pbo,selected_candidate
+convex,0.6142857142857143,convex_upside_t40_14d
+relative,0.7714285714285715,relative_winner_e60_b60_7d
+transition,0.6,regime_transition_t40_7d
+cross_sectional,0.6,cross_sectional_top3_t40_7d
+combined,0.6,combined_cross_sectional_relative_transition_7d

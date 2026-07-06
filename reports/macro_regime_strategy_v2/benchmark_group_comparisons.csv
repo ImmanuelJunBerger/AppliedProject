@@ -1,0 +1,5 @@
+benchmark_group,best_benchmark,selected_sharpe,best_benchmark_sharpe,selected_cagr,best_benchmark_cagr,selected_max_drawdown,best_benchmark_max_drawdown,beats_on_sharpe,beats_on_cagr,beats_on_drawdown
+simple_crypto_beta,eth_buy_hold,0.9700672636549106,-0.23851086051698195,0.2506806098543801,-0.3510212516138813,-0.1841866027754544,-0.6751516430846409,True,True,True
+point_in_time_top_universe,equal_weight_top10,0.9700672636549106,-0.4184354143143423,0.2506806098543801,-0.3925406240317313,-0.1841866027754544,-0.6350749613895308,True,True,True
+point_in_time_momentum,pure_top10_momentum,0.9700672636549106,-0.4068922959695901,0.2506806098543801,-0.354169482567836,-0.1841866027754544,-0.630929732434004,True,True,True
+prior_tier1_regime_momentum,u10_r7_momentum_63d_k3_balanced_v4_reduced_momentum,0.9700672636549106,0.3128540587490874,0.2506806098543801,0.0488243428998811,-0.1841866027754544,-0.2635102331566419,True,True,True

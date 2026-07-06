@@ -1,0 +1,171 @@
+{
+  "coverage": [
+    {
+      "dataset": "stablecoin_supply",
+      "source": "DefiLlama stablecoincharts/all",
+      "status": "available",
+      "start": "2017-11-29",
+      "end": "2026-06-24",
+      "observations": 3130,
+      "usable_for_strategy": true,
+      "limitation": "Free public endpoint; aggregate stablecoin supply only, not exchange-specific liquidity."
+    },
+    {
+      "dataset": "chain_tvl_all",
+      "source": "DefiLlama historicalChainTvl",
+      "status": "available",
+      "start": "2017-09-27",
+      "end": "2026-06-24",
+      "observations": 3193,
+      "usable_for_strategy": false,
+      "limitation": "Useful for feature research; not used in the first predeclared BTC/ETH/cash strategy."
+    },
+    {
+      "dataset": "chain_tvl_Ethereum",
+      "source": "DefiLlama historicalChainTvl",
+      "status": "available",
+      "start": "2017-09-27",
+      "end": "2026-06-24",
+      "observations": 3193,
+      "usable_for_strategy": false,
+      "limitation": "Useful for feature research; not used in the first predeclared BTC/ETH/cash strategy."
+    },
+    {
+      "dataset": "chain_tvl_Solana",
+      "source": "DefiLlama historicalChainTvl",
+      "status": "available",
+      "start": "2021-03-17",
+      "end": "2026-06-24",
+      "observations": 1926,
+      "usable_for_strategy": false,
+      "limitation": "Useful for feature research; not used in the first predeclared BTC/ETH/cash strategy."
+    },
+    {
+      "dataset": "chain_tvl_Tron",
+      "source": "DefiLlama historicalChainTvl",
+      "status": "available",
+      "start": "2020-04-03",
+      "end": "2026-06-24",
+      "observations": 2274,
+      "usable_for_strategy": false,
+      "limitation": "Useful for feature research; not used in the first predeclared BTC/ETH/cash strategy."
+    },
+    {
+      "dataset": "chain_tvl_Arbitrum",
+      "source": "DefiLlama historicalChainTvl",
+      "status": "available",
+      "start": "2021-06-04",
+      "end": "2026-06-24",
+      "observations": 1786,
+      "usable_for_strategy": false,
+      "limitation": "Useful for feature research; not used in the first predeclared BTC/ETH/cash strategy."
+    },
+    {
+      "dataset": "chain_tvl_Base",
+      "source": "DefiLlama historicalChainTvl",
+      "status": "available",
+      "start": "2023-06-15",
+      "end": "2026-06-24",
+      "observations": 1106,
+      "usable_for_strategy": false,
+      "limitation": "Useful for feature research; not used in the first predeclared BTC/ETH/cash strategy."
+    },
+    {
+      "dataset": "protocol_tvl_current",
+      "source": "DefiLlama protocols",
+      "status": "available",
+      "start": NaN,
+      "end": NaN,
+      "observations": 7702,
+      "usable_for_strategy": false,
+      "limitation": "Current protocol metadata only in this module; not sufficient alone for locked historical trading."
+    },
+    {
+      "dataset": "global_market_snapshot",
+      "source": "CoinGecko /global",
+      "status": "available",
+      "start": "2026-06-24",
+      "end": "2026-06-24",
+      "observations": 1,
+      "usable_for_strategy": false,
+      "limitation": "Current snapshot only; useful for dominance proxy documentation, not historical strategy selection."
+    },
+    {
+      "dataset": "coin_market_cap_supply_volume",
+      "source": "CoinGecko /coins/markets",
+      "status": "available",
+      "start": "2026-06-24",
+      "end": "2026-06-24",
+      "observations": 250,
+      "usable_for_strategy": false,
+      "limitation": "Current top-250 snapshot; not point-in-time enough for historical top-universe backtests."
+    },
+    {
+      "dataset": "coin_categories",
+      "source": "CoinGecko /coins/categories",
+      "status": "available",
+      "start": "2026-06-24",
+      "end": "2026-06-24",
+      "observations": 728,
+      "usable_for_strategy": false,
+      "limitation": "Current category/sector snapshot; historical category membership needs vendor support or frozen snapshots."
+    },
+    {
+      "dataset": "BTC_market_cap_volume_history",
+      "source": "CoinGecko market_chart/range",
+      "status": "failed: request failed: https://api.coingecko.com/api/v3/coins/bitcoin/market_chart/range?vs_currency=usd&from=1546300800&to=1782086400: HTTP Error 429: Too Many Requests",
+      "start": NaN,
+      "end": NaN,
+      "observations": 0,
+      "usable_for_strategy": false,
+      "limitation": NaN
+    },
+    {
+      "dataset": "ETH_market_cap_volume_history",
+      "source": "CoinGecko market_chart/range",
+      "status": "failed: request failed: https://api.coingecko.com/api/v3/coins/ethereum/market_chart/range?vs_currency=usd&from=1546300800&to=1782086400: HTTP Error 429: Too Many Requests",
+      "start": NaN,
+      "end": NaN,
+      "observations": 0,
+      "usable_for_strategy": false,
+      "limitation": NaN
+    },
+    {
+      "dataset": "BTCUSDT_4h_ohlcv",
+      "source": "Binance spot klines 4h",
+      "status": "available",
+      "start": "2019-01-01",
+      "end": "2026-06-22",
+      "observations": 16370,
+      "usable_for_strategy": true,
+      "limitation": "Exchange-specific public 4h spot bars; no order book or cross-exchange aggregation."
+    },
+    {
+      "dataset": "ETHUSDT_4h_ohlcv",
+      "source": "Binance spot klines 4h",
+      "status": "available",
+      "start": "2019-01-01",
+      "end": "2026-06-22",
+      "observations": 16370,
+      "usable_for_strategy": true,
+      "limitation": "Exchange-specific public 4h spot bars; no order book or cross-exchange aggregation."
+    },
+    {
+      "dataset": "token_unlocks",
+      "source": "Token unlock public APIs",
+      "status": "unavailable",
+      "start": NaN,
+      "end": NaN,
+      "observations": 0,
+      "usable_for_strategy": false,
+      "limitation": "No reliable unauthenticated official/public endpoint was integrated; no synthetic unlock data created."
+    }
+  ],
+  "metadata": {
+    "processed_dir": "data\\processed\\public_crypto"
+  },
+  "strategy": {
+    "available": false,
+    "reason": "strategy intentionally deferred until feature research tiers are reviewed"
+  }
+}

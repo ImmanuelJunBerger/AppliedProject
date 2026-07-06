@@ -1,0 +1,50 @@
+feature,family,source,formula,economic_rationale,availability
+active_address_growth_7d,on-chain,Blockchain.com BTC active addresses,"pct_change(active addresses, 7d), lagged",Rising network usage may indicate improving crypto demand.,implemented
+active_address_growth_30d,on-chain,Blockchain.com BTC active addresses,"pct_change(active addresses, 30d), lagged",Sustained address growth may indicate broader participation.,implemented
+transaction_count_growth_7d,on-chain,Blockchain.com BTC transaction count,"pct_change(transaction count, 7d), lagged",Short-term transaction growth can proxy settlement demand.,implemented
+transaction_count_growth_30d,on-chain,Blockchain.com BTC transaction count,"pct_change(transaction count, 30d), lagged",Persistent transaction growth can proxy network activity.,implemented
+funding_level,derivatives/crowding,Binance futures funding,"average BTC/ETH funding rate, lagged",High funding may indicate crowded long positioning.,implemented
+funding_change,derivatives/crowding,Binance futures funding,"7d change in average funding, lagged",Funding changes can proxy changing leverage pressure.,implemented
+open_interest_growth,derivatives/crowding,Binance futures open interest,"7d open-interest growth, lagged",Open-interest growth can proxy leverage and participation.,implemented
+long_short_ratio,derivatives/crowding,Binance long/short ratio,"average BTC/ETH long-short account ratio, lagged",Long/short imbalance can proxy directional crowding.,implemented
+taker_buy_sell_imbalance,derivatives/crowding,Binance taker buy/sell flow,"average taker imbalance, lagged",Aggressive taker flow may indicate short-term demand/supply pressure.,implemented
+leverage_crowding_score,derivatives/crowding,Binance funding + open interest,"zscore(funding) + zscore(7d OI growth), lagged",Combines funding and leverage growth into a crowding proxy.,implemented
+credit_spread_level,macro/vintage,WRDS macro feature file,"credit spread level, lagged",Wider spreads indicate tighter credit and risk-off conditions.,implemented
+credit_spread_change,macro/vintage,WRDS macro feature file,"21d change in credit spread, lagged",Rising spreads can pressure speculative assets.,implemented
+real_yield_level,macro/vintage,WRDS macro feature file,"10y real yield level, lagged",Higher real yields can reduce demand for long-duration/speculative assets.,implemented
+real_yield_change,macro/vintage,WRDS macro feature file,"21d real-yield change, lagged",Real-yield increases can tighten macro liquidity.,implemented
+dxy_momentum,macro/vintage,WRDS macro feature file,"21d USD trend, lagged",A stronger dollar often coincides with tighter global liquidity.,implemented
+exchange_netflow_7d,on-chain,unavailable,exchange-flow provider unavailable,Unavailable; not engineered.,unavailable
+exchange_netflow_30d,on-chain,unavailable,exchange-flow provider unavailable,Unavailable; not engineered.,unavailable
+exchange_pressure_percentile,on-chain,unavailable,exchange-flow provider unavailable,Unavailable; not engineered.,unavailable
+mvrv_level,on-chain,unavailable,MVRV provider unavailable,Unavailable; not engineered.,unavailable
+mvrv_percentile,on-chain,unavailable,MVRV provider unavailable,Unavailable; not engineered.,unavailable
+realized_cap_growth_30d,on-chain,unavailable,realized-cap provider unavailable,Unavailable; not engineered.,unavailable
+holder_accumulation_proxy,on-chain,unavailable,holder cohort provider unavailable,Unavailable; not engineered.,unavailable
+whale_accumulation_proxy,on-chain,unavailable,whale balance provider unavailable,Unavailable; not engineered.,unavailable
+etf_net_flow_1d,ETF flows,unavailable,ETF flow source unavailable or not point-in-time audited,Unavailable; not engineered.,unavailable
+etf_net_flow_5d,ETF flows,unavailable,ETF flow source unavailable or not point-in-time audited,Unavailable; not engineered.,unavailable
+etf_net_flow_21d,ETF flows,unavailable,ETF flow source unavailable or not point-in-time audited,Unavailable; not engineered.,unavailable
+etf_flow_acceleration,ETF flows,unavailable,ETF flow source unavailable or not point-in-time audited,Unavailable; not engineered.,unavailable
+etf_flow_percentile,ETF flows,unavailable,ETF flow source unavailable or not point-in-time audited,Unavailable; not engineered.,unavailable
+etf_inflow_streak,ETF flows,unavailable,ETF flow source unavailable or not point-in-time audited,Unavailable; not engineered.,unavailable
+etf_outflow_shock,ETF flows,unavailable,ETF flow source unavailable or not point-in-time audited,Unavailable; not engineered.,unavailable
+etf_flow_as_aum_if_available,ETF flows,unavailable,ETF AUM unavailable,Unavailable; not engineered.,unavailable
+iv_level,options-implied,unavailable,full options surface history unavailable,Unavailable; not engineered.,unavailable
+iv_change_7d,options-implied,unavailable,full options surface history unavailable,Unavailable; not engineered.,unavailable
+iv_change_30d,options-implied,unavailable,full options surface history unavailable,Unavailable; not engineered.,unavailable
+iv_term_slope,options-implied,unavailable,full options term structure unavailable,Unavailable; not engineered.,unavailable
+skew_level,options-implied,unavailable,skew history unavailable,Unavailable; not engineered.,unavailable
+skew_change,options-implied,unavailable,skew history unavailable,Unavailable; not engineered.,unavailable
+put_call_ratio,options-implied,unavailable,put/call history unavailable,Unavailable; not engineered.,unavailable
+risk_reversal,options-implied,unavailable,risk reversal history unavailable,Unavailable; not engineered.,unavailable
+option_oi_change,options-implied,unavailable,options OI history unavailable,Unavailable; not engineered.,unavailable
+liquidation_shock,derivatives/crowding,unavailable,liquidations unavailable,Unavailable; not engineered.,unavailable
+asset_manager_net_position,COT/CME,unavailable,COT/CME positioning unavailable,Unavailable; not engineered.,unavailable
+leveraged_fund_net_position,COT/CME,unavailable,COT/CME positioning unavailable,Unavailable; not engineered.,unavailable
+dealer_net_position,COT/CME,unavailable,COT/CME positioning unavailable,Unavailable; not engineered.,unavailable
+positioning_change_1w,COT/CME,unavailable,COT/CME positioning unavailable,Unavailable; not engineered.,unavailable
+positioning_percentile,COT/CME,unavailable,COT/CME positioning unavailable,Unavailable; not engineered.,unavailable
+liquidity_growth,macro/vintage,unavailable,macro liquidity vintage unavailable,Unavailable; not engineered.,unavailable
+financial_conditions_level,macro/vintage,unavailable,financial conditions index unavailable,Unavailable; not engineered.,unavailable
+financial_conditions_change,macro/vintage,unavailable,financial conditions index unavailable,Unavailable; not engineered.,unavailable

@@ -1,0 +1,57 @@
+split,refit_date,test_end,model,feature_set,parameters,cpcv_brier,train_observations,train_end,max_train_label_end
+development,2021-07-29,2022-01-28,har,price_only,{},,723,2021-07-21,2021-07-28
+development,2021-07-29,2022-01-28,elastic_net,price_only,"{""C"": 0.05, ""l1_ratio"": 0.9}",0.18280680254252815,723,2021-07-21,2021-07-28
+development,2021-07-29,2022-01-28,elastic_net,price_liquidity,"{""C"": 0.05, ""l1_ratio"": 0.9}",0.18425505960305766,723,2021-07-21,2021-07-28
+development,2021-07-29,2022-01-28,elastic_net,price_derivatives,"{""C"": 0.05, ""l1_ratio"": 0.9}",0.18524995802644942,723,2021-07-21,2021-07-28
+development,2021-07-29,2022-01-28,boosted_tree,price_only,"{""n_estimators"": 100, ""max_depth"": 2, ""learning_rate"": 0.03}",0.1944023141607728,723,2021-07-21,2021-07-28
+development,2021-07-29,2022-01-28,boosted_tree,price_liquidity,"{""n_estimators"": 100, ""max_depth"": 2, ""learning_rate"": 0.03}",0.1961060274655647,723,2021-07-21,2021-07-28
+development,2021-07-29,2022-01-28,boosted_tree,price_derivatives,"{""n_estimators"": 100, ""max_depth"": 2, ""learning_rate"": 0.03}",0.18711599188496694,723,2021-07-21,2021-07-28
+development,2022-01-29,2022-07-28,har,price_only,{},,907,2022-01-21,2022-01-28
+development,2022-01-29,2022-07-28,elastic_net,price_only,"{""C"": 0.05, ""l1_ratio"": 0.9}",0.18444396770502347,907,2022-01-21,2022-01-28
+development,2022-01-29,2022-07-28,elastic_net,price_liquidity,"{""C"": 0.05, ""l1_ratio"": 0.9}",0.18826079635964985,907,2022-01-21,2022-01-28
+development,2022-01-29,2022-07-28,elastic_net,price_derivatives,"{""C"": 0.05, ""l1_ratio"": 0.9}",0.19781823367111673,907,2022-01-21,2022-01-28
+development,2022-01-29,2022-07-28,boosted_tree,price_only,"{""n_estimators"": 100, ""max_depth"": 2, ""learning_rate"": 0.03}",0.18810116992149664,907,2022-01-21,2022-01-28
+development,2022-01-29,2022-07-28,boosted_tree,price_liquidity,"{""n_estimators"": 100, ""max_depth"": 2, ""learning_rate"": 0.03}",0.19145762098331476,907,2022-01-21,2022-01-28
+development,2022-01-29,2022-07-28,boosted_tree,price_derivatives,"{""n_estimators"": 100, ""max_depth"": 2, ""learning_rate"": 0.03}",0.19124938617015028,907,2022-01-21,2022-01-28
+development,2022-07-29,2023-01-28,har,price_only,{},,1088,2022-07-21,2022-07-28
+development,2022-07-29,2023-01-28,elastic_net,price_only,"{""C"": 0.05, ""l1_ratio"": 0.9}",0.1806090900176011,1088,2022-07-21,2022-07-28
+development,2022-07-29,2023-01-28,elastic_net,price_liquidity,"{""C"": 0.05, ""l1_ratio"": 0.9}",0.17735375478477158,1088,2022-07-21,2022-07-28
+development,2022-07-29,2023-01-28,elastic_net,price_derivatives,"{""C"": 0.05, ""l1_ratio"": 0.9}",0.19678652909639158,1088,2022-07-21,2022-07-28
+development,2022-07-29,2023-01-28,boosted_tree,price_only,"{""n_estimators"": 100, ""max_depth"": 2, ""learning_rate"": 0.03}",0.18165033348928952,1088,2022-07-21,2022-07-28
+development,2022-07-29,2023-01-28,boosted_tree,price_liquidity,"{""n_estimators"": 100, ""max_depth"": 2, ""learning_rate"": 0.03}",0.18174521108205466,1088,2022-07-21,2022-07-28
+development,2022-07-29,2023-01-28,boosted_tree,price_derivatives,"{""n_estimators"": 100, ""max_depth"": 2, ""learning_rate"": 0.03}",0.18387668685641767,1088,2022-07-21,2022-07-28
+development,2023-01-29,2023-07-28,har,price_only,{},,1272,2023-01-21,2023-01-28
+development,2023-01-29,2023-07-28,elastic_net,price_only,"{""C"": 0.05, ""l1_ratio"": 0.9}",0.19349907376035594,1272,2023-01-21,2023-01-28
+development,2023-01-29,2023-07-28,elastic_net,price_liquidity,"{""C"": 0.05, ""l1_ratio"": 0.9}",0.19171330715229454,1272,2023-01-21,2023-01-28
+development,2023-01-29,2023-07-28,elastic_net,price_derivatives,"{""C"": 0.05, ""l1_ratio"": 0.9}",0.2018372404101385,1272,2023-01-21,2023-01-28
+development,2023-01-29,2023-07-28,boosted_tree,price_only,"{""n_estimators"": 100, ""max_depth"": 2, ""learning_rate"": 0.03}",0.19431427923884279,1272,2023-01-21,2023-01-28
+development,2023-01-29,2023-07-28,boosted_tree,price_liquidity,"{""n_estimators"": 100, ""max_depth"": 2, ""learning_rate"": 0.03}",0.19117929594327687,1272,2023-01-21,2023-01-28
+development,2023-01-29,2023-07-28,boosted_tree,price_derivatives,"{""n_estimators"": 100, ""max_depth"": 2, ""learning_rate"": 0.03}",0.19667057773349286,1272,2023-01-21,2023-01-28
+development,2023-07-29,2024-01-28,har,price_only,{},,1453,2023-07-21,2023-07-28
+development,2023-07-29,2024-01-28,elastic_net,price_only,"{""C"": 0.05, ""l1_ratio"": 0.9}",0.19018392640047974,1453,2023-07-21,2023-07-28
+development,2023-07-29,2024-01-28,elastic_net,price_liquidity,"{""C"": 0.05, ""l1_ratio"": 0.9}",0.19244920920838712,1453,2023-07-21,2023-07-28
+development,2023-07-29,2024-01-28,elastic_net,price_derivatives,"{""C"": 0.05, ""l1_ratio"": 0.9}",0.21434398163000068,1453,2023-07-21,2023-07-28
+development,2023-07-29,2024-01-28,boosted_tree,price_only,"{""n_estimators"": 100, ""max_depth"": 2, ""learning_rate"": 0.03}",0.19371576259174353,1453,2023-07-21,2023-07-28
+development,2023-07-29,2024-01-28,boosted_tree,price_liquidity,"{""n_estimators"": 100, ""max_depth"": 2, ""learning_rate"": 0.03}",0.19390741738030656,1453,2023-07-21,2023-07-28
+development,2023-07-29,2024-01-28,boosted_tree,price_derivatives,"{""n_estimators"": 100, ""max_depth"": 2, ""learning_rate"": 0.03}",0.19426277094300715,1453,2023-07-21,2023-07-28
+development,2024-01-29,2024-07-28,har,price_only,{},,1637,2024-01-21,2024-01-28
+development,2024-01-29,2024-07-28,elastic_net,price_only,"{""C"": 0.05, ""l1_ratio"": 0.1}",0.196384147016641,1637,2024-01-21,2024-01-28
+development,2024-01-29,2024-07-28,elastic_net,price_liquidity,"{""C"": 0.05, ""l1_ratio"": 0.9}",0.20600849027487803,1637,2024-01-21,2024-01-28
+development,2024-01-29,2024-07-28,elastic_net,price_derivatives,"{""C"": 0.05, ""l1_ratio"": 0.9}",0.22747421591887895,1637,2024-01-21,2024-01-28
+development,2024-01-29,2024-07-28,boosted_tree,price_only,"{""n_estimators"": 100, ""max_depth"": 2, ""learning_rate"": 0.03}",0.19448500313557895,1637,2024-01-21,2024-01-28
+development,2024-01-29,2024-07-28,boosted_tree,price_liquidity,"{""n_estimators"": 100, ""max_depth"": 2, ""learning_rate"": 0.03}",0.19427717380323709,1637,2024-01-21,2024-01-28
+development,2024-01-29,2024-07-28,boosted_tree,price_derivatives,"{""n_estimators"": 100, ""max_depth"": 2, ""learning_rate"": 0.03}",0.1968556284262147,1637,2024-01-21,2024-01-28
+development,2024-07-29,2024-12-31,har,price_only,{},,1819,2024-07-21,2024-07-28
+development,2024-07-29,2024-12-31,elastic_net,price_only,"{""C"": 0.05, ""l1_ratio"": 0.5}",0.19344227911810477,1819,2024-07-21,2024-07-28
+development,2024-07-29,2024-12-31,elastic_net,price_liquidity,"{""C"": 0.05, ""l1_ratio"": 0.9}",0.19883064501749084,1819,2024-07-21,2024-07-28
+development,2024-07-29,2024-12-31,elastic_net,price_derivatives,"{""C"": 0.05, ""l1_ratio"": 0.9}",0.21145057126030706,1819,2024-07-21,2024-07-28
+development,2024-07-29,2024-12-31,boosted_tree,price_only,"{""n_estimators"": 100, ""max_depth"": 3, ""learning_rate"": 0.03}",0.1949950102181185,1819,2024-07-21,2024-07-28
+development,2024-07-29,2024-12-31,boosted_tree,price_liquidity,"{""n_estimators"": 100, ""max_depth"": 2, ""learning_rate"": 0.03}",0.19711291376956777,1819,2024-07-21,2024-07-28
+development,2024-07-29,2024-12-31,boosted_tree,price_derivatives,"{""n_estimators"": 100, ""max_depth"": 2, ""learning_rate"": 0.03}",0.19608247915773372,1819,2024-07-21,2024-07-28
+holdout,2025-01-01,2026-06-15,har,price_only,{},,1975,2024-12-24,2024-12-31
+holdout,2025-01-01,2026-06-15,elastic_net,price_only,"{""C"": 0.05, ""l1_ratio"": 0.1}",0.18911435860305217,1975,2024-12-24,2024-12-31
+holdout,2025-01-01,2026-06-15,elastic_net,price_liquidity,"{""C"": 0.05, ""l1_ratio"": 0.9}",0.19538003458508546,1975,2024-12-24,2024-12-31
+holdout,2025-01-01,2026-06-15,elastic_net,price_derivatives,"{""C"": 0.05, ""l1_ratio"": 0.9}",0.2001124076116624,1975,2024-12-24,2024-12-31
+holdout,2025-01-01,2026-06-15,boosted_tree,price_only,"{""n_estimators"": 100, ""max_depth"": 3, ""learning_rate"": 0.03}",0.19437148710891863,1975,2024-12-24,2024-12-31
+holdout,2025-01-01,2026-06-15,boosted_tree,price_liquidity,"{""n_estimators"": 100, ""max_depth"": 2, ""learning_rate"": 0.03}",0.19778821834237884,1975,2024-12-24,2024-12-31
+holdout,2025-01-01,2026-06-15,boosted_tree,price_derivatives,"{""n_estimators"": 100, ""max_depth"": 3, ""learning_rate"": 0.03}",0.19447085851420662,1975,2024-12-24,2024-12-31

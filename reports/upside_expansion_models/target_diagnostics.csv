@@ -1,0 +1,15 @@
+family,target,description,split,observations,positive_events,prevalence
+convex,btc_30d_gt_15,BTC 30-day forward return > +15%,development,261,74,0.2835249042145594
+convex,btc_30d_gt_15,BTC 30-day forward return > +15%,holdout,73,5,0.0684931506849315
+convex,eth_30d_gt_20,ETH 30-day forward return > +20%,development,261,73,0.2796934865900383
+convex,eth_30d_gt_20,ETH 30-day forward return > +20%,holdout,73,11,0.1506849315068493
+convex,btc_eth_50_50_30d_gt_15,BTC/ETH 50-50 30-day forward return > +15%,development,261,82,0.31417624521072796
+convex,btc_eth_50_50_30d_gt_15,BTC/ETH 50-50 30-day forward return > +15%,holdout,73,10,0.136986301369863
+relative,eth_leads_btc_30d_gt_5,ETH outperforms BTC over the next 30 days by at least +5%,development,261,85,0.32567049808429116
+relative,eth_leads_btc_30d_gt_5,ETH outperforms BTC over the next 30 days by at least +5%,holdout,73,16,0.2191780821917808
+relative,btc_leads_eth_30d_gt_5,BTC outperforms ETH over the next 30 days by at least +5%,development,261,91,0.3486590038314176
+relative,btc_leads_eth_30d_gt_5,BTC outperforms ETH over the next 30 days by at least +5%,holdout,73,33,0.4520547945205479
+transition,risk_off_to_risk_on_2_4w,Frozen macro state transitions from defensive to risk-on within 2-4 weeks,development,261,56,0.21455938697318008
+transition,risk_off_to_risk_on_2_4w,Frozen macro state transitions from defensive to risk-on within 2-4 weeks,holdout,73,16,0.2191780821917808
+cross_sectional,top20_top_quintile_30d,Point-in-time top-20 asset is top-quintile 30-day performer,development,5216,1044,0.20015337423312884
+cross_sectional,top20_top_quintile_30d,Point-in-time top-20 asset is top-quintile 30-day performer,holdout,1460,292,0.2

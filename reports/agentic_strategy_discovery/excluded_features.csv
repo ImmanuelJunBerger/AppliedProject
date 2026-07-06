@@ -1,0 +1,6 @@
+feature,reason
+ETF flows,No point-in-time local ETF flow table is available.
+full options implied-volatility surface,No accepted local options surface with sufficient timestamp integrity.
+COT/CME positioning,No audited point-in-time COT/CME positioning file is available.
+entity-adjusted exchange flows/MVRV/realized cap,No accepted professional on-chain provider file is available.
+trend-scanning labels,"Existing trend-scanning labels are generated from forward price paths; allowed as labels, rejected as live-decision features."

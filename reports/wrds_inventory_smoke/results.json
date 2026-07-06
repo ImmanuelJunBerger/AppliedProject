@@ -1,0 +1,292 @@
+{
+  "status": "credentials_missing",
+  "credential_status": {
+    "username_present": false,
+    "password_present": false
+  },
+  "wrds_package_available": null,
+  "library_count": 0,
+  "libraries": [],
+  "scanned_libraries": [],
+  "table_matches": [],
+  "table_errors": {},
+  "candidate_datasets": [
+    {
+      "category": "crypto market data",
+      "source": "Datastream / LSEG digital asset series, if licensed",
+      "likely_libraries": [
+        "datastream",
+        "tr_ds",
+        "ds",
+        "lseg",
+        "refinitiv"
+      ],
+      "likely_tables_or_identifiers": [
+        "BTC",
+        "ETH",
+        "crypto",
+        "digital asset identifiers"
+      ],
+      "crypto_relevance": "Potential independent BTC/ETH prices, index series, and cross-venue macro-aligned timestamps.",
+      "limitation": "Coverage and identifiers depend on the institution's Datastream/LSEG license; WRDS is not usually the best source for crypto-native OHLCV."
+    },
+    {
+      "category": "Datastream / LSEG time series",
+      "source": "Refinitiv Datastream / LSEG cross-asset time series",
+      "likely_libraries": [
+        "datastream",
+        "tr_ds",
+        "ds",
+        "lseg",
+        "refinitiv"
+      ],
+      "likely_tables_or_identifiers": [
+        "equity indices",
+        "DXY",
+        "commodities",
+        "rates",
+        "VIX"
+      ],
+      "crypto_relevance": "Single source for broad macro/risk-regime inputs that can be lagged and merged with crypto daily bars.",
+      "limitation": "Symbol mapping must be versioned; vendor revisions and holidays need explicit treatment."
+    },
+    {
+      "category": "macro variables",
+      "source": "FRED, Federal Reserve, BEA/BLS, or Datastream macro series through WRDS",
+      "likely_libraries": [
+        "fred",
+        "frb",
+        "bea",
+        "bls",
+        "macro",
+        "datastream"
+      ],
+      "likely_tables_or_identifiers": [
+        "DFF",
+        "SOFR",
+        "CPI",
+        "unemployment",
+        "money supply",
+        "financial conditions"
+      ],
+      "crypto_relevance": "Macro liquidity and risk-regime features: liquidity impulse, inflation/rates pressure, economic stress.",
+      "limitation": "Low-frequency macro data is released with delays and revisions; use release calendars or conservative lags."
+    },
+    {
+      "category": "FX",
+      "source": "USD index and major FX series from Datastream/LSEG or FRED",
+      "likely_libraries": [
+        "datastream",
+        "tr_ds",
+        "fred",
+        "fx"
+      ],
+      "likely_tables_or_identifiers": [
+        "DXY",
+        "broad USD index",
+        "EURUSD",
+        "JPY",
+        "CNH"
+      ],
+      "crypto_relevance": "Crypto often trades as a high-beta anti-USD liquidity asset; USD uptrends can gate risk down.",
+      "limitation": "FX data helps regime filtering but is not crypto-specific."
+    },
+    {
+      "category": "interest rates",
+      "source": "Treasury, SOFR/Fed funds, real yield, and yield-curve series",
+      "likely_libraries": [
+        "fred",
+        "frb",
+        "datastream",
+        "ice"
+      ],
+      "likely_tables_or_identifiers": [
+        "2Y",
+        "10Y",
+        "TIPS real yield",
+        "SOFR",
+        "Fed funds",
+        "2s10s"
+      ],
+      "crypto_relevance": "Rates trend and real-rate shocks can identify hostile conditions for speculative assets.",
+      "limitation": "Daily rates are useful; macro release data must be lagged to avoid revision leakage."
+    },
+    {
+      "category": "commodities",
+      "source": "Gold, copper, oil, broad commodity indices",
+      "likely_libraries": [
+        "datastream",
+        "tr_ds",
+        "cme",
+        "commodity"
+      ],
+      "likely_tables_or_identifiers": [
+        "gold",
+        "copper",
+        "WTI",
+        "Brent",
+        "CRB"
+      ],
+      "crypto_relevance": "Commodity trends can proxy inflation, growth, and risk sentiment; gold/BTC interaction may be relevant.",
+      "limitation": "Commodity signals are indirect and can add noise if used without a predeclared regime rule."
+    },
+    {
+      "category": "equity indices",
+      "source": "CRSP/Compustat/Datastream equity index returns",
+      "likely_libraries": [
+        "crsp",
+        "comp",
+        "datastream",
+        "msci",
+        "snp"
+      ],
+      "likely_tables_or_identifiers": [
+        "S&P 500",
+        "Nasdaq 100",
+        "Russell 2000",
+        "MSCI World"
+      ],
+      "crypto_relevance": "Risk-on/risk-off gate: equity trend, drawdown, breadth, and realized volatility.",
+      "limitation": "Equity data is useful for regime, not as a direct crypto alpha source."
+    },
+    {
+      "category": "volatility indices",
+      "source": "CBOE VIX/VVIX or Datastream volatility index series",
+      "likely_libraries": [
+        "cboe",
+        "datastream",
+        "optionm"
+      ],
+      "likely_tables_or_identifiers": [
+        "VIX",
+        "VVIX",
+        "MOVE",
+        "volatility index"
+      ],
+      "crypto_relevance": "Volatility shock filter: reduce crypto exposure when VIX is high or rapidly rising.",
+      "limitation": "VIX reflects equity options, not crypto options; still useful as a global risk proxy."
+    },
+    {
+      "category": "ETF flows",
+      "source": "ETF Global, CRSP mutual fund/ETF, Lipper, or fund-holdings data if licensed",
+      "likely_libraries": [
+        "etf",
+        "crsp",
+        "lipper",
+        "fund"
+      ],
+      "likely_tables_or_identifiers": [
+        "ETF flows",
+        "holdings",
+        "AUM",
+        "fund returns"
+      ],
+      "crypto_relevance": "Institutional flow proxy, especially for spot BTC/ETH ETFs if covered after launch.",
+      "limitation": "WRDS ETF flow coverage may not include crypto ETFs or may arrive with delays unsuitable for weekly trading."
+    },
+    {
+      "category": "news / RavenPack",
+      "source": "RavenPack or other licensed news sentiment on WRDS",
+      "likely_libraries": [
+        "ravenpack",
+        "raven",
+        "news"
+      ],
+      "likely_tables_or_identifiers": [
+        "entity sentiment",
+        "event novelty",
+        "relevance",
+        "crypto entities"
+      ],
+      "crypto_relevance": "Risk-event filter and sentiment confirmation if crypto entities or broad market risk topics are covered.",
+      "limitation": "News is high-dimensional, licensed, timestamp-sensitive, and easy to overfit."
+    },
+    {
+      "category": "options / OptionMetrics",
+      "source": "OptionMetrics IvyDB and index/ETF options",
+      "likely_libraries": [
+        "optionm",
+        "optionmetrics",
+        "ivydb"
+      ],
+      "likely_tables_or_identifiers": [
+        "SPY",
+        "QQQ",
+        "VIX-linked products",
+        "implied volatility",
+        "skew"
+      ],
+      "crypto_relevance": "Equity/index options can provide implied-risk features; crypto options are unlikely unless specifically licensed elsewhere.",
+      "limitation": "Useful for market-regime filters, but not a substitute for Deribit-style crypto implied volatility."
+    }
+  ],
+  "feature_plan": [
+    {
+      "feature_group": "macro risk regime",
+      "wrds_source": "Datastream/LSEG, FRED/FRB macro series if accessible",
+      "example_features": "financial-conditions z-score; recession/stress proxy; release-lagged macro surprise where available",
+      "trading_use": "Permit crypto exposure only outside broad macro stress.",
+      "leakage_control": "Use publication/release lags; do not use revised values at original dates without point-in-time vintages."
+    },
+    {
+      "feature_group": "USD liquidity",
+      "wrds_source": "DXY/broad USD from Datastream/LSEG or FRED; money-market/rates series",
+      "example_features": "DXY 50/200-day trend; 20-day USD momentum; liquidity impulse proxy",
+      "trading_use": "Reduce BTC/ETH exposure during strong USD/liquidity-tightening regimes.",
+      "leakage_control": "Daily series lagged one trading day; macro proxies lagged by release schedule."
+    },
+    {
+      "feature_group": "rates",
+      "wrds_source": "Treasury, Fed funds, SOFR, real yields from FRED/FRB/Datastream",
+      "example_features": "2Y and 10Y yield trend; 10Y real-yield change; yield-curve slope",
+      "trading_use": "Identify tightening shocks that historically pressure high-duration risk assets.",
+      "leakage_control": "Use prior close or conservative one-day lag."
+    },
+    {
+      "feature_group": "equity risk-on/risk-off",
+      "wrds_source": "CRSP/Compustat/Datastream equity index data",
+      "example_features": "S&P 500 above 200-day average; Nasdaq 30-day momentum; equity drawdown",
+      "trading_use": "Gate crypto risk when equities are in confirmed uptrends.",
+      "leakage_control": "Align to crypto decision timestamp; lag one day because crypto trades 24/7."
+    },
+    {
+      "feature_group": "commodity risk sentiment",
+      "wrds_source": "Datastream/LSEG commodity series",
+      "example_features": "gold trend; copper/gold ratio; oil shock filter; broad commodity momentum",
+      "trading_use": "Differentiate inflation shocks, growth risk, and safe-haven regimes.",
+      "leakage_control": "Daily lag; predeclare transformations to avoid narrative fitting."
+    },
+    {
+      "feature_group": "VIX / volatility",
+      "wrds_source": "CBOE/Datastream VIX, VVIX, MOVE if licensed",
+      "example_features": "VIX level percentile; 5-day VIX change; volatility shock dummy",
+      "trading_use": "Risk-off gate or position-size reduction during volatility shocks.",
+      "leakage_control": "Use only observations known before rebalance."
+    },
+    {
+      "feature_group": "ETF / institutional flows",
+      "wrds_source": "ETF Global, CRSP mutual fund/ETF, Lipper, holdings databases if licensed",
+      "example_features": "BTC ETF AUM/flow change; crypto-equity ETF flow; institutional demand proxy",
+      "trading_use": "Confirm risk-on exposure if spot ETF flow data is timely and complete.",
+      "leakage_control": "Use actual report availability dates; assume stale if only monthly/quarterly."
+    },
+    {
+      "feature_group": "news sentiment",
+      "wrds_source": "RavenPack if licensed",
+      "example_features": "crypto entity sentiment; macro risk sentiment; novelty-weighted negative-news shock",
+      "trading_use": "Avoid exposure during broad negative event clusters; do not use as a standalone alpha yet.",
+      "leakage_control": "Use timestamped news only; aggregate before rebalance cut-off."
+    },
+    {
+      "feature_group": "options-implied volatility",
+      "wrds_source": "OptionMetrics, CBOE, Datastream",
+      "example_features": "SPY/QQQ implied volatility; skew; term-structure slope; VIX/VVIX",
+      "trading_use": "Forward-looking risk proxy for macro-conditioned crypto exposure.",
+      "leakage_control": "Lag option metrics and ensure no post-close values enter same-day crypto decisions."
+    }
+  ],
+  "notes": [
+    "No live WRDS query was attempted because WRDS_USERNAME and/or WRDS_PASSWORD is missing.",
+    "Reports were generated from the predeclared WRDS research inventory only."
+  ]
+}

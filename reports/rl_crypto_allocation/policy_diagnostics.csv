@@ -1,0 +1,11 @@
+split,diagnostic,name,value
+development,action_frequency,eth,1.0
+development,average_exposure,rl_fitted_q_linear_btc_eth_r14_raw_return,1.0
+development,cash_fraction,rl_fitted_q_linear_btc_eth_r14_raw_return,0.0
+holdout,action_frequency,eth,1.0
+holdout,average_exposure,rl_fitted_q_linear_btc_eth_r14_raw_return,1.0
+holdout,cash_fraction,rl_fitted_q_linear_btc_eth_r14_raw_return,0.0
+holdout,mean_q_value,cash,0.0816958944554765
+holdout,mean_q_value,btc,0.10906148735502806
+holdout,mean_q_value,eth,0.119624850843048
+holdout,mean_q_value,btc_eth_50_50,0.11487484797641988

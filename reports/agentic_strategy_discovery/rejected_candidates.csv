@@ -1,0 +1,8 @@
+candidate,family,rejection_reason
+vol_compression_breakout_score,Family C: Volatility Compression Breakout,Selected by development CPCV but failed replacement filters.
+agentic_three_signal_ensemble,Family G: Agentic Deterministic Ensemble,Not selected by development CPCV; documented as rejected candidate.
+macro_liquidity_expansion_score,Family A: Macro + Liquidity Expansion,Not selected by development CPCV; documented as rejected candidate.
+capitulation_rebound_score,Family B: Capitulation-Rebound Strategy,Not selected by development CPCV; documented as rejected candidate. Exposure below 20%.
+eth_btc_leadership_rotation,Family D: ETH/BTC Leadership Rotation,Not selected by development CPCV; documented as rejected candidate.
+macro_gated_expansion_rebound,Family F: Macro-Gated Expansion Rebound,Not selected by development CPCV; documented as rejected candidate.
+trend_scanning_confirmation,Family E: Trend-Scanning Meta Strategy,Not selected by development CPCV; documented as rejected candidate. Exposure below 20%.

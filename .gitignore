@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.codex-wrds-deps/
+.env
+.env.local
+.env.*.local
+.pgpass
+*.pgpass
+wrds.env
+credentials/
+secrets/
+.DS_Store
+data/

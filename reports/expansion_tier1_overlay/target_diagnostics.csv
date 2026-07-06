@@ -1,0 +1,7 @@
+target,description,split,observations,positive_events,prevalence
+target_a_btc_eth_upside,BTC/ETH 50-50 30-day forward return > +15%,development,287,84,0.2926829268292683
+target_a_btc_eth_upside,BTC/ETH 50-50 30-day forward return > +15%,holdout,73,10,0.136986301369863
+target_b_eth_leadership,ETH outperforms BTC over the next 30 days by > +5%,development,287,91,0.3170731707317073
+target_b_eth_leadership,ETH outperforms BTC over the next 30 days by > +5%,holdout,73,16,0.2191780821917808
+target_c_top20_leadership,Point-in-time top-20 equal-weight 30-day return beats BTC/ETH by > +5%,development,287,71,0.24738675958188153
+target_c_top20_leadership,Point-in-time top-20 equal-weight 30-day return beats BTC/ETH by > +5%,holdout,73,10,0.136986301369863

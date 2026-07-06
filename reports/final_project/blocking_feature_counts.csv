@@ -1,0 +1,7 @@
+feature,blocking_weeks,fraction_weeks
+vix_level,230,0.5897435897435898
+dow_vol_level,228,0.5846153846153846
+equity_realized_vol_21d,221,0.5666666666666667
+vix_change_5d,217,0.5564102564102564
+equity_momentum_21d,198,0.5076923076923077
+vix_change_21d,186,0.47692307692307695

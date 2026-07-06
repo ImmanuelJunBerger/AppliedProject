@@ -1,0 +1,50 @@
+row_type,feature,feature_2,correlation,cluster_id,vif,interpretation
+high_correlation_pair,momentum_21d,distance_to_50dma,0.8500097196905378,1,,potential duplicate information content
+high_correlation_pair,momentum_63d,trend_slope_63d,0.9999999998945419,2,,potential duplicate information content
+high_correlation_pair,momentum_63d,volatility_adjusted_momentum_63d,0.9666999341483128,2,,potential duplicate information content
+high_correlation_pair,momentum_126d,distance_to_200dma,0.8967072682668379,3,,potential duplicate information content
+high_correlation_pair,momentum_consistency_63d,trend_persistence_63d,1.0,4,,potential duplicate information content
+high_correlation_pair,trend_slope_63d,volatility_adjusted_momentum_63d,0.9666999218947889,2,,potential duplicate information content
+high_correlation_pair,realized_volatility_30d,downside_volatility_30d,0.8519443730964854,5,,potential duplicate information content
+high_correlation_pair,realized_volatility_30d,upside_volatility_30d,0.9166969683502965,5,,potential duplicate information content
+high_correlation_pair,amihud_illiquidity_30d,turnover_30d,-0.9443357727033912,6,,potential duplicate information content
+high_correlation_pair,volume_acceleration,volume_concentration_7_30,1.0,7,,potential duplicate information content
+high_correlation_pair,relative_strength_rank,percentile_momentum_63d,1.0,8,,potential duplicate information content
+high_correlation_pair,market_drawdown,stablecoin_supply_change_90d,0.8756229113755297,9,,potential duplicate information content
+high_correlation_pair,stablecoin_supply_change_30d,stablecoin_supply_change_90d,0.8994944688548269,9,,potential duplicate information content
+high_correlation_pair,stablecoin_supply_change_30d,stablecoin_supply_growth_30d,1.0,9,,potential duplicate information content
+high_correlation_pair,stablecoin_supply_change_90d,stablecoin_supply_growth_30d,0.8994944688548269,9,,potential duplicate information content
+vif,momentum_7d,,,0,2.1874508431733775,acceptable
+vif,momentum_21d,,,1,14.746212796855511,high multicollinearity
+vif,momentum_63d,,,2,516185.00255504565,high multicollinearity
+vif,momentum_126d,,,3,2.4221957838339363,acceptable
+vif,momentum_acceleration,,,0,515925.81773321214,high multicollinearity
+vif,momentum_consistency_63d,,,4,500000.51866645576,high multicollinearity
+vif,distance_to_50dma,,,1,15.0216425784874,high multicollinearity
+vif,distance_to_200dma,,,3,5.594850612474407,acceptable
+vif,trend_slope_63d,,,2,6.17983740886196,acceptable
+vif,trend_persistence_63d,,,4,500000.5186664621,high multicollinearity
+vif,realized_volatility_30d,,,5,92.30715940959308,high multicollinearity
+vif,downside_volatility_30d,,,5,17.117497956582792,high multicollinearity
+vif,upside_volatility_30d,,,5,43.68558524634585,high multicollinearity
+vif,volatility_of_volatility_30d,,,0,1.4272461226969209,acceptable
+vif,jump_intensity_30d,,,0,1.4353133986161122,acceptable
+vif,amihud_illiquidity_30d,,,6,57.166296818930896,high multicollinearity
+vif,turnover_30d,,,6,58.90002509428347,high multicollinearity
+vif,volume_acceleration,,,7,15.11770508098881,high multicollinearity
+vif,volume_concentration_7_30,,,7,16.052000424259727,high multicollinearity
+vif,relative_strength_rank,,,8,500000.6615927732,high multicollinearity
+vif,percentile_momentum_63d,,,8,500000.6615927751,high multicollinearity
+vif,volatility_adjusted_momentum_63d,,,2,65412.39052748979,high multicollinearity
+vif,market_breadth,,,0,3.9949324954172853,acceptable
+vif,cross_sectional_dispersion,,,0,3.46787630166402,acceptable
+vif,average_correlation_30d,,,0,2.9655215392383667,acceptable
+vif,market_drawdown,,,9,3.812973436035208,acceptable
+vif,volatility_expansion_probability,,,0,1.3449623851590384,acceptable
+vif,stablecoin_supply_change_7d,,,0,2.244030787114348,acceptable
+vif,stablecoin_supply_change_30d,,,9,500001.2246282493,high multicollinearity
+vif,stablecoin_supply_change_90d,,,9,4.402191647769715,acceptable
+vif,stablecoin_supply_z_90,,,0,2.395849413288978,acceptable
+vif,stablecoin_supply_growth_30d,,,9,500001.2246282459,high multicollinearity
+vif,tvl_growth_30d,,,0,5.160407981278222,acceptable
+vif,tvl_momentum_90d,,,0,3.6027901437196426,acceptable

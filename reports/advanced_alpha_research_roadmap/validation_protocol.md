@@ -1,0 +1,16 @@
+# Validation protocol
+
+| Control | Requirement |
+|---|---|
+| Frozen benchmark | btc_eth_macro_gate_balanced remains unchanged; every candidate compares to it. |
+| Development period | Fixed development period ending 2024-12-31 unless a dataset starts later, in which case the limited sample must be labelled. |
+| Locked holdout | 2025-01-01 onward; never used for feature/model/threshold selection. |
+| Feature gate | No strategy test unless new data passes independent development-only feature validation. |
+| CPCV | Combinatorial purged cross-validation inside development with purging and embargo. |
+| No best-cell selection | Report all tested configurations; do not promote highest holdout Sharpe. |
+| Statistical controls | PBO, deflated Sharpe probability, bootstrap confidence intervals where feasible, and configuration count. |
+| Economic controls | Cost sensitivity at 10/25/50/100 bps, turnover, exposure, cash allocation, drawdown, and worst-month diagnostics. |
+| False improvement flag | Reject improvements caused only by going mostly to cash or reducing exposure dramatically. |
+| Acceptance rule | A candidate is interesting only if holdout Sharpe, CAGR, and max drawdown improve simultaneously. |
+
+The holdout remains locked. No best-cell selection is allowed.

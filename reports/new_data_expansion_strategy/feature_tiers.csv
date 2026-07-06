@@ -1,0 +1,24 @@
+feature,new_data_tier,reason,best_target,development_directed_auc,development_ic,newey_west_t_stat,p_value,positive_cpcv_fold_fraction,holdout_directed_auc_diagnostic,holdout_sign_consistent_diagnostic
+btc_active_address_growth_30d,New Data Tier 2,Promising but weaker or less statistically stable development evidence.,target_d_eth_beats_btc_30d,0.5560663825969949,0.09037798007689135,0.8381259142967153,0.40195999007817274,0.8,0.5285087719298245,True
+btc_active_address_growth_7d,New Data Tier 2,Promising but weaker or less statistically stable development evidence.,target_d_eth_beats_btc_30d,0.5463108320251177,0.07465221154351226,1.6254550062943918,0.10406564350189415,0.9333333333333333,0.5087719298245614,False
+btc_transaction_growth_30d,New Data Tier 2,Promising but weaker or less statistically stable development evidence.,target_d_eth_beats_btc_30d,0.5574680421619197,0.09263742957881364,1.0593412087246343,0.2894444139956019,0.8,0.6074561403508772,True
+btc_transaction_growth_7d,New Data Tier 3,"Weak, unstable, redundant, or unavailable development evidence.",target_e_top20_leadership,0.5234741784037558,-0.035087935291125194,-1.2393506984716012,0.21521565095714149,0.8666666666666667,0.5587301587301586,True
+etf_net_flow,New Data Tier 3,Unavailable source or no usable feature observations.,,,,,,,,False
+etf_flow_as_pct_aum,New Data Tier 3,Unavailable source or no usable feature observations.,,,,,,,,False
+etf_5d_flow,New Data Tier 3,Unavailable source or no usable feature observations.,,,,,,,,False
+etf_21d_flow,New Data Tier 3,Unavailable source or no usable feature observations.,,,,,,,,False
+etf_flow_acceleration,New Data Tier 3,Unavailable source or no usable feature observations.,,,,,,,,False
+etf_flow_percentile,New Data Tier 3,Unavailable source or no usable feature observations.,,,,,,,,False
+etf_inflow_streak,New Data Tier 3,Unavailable source or no usable feature observations.,,,,,,,,False
+etf_outflow_shock,New Data Tier 3,Unavailable source or no usable feature observations.,,,,,,,,False
+exchange_flow_pressure,New Data Tier 3,Unavailable source or no usable feature observations.,,,,,,,,False
+mvrv_percentile,New Data Tier 3,Unavailable source or no usable feature observations.,,,,,,,,False
+realized_cap_growth,New Data Tier 3,Unavailable source or no usable feature observations.,,,,,,,,False
+holder_accumulation_proxy,New Data Tier 3,Unavailable source or no usable feature observations.,,,,,,,,False
+option_iv_level,New Data Tier 3,Unavailable source or no usable feature observations.,,,,,,,,False
+option_iv_change,New Data Tier 3,Unavailable source or no usable feature observations.,,,,,,,,False
+option_skew_level,New Data Tier 3,Unavailable source or no usable feature observations.,,,,,,,,False
+option_skew_change,New Data Tier 3,Unavailable source or no usable feature observations.,,,,,,,,False
+option_put_call_change,New Data Tier 3,Unavailable source or no usable feature observations.,,,,,,,,False
+option_term_structure_slope,New Data Tier 3,Unavailable source or no usable feature observations.,,,,,,,,False
+option_risk_reversal_proxy,New Data Tier 3,Unavailable source or no usable feature observations.,,,,,,,,False

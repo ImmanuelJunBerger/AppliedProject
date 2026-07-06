@@ -1,0 +1,5 @@
+feature_set,available,feature_count,reason
+price_only,True,17,available
+price_liquidity,True,25,available
+price_derivatives,True,23,available
+price_derivatives_options,False,0,derivative and/or options columns are absent or below 20% development coverage

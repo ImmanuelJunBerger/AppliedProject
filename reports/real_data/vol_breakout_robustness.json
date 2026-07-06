@@ -1,0 +1,4994 @@
+[
+  {
+    "configuration":"top5__W-FRI__cost10__vol0__brake0",
+    "top_n":5,
+    "frequency":"W-FRI",
+    "cost_bps":10,
+    "volatility_scaling":false,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1055,
+      "metrics":{
+        "CAGR":-0.0313232059,
+        "Sharpe":0.034512095,
+        "Sortino":0.0323953648,
+        "Calmar":-0.0842329741,
+        "Annualized Volatility":0.2863343818,
+        "Maximum Drawdown":-0.3718639436,
+        "Hit Rate":0.2881516588,
+        "Turnover":0.0432227488,
+        "Exposure":0.6341232227,
+        "Transaction Costs":0.0456
+      },
+      "diagnostics":{
+        "hit_rate":0.2881516588,
+        "turnover":0.0432227488,
+        "transaction_costs":0.0456
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.0829951636,
+        "Sharpe":-0.3458845566,
+        "Sortino":-0.3125400456,
+        "Calmar":-0.2798146876,
+        "Annualized Volatility":0.1952853403,
+        "Maximum Drawdown":-0.2966076022,
+        "Hit Rate":0.2156133829,
+        "Turnover":0.0371747212,
+        "Exposure":0.4851301115,
+        "Transaction Costs":0.02
+      },
+      "diagnostics":{
+        "hit_rate":0.2156133829,
+        "turnover":0.0371747212,
+        "transaction_costs":0.02
+      }
+    }
+  },
+  {
+    "configuration":"top5__W-FRI__cost10__vol0__brake1",
+    "top_n":5,
+    "frequency":"W-FRI",
+    "cost_bps":10,
+    "volatility_scaling":false,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1055,
+      "metrics":{
+        "CAGR":-0.0142275273,
+        "Sharpe":0.01687715,
+        "Sortino":0.0158780381,
+        "Calmar":-0.0581000223,
+        "Annualized Volatility":0.1867645835,
+        "Maximum Drawdown":-0.2448798937,
+        "Hit Rate":0.2862559242,
+        "Turnover":0.0211374408,
+        "Exposure":0.6312796209,
+        "Transaction Costs":0.0223
+      },
+      "diagnostics":{
+        "hit_rate":0.2862559242,
+        "turnover":0.0211374408,
+        "transaction_costs":0.0223
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.0352636986,
+        "Sharpe":-0.4740896621,
+        "Sortino":-0.3685437528,
+        "Calmar":-0.2939127083,
+        "Annualized Volatility":0.0704697132,
+        "Maximum Drawdown":-0.1199801763,
+        "Hit Rate":0.2156133829,
+        "Turnover":0.0115241636,
+        "Exposure":0.4795539033,
+        "Transaction Costs":0.0062
+      },
+      "diagnostics":{
+        "hit_rate":0.2156133829,
+        "turnover":0.0115241636,
+        "transaction_costs":0.0062
+      }
+    }
+  },
+  {
+    "configuration":"top5__W-FRI__cost10__vol1__brake0",
+    "top_n":5,
+    "frequency":"W-FRI",
+    "cost_bps":10,
+    "volatility_scaling":true,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1055,
+      "metrics":{
+        "CAGR":-0.0012793463,
+        "Sharpe":0.1333919247,
+        "Sortino":0.1246762061,
+        "Calmar":-0.0035032405,
+        "Annualized Volatility":0.2711603252,
+        "Maximum Drawdown":-0.3651894131,
+        "Hit Rate":0.2872037915,
+        "Turnover":0.0418651555,
+        "Exposure":0.6322274882,
+        "Transaction Costs":0.0441677391
+      },
+      "diagnostics":{
+        "hit_rate":0.2872037915,
+        "turnover":0.0418651555,
+        "transaction_costs":0.0441677391
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.0906299346,
+        "Sharpe":-0.3964511659,
+        "Sortino":-0.3545666272,
+        "Calmar":-0.296930668,
+        "Annualized Volatility":0.1926989393,
+        "Maximum Drawdown":-0.3052225463,
+        "Hit Rate":0.2156133829,
+        "Turnover":0.0369187491,
+        "Exposure":0.4851301115,
+        "Transaction Costs":0.019862287
+      },
+      "diagnostics":{
+        "hit_rate":0.2156133829,
+        "turnover":0.0369187491,
+        "transaction_costs":0.019862287
+      }
+    }
+  },
+  {
+    "configuration":"top5__W-FRI__cost10__vol1__brake1",
+    "top_n":5,
+    "frequency":"W-FRI",
+    "cost_bps":10,
+    "volatility_scaling":true,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1055,
+      "metrics":{
+        "CAGR":-0.0058353431,
+        "Sharpe":0.0519737213,
+        "Sortino":0.0490589089,
+        "Calmar":-0.0238294088,
+        "Annualized Volatility":0.1717288936,
+        "Maximum Drawdown":-0.2448798937,
+        "Hit Rate":0.2862559242,
+        "Turnover":0.020538455,
+        "Exposure":0.6312796209,
+        "Transaction Costs":0.0216680701
+      },
+      "diagnostics":{
+        "hit_rate":0.2862559242,
+        "turnover":0.020538455,
+        "transaction_costs":0.0216680701
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.0391730969,
+        "Sharpe":-0.5475338099,
+        "Sortino":-0.4176938753,
+        "Calmar":-0.3128055558,
+        "Annualized Volatility":0.0686596327,
+        "Maximum Drawdown":-0.1252314615,
+        "Hit Rate":0.2156133829,
+        "Turnover":0.0113961775,
+        "Exposure":0.4795539033,
+        "Transaction Costs":0.0061311435
+      },
+      "diagnostics":{
+        "hit_rate":0.2156133829,
+        "turnover":0.0113961775,
+        "transaction_costs":0.0061311435
+      }
+    }
+  },
+  {
+    "configuration":"top5__W-FRI__cost25__vol0__brake0",
+    "top_n":5,
+    "frequency":"W-FRI",
+    "cost_bps":25,
+    "volatility_scaling":false,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1055,
+      "metrics":{
+        "CAGR":-0.0540247114,
+        "Sharpe":-0.0481093364,
+        "Sortino":-0.0453101103,
+        "Calmar":-0.1419203386,
+        "Annualized Volatility":0.2864819311,
+        "Maximum Drawdown":-0.3806692683,
+        "Hit Rate":0.2853080569,
+        "Turnover":0.0432227488,
+        "Exposure":0.6341232227,
+        "Transaction Costs":0.114
+      },
+      "diagnostics":{
+        "hit_rate":0.2853080569,
+        "turnover":0.0432227488,
+        "transaction_costs":0.114
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1015596522,
+        "Sharpe":-0.4490664179,
+        "Sortino":-0.4064957926,
+        "Calmar":-0.3295722309,
+        "Annualized Volatility":0.195737957,
+        "Maximum Drawdown":-0.3081559751,
+        "Hit Rate":0.2137546468,
+        "Turnover":0.0371747212,
+        "Exposure":0.4851301115,
+        "Transaction Costs":0.05
+      },
+      "diagnostics":{
+        "hit_rate":0.2137546468,
+        "turnover":0.0371747212,
+        "transaction_costs":0.05
+      }
+    }
+  },
+  {
+    "configuration":"top5__W-FRI__cost25__vol0__brake1",
+    "top_n":5,
+    "frequency":"W-FRI",
+    "cost_bps":25,
+    "volatility_scaling":false,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1055,
+      "metrics":{
+        "CAGR":-0.025604744,
+        "Sharpe":-0.0450432531,
+        "Sortino":-0.042498422,
+        "Calmar":-0.1018365403,
+        "Annualized Volatility":0.1869468641,
+        "Maximum Drawdown":-0.2514298295,
+        "Hit Rate":0.2834123223,
+        "Turnover":0.0211374408,
+        "Exposure":0.6312796209,
+        "Transaction Costs":0.05575
+      },
+      "diagnostics":{
+        "hit_rate":0.2834123223,
+        "turnover":0.0211374408,
+        "transaction_costs":0.05575
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.0413385204,
+        "Sharpe":-0.5629129063,
+        "Sortino":-0.4381304102,
+        "Calmar":-0.3309196178,
+        "Annualized Volatility":0.0705587696,
+        "Maximum Drawdown":-0.1249201261,
+        "Hit Rate":0.2137546468,
+        "Turnover":0.0115241636,
+        "Exposure":0.4795539033,
+        "Transaction Costs":0.0155
+      },
+      "diagnostics":{
+        "hit_rate":0.2137546468,
+        "turnover":0.0115241636,
+        "transaction_costs":0.0155
+      }
+    }
+  },
+  {
+    "configuration":"top5__W-FRI__cost25__vol1__brake0",
+    "top_n":5,
+    "frequency":"W-FRI",
+    "cost_bps":25,
+    "volatility_scaling":true,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1055,
+      "metrics":{
+        "CAGR":-0.0239540143,
+        "Sharpe":0.0488364826,
+        "Sortino":0.0457927579,
+        "Calmar":-0.0643580975,
+        "Annualized Volatility":0.2713017876,
+        "Maximum Drawdown":-0.3721989184,
+        "Hit Rate":0.2843601896,
+        "Turnover":0.0418651555,
+        "Exposure":0.6322274882,
+        "Transaction Costs":0.1104193477
+      },
+      "diagnostics":{
+        "hit_rate":0.2843601896,
+        "turnover":0.0418651555,
+        "transaction_costs":0.1104193477
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1089190091,
+        "Sharpe":-0.5000956234,
+        "Sortino":-0.4481052619,
+        "Calmar":-0.3441436674,
+        "Annualized Volatility":0.1931805234,
+        "Maximum Drawdown":-0.316492847,
+        "Hit Rate":0.2137546468,
+        "Turnover":0.0369187491,
+        "Exposure":0.4851301115,
+        "Transaction Costs":0.0496557175
+      },
+      "diagnostics":{
+        "hit_rate":0.2137546468,
+        "turnover":0.0369187491,
+        "transaction_costs":0.0496557175
+      }
+    }
+  },
+  {
+    "configuration":"top5__W-FRI__cost25__vol1__brake1",
+    "top_n":5,
+    "frequency":"W-FRI",
+    "cost_bps":25,
+    "volatility_scaling":true,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1055,
+      "metrics":{
+        "CAGR":-0.0169823599,
+        "Sharpe":-0.0134926886,
+        "Sortino":-0.0127719739,
+        "Calmar":-0.0675431388,
+        "Annualized Volatility":0.1719015789,
+        "Maximum Drawdown":-0.2514298295,
+        "Hit Rate":0.2834123223,
+        "Turnover":0.020538455,
+        "Exposure":0.6312796209,
+        "Transaction Costs":0.0541701751
+      },
+      "diagnostics":{
+        "hit_rate":0.2834123223,
+        "turnover":0.020538455,
+        "transaction_costs":0.0541701751
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.0451577095,
+        "Sharpe":-0.6373767715,
+        "Sortino":-0.4869304053,
+        "Calmar":-0.3472231663,
+        "Annualized Volatility":0.0687707482,
+        "Maximum Drawdown":-0.1300538497,
+        "Hit Rate":0.2137546468,
+        "Turnover":0.0113961775,
+        "Exposure":0.4795539033,
+        "Transaction Costs":0.0153278587
+      },
+      "diagnostics":{
+        "hit_rate":0.2137546468,
+        "turnover":0.0113961775,
+        "transaction_costs":0.0153278587
+      }
+    }
+  },
+  {
+    "configuration":"top5__W-FRI__cost50__vol0__brake0",
+    "top_n":5,
+    "frequency":"W-FRI",
+    "cost_bps":50,
+    "volatility_scaling":false,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1055,
+      "metrics":{
+        "CAGR":-0.0907210369,
+        "Sharpe":-0.185540379,
+        "Sortino":-0.1754833918,
+        "Calmar":-0.2296238585,
+        "Annualized Volatility":0.2868551535,
+        "Maximum Drawdown":-0.3950854129,
+        "Hit Rate":0.282464455,
+        "Turnover":0.0432227488,
+        "Exposure":0.6341232227,
+        "Transaction Costs":0.228
+      },
+      "diagnostics":{
+        "hit_rate":0.282464455,
+        "turnover":0.0432227488,
+        "transaction_costs":0.228
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1316995365,
+        "Sharpe":-0.6194722551,
+        "Sortino":-0.5614476514,
+        "Calmar":-0.4027475676,
+        "Annualized Volatility":0.1966533211,
+        "Maximum Drawdown":-0.3270026864,
+        "Hit Rate":0.2118959108,
+        "Turnover":0.0371747212,
+        "Exposure":0.4851301115,
+        "Transaction Costs":0.1
+      },
+      "diagnostics":{
+        "hit_rate":0.2118959108,
+        "turnover":0.0371747212,
+        "transaction_costs":0.1
+      }
+    }
+  },
+  {
+    "configuration":"top5__W-FRI__cost50__vol0__brake1",
+    "top_n":5,
+    "frequency":"W-FRI",
+    "cost_bps":50,
+    "volatility_scaling":false,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1055,
+      "metrics":{
+        "CAGR":-0.0442877576,
+        "Sharpe":-0.1479271212,
+        "Sortino":-0.1398043441,
+        "Calmar":-0.1688896847,
+        "Annualized Volatility":0.1873125725,
+        "Maximum Drawdown":-0.2622289081,
+        "Hit Rate":0.2815165877,
+        "Turnover":0.0211374408,
+        "Exposure":0.6312796209,
+        "Transaction Costs":0.1115
+      },
+      "diagnostics":{
+        "hit_rate":0.2815165877,
+        "turnover":0.0211374408,
+        "transaction_costs":0.1115
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.0513823295,
+        "Sharpe":-0.7098956635,
+        "Sortino":-0.5527128403,
+        "Calmar":-0.386055789,
+        "Annualized Volatility":0.0707628514,
+        "Maximum Drawdown":-0.1330956069,
+        "Hit Rate":0.2118959108,
+        "Turnover":0.0115241636,
+        "Exposure":0.4795539033,
+        "Transaction Costs":0.031
+      },
+      "diagnostics":{
+        "hit_rate":0.2118959108,
+        "turnover":0.0115241636,
+        "transaction_costs":0.031
+      }
+    }
+  },
+  {
+    "configuration":"top5__W-FRI__cost50__vol1__brake0",
+    "top_n":5,
+    "frequency":"W-FRI",
+    "cost_bps":50,
+    "volatility_scaling":true,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1055,
+      "metrics":{
+        "CAGR":-0.0606424285,
+        "Sharpe":-0.0918507265,
+        "Sortino":-0.0864596069,
+        "Calmar":-0.1580378727,
+        "Annualized Volatility":0.2716639304,
+        "Maximum Drawdown":-0.3837208609,
+        "Hit Rate":0.2815165877,
+        "Turnover":0.0418651555,
+        "Exposure":0.6322274882,
+        "Transaction Costs":0.2208386953
+      },
+      "diagnostics":{
+        "hit_rate":0.2815165877,
+        "turnover":0.0418651555,
+        "transaction_costs":0.2208386953
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1386168518,
+        "Sharpe":-0.6711388232,
+        "Sortino":-0.602230622,
+        "Calmar":-0.4139171269,
+        "Annualized Volatility":0.1941432805,
+        "Maximum Drawdown":-0.3348903509,
+        "Hit Rate":0.2118959108,
+        "Turnover":0.0369187491,
+        "Exposure":0.4851301115,
+        "Transaction Costs":0.099311435
+      },
+      "diagnostics":{
+        "hit_rate":0.2118959108,
+        "turnover":0.0369187491,
+        "transaction_costs":0.099311435
+      }
+    }
+  },
+  {
+    "configuration":"top5__W-FRI__cost50__vol1__brake1",
+    "top_n":5,
+    "frequency":"W-FRI",
+    "cost_bps":50,
+    "volatility_scaling":true,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1055,
+      "metrics":{
+        "CAGR":-0.0352951576,
+        "Sharpe":-0.1222662898,
+        "Sortino":-0.115920662,
+        "Calmar":-0.1345967457,
+        "Annualized Volatility":0.1722531592,
+        "Maximum Drawdown":-0.2622289081,
+        "Hit Rate":0.2815165877,
+        "Turnover":0.020538455,
+        "Exposure":0.6312796209,
+        "Transaction Costs":0.1083403503
+      },
+      "diagnostics":{
+        "hit_rate":0.2815165877,
+        "turnover":0.020538455,
+        "transaction_costs":0.1083403503
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.0550532215,
+        "Sharpe":-0.7858398004,
+        "Sortino":-0.6007630282,
+        "Calmar":-0.3988329767,
+        "Annualized Volatility":0.0690113804,
+        "Maximum Drawdown":-0.1380357813,
+        "Hit Rate":0.2118959108,
+        "Turnover":0.0113961775,
+        "Exposure":0.4795539033,
+        "Transaction Costs":0.0306557175
+      },
+      "diagnostics":{
+        "hit_rate":0.2118959108,
+        "turnover":0.0113961775,
+        "transaction_costs":0.0306557175
+      }
+    }
+  },
+  {
+    "configuration":"top5__W-FRI__cost100__vol0__brake0",
+    "top_n":5,
+    "frequency":"W-FRI",
+    "cost_bps":100,
+    "volatility_scaling":false,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1055,
+      "metrics":{
+        "CAGR":-0.1600255256,
+        "Sharpe":-0.4585752659,
+        "Sortino":-0.4376757598,
+        "Calmar":-0.3304581088,
+        "Annualized Volatility":0.2880764409,
+        "Maximum Drawdown":-0.4842535904,
+        "Hit Rate":0.2758293839,
+        "Turnover":0.0432227488,
+        "Exposure":0.6341232227,
+        "Transaction Costs":0.456
+      },
+      "diagnostics":{
+        "hit_rate":0.2758293839,
+        "turnover":0.0432227488,
+        "transaction_costs":0.456
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1890871107,
+        "Sharpe":-0.9527223,
+        "Sortino":-0.8610725078,
+        "Calmar":-0.5205593589,
+        "Annualized Volatility":0.1990770474,
+        "Maximum Drawdown":-0.3632383271,
+        "Hit Rate":0.2118959108,
+        "Turnover":0.0371747212,
+        "Exposure":0.4851301115,
+        "Transaction Costs":0.2
+      },
+      "diagnostics":{
+        "hit_rate":0.2118959108,
+        "turnover":0.0371747212,
+        "transaction_costs":0.2
+      }
+    }
+  },
+  {
+    "configuration":"top5__W-FRI__cost100__vol0__brake1",
+    "top_n":5,
+    "frequency":"W-FRI",
+    "cost_bps":100,
+    "volatility_scaling":false,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1055,
+      "metrics":{
+        "CAGR":-0.0806295015,
+        "Sharpe":-0.3520629445,
+        "Sortino":-0.3349471388,
+        "Calmar":-0.2772705158,
+        "Annualized Volatility":0.1882743982,
+        "Maximum Drawdown":-0.2907972427,
+        "Hit Rate":0.2739336493,
+        "Turnover":0.0211374408,
+        "Exposure":0.6312796209,
+        "Transaction Costs":0.223
+      },
+      "diagnostics":{
+        "hit_rate":0.2739336493,
+        "turnover":0.0211374408,
+        "transaction_costs":0.223
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.0711700482,
+        "Sharpe":-0.9984382376,
+        "Sortino":-0.7737017328,
+        "Calmar":-0.4769085488,
+        "Annualized Volatility":0.0713773143,
+        "Maximum Drawdown":-0.1492320663,
+        "Hit Rate":0.2118959108,
+        "Turnover":0.0115241636,
+        "Exposure":0.4795539033,
+        "Transaction Costs":0.062
+      },
+      "diagnostics":{
+        "hit_rate":0.2118959108,
+        "turnover":0.0115241636,
+        "transaction_costs":0.062
+      }
+    }
+  },
+  {
+    "configuration":"top5__W-FRI__cost100__vol1__brake0",
+    "top_n":5,
+    "frequency":"W-FRI",
+    "cost_bps":100,
+    "volatility_scaling":true,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1055,
+      "metrics":{
+        "CAGR":-0.1300576448,
+        "Sharpe":-0.3714601738,
+        "Sortino":-0.3526183161,
+        "Calmar":-0.3030042691,
+        "Annualized Volatility":0.2728595024,
+        "Maximum Drawdown":-0.4292271036,
+        "Hit Rate":0.2748815166,
+        "Turnover":0.0418651555,
+        "Exposure":0.6322274882,
+        "Transaction Costs":0.4416773906
+      },
+      "diagnostics":{
+        "hit_rate":0.2748815166,
+        "turnover":0.0418651555,
+        "transaction_costs":0.4416773906
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1951809777,
+        "Sharpe":-1.0051659688,
+        "Sortino":-0.8997985757,
+        "Calmar":-0.5271187775,
+        "Annualized Volatility":0.1966578813,
+        "Maximum Drawdown":-0.3702789315,
+        "Hit Rate":0.2118959108,
+        "Turnover":0.0369187491,
+        "Exposure":0.4851301115,
+        "Transaction Costs":0.1986228699
+      },
+      "diagnostics":{
+        "hit_rate":0.2118959108,
+        "turnover":0.0369187491,
+        "transaction_costs":0.1986228699
+      }
+    }
+  },
+  {
+    "configuration":"top5__W-FRI__cost100__vol1__brake1",
+    "top_n":5,
+    "frequency":"W-FRI",
+    "cost_bps":100,
+    "volatility_scaling":true,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1055,
+      "metrics":{
+        "CAGR":-0.0709452523,
+        "Sharpe":-0.3380231319,
+        "Sortino":-0.3224951376,
+        "Calmar":-0.2503421979,
+        "Annualized Volatility":0.1731935764,
+        "Maximum Drawdown":-0.2833931032,
+        "Hit Rate":0.2739336493,
+        "Turnover":0.020538455,
+        "Exposure":0.6312796209,
+        "Transaction Costs":0.2166807006
+      },
+      "diagnostics":{
+        "hit_rate":0.2739336493,
+        "turnover":0.020538455,
+        "transaction_costs":0.2166807006
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.074551917,
+        "Sharpe":-1.076504875,
+        "Sortino":-0.8197178974,
+        "Calmar":-0.4847518921,
+        "Annualized Volatility":0.0696976996,
+        "Maximum Drawdown":-0.1537939681,
+        "Hit Rate":0.2118959108,
+        "Turnover":0.0113961775,
+        "Exposure":0.4795539033,
+        "Transaction Costs":0.061311435
+      },
+      "diagnostics":{
+        "hit_rate":0.2118959108,
+        "turnover":0.0113961775,
+        "transaction_costs":0.061311435
+      }
+    }
+  },
+  {
+    "configuration":"top5__2W-FRI__cost10__vol0__brake0",
+    "top_n":5,
+    "frequency":"2W-FRI",
+    "cost_bps":10,
+    "volatility_scaling":false,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    }
+  },
+  {
+    "configuration":"top5__2W-FRI__cost10__vol0__brake1",
+    "top_n":5,
+    "frequency":"2W-FRI",
+    "cost_bps":10,
+    "volatility_scaling":false,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    }
+  },
+  {
+    "configuration":"top5__2W-FRI__cost10__vol1__brake0",
+    "top_n":5,
+    "frequency":"2W-FRI",
+    "cost_bps":10,
+    "volatility_scaling":true,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    }
+  },
+  {
+    "configuration":"top5__2W-FRI__cost10__vol1__brake1",
+    "top_n":5,
+    "frequency":"2W-FRI",
+    "cost_bps":10,
+    "volatility_scaling":true,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    }
+  },
+  {
+    "configuration":"top5__2W-FRI__cost25__vol0__brake0",
+    "top_n":5,
+    "frequency":"2W-FRI",
+    "cost_bps":25,
+    "volatility_scaling":false,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    }
+  },
+  {
+    "configuration":"top5__2W-FRI__cost25__vol0__brake1",
+    "top_n":5,
+    "frequency":"2W-FRI",
+    "cost_bps":25,
+    "volatility_scaling":false,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    }
+  },
+  {
+    "configuration":"top5__2W-FRI__cost25__vol1__brake0",
+    "top_n":5,
+    "frequency":"2W-FRI",
+    "cost_bps":25,
+    "volatility_scaling":true,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    }
+  },
+  {
+    "configuration":"top5__2W-FRI__cost25__vol1__brake1",
+    "top_n":5,
+    "frequency":"2W-FRI",
+    "cost_bps":25,
+    "volatility_scaling":true,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    }
+  },
+  {
+    "configuration":"top5__2W-FRI__cost50__vol0__brake0",
+    "top_n":5,
+    "frequency":"2W-FRI",
+    "cost_bps":50,
+    "volatility_scaling":false,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    }
+  },
+  {
+    "configuration":"top5__2W-FRI__cost50__vol0__brake1",
+    "top_n":5,
+    "frequency":"2W-FRI",
+    "cost_bps":50,
+    "volatility_scaling":false,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    }
+  },
+  {
+    "configuration":"top5__2W-FRI__cost50__vol1__brake0",
+    "top_n":5,
+    "frequency":"2W-FRI",
+    "cost_bps":50,
+    "volatility_scaling":true,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    }
+  },
+  {
+    "configuration":"top5__2W-FRI__cost50__vol1__brake1",
+    "top_n":5,
+    "frequency":"2W-FRI",
+    "cost_bps":50,
+    "volatility_scaling":true,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    }
+  },
+  {
+    "configuration":"top5__2W-FRI__cost100__vol0__brake0",
+    "top_n":5,
+    "frequency":"2W-FRI",
+    "cost_bps":100,
+    "volatility_scaling":false,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    }
+  },
+  {
+    "configuration":"top5__2W-FRI__cost100__vol0__brake1",
+    "top_n":5,
+    "frequency":"2W-FRI",
+    "cost_bps":100,
+    "volatility_scaling":false,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    }
+  },
+  {
+    "configuration":"top5__2W-FRI__cost100__vol1__brake0",
+    "top_n":5,
+    "frequency":"2W-FRI",
+    "cost_bps":100,
+    "volatility_scaling":true,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    }
+  },
+  {
+    "configuration":"top5__2W-FRI__cost100__vol1__brake1",
+    "top_n":5,
+    "frequency":"2W-FRI",
+    "cost_bps":100,
+    "volatility_scaling":true,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":0.0,
+        "Sharpe":0,
+        "Sortino":null,
+        "Calmar":0,
+        "Annualized Volatility":0.0,
+        "Maximum Drawdown":0.0,
+        "Hit Rate":0.0,
+        "Turnover":0.0,
+        "Exposure":0.0,
+        "Transaction Costs":0.0
+      },
+      "diagnostics":{
+        "hit_rate":0.0,
+        "turnover":0.0,
+        "transaction_costs":0.0
+      }
+    }
+  },
+  {
+    "configuration":"top10__W-FRI__cost10__vol0__brake0",
+    "top_n":10,
+    "frequency":"W-FRI",
+    "cost_bps":10,
+    "volatility_scaling":false,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.1956913005,
+        "Sharpe":0.6403409514,
+        "Sortino":0.7189685732,
+        "Calmar":0.3785304523,
+        "Annualized Volatility":0.4108978949,
+        "Maximum Drawdown":-0.5169763735,
+        "Hit Rate":0.348540146,
+        "Turnover":0.0683951233,
+        "Exposure":0.7180656934,
+        "Transaction Costs":0.0749610551
+      },
+      "diagnostics":{
+        "hit_rate":0.348540146,
+        "turnover":0.0683951233,
+        "transaction_costs":0.0749610551
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.120844284,
+        "Sharpe":-0.4286737843,
+        "Sortino":-0.51451887,
+        "Calmar":-0.4345543808,
+        "Annualized Volatility":0.2357661231,
+        "Maximum Drawdown":-0.2780878283,
+        "Hit Rate":0.343866171,
+        "Turnover":0.0562460481,
+        "Exposure":0.7453531599,
+        "Transaction Costs":0.0302603739
+      },
+      "diagnostics":{
+        "hit_rate":0.343866171,
+        "turnover":0.0562460481,
+        "transaction_costs":0.0302603739
+      }
+    }
+  },
+  {
+    "configuration":"top10__W-FRI__cost10__vol0__brake1",
+    "top_n":10,
+    "frequency":"W-FRI",
+    "cost_bps":10,
+    "volatility_scaling":false,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.1353890445,
+        "Sharpe":0.6284094947,
+        "Sortino":0.6404248271,
+        "Calmar":0.4298659116,
+        "Annualized Volatility":0.2535096416,
+        "Maximum Drawdown":-0.3149564569,
+        "Hit Rate":0.3448905109,
+        "Turnover":0.035776392,
+        "Exposure":0.7144160584,
+        "Transaction Costs":0.0392109256
+      },
+      "diagnostics":{
+        "hit_rate":0.3448905109,
+        "turnover":0.035776392,
+        "transaction_costs":0.0392109256
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1097636498,
+        "Sharpe":-0.7076471129,
+        "Sortino":-0.754397581,
+        "Calmar":-0.5136782282,
+        "Annualized Volatility":0.148693275,
+        "Maximum Drawdown":-0.2136817248,
+        "Hit Rate":0.343866171,
+        "Turnover":0.0299967613,
+        "Exposure":0.7453531599,
+        "Transaction Costs":0.0161382576
+      },
+      "diagnostics":{
+        "hit_rate":0.343866171,
+        "turnover":0.0299967613,
+        "transaction_costs":0.0161382576
+      }
+    }
+  },
+  {
+    "configuration":"top10__W-FRI__cost10__vol1__brake0",
+    "top_n":10,
+    "frequency":"W-FRI",
+    "cost_bps":10,
+    "volatility_scaling":true,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.2083131606,
+        "Sharpe":0.7205540771,
+        "Sortino":0.813665327,
+        "Calmar":0.4748831097,
+        "Annualized Volatility":0.3448860341,
+        "Maximum Drawdown":-0.4386619704,
+        "Hit Rate":0.348540146,
+        "Turnover":0.0577389625,
+        "Exposure":0.7171532847,
+        "Transaction Costs":0.0632819029
+      },
+      "diagnostics":{
+        "hit_rate":0.348540146,
+        "turnover":0.0577389625,
+        "transaction_costs":0.0632819029
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.11669438,
+        "Sharpe":-0.4131971679,
+        "Sortino":-0.4953398236,
+        "Calmar":-0.4209042759,
+        "Annualized Volatility":0.2341338386,
+        "Maximum Drawdown":-0.2772468389,
+        "Hit Rate":0.343866171,
+        "Turnover":0.0560630245,
+        "Exposure":0.7453531599,
+        "Transaction Costs":0.0301619072
+      },
+      "diagnostics":{
+        "hit_rate":0.343866171,
+        "turnover":0.0560630245,
+        "transaction_costs":0.0301619072
+      }
+    }
+  },
+  {
+    "configuration":"top10__W-FRI__cost10__vol1__brake1",
+    "top_n":10,
+    "frequency":"W-FRI",
+    "cost_bps":10,
+    "volatility_scaling":true,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.1378652745,
+        "Sharpe":0.7262039977,
+        "Sortino":0.7609221571,
+        "Calmar":0.4426098092,
+        "Annualized Volatility":0.2075765754,
+        "Maximum Drawdown":-0.311482646,
+        "Hit Rate":0.3448905109,
+        "Turnover":0.0298684153,
+        "Exposure":0.7144160584,
+        "Transaction Costs":0.0327357832
+      },
+      "diagnostics":{
+        "hit_rate":0.3448905109,
+        "turnover":0.0298684153,
+        "transaction_costs":0.0327357832
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1077665372,
+        "Sharpe":-0.6957692081,
+        "Sortino":-0.740371961,
+        "Calmar":-0.5047332291,
+        "Annualized Volatility":0.1481319023,
+        "Maximum Drawdown":-0.2135118731,
+        "Hit Rate":0.343866171,
+        "Turnover":0.0299072702,
+        "Exposure":0.7453531599,
+        "Transaction Costs":0.0160901114
+      },
+      "diagnostics":{
+        "hit_rate":0.343866171,
+        "turnover":0.0299072702,
+        "transaction_costs":0.0160901114
+      }
+    }
+  },
+  {
+    "configuration":"top10__W-FRI__cost25__vol0__brake0",
+    "top_n":10,
+    "frequency":"W-FRI",
+    "cost_bps":25,
+    "volatility_scaling":false,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.1517589957,
+        "Sharpe":0.549268386,
+        "Sortino":0.6175200901,
+        "Calmar":0.2871939707,
+        "Annualized Volatility":0.4108527356,
+        "Maximum Drawdown":-0.5284198527,
+        "Hit Rate":0.3448905109,
+        "Turnover":0.0683951233,
+        "Exposure":0.7180656934,
+        "Transaction Costs":0.1874026378
+      },
+      "diagnostics":{
+        "hit_rate":0.3448905109,
+        "turnover":0.0683951233,
+        "transaction_costs":0.1874026378
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1476326214,
+        "Sharpe":-0.5579841915,
+        "Sortino":-0.6680521353,
+        "Calmar":-0.4951420294,
+        "Annualized Volatility":0.2363175687,
+        "Maximum Drawdown":-0.298162169,
+        "Hit Rate":0.343866171,
+        "Turnover":0.0562460481,
+        "Exposure":0.7453531599,
+        "Transaction Costs":0.0756509347
+      },
+      "diagnostics":{
+        "hit_rate":0.343866171,
+        "turnover":0.0562460481,
+        "transaction_costs":0.0756509347
+      }
+    }
+  },
+  {
+    "configuration":"top10__W-FRI__cost25__vol0__brake1",
+    "top_n":10,
+    "frequency":"W-FRI",
+    "cost_bps":25,
+    "volatility_scaling":false,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.1133622059,
+        "Sharpe":0.5511333121,
+        "Sortino":0.5614628985,
+        "Calmar":0.3491149563,
+        "Annualized Volatility":0.2535145092,
+        "Maximum Drawdown":-0.3247131177,
+        "Hit Rate":0.3421532847,
+        "Turnover":0.035776392,
+        "Exposure":0.7144160584,
+        "Transaction Costs":0.098027314
+      },
+      "diagnostics":{
+        "hit_rate":0.3421532847,
+        "turnover":0.035776392,
+        "transaction_costs":0.098027314
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1243118074,
+        "Sharpe":-0.8164143604,
+        "Sortino":-0.8678707084,
+        "Calmar":-0.5500894058,
+        "Annualized Volatility":0.148999821,
+        "Maximum Drawdown":-0.2259847328,
+        "Hit Rate":0.343866171,
+        "Turnover":0.0299967613,
+        "Exposure":0.7453531599,
+        "Transaction Costs":0.0403456439
+      },
+      "diagnostics":{
+        "hit_rate":0.343866171,
+        "turnover":0.0299967613,
+        "transaction_costs":0.0403456439
+      }
+    }
+  },
+  {
+    "configuration":"top10__W-FRI__cost25__vol1__brake0",
+    "top_n":10,
+    "frequency":"W-FRI",
+    "cost_bps":25,
+    "volatility_scaling":true,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.1707283691,
+        "Sharpe":0.6289569743,
+        "Sortino":0.7110061403,
+        "Calmar":0.3798016303,
+        "Annualized Volatility":0.344851818,
+        "Maximum Drawdown":-0.4495198426,
+        "Hit Rate":0.3448905109,
+        "Turnover":0.0577389625,
+        "Exposure":0.7171532847,
+        "Transaction Costs":0.1582047572
+      },
+      "diagnostics":{
+        "hit_rate":0.3448905109,
+        "turnover":0.0577389625,
+        "transaction_costs":0.1582047572
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1435202362,
+        "Sharpe":-0.5430374045,
+        "Sortino":-0.6493625904,
+        "Calmar":-0.4827167077,
+        "Annualized Volatility":0.2346761822,
+        "Maximum Drawdown":-0.2973177308,
+        "Hit Rate":0.343866171,
+        "Turnover":0.0560630245,
+        "Exposure":0.7453531599,
+        "Transaction Costs":0.0754047679
+      },
+      "diagnostics":{
+        "hit_rate":0.343866171,
+        "turnover":0.0560630245,
+        "transaction_costs":0.0754047679
+      }
+    }
+  },
+  {
+    "configuration":"top10__W-FRI__cost25__vol1__brake1",
+    "top_n":10,
+    "frequency":"W-FRI",
+    "cost_bps":25,
+    "volatility_scaling":true,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.1193965319,
+        "Sharpe":0.6472719668,
+        "Sortino":0.6773270733,
+        "Calmar":0.3783388392,
+        "Annualized Volatility":0.2076252153,
+        "Maximum Drawdown":-0.3155809543,
+        "Hit Rate":0.3421532847,
+        "Turnover":0.0298684153,
+        "Exposure":0.7144160584,
+        "Transaction Costs":0.081839458
+      },
+      "diagnostics":{
+        "hit_rate":0.3421532847,
+        "turnover":0.0298684153,
+        "transaction_costs":0.081839458
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1223036214,
+        "Sharpe":-0.8046604203,
+        "Sortino":-0.8537938835,
+        "Calmar":-0.5416250546,
+        "Annualized Volatility":0.1484350961,
+        "Maximum Drawdown":-0.2258086482,
+        "Hit Rate":0.343866171,
+        "Turnover":0.0299072702,
+        "Exposure":0.7453531599,
+        "Transaction Costs":0.0402252784
+      },
+      "diagnostics":{
+        "hit_rate":0.343866171,
+        "turnover":0.0299072702,
+        "transaction_costs":0.0402252784
+      }
+    }
+  },
+  {
+    "configuration":"top10__W-FRI__cost50__vol0__brake0",
+    "top_n":10,
+    "frequency":"W-FRI",
+    "cost_bps":50,
+    "volatility_scaling":false,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.0820172819,
+        "Sharpe":0.3972850118,
+        "Sortino":0.4477206372,
+        "Calmar":0.1493588027,
+        "Annualized Volatility":0.4109338741,
+        "Maximum Drawdown":-0.5491292136,
+        "Hit Rate":0.3385036496,
+        "Turnover":0.0683951233,
+        "Exposure":0.7180656934,
+        "Transaction Costs":0.3748052756
+      },
+      "diagnostics":{
+        "hit_rate":0.3385036496,
+        "turnover":0.0683951233,
+        "transaction_costs":0.3748052756
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1905237738,
+        "Sharpe":-0.7714919416,
+        "Sortino":-0.9196972899,
+        "Calmar":-0.5766075716,
+        "Annualized Volatility":0.2374438105,
+        "Maximum Drawdown":-0.3304219077,
+        "Hit Rate":0.3420074349,
+        "Turnover":0.0562460481,
+        "Exposure":0.7453531599,
+        "Transaction Costs":0.1513018694
+      },
+      "diagnostics":{
+        "hit_rate":0.3420074349,
+        "turnover":0.0562460481,
+        "transaction_costs":0.1513018694
+      }
+    }
+  },
+  {
+    "configuration":"top10__W-FRI__cost50__vol0__brake1",
+    "top_n":10,
+    "frequency":"W-FRI",
+    "cost_bps":50,
+    "volatility_scaling":false,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.077565012,
+        "Sharpe":0.4221710331,
+        "Sortino":0.4305542472,
+        "Calmar":0.227673658,
+        "Annualized Volatility":0.2536278547,
+        "Maximum Drawdown":-0.3406850519,
+        "Hit Rate":0.3357664234,
+        "Turnover":0.035776392,
+        "Exposure":0.7144160584,
+        "Transaction Costs":0.1960546281
+      },
+      "diagnostics":{
+        "hit_rate":0.3357664234,
+        "turnover":0.035776392,
+        "transaction_costs":0.1960546281
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1480488558,
+        "Sharpe":-0.9959292229,
+        "Sortino":-1.0555732787,
+        "Calmar":-0.6016327857,
+        "Annualized Volatility":0.1496267353,
+        "Maximum Drawdown":-0.2460784374,
+        "Hit Rate":0.3401486989,
+        "Turnover":0.0299967613,
+        "Exposure":0.7453531599,
+        "Transaction Costs":0.0806912878
+      },
+      "diagnostics":{
+        "hit_rate":0.3401486989,
+        "turnover":0.0299967613,
+        "transaction_costs":0.0806912878
+      }
+    }
+  },
+  {
+    "configuration":"top10__W-FRI__cost50__vol1__brake0",
+    "top_n":10,
+    "frequency":"W-FRI",
+    "cost_bps":50,
+    "volatility_scaling":true,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.1106021739,
+        "Sharpe":0.4760454237,
+        "Sortino":0.5395733377,
+        "Calmar":0.235467248,
+        "Annualized Volatility":0.344946395,
+        "Maximum Drawdown":-0.4697136218,
+        "Hit Rate":0.3375912409,
+        "Turnover":0.0577389625,
+        "Exposure":0.7171532847,
+        "Transaction Costs":0.3164095144
+      },
+      "diagnostics":{
+        "hit_rate":0.3375912409,
+        "turnover":0.0577389625,
+        "transaction_costs":0.3164095144
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1864772903,
+        "Sharpe":-0.7574417904,
+        "Sortino":-0.9018532525,
+        "Calmar":-0.5658139742,
+        "Annualized Volatility":0.2357876962,
+        "Maximum Drawdown":-0.3295734973,
+        "Hit Rate":0.3420074349,
+        "Turnover":0.0560630245,
+        "Exposure":0.7453531599,
+        "Transaction Costs":0.1508095358
+      },
+      "diagnostics":{
+        "hit_rate":0.3420074349,
+        "turnover":0.0560630245,
+        "transaction_costs":0.1508095358
+      }
+    }
+  },
+  {
+    "configuration":"top10__W-FRI__cost50__vol1__brake1",
+    "top_n":10,
+    "frequency":"W-FRI",
+    "cost_bps":50,
+    "volatility_scaling":true,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.0892539075,
+        "Sharpe":0.5155456772,
+        "Sortino":0.539236201,
+        "Calmar":0.2768712385,
+        "Annualized Volatility":0.2078090405,
+        "Maximum Drawdown":-0.3223661223,
+        "Hit Rate":0.3357664234,
+        "Turnover":0.0298684153,
+        "Exposure":0.7144160584,
+        "Transaction Costs":0.163678916
+      },
+      "diagnostics":{
+        "hit_rate":0.3357664234,
+        "turnover":0.0298684153,
+        "transaction_costs":0.163678916
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1460241703,
+        "Sharpe":-0.9843931017,
+        "Sortino":-1.0414350039,
+        "Calmar":-0.5938537551,
+        "Annualized Volatility":0.1490565411,
+        "Maximum Drawdown":-0.2458924762,
+        "Hit Rate":0.3401486989,
+        "Turnover":0.0299072702,
+        "Exposure":0.7453531599,
+        "Transaction Costs":0.0804505568
+      },
+      "diagnostics":{
+        "hit_rate":0.3401486989,
+        "turnover":0.0299072702,
+        "transaction_costs":0.0804505568
+      }
+    }
+  },
+  {
+    "configuration":"top10__W-FRI__cost100__vol0__brake0",
+    "top_n":10,
+    "frequency":"W-FRI",
+    "cost_bps":100,
+    "volatility_scaling":false,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":-0.0453147885,
+        "Sharpe":0.093365215,
+        "Sortino":0.1057766263,
+        "Calmar":-0.0727331424,
+        "Annualized Volatility":0.411681899,
+        "Maximum Drawdown":-0.6230280586,
+        "Hit Rate":0.3266423358,
+        "Turnover":0.0683951233,
+        "Exposure":0.7180656934,
+        "Transaction Costs":0.7496105511
+      },
+      "diagnostics":{
+        "hit_rate":0.3266423358,
+        "turnover":0.0683951233,
+        "transaction_costs":0.7496105511
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.2700943017,
+        "Sharpe":-1.1887058032,
+        "Sortino":-1.410241294,
+        "Calmar":-0.6913405107,
+        "Annualized Volatility":0.240459013,
+        "Maximum Drawdown":-0.390682012,
+        "Hit Rate":0.3289962825,
+        "Turnover":0.0562460481,
+        "Exposure":0.7453531599,
+        "Transaction Costs":0.3026037387
+      },
+      "diagnostics":{
+        "hit_rate":0.3289962825,
+        "turnover":0.0562460481,
+        "transaction_costs":0.3026037387
+      }
+    }
+  },
+  {
+    "configuration":"top10__W-FRI__cost100__vol0__brake1",
+    "top_n":10,
+    "frequency":"W-FRI",
+    "cost_bps":100,
+    "volatility_scaling":false,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.0092761544,
+        "Sharpe":0.1643370741,
+        "Sortino":0.1679700069,
+        "Calmar":0.0249646564,
+        "Annualized Volatility":0.2542482778,
+        "Maximum Drawdown":-0.3715714847,
+        "Hit Rate":0.3239051095,
+        "Turnover":0.035776392,
+        "Exposure":0.7144160584,
+        "Transaction Costs":0.3921092562
+      },
+      "diagnostics":{
+        "hit_rate":0.3239051095,
+        "turnover":0.035776392,
+        "transaction_costs":0.3921092562
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1936688872,
+        "Sharpe":-1.346663526,
+        "Sortino":-1.4231541654,
+        "Calmar":-0.6800938289,
+        "Annualized Volatility":0.1513085663,
+        "Maximum Drawdown":-0.2847678937,
+        "Hit Rate":0.3289962825,
+        "Turnover":0.0299967613,
+        "Exposure":0.7453531599,
+        "Transaction Costs":0.1613825755
+      },
+      "diagnostics":{
+        "hit_rate":0.3289962825,
+        "turnover":0.0299967613,
+        "transaction_costs":0.1613825755
+      }
+    }
+  },
+  {
+    "configuration":"top10__W-FRI__cost100__vol1__brake0",
+    "top_n":10,
+    "frequency":"W-FRI",
+    "cost_bps":100,
+    "volatility_scaling":true,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":-0.0007645186,
+        "Sharpe":0.1701938583,
+        "Sortino":0.1938941961,
+        "Calmar":-0.0014629601,
+        "Annualized Volatility":0.3457031108,
+        "Maximum Drawdown":-0.5225833437,
+        "Hit Rate":0.3248175182,
+        "Turnover":0.0577389625,
+        "Exposure":0.7171532847,
+        "Transaction Costs":0.6328190288
+      },
+      "diagnostics":{
+        "hit_rate":0.3248175182,
+        "turnover":0.0577389625,
+        "transaction_costs":0.6328190288
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.2661903123,
+        "Sharpe":-1.17646449,
+        "Sortino":-1.3943126811,
+        "Calmar":-0.6828339716,
+        "Annualized Volatility":0.238775141,
+        "Maximum Drawdown":-0.3898316771,
+        "Hit Rate":0.3289962825,
+        "Turnover":0.0560630245,
+        "Exposure":0.7453531599,
+        "Transaction Costs":0.3016190717
+      },
+      "diagnostics":{
+        "hit_rate":0.3289962825,
+        "turnover":0.0560630245,
+        "transaction_costs":0.3016190717
+      }
+    }
+  },
+  {
+    "configuration":"top10__W-FRI__cost100__vol1__brake1",
+    "top_n":10,
+    "frequency":"W-FRI",
+    "cost_bps":100,
+    "volatility_scaling":true,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.0312922671,
+        "Sharpe":0.2523257811,
+        "Sortino":0.2637039338,
+        "Calmar":0.0931961551,
+        "Annualized Volatility":0.2085605137,
+        "Maximum Drawdown":-0.3357677906,
+        "Hit Rate":0.3239051095,
+        "Turnover":0.0298684153,
+        "Exposure":0.7144160584,
+        "Transaction Costs":0.3273578321
+      },
+      "diagnostics":{
+        "hit_rate":0.3239051095,
+        "turnover":0.0298684153,
+        "transaction_costs":0.3273578321
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1916181339,
+        "Sharpe":-1.3355921632,
+        "Sortino":-1.4090338443,
+        "Calmar":-0.6733744523,
+        "Annualized Volatility":0.1507278977,
+        "Maximum Drawdown":-0.2845640093,
+        "Hit Rate":0.3289962825,
+        "Turnover":0.0299072702,
+        "Exposure":0.7453531599,
+        "Transaction Costs":0.1609011136
+      },
+      "diagnostics":{
+        "hit_rate":0.3289962825,
+        "turnover":0.0299072702,
+        "transaction_costs":0.1609011136
+      }
+    }
+  },
+  {
+    "configuration":"top10__2W-FRI__cost10__vol0__brake0",
+    "top_n":10,
+    "frequency":"2W-FRI",
+    "cost_bps":10,
+    "volatility_scaling":false,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":719,
+      "metrics":{
+        "CAGR":0.2170882058,
+        "Sharpe":0.6827158667,
+        "Sortino":0.7894383463,
+        "Calmar":0.4688058389,
+        "Annualized Volatility":0.4117225322,
+        "Maximum Drawdown":-0.463066344,
+        "Hit Rate":0.3796940195,
+        "Turnover":0.0454232608,
+        "Exposure":0.7732962448,
+        "Transaction Costs":0.0326593245
+      },
+      "diagnostics":{
+        "hit_rate":0.3796940195,
+        "turnover":0.0454232608,
+        "transaction_costs":0.0326593245
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1146738131,
+        "Sharpe":-0.4333162181,
+        "Sortino":-0.4774741352,
+        "Calmar":-0.5413801724,
+        "Annualized Volatility":0.2233895916,
+        "Maximum Drawdown":-0.211817534,
+        "Hit Rate":0.3345724907,
+        "Turnover":0.0380033007,
+        "Exposure":0.7379182156,
+        "Transaction Costs":0.0204457758
+      },
+      "diagnostics":{
+        "hit_rate":0.3345724907,
+        "turnover":0.0380033007,
+        "transaction_costs":0.0204457758
+      }
+    }
+  },
+  {
+    "configuration":"top10__2W-FRI__cost10__vol0__brake1",
+    "top_n":10,
+    "frequency":"2W-FRI",
+    "cost_bps":10,
+    "volatility_scaling":false,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":719,
+      "metrics":{
+        "CAGR":0.071340603,
+        "Sharpe":0.3786936357,
+        "Sortino":0.3935141144,
+        "Calmar":0.2215999777,
+        "Annualized Volatility":0.3068715324,
+        "Maximum Drawdown":-0.3219341613,
+        "Hit Rate":0.3796940195,
+        "Turnover":0.0321465404,
+        "Exposure":0.7719054242,
+        "Transaction Costs":0.0231133625
+      },
+      "diagnostics":{
+        "hit_rate":0.3796940195,
+        "turnover":0.0321465404,
+        "transaction_costs":0.0231133625
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.0317514417,
+        "Sharpe":-0.5465988032,
+        "Sortino":-0.5993364464,
+        "Calmar":-0.5303048742,
+        "Annualized Volatility":0.0561482911,
+        "Maximum Drawdown":-0.059873939,
+        "Hit Rate":0.3345724907,
+        "Turnover":0.0095008252,
+        "Exposure":0.7379182156,
+        "Transaction Costs":0.0051114439
+      },
+      "diagnostics":{
+        "hit_rate":0.3345724907,
+        "turnover":0.0095008252,
+        "transaction_costs":0.0051114439
+      }
+    }
+  },
+  {
+    "configuration":"top10__2W-FRI__cost10__vol1__brake0",
+    "top_n":10,
+    "frequency":"2W-FRI",
+    "cost_bps":10,
+    "volatility_scaling":true,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":719,
+      "metrics":{
+        "CAGR":0.2265565733,
+        "Sharpe":0.741764582,
+        "Sortino":0.859730519,
+        "Calmar":0.5186721907,
+        "Annualized Volatility":0.3645606728,
+        "Maximum Drawdown":-0.4368010804,
+        "Hit Rate":0.3769123783,
+        "Turnover":0.0404036849,
+        "Exposure":0.7719054242,
+        "Transaction Costs":0.0290502495
+      },
+      "diagnostics":{
+        "hit_rate":0.3769123783,
+        "turnover":0.0404036849,
+        "transaction_costs":0.0290502495
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1083828888,
+        "Sharpe":-0.4065763556,
+        "Sortino":-0.444465732,
+        "Calmar":-0.5099337089,
+        "Annualized Volatility":0.2216299056,
+        "Maximum Drawdown":-0.2125430952,
+        "Hit Rate":0.3345724907,
+        "Turnover":0.0374444894,
+        "Exposure":0.7379182156,
+        "Transaction Costs":0.0201451353
+      },
+      "diagnostics":{
+        "hit_rate":0.3345724907,
+        "turnover":0.0374444894,
+        "transaction_costs":0.0201451353
+      }
+    }
+  },
+  {
+    "configuration":"top10__2W-FRI__cost10__vol1__brake1",
+    "top_n":10,
+    "frequency":"2W-FRI",
+    "cost_bps":10,
+    "volatility_scaling":true,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":719,
+      "metrics":{
+        "CAGR":0.0912521351,
+        "Sharpe":0.4686188588,
+        "Sortino":0.49346188,
+        "Calmar":0.3065297576,
+        "Annualized Volatility":0.2571673821,
+        "Maximum Drawdown":-0.2976942134,
+        "Hit Rate":0.3769123783,
+        "Turnover":0.0278956168,
+        "Exposure":0.7705146036,
+        "Transaction Costs":0.0200569485
+      },
+      "diagnostics":{
+        "hit_rate":0.3769123783,
+        "turnover":0.0278956168,
+        "transaction_costs":0.0200569485
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.0299754921,
+        "Sharpe":-0.5184863093,
+        "Sortino":-0.5640305051,
+        "Calmar":-0.5002503895,
+        "Annualized Volatility":0.0557061912,
+        "Maximum Drawdown":-0.059920977,
+        "Hit Rate":0.3345724907,
+        "Turnover":0.0093611223,
+        "Exposure":0.7379182156,
+        "Transaction Costs":0.0050362838
+      },
+      "diagnostics":{
+        "hit_rate":0.3345724907,
+        "turnover":0.0093611223,
+        "transaction_costs":0.0050362838
+      }
+    }
+  },
+  {
+    "configuration":"top10__2W-FRI__cost25__vol0__brake0",
+    "top_n":10,
+    "frequency":"2W-FRI",
+    "cost_bps":25,
+    "volatility_scaling":false,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":719,
+      "metrics":{
+        "CAGR":0.1872392314,
+        "Sharpe":0.622421268,
+        "Sortino":0.7220352546,
+        "Calmar":0.401005943,
+        "Annualized Volatility":0.4116508919,
+        "Maximum Drawdown":-0.4669238317,
+        "Hit Rate":0.3755215577,
+        "Turnover":0.0454232608,
+        "Exposure":0.7732962448,
+        "Transaction Costs":0.0816483113
+      },
+      "diagnostics":{
+        "hit_rate":0.3755215577,
+        "turnover":0.0454232608,
+        "transaction_costs":0.0816483113
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1329300566,
+        "Sharpe":-0.526245692,
+        "Sortino":-0.5803306593,
+        "Calmar":-0.6024644249,
+        "Annualized Volatility":0.2234795304,
+        "Maximum Drawdown":-0.2206438274,
+        "Hit Rate":0.3345724907,
+        "Turnover":0.0380033007,
+        "Exposure":0.7379182156,
+        "Transaction Costs":0.0511144394
+      },
+      "diagnostics":{
+        "hit_rate":0.3345724907,
+        "turnover":0.0380033007,
+        "transaction_costs":0.0511144394
+      }
+    }
+  },
+  {
+    "configuration":"top10__2W-FRI__cost25__vol0__brake1",
+    "top_n":10,
+    "frequency":"2W-FRI",
+    "cost_bps":25,
+    "volatility_scaling":false,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":719,
+      "metrics":{
+        "CAGR":0.0526091824,
+        "Sharpe":0.3212006721,
+        "Sortino":0.3349583607,
+        "Calmar":0.161632089,
+        "Annualized Volatility":0.3070045426,
+        "Maximum Drawdown":-0.3254872393,
+        "Hit Rate":0.3755215577,
+        "Turnover":0.0321465404,
+        "Exposure":0.7719054242,
+        "Transaction Costs":0.0577834064
+      },
+      "diagnostics":{
+        "hit_rate":0.3755215577,
+        "turnover":0.0321465404,
+        "transaction_costs":0.0577834064
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.0367759361,
+        "Sharpe":-0.6391308636,
+        "Sortino":-0.702335128,
+        "Calmar":-0.5773448315,
+        "Annualized Volatility":0.0561579678,
+        "Maximum Drawdown":-0.0636983897,
+        "Hit Rate":0.3327137546,
+        "Turnover":0.0095008252,
+        "Exposure":0.7379182156,
+        "Transaction Costs":0.0127786099
+      },
+      "diagnostics":{
+        "hit_rate":0.3327137546,
+        "turnover":0.0095008252,
+        "transaction_costs":0.0127786099
+      }
+    }
+  },
+  {
+    "configuration":"top10__2W-FRI__cost25__vol1__brake0",
+    "top_n":10,
+    "frequency":"2W-FRI",
+    "cost_bps":25,
+    "volatility_scaling":true,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":719,
+      "metrics":{
+        "CAGR":0.1997849136,
+        "Sharpe":0.6813138665,
+        "Sortino":0.7914391998,
+        "Calmar":0.4537891147,
+        "Annualized Volatility":0.3644387555,
+        "Maximum Drawdown":-0.4402593786,
+        "Hit Rate":0.3741307371,
+        "Turnover":0.0404036849,
+        "Exposure":0.7719054242,
+        "Transaction Costs":0.0726256237
+      },
+      "diagnostics":{
+        "hit_rate":0.3741307371,
+        "turnover":0.0404036849,
+        "transaction_costs":0.0726256237
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1265020189,
+        "Sharpe":-0.4988626054,
+        "Sortino":-0.5457374252,
+        "Calmar":-0.5716824922,
+        "Annualized Volatility":0.2217250523,
+        "Maximum Drawdown":-0.2212802047,
+        "Hit Rate":0.3345724907,
+        "Turnover":0.0374444894,
+        "Exposure":0.7379182156,
+        "Transaction Costs":0.0503628382
+      },
+      "diagnostics":{
+        "hit_rate":0.3345724907,
+        "turnover":0.0374444894,
+        "transaction_costs":0.0503628382
+      }
+    }
+  },
+  {
+    "configuration":"top10__2W-FRI__cost25__vol1__brake1",
+    "top_n":10,
+    "frequency":"2W-FRI",
+    "cost_bps":25,
+    "volatility_scaling":true,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":719,
+      "metrics":{
+        "CAGR":0.0746888525,
+        "Sharpe":0.4090786087,
+        "Sortino":0.4317842307,
+        "Calmar":0.2484316817,
+        "Annualized Volatility":0.2572626207,
+        "Maximum Drawdown":-0.3006414158,
+        "Hit Rate":0.3741307371,
+        "Turnover":0.0278956168,
+        "Exposure":0.7705146036,
+        "Transaction Costs":0.0501423712
+      },
+      "diagnostics":{
+        "hit_rate":0.3741307371,
+        "turnover":0.0278956168,
+        "transaction_costs":0.0501423712
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.0349354235,
+        "Sharpe":-0.6103701933,
+        "Sortino":-0.6654087529,
+        "Calmar":-0.5482571299,
+        "Annualized Volatility":0.0557171899,
+        "Maximum Drawdown":-0.063720874,
+        "Hit Rate":0.3327137546,
+        "Turnover":0.0093611223,
+        "Exposure":0.7379182156,
+        "Transaction Costs":0.0125907096
+      },
+      "diagnostics":{
+        "hit_rate":0.3327137546,
+        "turnover":0.0093611223,
+        "transaction_costs":0.0125907096
+      }
+    }
+  },
+  {
+    "configuration":"top10__2W-FRI__cost50__vol0__brake0",
+    "top_n":10,
+    "frequency":"2W-FRI",
+    "cost_bps":50,
+    "volatility_scaling":false,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":719,
+      "metrics":{
+        "CAGR":0.1390526189,
+        "Sharpe":0.5217427388,
+        "Sortino":0.6085678241,
+        "Calmar":0.2937943447,
+        "Annualized Volatility":0.4116426136,
+        "Maximum Drawdown":-0.4732991679,
+        "Hit Rate":0.3685674548,
+        "Turnover":0.0454232608,
+        "Exposure":0.7732962448,
+        "Transaction Costs":0.1632966225
+      },
+      "diagnostics":{
+        "hit_rate":0.3685674548,
+        "turnover":0.0454232608,
+        "transaction_costs":0.1632966225
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1625567224,
+        "Sharpe":-0.680474356,
+        "Sortino":-0.7541039564,
+        "Calmar":-0.6694728138,
+        "Annualized Volatility":0.2237897,
+        "Maximum Drawdown":-0.24281303,
+        "Hit Rate":0.3271375465,
+        "Turnover":0.0380033007,
+        "Exposure":0.7379182156,
+        "Transaction Costs":0.1022288788
+      },
+      "diagnostics":{
+        "hit_rate":0.3271375465,
+        "turnover":0.0380033007,
+        "transaction_costs":0.1022288788
+      }
+    }
+  },
+  {
+    "configuration":"top10__2W-FRI__cost50__vol0__brake1",
+    "top_n":10,
+    "frequency":"2W-FRI",
+    "cost_bps":50,
+    "volatility_scaling":false,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":719,
+      "metrics":{
+        "CAGR":0.0220820601,
+        "Sharpe":0.2254175463,
+        "Sortino":0.2362320534,
+        "Calmar":0.0666378746,
+        "Annualized Volatility":0.3073245558,
+        "Maximum Drawdown":-0.3313740156,
+        "Hit Rate":0.3699582754,
+        "Turnover":0.0321465404,
+        "Exposure":0.7719054242,
+        "Transaction Costs":0.1155668127
+      },
+      "diagnostics":{
+        "hit_rate":0.3699582754,
+        "turnover":0.0321465404,
+        "transaction_costs":0.1155668127
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.0450955532,
+        "Sharpe":-0.7924448139,
+        "Sortino":-0.8747111076,
+        "Calmar":-0.6438462883,
+        "Annualized Volatility":0.0562333082,
+        "Maximum Drawdown":-0.0700408684,
+        "Hit Rate":0.3271375465,
+        "Turnover":0.0095008252,
+        "Exposure":0.7379182156,
+        "Transaction Costs":0.0255572197
+      },
+      "diagnostics":{
+        "hit_rate":0.3271375465,
+        "turnover":0.0095008252,
+        "transaction_costs":0.0255572197
+      }
+    }
+  },
+  {
+    "configuration":"top10__2W-FRI__cost50__vol1__brake0",
+    "top_n":10,
+    "frequency":"2W-FRI",
+    "cost_bps":50,
+    "volatility_scaling":true,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":719,
+      "metrics":{
+        "CAGR":0.1564082334,
+        "Sharpe":0.5802977049,
+        "Sortino":0.6770593964,
+        "Calmar":0.3507048162,
+        "Annualized Volatility":0.3643454271,
+        "Maximum Drawdown":-0.4459825646,
+        "Hit Rate":0.3685674548,
+        "Turnover":0.0404036849,
+        "Exposure":0.7719054242,
+        "Transaction Costs":0.1452512474
+      },
+      "diagnostics":{
+        "hit_rate":0.3685674548,
+        "turnover":0.0404036849,
+        "transaction_costs":0.1452512474
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1559179831,
+        "Sharpe":-0.6520313432,
+        "Sortino":-0.7168835432,
+        "Calmar":-0.6325764224,
+        "Annualized Volatility":0.2220421385,
+        "Maximum Drawdown":-0.246480864,
+        "Hit Rate":0.3271375465,
+        "Turnover":0.0374444894,
+        "Exposure":0.7379182156,
+        "Transaction Costs":0.1007256765
+      },
+      "diagnostics":{
+        "hit_rate":0.3271375465,
+        "turnover":0.0374444894,
+        "transaction_costs":0.1007256765
+      }
+    }
+  },
+  {
+    "configuration":"top10__2W-FRI__cost50__vol1__brake1",
+    "top_n":10,
+    "frequency":"2W-FRI",
+    "cost_bps":50,
+    "volatility_scaling":true,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":719,
+      "metrics":{
+        "CAGR":0.0476131621,
+        "Sharpe":0.3098294852,
+        "Sortino":0.3288772464,
+        "Calmar":0.1558375815,
+        "Annualized Volatility":0.2575154671,
+        "Maximum Drawdown":-0.3055306788,
+        "Hit Rate":0.3671766342,
+        "Turnover":0.0278956168,
+        "Exposure":0.7705146036,
+        "Transaction Costs":0.1002847424
+      },
+      "diagnostics":{
+        "hit_rate":0.3671766342,
+        "turnover":0.0278956168,
+        "transaction_costs":0.1002847424
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.0431489564,
+        "Sharpe":-0.7626286646,
+        "Sortino":-0.8351339286,
+        "Calmar":-0.6075568503,
+        "Annualized Volatility":0.0557940425,
+        "Maximum Drawdown":-0.0710204425,
+        "Hit Rate":0.3271375465,
+        "Turnover":0.0093611223,
+        "Exposure":0.7379182156,
+        "Transaction Costs":0.0251814191
+      },
+      "diagnostics":{
+        "hit_rate":0.3271375465,
+        "turnover":0.0093611223,
+        "transaction_costs":0.0251814191
+      }
+    }
+  },
+  {
+    "configuration":"top10__2W-FRI__cost100__vol0__brake0",
+    "top_n":10,
+    "frequency":"2W-FRI",
+    "cost_bps":100,
+    "volatility_scaling":false,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":719,
+      "metrics":{
+        "CAGR":0.048272546,
+        "Sharpe":0.3200496453,
+        "Sortino":0.3747893417,
+        "Calmar":0.0993568446,
+        "Annualized Volatility":0.4120426179,
+        "Maximum Drawdown":-0.4858502325,
+        "Hit Rate":0.3671766342,
+        "Turnover":0.0454232608,
+        "Exposure":0.7732962448,
+        "Transaction Costs":0.326593245
+      },
+      "diagnostics":{
+        "hit_rate":0.3671766342,
+        "turnover":0.0454232608,
+        "transaction_costs":0.326593245
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.2189212527,
+        "Sharpe":-0.9850306028,
+        "Sortino":-1.098959626,
+        "Calmar":-0.7172113631,
+        "Annualized Volatility":0.2250074009,
+        "Maximum Drawdown":-0.3052395207,
+        "Hit Rate":0.3197026022,
+        "Turnover":0.0380033007,
+        "Exposure":0.7379182156,
+        "Transaction Costs":0.2044577576
+      },
+      "diagnostics":{
+        "hit_rate":0.3197026022,
+        "turnover":0.0380033007,
+        "transaction_costs":0.2044577576
+      }
+    }
+  },
+  {
+    "configuration":"top10__2W-FRI__cost100__vol0__brake1",
+    "top_n":10,
+    "frequency":"2W-FRI",
+    "cost_bps":100,
+    "volatility_scaling":false,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":719,
+      "metrics":{
+        "CAGR":-0.0364591081,
+        "Sharpe":0.0344074554,
+        "Sortino":0.0362905453,
+        "Calmar":-0.1046328404,
+        "Annualized Volatility":0.3083317545,
+        "Maximum Drawdown":-0.3484480397,
+        "Hit Rate":0.364394993,
+        "Turnover":0.0321465404,
+        "Exposure":0.7719054242,
+        "Transaction Costs":0.2311336255
+      },
+      "diagnostics":{
+        "hit_rate":0.364394993,
+        "turnover":0.0321465404,
+        "transaction_costs":0.2311336255
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.0615321362,
+        "Sharpe":-1.0935647133,
+        "Sortino":-1.2142422586,
+        "Calmar":-0.6885908436,
+        "Annualized Volatility":0.0566046057,
+        "Maximum Drawdown":-0.0893595039,
+        "Hit Rate":0.3197026022,
+        "Turnover":0.0095008252,
+        "Exposure":0.7379182156,
+        "Transaction Costs":0.0511144394
+      },
+      "diagnostics":{
+        "hit_rate":0.3197026022,
+        "turnover":0.0095008252,
+        "transaction_costs":0.0511144394
+      }
+    }
+  },
+  {
+    "configuration":"top10__2W-FRI__cost100__vol1__brake0",
+    "top_n":10,
+    "frequency":"2W-FRI",
+    "cost_bps":100,
+    "volatility_scaling":true,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":719,
+      "metrics":{
+        "CAGR":0.0741298865,
+        "Sharpe":0.3776825544,
+        "Sortino":0.442471461,
+        "Calmar":0.1621112435,
+        "Annualized Volatility":0.3645709564,
+        "Maximum Drawdown":-0.4572778849,
+        "Hit Rate":0.3657858136,
+        "Turnover":0.0404036849,
+        "Exposure":0.7719054242,
+        "Transaction Costs":0.2905024947
+      },
+      "diagnostics":{
+        "hit_rate":0.3657858136,
+        "turnover":0.0404036849,
+        "transaction_costs":0.2905024947
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.2119237572,
+        "Sharpe":-0.9545280479,
+        "Sortino":-1.0565255949,
+        "Calmar":-0.7131718483,
+        "Annualized Volatility":0.2232670139,
+        "Maximum Drawdown":-0.2971566499,
+        "Hit Rate":0.3197026022,
+        "Turnover":0.0374444894,
+        "Exposure":0.7379182156,
+        "Transaction Costs":0.2014513529
+      },
+      "diagnostics":{
+        "hit_rate":0.3197026022,
+        "turnover":0.0374444894,
+        "transaction_costs":0.2014513529
+      }
+    }
+  },
+  {
+    "configuration":"top10__2W-FRI__cost100__vol1__brake1",
+    "top_n":10,
+    "frequency":"2W-FRI",
+    "cost_bps":100,
+    "volatility_scaling":true,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":719,
+      "metrics":{
+        "CAGR":-0.0046055142,
+        "Sharpe":0.1117625424,
+        "Sortino":0.1191912434,
+        "Calmar":-0.0146102719,
+        "Annualized Volatility":0.2583726472,
+        "Maximum Drawdown":-0.315224404,
+        "Hit Rate":0.3630041725,
+        "Turnover":0.0278956168,
+        "Exposure":0.7705146036,
+        "Transaction Costs":0.2005694849
+      },
+      "diagnostics":{
+        "hit_rate":0.3630041725,
+        "turnover":0.0278956168,
+        "transaction_costs":0.2005694849
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.0593789923,
+        "Sharpe":-1.0617533246,
+        "Sortino":-1.1695801526,
+        "Calmar":-0.6823025621,
+        "Annualized Volatility":0.0561657619,
+        "Maximum Drawdown":-0.0870273624,
+        "Hit Rate":0.3197026022,
+        "Turnover":0.0093611223,
+        "Exposure":0.7379182156,
+        "Transaction Costs":0.0503628382
+      },
+      "diagnostics":{
+        "hit_rate":0.3197026022,
+        "turnover":0.0093611223,
+        "transaction_costs":0.0503628382
+      }
+    }
+  },
+  {
+    "configuration":"top20__W-FRI__cost10__vol0__brake0",
+    "top_n":20,
+    "frequency":"W-FRI",
+    "cost_bps":10,
+    "volatility_scaling":false,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":-0.1087347927,
+        "Sharpe":0.0036253084,
+        "Sortino":0.0041854095,
+        "Calmar":-0.1872404011,
+        "Annualized Volatility":0.4822441472,
+        "Maximum Drawdown":-0.580722921,
+        "Hit Rate":0.4124087591,
+        "Turnover":0.0908814741,
+        "Exposure":0.8594890511,
+        "Transaction Costs":0.0996060956
+      },
+      "diagnostics":{
+        "hit_rate":0.4124087591,
+        "turnover":0.0908814741,
+        "transaction_costs":0.0996060956
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.2867763046,
+        "Sharpe":-1.1913408406,
+        "Sortino":-1.2948772702,
+        "Calmar":-0.6418681534,
+        "Annualized Volatility":0.2559631051,
+        "Maximum Drawdown":-0.4467838186,
+        "Hit Rate":0.3680297398,
+        "Turnover":0.0681830662,
+        "Exposure":0.7992565056,
+        "Transaction Costs":0.0366824896
+      },
+      "diagnostics":{
+        "hit_rate":0.3680297398,
+        "turnover":0.0681830662,
+        "transaction_costs":0.0366824896
+      }
+    }
+  },
+  {
+    "configuration":"top20__W-FRI__cost10__vol0__brake1",
+    "top_n":20,
+    "frequency":"W-FRI",
+    "cost_bps":10,
+    "volatility_scaling":false,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":-0.0898898086,
+        "Sharpe":-0.3489040756,
+        "Sortino":-0.3336307177,
+        "Calmar":-0.3002713093,
+        "Annualized Volatility":0.207197382,
+        "Maximum Drawdown":-0.2993619629,
+        "Hit Rate":0.4114963504,
+        "Turnover":0.0278005918,
+        "Exposure":0.8567518248,
+        "Transaction Costs":0.0304694486
+      },
+      "diagnostics":{
+        "hit_rate":0.4114963504,
+        "turnover":0.0278005918,
+        "transaction_costs":0.0304694486
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.069351584,
+        "Sharpe":-1.0902092256,
+        "Sortino":-1.1800775701,
+        "Calmar":-0.5684815814,
+        "Annualized Volatility":0.0640405905,
+        "Maximum Drawdown":-0.1219944256,
+        "Hit Rate":0.3698884758,
+        "Turnover":0.0170457666,
+        "Exposure":0.7973977695,
+        "Transaction Costs":0.0091706224
+      },
+      "diagnostics":{
+        "hit_rate":0.3698884758,
+        "turnover":0.0170457666,
+        "transaction_costs":0.0091706224
+      }
+    }
+  },
+  {
+    "configuration":"top20__W-FRI__cost10__vol1__brake0",
+    "top_n":20,
+    "frequency":"W-FRI",
+    "cost_bps":10,
+    "volatility_scaling":true,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.0150869424,
+        "Sharpe":0.2395010912,
+        "Sortino":0.2758095917,
+        "Calmar":0.0380706413,
+        "Annualized Volatility":0.4036386811,
+        "Maximum Drawdown":-0.3962881076,
+        "Hit Rate":0.4133211679,
+        "Turnover":0.0727085253,
+        "Exposure":0.8585766423,
+        "Transaction Costs":0.0796885437
+      },
+      "diagnostics":{
+        "hit_rate":0.4133211679,
+        "turnover":0.0727085253,
+        "transaction_costs":0.0796885437
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.2712469199,
+        "Sharpe":-1.1813401678,
+        "Sortino":-1.2801472831,
+        "Calmar":-0.6525791345,
+        "Annualized Volatility":0.2427085126,
+        "Maximum Drawdown":-0.4156536818,
+        "Hit Rate":0.3680297398,
+        "Turnover":0.0646396363,
+        "Exposure":0.7992565056,
+        "Transaction Costs":0.0347761243
+      },
+      "diagnostics":{
+        "hit_rate":0.3680297398,
+        "turnover":0.0646396363,
+        "transaction_costs":0.0347761243
+      }
+    }
+  },
+  {
+    "configuration":"top20__W-FRI__cost10__vol1__brake1",
+    "top_n":20,
+    "frequency":"W-FRI",
+    "cost_bps":10,
+    "volatility_scaling":true,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":-0.0441890299,
+        "Sharpe":-0.1781744449,
+        "Sortino":-0.165523219,
+        "Calmar":-0.1923524654,
+        "Annualized Volatility":0.1701569778,
+        "Maximum Drawdown":-0.2297294699,
+        "Hit Rate":0.4114963504,
+        "Turnover":0.0223812005,
+        "Exposure":0.8567518248,
+        "Transaction Costs":0.0245297958
+      },
+      "diagnostics":{
+        "hit_rate":0.4114963504,
+        "turnover":0.0223812005,
+        "transaction_costs":0.0245297958
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.0655070009,
+        "Sharpe":-1.0847261869,
+        "Sortino":-1.1713880511,
+        "Calmar":-0.5888369069,
+        "Annualized Volatility":0.0607532321,
+        "Maximum Drawdown":-0.1112481234,
+        "Hit Rate":0.3698884758,
+        "Turnover":0.0161599091,
+        "Exposure":0.7973977695,
+        "Transaction Costs":0.0086940311
+      },
+      "diagnostics":{
+        "hit_rate":0.3698884758,
+        "turnover":0.0161599091,
+        "transaction_costs":0.0086940311
+      }
+    }
+  },
+  {
+    "configuration":"top20__W-FRI__cost25__vol0__brake0",
+    "top_n":20,
+    "frequency":"W-FRI",
+    "cost_bps":25,
+    "volatility_scaling":false,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":-0.1520124612,
+        "Sharpe":-0.0995668661,
+        "Sortino":-0.1151490046,
+        "Calmar":-0.2478996349,
+        "Annualized Volatility":0.4821817257,
+        "Maximum Drawdown":-0.613201634,
+        "Hit Rate":0.4078467153,
+        "Turnover":0.0908814741,
+        "Exposure":0.8594890511,
+        "Transaction Costs":0.2490152391
+      },
+      "diagnostics":{
+        "hit_rate":0.4078467153,
+        "turnover":0.0908814741,
+        "transaction_costs":0.2490152391
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.3130198645,
+        "Sharpe":-1.3347660162,
+        "Sortino":-1.456324476,
+        "Calmar":-0.6605934698,
+        "Annualized Volatility":0.2564266136,
+        "Maximum Drawdown":-0.4738464408,
+        "Hit Rate":0.3643122677,
+        "Turnover":0.0681830662,
+        "Exposure":0.7992565056,
+        "Transaction Costs":0.0917062241
+      },
+      "diagnostics":{
+        "hit_rate":0.3643122677,
+        "turnover":0.0681830662,
+        "transaction_costs":0.0917062241
+      }
+    }
+  },
+  {
+    "configuration":"top20__W-FRI__cost25__vol0__brake1",
+    "top_n":20,
+    "frequency":"W-FRI",
+    "cost_bps":25,
+    "volatility_scaling":false,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":-0.103657053,
+        "Sharpe":-0.4222044527,
+        "Sortino":-0.4051050614,
+        "Calmar":-0.3336464217,
+        "Annualized Volatility":0.2072759643,
+        "Maximum Drawdown":-0.3106793487,
+        "Hit Rate":0.4069343066,
+        "Turnover":0.0278005918,
+        "Exposure":0.8567518248,
+        "Transaction Costs":0.0761736215
+      },
+      "diagnostics":{
+        "hit_rate":0.4069343066,
+        "turnover":0.0278005918,
+        "transaction_costs":0.0761736215
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.0780032733,
+        "Sharpe":-1.234335711,
+        "Sortino":-1.3447646085,
+        "Calmar":-0.5878992628,
+        "Annualized Volatility":0.0641237218,
+        "Maximum Drawdown":-0.1326813592,
+        "Hit Rate":0.3624535316,
+        "Turnover":0.0170457666,
+        "Exposure":0.7973977695,
+        "Transaction Costs":0.022926556
+      },
+      "diagnostics":{
+        "hit_rate":0.3624535316,
+        "turnover":0.0170457666,
+        "transaction_costs":0.022926556
+      }
+    }
+  },
+  {
+    "configuration":"top20__W-FRI__cost25__vol1__brake0",
+    "top_n":20,
+    "frequency":"W-FRI",
+    "cost_bps":25,
+    "volatility_scaling":true,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":-0.0244762607,
+        "Sharpe":0.1409381427,
+        "Sortino":0.1626054811,
+        "Calmar":-0.0565850129,
+        "Annualized Volatility":0.4034676906,
+        "Maximum Drawdown":-0.4325573043,
+        "Hit Rate":0.4087591241,
+        "Turnover":0.0727085253,
+        "Exposure":0.8585766423,
+        "Transaction Costs":0.1992213594
+      },
+      "diagnostics":{
+        "hit_rate":0.4087591241,
+        "turnover":0.0727085253,
+        "transaction_costs":0.1992213594
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.2966870032,
+        "Sharpe":-1.324757651,
+        "Sortino":-1.4427383012,
+        "Calmar":-0.6697925651,
+        "Annualized Volatility":0.2431475037,
+        "Maximum Drawdown":-0.442953563,
+        "Hit Rate":0.3624535316,
+        "Turnover":0.0646396363,
+        "Exposure":0.7992565056,
+        "Transaction Costs":0.0869403108
+      },
+      "diagnostics":{
+        "hit_rate":0.3624535316,
+        "turnover":0.0646396363,
+        "transaction_costs":0.0869403108
+      }
+    }
+  },
+  {
+    "configuration":"top20__W-FRI__cost25__vol1__brake1",
+    "top_n":20,
+    "frequency":"W-FRI",
+    "cost_bps":25,
+    "volatility_scaling":true,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":-0.0558368343,
+        "Sharpe":-0.2501413192,
+        "Sortino":-0.2332685279,
+        "Calmar":-0.2339562444,
+        "Annualized Volatility":0.1701891255,
+        "Maximum Drawdown":-0.2386635777,
+        "Hit Rate":0.4069343066,
+        "Turnover":0.0223812005,
+        "Exposure":0.8567518248,
+        "Transaction Costs":0.0613244895
+      },
+      "diagnostics":{
+        "hit_rate":0.4069343066,
+        "turnover":0.0223812005,
+        "transaction_costs":0.0613244895
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.0737463383,
+        "Sharpe":-1.2281418172,
+        "Sortino":-1.335030719,
+        "Calmar":-0.6055671428,
+        "Annualized Volatility":0.0608628181,
+        "Maximum Drawdown":-0.1217806137,
+        "Hit Rate":0.3624535316,
+        "Turnover":0.0161599091,
+        "Exposure":0.7973977695,
+        "Transaction Costs":0.0217350777
+      },
+      "diagnostics":{
+        "hit_rate":0.3624535316,
+        "turnover":0.0161599091,
+        "transaction_costs":0.0217350777
+      }
+    }
+  },
+  {
+    "configuration":"top20__W-FRI__cost50__vol0__brake0",
+    "top_n":20,
+    "frequency":"W-FRI",
+    "cost_bps":50,
+    "volatility_scaling":false,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":-0.219600042,
+        "Sharpe":-0.2715151167,
+        "Sortino":-0.3146518922,
+        "Calmar":-0.3317751231,
+        "Annualized Volatility":0.4822518541,
+        "Maximum Drawdown":-0.6618942371,
+        "Hit Rate":0.4023722628,
+        "Turnover":0.0908814741,
+        "Exposure":0.8594890511,
+        "Transaction Costs":0.4980304781
+      },
+      "diagnostics":{
+        "hit_rate":0.4023722628,
+        "turnover":0.0908814741,
+        "transaction_costs":0.4980304781
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.3546759306,
+        "Sharpe":-1.5712255946,
+        "Sortino":-1.730693125,
+        "Calmar":-0.6872422843,
+        "Annualized Volatility":0.2574338013,
+        "Maximum Drawdown":-0.5160857222,
+        "Hit Rate":0.3531598513,
+        "Turnover":0.0681830662,
+        "Exposure":0.7992565056,
+        "Transaction Costs":0.1834124481
+      },
+      "diagnostics":{
+        "hit_rate":0.3531598513,
+        "turnover":0.0681830662,
+        "transaction_costs":0.1834124481
+      }
+    }
+  },
+  {
+    "configuration":"top20__W-FRI__cost50__vol0__brake1",
+    "top_n":20,
+    "frequency":"W-FRI",
+    "cost_bps":50,
+    "volatility_scaling":false,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":-0.1261546949,
+        "Sharpe":-0.5440725892,
+        "Sortino":-0.524557221,
+        "Calmar":-0.3650401556,
+        "Annualized Volatility":0.2074739241,
+        "Maximum Drawdown":-0.3455912809,
+        "Hit Rate":0.4005474453,
+        "Turnover":0.0278005918,
+        "Exposure":0.8567518248,
+        "Transaction Costs":0.1523472431
+      },
+      "diagnostics":{
+        "hit_rate":0.4005474453,
+        "turnover":0.0278005918,
+        "transaction_costs":0.1523472431
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.0922495479,
+        "Sharpe":-1.4718888627,
+        "Sortino":-1.6176428843,
+        "Calmar":-0.6141339378,
+        "Annualized Volatility":0.0643421281,
+        "Maximum Drawdown":-0.1502107964,
+        "Hit Rate":0.3550185874,
+        "Turnover":0.0170457666,
+        "Exposure":0.7973977695,
+        "Transaction Costs":0.045853112
+      },
+      "diagnostics":{
+        "hit_rate":0.3550185874,
+        "turnover":0.0170457666,
+        "transaction_costs":0.045853112
+      }
+    }
+  },
+  {
+    "configuration":"top20__W-FRI__cost50__vol1__brake0",
+    "top_n":20,
+    "frequency":"W-FRI",
+    "cost_bps":50,
+    "volatility_scaling":true,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":-0.0870864037,
+        "Sharpe":-0.0235097803,
+        "Sortino":-0.0271985759,
+        "Calmar":-0.1783499375,
+        "Annualized Volatility":0.4033445775,
+        "Maximum Drawdown":-0.4882895105,
+        "Hit Rate":0.4023722628,
+        "Turnover":0.0727085253,
+        "Exposure":0.8585766423,
+        "Transaction Costs":0.3984427187
+      },
+      "diagnostics":{
+        "hit_rate":0.4023722628,
+        "turnover":0.0727085253,
+        "transaction_costs":0.3984427187
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.3371724428,
+        "Sharpe":-1.5611420628,
+        "Sortino":-1.7152834968,
+        "Calmar":-0.6942076255,
+        "Annualized Volatility":0.2441130715,
+        "Maximum Drawdown":-0.4856939486,
+        "Hit Rate":0.3531598513,
+        "Turnover":0.0646396363,
+        "Exposure":0.7992565056,
+        "Transaction Costs":0.1738806217
+      },
+      "diagnostics":{
+        "hit_rate":0.3531598513,
+        "turnover":0.0646396363,
+        "transaction_costs":0.1738806217
+      }
+    }
+  },
+  {
+    "configuration":"top20__W-FRI__cost50__vol1__brake1",
+    "top_n":20,
+    "frequency":"W-FRI",
+    "cost_bps":50,
+    "volatility_scaling":true,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":-0.0749450601,
+        "Sharpe":-0.369902769,
+        "Sortino":-0.3465591975,
+        "Calmar":-0.2958353011,
+        "Annualized Volatility":0.1702992871,
+        "Maximum Drawdown":-0.2533337293,
+        "Hit Rate":0.401459854,
+        "Turnover":0.0223812005,
+        "Exposure":0.8567518248,
+        "Transaction Costs":0.1226489789
+      },
+      "diagnostics":{
+        "hit_rate":0.401459854,
+        "turnover":0.0223812005,
+        "transaction_costs":0.1226489789
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.0873219847,
+        "Sharpe":-1.4642710394,
+        "Sortino":-1.6056373931,
+        "Calmar":-0.6279267723,
+        "Annualized Volatility":0.061118527,
+        "Maximum Drawdown":-0.1390639618,
+        "Hit Rate":0.3550185874,
+        "Turnover":0.0161599091,
+        "Exposure":0.7973977695,
+        "Transaction Costs":0.0434701554
+      },
+      "diagnostics":{
+        "hit_rate":0.3550185874,
+        "turnover":0.0161599091,
+        "transaction_costs":0.0434701554
+      }
+    }
+  },
+  {
+    "configuration":"top20__W-FRI__cost100__vol0__brake0",
+    "top_n":20,
+    "frequency":"W-FRI",
+    "cost_bps":100,
+    "volatility_scaling":false,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":-0.3392905381,
+        "Sharpe":-0.614430657,
+        "Sortino":-0.7176269483,
+        "Calmar":-0.4545364011,
+        "Annualized Volatility":0.483044515,
+        "Maximum Drawdown":-0.7464540515,
+        "Hit Rate":0.3859489051,
+        "Turnover":0.0908814741,
+        "Exposure":0.8594890511,
+        "Transaction Costs":0.9960609563
+      },
+      "diagnostics":{
+        "hit_rate":0.3859489051,
+        "turnover":0.0908814741,
+        "transaction_costs":0.9960609563
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.4307133184,
+        "Sharpe":-2.0318509998,
+        "Sortino":-2.2601062324,
+        "Calmar":-0.7290265843,
+        "Annualized Volatility":0.260314695,
+        "Maximum Drawdown":-0.5908060524,
+        "Hit Rate":0.3475836431,
+        "Turnover":0.0681830662,
+        "Exposure":0.7992565056,
+        "Transaction Costs":0.3668248962
+      },
+      "diagnostics":{
+        "hit_rate":0.3475836431,
+        "turnover":0.0681830662,
+        "transaction_costs":0.3668248962
+      }
+    }
+  },
+  {
+    "configuration":"top20__W-FRI__cost100__vol0__brake1",
+    "top_n":20,
+    "frequency":"W-FRI",
+    "cost_bps":100,
+    "volatility_scaling":false,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":-0.1695182532,
+        "Sharpe":-0.7861661688,
+        "Sortino":-0.7643544223,
+        "Calmar":-0.3881671444,
+        "Annualized Volatility":0.2081200662,
+        "Maximum Drawdown":-0.4367145847,
+        "Hit Rate":0.3895985401,
+        "Turnover":0.0278005918,
+        "Exposure":0.8567518248,
+        "Transaction Costs":0.3046944861
+      },
+      "diagnostics":{
+        "hit_rate":0.3895985401,
+        "turnover":0.0278005918,
+        "transaction_costs":0.3046944861
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1201038829,
+        "Sharpe":-1.9333774702,
+        "Sortino":-2.1461774283,
+        "Calmar":-0.6519017062,
+        "Annualized Volatility":0.0650741967,
+        "Maximum Drawdown":-0.1842361843,
+        "Hit Rate":0.3494423792,
+        "Turnover":0.0170457666,
+        "Exposure":0.7973977695,
+        "Transaction Costs":0.0917062241
+      },
+      "diagnostics":{
+        "hit_rate":0.3494423792,
+        "turnover":0.0170457666,
+        "transaction_costs":0.0917062241
+      }
+    }
+  },
+  {
+    "configuration":"top20__W-FRI__cost100__vol1__brake0",
+    "top_n":20,
+    "frequency":"W-FRI",
+    "cost_bps":100,
+    "volatility_scaling":true,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":-0.2007346357,
+        "Sharpe":-0.3521763962,
+        "Sortino":-0.4103802336,
+        "Calmar":-0.3393543384,
+        "Annualized Volatility":0.4037056504,
+        "Maximum Drawdown":-0.5915192851,
+        "Hit Rate":0.3877737226,
+        "Turnover":0.0727085253,
+        "Exposure":0.8585766423,
+        "Transaction Costs":0.7968854375
+      },
+      "diagnostics":{
+        "hit_rate":0.3877737226,
+        "turnover":0.0727085253,
+        "transaction_costs":0.7968854375
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.4114313004,
+        "Sharpe":-2.0212510644,
+        "Sortino":-2.2436178547,
+        "Calmar":-0.7324313075,
+        "Annualized Volatility":0.246907734,
+        "Maximum Drawdown":-0.5617336346,
+        "Hit Rate":0.3475836431,
+        "Turnover":0.0646396363,
+        "Exposure":0.7992565056,
+        "Transaction Costs":0.3477612434
+      },
+      "diagnostics":{
+        "hit_rate":0.3475836431,
+        "turnover":0.0646396363,
+        "transaction_costs":0.3477612434
+      }
+    }
+  },
+  {
+    "configuration":"top20__W-FRI__cost100__vol1__brake1",
+    "top_n":20,
+    "frequency":"W-FRI",
+    "cost_bps":100,
+    "volatility_scaling":true,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":-0.1120445202,
+        "Sharpe":-0.6082067906,
+        "Sortino":-0.5758489097,
+        "Calmar":-0.3494542937,
+        "Annualized Volatility":0.1707311895,
+        "Maximum Drawdown":-0.3206271098,
+        "Hit Rate":0.3895985401,
+        "Turnover":0.0223812005,
+        "Exposure":0.8567518248,
+        "Transaction Costs":0.2452979579
+      },
+      "diagnostics":{
+        "hit_rate":0.3895985401,
+        "turnover":0.0223812005,
+        "transaction_costs":0.2452979579
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1138958114,
+        "Sharpe":-1.9222481384,
+        "Sortino":-2.1287727639,
+        "Calmar":-0.6597376861,
+        "Annualized Volatility":0.0618993567,
+        "Maximum Drawdown":-0.1726380253,
+        "Hit Rate":0.3494423792,
+        "Turnover":0.0161599091,
+        "Exposure":0.7973977695,
+        "Transaction Costs":0.0869403108
+      },
+      "diagnostics":{
+        "hit_rate":0.3494423792,
+        "turnover":0.0161599091,
+        "transaction_costs":0.0869403108
+      }
+    }
+  },
+  {
+    "configuration":"top20__2W-FRI__cost10__vol0__brake0",
+    "top_n":20,
+    "frequency":"2W-FRI",
+    "cost_bps":10,
+    "volatility_scaling":false,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.2817448596,
+        "Sharpe":0.7909635619,
+        "Sortino":1.0383882992,
+        "Calmar":0.6072271317,
+        "Annualized Volatility":0.4291214269,
+        "Maximum Drawdown":-0.4639859534,
+        "Hit Rate":0.4151459854,
+        "Turnover":0.0475810346,
+        "Exposure":0.8412408759,
+        "Transaction Costs":0.052148814
+      },
+      "diagnostics":{
+        "hit_rate":0.4151459854,
+        "turnover":0.0475810346,
+        "transaction_costs":0.052148814
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.3482716834,
+        "Sharpe":-1.7230708365,
+        "Sortino":-1.6810713448,
+        "Calmar":-0.743898431,
+        "Annualized Volatility":0.2324530508,
+        "Maximum Drawdown":-0.4681710149,
+        "Hit Rate":0.3680297398,
+        "Turnover":0.0358015091,
+        "Exposure":0.7955390335,
+        "Transaction Costs":0.0192612119
+      },
+      "diagnostics":{
+        "hit_rate":0.3680297398,
+        "turnover":0.0358015091,
+        "transaction_costs":0.0192612119
+      }
+    }
+  },
+  {
+    "configuration":"top20__2W-FRI__cost10__vol0__brake1",
+    "top_n":20,
+    "frequency":"2W-FRI",
+    "cost_bps":10,
+    "volatility_scaling":false,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.1342921807,
+        "Sharpe":0.6400259159,
+        "Sortino":0.7037566537,
+        "Calmar":0.5037942175,
+        "Annualized Volatility":0.2430017949,
+        "Maximum Drawdown":-0.2665615762,
+        "Hit Rate":0.4151459854,
+        "Turnover":0.0197053101,
+        "Exposure":0.8412408759,
+        "Transaction Costs":0.0215970199
+      },
+      "diagnostics":{
+        "hit_rate":0.4151459854,
+        "turnover":0.0197053101,
+        "transaction_costs":0.0215970199
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1438138585,
+        "Sharpe":-1.8069005687,
+        "Sortino":-1.553748233,
+        "Calmar":-0.702348186,
+        "Annualized Volatility":0.0839460236,
+        "Maximum Drawdown":-0.2047614863,
+        "Hit Rate":0.3661710037,
+        "Turnover":0.0102215652,
+        "Exposure":0.7936802974,
+        "Transaction Costs":0.0054992021
+      },
+      "diagnostics":{
+        "hit_rate":0.3661710037,
+        "turnover":0.0102215652,
+        "transaction_costs":0.0054992021
+      }
+    }
+  },
+  {
+    "configuration":"top20__2W-FRI__cost10__vol1__brake0",
+    "top_n":20,
+    "frequency":"2W-FRI",
+    "cost_bps":10,
+    "volatility_scaling":true,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.2296262853,
+        "Sharpe":0.7744056914,
+        "Sortino":1.067058485,
+        "Calmar":0.4947915854,
+        "Annualized Volatility":0.340885399,
+        "Maximum Drawdown":-0.4640868845,
+        "Hit Rate":0.4133211679,
+        "Turnover":0.0397474593,
+        "Exposure":0.8412408759,
+        "Transaction Costs":0.0435632154
+      },
+      "diagnostics":{
+        "hit_rate":0.4133211679,
+        "turnover":0.0397474593,
+        "transaction_costs":0.0435632154
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.3413346796,
+        "Sharpe":-1.6916138076,
+        "Sortino":-1.6505514673,
+        "Calmar":-0.7423447434,
+        "Annualized Volatility":0.2307580917,
+        "Maximum Drawdown":-0.4598061515,
+        "Hit Rate":0.3661710037,
+        "Turnover":0.0354342525,
+        "Exposure":0.7955390335,
+        "Transaction Costs":0.0190636279
+      },
+      "diagnostics":{
+        "hit_rate":0.3661710037,
+        "turnover":0.0354342525,
+        "transaction_costs":0.0190636279
+      }
+    }
+  },
+  {
+    "configuration":"top20__2W-FRI__cost10__vol1__brake1",
+    "top_n":20,
+    "frequency":"2W-FRI",
+    "cost_bps":10,
+    "volatility_scaling":true,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.1400586645,
+        "Sharpe":0.8782010343,
+        "Sortino":1.1148776477,
+        "Calmar":0.9105576896,
+        "Annualized Volatility":0.1644990008,
+        "Maximum Drawdown":-0.1538163546,
+        "Hit Rate":0.4151459854,
+        "Turnover":0.0144799949,
+        "Exposure":0.8412408759,
+        "Transaction Costs":0.0158700745
+      },
+      "diagnostics":{
+        "hit_rate":0.4151459854,
+        "turnover":0.0144799949,
+        "transaction_costs":0.0158700745
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1416127731,
+        "Sharpe":-1.7827453479,
+        "Sortino":-1.5327271223,
+        "Calmar":-0.7019350596,
+        "Annualized Volatility":0.0836574247,
+        "Maximum Drawdown":-0.2017462601,
+        "Hit Rate":0.3643122677,
+        "Turnover":0.010129751,
+        "Exposure":0.7936802974,
+        "Transaction Costs":0.0054498061
+      },
+      "diagnostics":{
+        "hit_rate":0.3643122677,
+        "turnover":0.010129751,
+        "transaction_costs":0.0054498061
+      }
+    }
+  },
+  {
+    "configuration":"top20__2W-FRI__cost25__vol0__brake0",
+    "top_n":20,
+    "frequency":"2W-FRI",
+    "cost_bps":25,
+    "volatility_scaling":false,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.2489022653,
+        "Sharpe":0.7305894678,
+        "Sortino":0.9602635582,
+        "Calmar":0.5145632932,
+        "Annualized Volatility":0.4289259696,
+        "Maximum Drawdown":-0.4837155479,
+        "Hit Rate":0.4124087591,
+        "Turnover":0.0475810346,
+        "Exposure":0.8412408759,
+        "Transaction Costs":0.1303720349
+      },
+      "diagnostics":{
+        "hit_rate":0.4124087591,
+        "turnover":0.0475810346,
+        "transaction_costs":0.1303720349
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.3609541146,
+        "Sharpe":-1.806500876,
+        "Sortino":-1.77020209,
+        "Calmar":-0.7470758635,
+        "Annualized Volatility":0.2325680571,
+        "Maximum Drawdown":-0.4831559046,
+        "Hit Rate":0.3624535316,
+        "Turnover":0.0358015091,
+        "Exposure":0.7955390335,
+        "Transaction Costs":0.0481530298
+      },
+      "diagnostics":{
+        "hit_rate":0.3624535316,
+        "turnover":0.0358015091,
+        "transaction_costs":0.0481530298
+      }
+    }
+  },
+  {
+    "configuration":"top20__2W-FRI__cost25__vol0__brake1",
+    "top_n":20,
+    "frequency":"2W-FRI",
+    "cost_bps":25,
+    "volatility_scaling":false,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.1221474883,
+        "Sharpe":0.5958557262,
+        "Sortino":0.6559780313,
+        "Calmar":0.4513769262,
+        "Annualized Volatility":0.2429091183,
+        "Maximum Drawdown":-0.2706108381,
+        "Hit Rate":0.4124087591,
+        "Turnover":0.0197053101,
+        "Exposure":0.8412408759,
+        "Transaction Costs":0.0539925498
+      },
+      "diagnostics":{
+        "hit_rate":0.4124087591,
+        "turnover":0.0197053101,
+        "transaction_costs":0.0539925498
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.148597049,
+        "Sharpe":-1.8726138531,
+        "Sortino":-1.6192389141,
+        "Calmar":-0.7039127842,
+        "Annualized Volatility":0.0839887115,
+        "Maximum Drawdown":-0.2111015063,
+        "Hit Rate":0.3605947955,
+        "Turnover":0.0102215652,
+        "Exposure":0.7936802974,
+        "Transaction Costs":0.0137480052
+      },
+      "diagnostics":{
+        "hit_rate":0.3605947955,
+        "turnover":0.0102215652,
+        "transaction_costs":0.0137480052
+      }
+    }
+  },
+  {
+    "configuration":"top20__2W-FRI__cost25__vol1__brake0",
+    "top_n":20,
+    "frequency":"2W-FRI",
+    "cost_bps":25,
+    "volatility_scaling":true,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.2032495498,
+        "Sharpe":0.7109965134,
+        "Sortino":0.9810446728,
+        "Calmar":0.4204272753,
+        "Annualized Volatility":0.3406793909,
+        "Maximum Drawdown":-0.4834356896,
+        "Hit Rate":0.4105839416,
+        "Turnover":0.0397474593,
+        "Exposure":0.8412408759,
+        "Transaction Costs":0.1089080384
+      },
+      "diagnostics":{
+        "hit_rate":0.4105839416,
+        "turnover":0.0397474593,
+        "transaction_costs":0.1089080384
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.354022235,
+        "Sharpe":-1.7747684107,
+        "Sortino":-1.7371624808,
+        "Calmar":-0.7455122334,
+        "Annualized Volatility":0.2308773499,
+        "Maximum Drawdown":-0.4748711277,
+        "Hit Rate":0.3624535316,
+        "Turnover":0.0354342525,
+        "Exposure":0.7955390335,
+        "Transaction Costs":0.0476590696
+      },
+      "diagnostics":{
+        "hit_rate":0.3624535316,
+        "turnover":0.0354342525,
+        "transaction_costs":0.0476590696
+      }
+    }
+  },
+  {
+    "configuration":"top20__2W-FRI__cost25__vol1__brake1",
+    "top_n":20,
+    "frequency":"2W-FRI",
+    "cost_bps":25,
+    "volatility_scaling":true,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.1310741815,
+        "Sharpe":0.8304356384,
+        "Sortino":1.0550102803,
+        "Calmar":0.8360593213,
+        "Annualized Volatility":0.1644141811,
+        "Maximum Drawdown":-0.1567761738,
+        "Hit Rate":0.4124087591,
+        "Turnover":0.0144799949,
+        "Exposure":0.8412408759,
+        "Transaction Costs":0.0396751861
+      },
+      "diagnostics":{
+        "hit_rate":0.4124087591,
+        "turnover":0.0144799949,
+        "transaction_costs":0.0396751861
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1463653264,
+        "Sharpe":-1.8480852761,
+        "Sortino":-1.5951875596,
+        "Calmar":-0.7035048993,
+        "Annualized Volatility":0.0837006416,
+        "Maximum Drawdown":-0.2080516092,
+        "Hit Rate":0.3605947955,
+        "Turnover":0.010129751,
+        "Exposure":0.7936802974,
+        "Transaction Costs":0.0136245151
+      },
+      "diagnostics":{
+        "hit_rate":0.3605947955,
+        "turnover":0.010129751,
+        "transaction_costs":0.0136245151
+      }
+    }
+  },
+  {
+    "configuration":"top20__2W-FRI__cost50__vol0__brake0",
+    "top_n":20,
+    "frequency":"2W-FRI",
+    "cost_bps":50,
+    "volatility_scaling":false,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.1959632905,
+        "Sharpe":0.6296829155,
+        "Sortino":0.8298248734,
+        "Calmar":0.3804883462,
+        "Annualized Volatility":0.4287095855,
+        "Maximum Drawdown":-0.5150309923,
+        "Hit Rate":0.4069343066,
+        "Turnover":0.0475810346,
+        "Exposure":0.8412408759,
+        "Transaction Costs":0.2607440699
+      },
+      "diagnostics":{
+        "hit_rate":0.4069343066,
+        "turnover":0.0475810346,
+        "transaction_costs":0.2607440699
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.3815676079,
+        "Sharpe":-1.9441738586,
+        "Sortino":-1.9244909053,
+        "Calmar":-0.751797265,
+        "Annualized Volatility":0.2329026666,
+        "Maximum Drawdown":-0.507540564,
+        "Hit Rate":0.3494423792,
+        "Turnover":0.0358015091,
+        "Exposure":0.7955390335,
+        "Transaction Costs":0.0963060595
+      },
+      "diagnostics":{
+        "hit_rate":0.3494423792,
+        "turnover":0.0358015091,
+        "transaction_costs":0.0963060595
+      }
+    }
+  },
+  {
+    "configuration":"top20__2W-FRI__cost50__vol0__brake1",
+    "top_n":20,
+    "frequency":"2W-FRI",
+    "cost_bps":50,
+    "volatility_scaling":false,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.1021769132,
+        "Sharpe":0.5220273912,
+        "Sortino":0.5768426923,
+        "Calmar":0.3681535087,
+        "Annualized Volatility":0.2428180891,
+        "Maximum Drawdown":-0.277538882,
+        "Hit Rate":0.4060218978,
+        "Turnover":0.0197053101,
+        "Exposure":0.8412408759,
+        "Transaction Costs":0.1079850996
+      },
+      "diagnostics":{
+        "hit_rate":0.4060218978,
+        "turnover":0.0197053101,
+        "transaction_costs":0.1079850996
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1565139658,
+        "Sharpe":-1.9806377685,
+        "Sortino":-1.7344770743,
+        "Calmar":-0.7053665024,
+        "Annualized Volatility":0.0841171493,
+        "Maximum Drawdown":-0.2218902731,
+        "Hit Rate":0.3475836431,
+        "Turnover":0.0102215652,
+        "Exposure":0.7936802974,
+        "Transaction Costs":0.0274960104
+      },
+      "diagnostics":{
+        "hit_rate":0.3475836431,
+        "turnover":0.0102215652,
+        "transaction_costs":0.0274960104
+      }
+    }
+  },
+  {
+    "configuration":"top20__2W-FRI__cost50__vol1__brake0",
+    "top_n":20,
+    "frequency":"2W-FRI",
+    "cost_bps":50,
+    "volatility_scaling":true,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.1604930255,
+        "Sharpe":0.6049477828,
+        "Sortino":0.8368413566,
+        "Calmar":0.3121361353,
+        "Annualized Volatility":0.3404464127,
+        "Maximum Drawdown":-0.5141763717,
+        "Hit Rate":0.4060218978,
+        "Turnover":0.0397474593,
+        "Exposure":0.8412408759,
+        "Transaction Costs":0.2178160768
+      },
+      "diagnostics":{
+        "hit_rate":0.4060218978,
+        "turnover":0.0397474593,
+        "transaction_costs":0.2178160768
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.3746494764,
+        "Sharpe":-1.9119947076,
+        "Sortino":-1.8904941062,
+        "Calmar":-0.7502005868,
+        "Annualized Volatility":0.231217995,
+        "Maximum Drawdown":-0.4993990713,
+        "Hit Rate":0.3494423792,
+        "Turnover":0.0354342525,
+        "Exposure":0.7955390335,
+        "Transaction Costs":0.0953181393
+      },
+      "diagnostics":{
+        "hit_rate":0.3494423792,
+        "turnover":0.0354342525,
+        "transaction_costs":0.0953181393
+      }
+    }
+  },
+  {
+    "configuration":"top20__2W-FRI__cost50__vol1__brake1",
+    "top_n":20,
+    "frequency":"2W-FRI",
+    "cost_bps":50,
+    "volatility_scaling":true,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.1162465814,
+        "Sharpe":0.7504643923,
+        "Sortino":0.9551347827,
+        "Calmar":0.7189488294,
+        "Annualized Volatility":0.1643281164,
+        "Maximum Drawdown":-0.1616896456,
+        "Hit Rate":0.4069343066,
+        "Turnover":0.0144799949,
+        "Exposure":0.8412408759,
+        "Transaction Costs":0.0793503723
+      },
+      "diagnostics":{
+        "hit_rate":0.4069343066,
+        "turnover":0.0144799949,
+        "transaction_costs":0.0793503723
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1542320649,
+        "Sharpe":-1.9555037923,
+        "Sortino":-1.709443814,
+        "Calmar":-0.7049464077,
+        "Annualized Volatility":0.0838297128,
+        "Maximum Drawdown":-0.2187855179,
+        "Hit Rate":0.3475836431,
+        "Turnover":0.010129751,
+        "Exposure":0.7936802974,
+        "Transaction Costs":0.0272490303
+      },
+      "diagnostics":{
+        "hit_rate":0.3475836431,
+        "turnover":0.010129751,
+        "transaction_costs":0.0272490303
+      }
+    }
+  },
+  {
+    "configuration":"top20__2W-FRI__cost100__vol0__brake0",
+    "top_n":20,
+    "frequency":"2W-FRI",
+    "cost_bps":100,
+    "volatility_scaling":false,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.0965125878,
+        "Sharpe":0.4271542448,
+        "Sortino":0.5644143537,
+        "Calmar":0.1686724371,
+        "Annualized Volatility":0.428687566,
+        "Maximum Drawdown":-0.5721894433,
+        "Hit Rate":0.4023722628,
+        "Turnover":0.0475810346,
+        "Exposure":0.8412408759,
+        "Transaction Costs":0.5214881397
+      },
+      "diagnostics":{
+        "hit_rate":0.4023722628,
+        "turnover":0.0475810346,
+        "transaction_costs":0.5214881397
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.4208994102,
+        "Sharpe":-2.2132884702,
+        "Sortino":-2.2183047816,
+        "Calmar":-0.7611178008,
+        "Annualized Volatility":0.2341046082,
+        "Maximum Drawdown":-0.5530016638,
+        "Hit Rate":0.3401486989,
+        "Turnover":0.0358015091,
+        "Exposure":0.7955390335,
+        "Transaction Costs":0.1926121191
+      },
+      "diagnostics":{
+        "hit_rate":0.3401486989,
+        "turnover":0.0358015091,
+        "transaction_costs":0.1926121191
+      }
+    }
+  },
+  {
+    "configuration":"top20__2W-FRI__cost100__vol0__brake1",
+    "top_n":20,
+    "frequency":"2W-FRI",
+    "cost_bps":100,
+    "volatility_scaling":false,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.0632314435,
+        "Sharpe":0.3738376955,
+        "Sortino":0.4126269885,
+        "Calmar":0.2155763926,
+        "Annualized Volatility":0.2428741234,
+        "Maximum Drawdown":-0.2933133946,
+        "Hit Rate":0.4032846715,
+        "Turnover":0.0197053101,
+        "Exposure":0.8412408759,
+        "Transaction Costs":0.2159701992
+      },
+      "diagnostics":{
+        "hit_rate":0.4032846715,
+        "turnover":0.0197053101,
+        "transaction_costs":0.2159701992
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1721432808,
+        "Sharpe":-2.1901585848,
+        "Sortino":-1.937411296,
+        "Calmar":-0.7082678425,
+        "Annualized Volatility":0.0845874635,
+        "Maximum Drawdown":-0.2430482799,
+        "Hit Rate":0.3401486989,
+        "Turnover":0.0102215652,
+        "Exposure":0.7936802974,
+        "Transaction Costs":0.0549920207
+      },
+      "diagnostics":{
+        "hit_rate":0.3401486989,
+        "turnover":0.0102215652,
+        "transaction_costs":0.0549920207
+      }
+    }
+  },
+  {
+    "configuration":"top20__2W-FRI__cost100__vol1__brake0",
+    "top_n":20,
+    "frequency":"2W-FRI",
+    "cost_bps":100,
+    "volatility_scaling":true,
+    "drawdown_brake":false,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.0793206424,
+        "Sharpe":0.3919362264,
+        "Sortino":0.5437459672,
+        "Calmar":0.1390646273,
+        "Annualized Volatility":0.340395147,
+        "Maximum Drawdown":-0.5703869048,
+        "Hit Rate":0.401459854,
+        "Turnover":0.0397474593,
+        "Exposure":0.8412408759,
+        "Transaction Costs":0.4356321535
+      },
+      "diagnostics":{
+        "hit_rate":0.401459854,
+        "turnover":0.0397474593,
+        "transaction_costs":0.4356321535
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.4140268913,
+        "Sharpe":-2.1802667741,
+        "Sortino":-2.1822983072,
+        "Calmar":-0.7594585593,
+        "Annualized Volatility":0.2324280219,
+        "Maximum Drawdown":-0.5451606097,
+        "Hit Rate":0.3401486989,
+        "Turnover":0.0354342525,
+        "Exposure":0.7955390335,
+        "Transaction Costs":0.1906362785
+      },
+      "diagnostics":{
+        "hit_rate":0.3401486989,
+        "turnover":0.0354342525,
+        "transaction_costs":0.1906362785
+      }
+    }
+  },
+  {
+    "configuration":"top20__2W-FRI__cost100__vol1__brake1",
+    "top_n":20,
+    "frequency":"2W-FRI",
+    "cost_bps":100,
+    "volatility_scaling":true,
+    "drawdown_brake":true,
+    "validation":{
+      "start":"2022-01-01",
+      "end":"2024-12-31",
+      "observations":1096,
+      "metrics":{
+        "CAGR":0.0871334025,
+        "Sharpe":0.5895245682,
+        "Sortino":0.7484653402,
+        "Calmar":0.4893012205,
+        "Annualized Volatility":0.1643636491,
+        "Maximum Drawdown":-0.178077223,
+        "Hit Rate":0.4032846715,
+        "Turnover":0.0144799949,
+        "Exposure":0.8412408759,
+        "Transaction Costs":0.1587007445
+      },
+      "diagnostics":{
+        "hit_rate":0.4032846715,
+        "turnover":0.0144799949,
+        "transaction_costs":0.1587007445
+      }
+    },
+    "holdout":{
+      "start":"2025-01-01",
+      "end":"2026-06-22",
+      "observations":538,
+      "metrics":{
+        "CAGR":-0.1697642859,
+        "Sharpe":-2.1638830383,
+        "Sortino":-1.9106131766,
+        "Calmar":-0.7078234917,
+        "Annualized Volatility":0.084300359,
+        "Maximum Drawdown":-0.2398398582,
+        "Hit Rate":0.3401486989,
+        "Turnover":0.010129751,
+        "Exposure":0.7936802974,
+        "Transaction Costs":0.0544980606
+      },
+      "diagnostics":{
+        "hit_rate":0.3401486989,
+        "turnover":0.010129751,
+        "transaction_costs":0.0544980606
+      }
+    }
+  }
+]

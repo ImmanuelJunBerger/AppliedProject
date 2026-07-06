@@ -1,0 +1,32 @@
+feature,source,point_in_time_status,available
+equity_realized_vol_21d,existing macro/crypto regime feature,lagged before strategy use,True
+equity_momentum_21d,existing macro/crypto regime feature,lagged before strategy use,True
+dow_vol_level,existing macro/crypto regime feature,lagged before strategy use,True
+vix_level,existing macro/crypto regime feature,lagged before strategy use,True
+vix_change_5d,existing macro/crypto regime feature,lagged before strategy use,True
+vix_change_21d,existing macro/crypto regime feature,lagged before strategy use,True
+stablecoin_supply_change_7d,existing macro/crypto regime feature,lagged before strategy use,True
+tvl_growth_30d,existing macro/crypto regime feature,lagged before strategy use,True
+volatility_expansion_probability,existing macro/crypto regime feature,lagged before strategy use,True
+cross_sectional_dispersion,existing macro/crypto regime feature,lagged before strategy use,True
+funding_change,accepted new-data feature panel,lagged before strategy use,True
+funding_level,accepted new-data feature panel,lagged before strategy use,True
+tvl_percentile,engineered from point-in-time OHLCV/public crypto data,lagged before strategy use,True
+tvl_acceleration,engineered from point-in-time OHLCV/public crypto data,lagged before strategy use,True
+stablecoin_supply_percentile,engineered from point-in-time OHLCV/public crypto data,lagged before strategy use,True
+stablecoin_acceleration,engineered from point-in-time OHLCV/public crypto data,lagged before strategy use,True
+top_universe_above_30dma_pct,engineered from point-in-time OHLCV/public crypto data,lagged before strategy use,True
+top_universe_positive_30d_pct,engineered from point-in-time OHLCV/public crypto data,lagged before strategy use,True
+top_universe_30d_high_pct,engineered from point-in-time OHLCV/public crypto data,lagged before strategy use,True
+breadth_recovery,engineered from point-in-time OHLCV/public crypto data,lagged before strategy use,True
+realized_vol_21d,engineered from point-in-time OHLCV/public crypto data,lagged before strategy use,True
+realized_vol_percentile,engineered from point-in-time OHLCV/public crypto data,lagged before strategy use,True
+volatility_compression,engineered from point-in-time OHLCV/public crypto data,lagged before strategy use,True
+jump_intensity,engineered from point-in-time OHLCV/public crypto data,lagged before strategy use,True
+upside_semivariance,engineered from point-in-time OHLCV/public crypto data,lagged before strategy use,True
+downside_to_upside_volatility_ratio,engineered from point-in-time OHLCV/public crypto data,lagged before strategy use,True
+market_drawdown,engineered from point-in-time OHLCV/public crypto data,lagged before strategy use,True
+recovery_from_drawdown,engineered from point-in-time OHLCV/public crypto data,lagged before strategy use,True
+distance_from_90d_lows,engineered from point-in-time OHLCV/public crypto data,lagged before strategy use,True
+eth_btc_relative_strength_30d,engineered from point-in-time OHLCV/public crypto data,lagged before strategy use,True
+eth_btc_relative_strength_z,engineered from point-in-time OHLCV/public crypto data,lagged before strategy use,True

@@ -1,0 +1,11 @@
+target,description,split,observations,positive_events,prevalence
+target_a_btc_30d_gt_15,BTC > +15% over next 30 days,development,287,77,0.2682926829268293
+target_a_btc_30d_gt_15,BTC > +15% over next 30 days,holdout,73,5,0.0684931506849315
+target_b_eth_30d_gt_20,ETH > +20% over next 30 days,development,287,75,0.2613240418118467
+target_b_eth_30d_gt_20,ETH > +20% over next 30 days,holdout,73,11,0.1506849315068493
+target_c_eth_beats_btc_30d_gt_5,ETH outperforms BTC by >5% over next 30 days,development,287,91,0.3170731707317073
+target_c_eth_beats_btc_30d_gt_5,ETH outperforms BTC by >5% over next 30 days,holdout,73,16,0.2191780821917808
+target_d_top20_leadership,Top-20 leadership state: top-20 EW beats BTC/ETH 50-50 by >5%,development,287,71,0.24738675958188153
+target_d_top20_leadership,Top-20 leadership state: top-20 EW beats BTC/ETH 50-50 by >5%,holdout,73,10,0.136986301369863
+target_e_top20_asset_top_quintile,Top-20 asset in next-month top quintile,development,5704,1146,0.2009116409537167
+target_e_top20_asset_top_quintile,Top-20 asset in next-month top quintile,holdout,1460,292,0.2

@@ -1,0 +1,13 @@
+# Study templates
+
+Each study follows the same order: acquire data, audit timestamps, engineer
+lagged features, validate features independently, and only then test a frozen
+strategy overlay if the feature gate passes.
+
+| Study | New information | Feature validation | Model path | Economic test | Reject if |
+|---|---|---|---|---|---|
+| Institutional-flow expansion overlay | ETF/CME/CFTC/CoinShares/exchange-reserve flow series. | Net flow, flow/AUM, flow acceleration, flow percentile, inflow streak, outflow shock versus upside targets. | Start with Level 1 classifiers; only use Level 2 if daily observations are sufficient. | Layer on frozen macro gate; risk-on weeks can increase exposure or tilt ETH only if probabilities pass development thresholds. | Flow data is delayed/revised, insufficiently mapped to BTC/ETH, or improves only by reducing exposure. |
+| Professional on-chain upside model | MVRV, realized cap, NVT, SOPR, exchange flows, whale/holder/entity metrics. | Development-only AUC/IC/Newey-West/CPCV stability; compare against public active-address and transaction proxies. | Level 1 first; sequence models only if dense daily multi-metric history is available. | Only Tier-1 on-chain features may enter expansion overlays. | Entity-label revisions or metric methodology create lookahead risk, or holdout effect disappears. |
+| Crypto options-implied expansion model | Constant-maturity IV, skew, risk reversal, put/call ratio, and term-structure data. | Test whether implied information improves upside/leadership targets after realized-volatility controls. | Level 1 first; shallow sequence models only if option-surface panel is sufficiently dense. | Use options state to increase upside participation only when macro gate allows exposure. | Signal is stale, surface construction is unstable, or it only restates realized volatility. |
+| Cross-sectional leadership expansion model | Sector leadership, breadth expansion, dominance, correlation and dispersion states. | Universe-vintage-aware feature research across top 10/20/30; no survivorship-biased sector labels. | Level 1 classifiers and interpretable ensemble scores. | Allow top-universe sleeves only if leadership target passes development CPCV. | Turnover is high, leadership is unstable, or top-universe sleeve fails holdout drawdown controls. |
+| LLM timestamped event features | News/regulatory/social/research-report sentiment and event tags. | Timestamp audit, event-label stability, and independent AUC/IC versus upside/risk targets. | LLMs extract features only; trading model remains conventional and predeclared. | Text features must improve frozen-strategy overlay after costs. | Text publication time is ambiguous or feature extraction is not reproducible. |

@@ -1,0 +1,11 @@
+target,description,split,observations,positive_events,prevalence
+btc_eth_50_50_forward_positive_30d,BTC/ETH 50-50 30-day forward return positive,development,261,148,0.5670498084291188
+btc_eth_50_50_forward_positive_30d,BTC/ETH 50-50 30-day forward return positive,holdout,73,35,0.4794520547945205
+btc_forward_30d_gt_10,BTC forward 30-day return > +10%,development,261,95,0.36398467432950193
+btc_forward_30d_gt_10,BTC forward 30-day return > +10%,holdout,73,12,0.1643835616438356
+eth_forward_30d_gt_15,ETH forward 30-day return > +15%,development,261,91,0.3486590038314176
+eth_forward_30d_gt_15,ETH forward 30-day return > +15%,holdout,73,13,0.1780821917808219
+frozen_macro_positive_next_period,Frozen macro strategy next-period return positive,development,261,102,0.39080459770114945
+frozen_macro_positive_next_period,Frozen macro strategy next-period return positive,holdout,73,24,0.3287671232876712
+avoid_large_negative_btc_eth_30d,Avoid exposure before large negative next-period BTC/ETH return,development,261,205,0.7854406130268199
+avoid_large_negative_btc_eth_30d,Avoid exposure before large negative next-period BTC/ETH return,holdout,73,51,0.6986301369863014

@@ -1,0 +1,23 @@
+{
+  "directional_return": [
+    "BTC/ETH next returns positive"
+  ],
+  "large_upside": [
+    "30d upside thresholds"
+  ],
+  "crash_avoidance": [
+    "future drawdown labels"
+  ],
+  "volatility_state": [
+    "future vol state"
+  ],
+  "relative_value": [
+    "ETH beats BTC"
+  ],
+  "regime_transition": [
+    "state changes"
+  ],
+  "utility_trade_quality": [
+    "profit after costs"
+  ]
+}

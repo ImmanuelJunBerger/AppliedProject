@@ -1,0 +1,43 @@
+# Frozen before locked-holdout audit for the defensible-strategy review.
+# Selection basis: development-only diagnostics and existing CPCV/PBO/DSR evidence.
+# Holdout is for audit only and must not be used to alter this specification.
+strategy_name: btc_eth_macro_gate_balanced
+framing: defensive_btc_eth_macro_risk_management
+asset_universe: [BTC, ETH, CASH]
+implementation_source: src/crypto_mlsystem/macro_regime_benchmark_analysis.py::FIXED_SELECTED
+candidate_dataclass:
+  family: BTC/ETH/cash macro risk gate
+  gate_profile: balanced
+  use_crypto_gate: false
+  allocation: btc_eth
+  rebalance_days: 7
+  top_k: 5
+  universe_size: 10
+  max_asset_weight: 0.20
+  turnover_cap: 0.75
+macro_features:
+  positive: [equity_realized_vol_21d, equity_momentum_21d, dow_vol_level, vix_level]
+  negative: [vix_change_5d, vix_change_21d]
+threshold_policy:
+  source: development-period feature quantiles in build_macro_regime_dataset
+  balanced_positive_quantile: 0.50
+  balanced_negative_quantile: 0.50
+  balanced_macro_votes_required: 4
+allocation_policy:
+  risk_on: {BTC: 0.50, ETH: 0.50, CASH: 0.00}
+  neutral: {BTC: 0.25, ETH: 0.25, CASH: 0.50}
+  risk_off: {BTC: 0.00, ETH: 0.00, CASH: 1.00}
+transaction_cost_bps: [10, 25, 50, 100]
+validation_requirements:
+  development_start_for_diagnostics: '2019-07-05'
+  code_development_start: '2020-01-01'
+  development_end: '2024-12-31'
+  locked_holdout_start: '2025-01-01'
+  preserve_cpcv_purging_embargo: true
+  preserve_pbo_dsr_bootstrap: true
+  no_holdout_tuning: true
+rationale: >-
+  Development-only diagnostics did not identify a defensibly superior replacement
+  after costs and robustness checks. The frozen strategy is retained, but the
+  project framing is narrowed to defensive BTC/ETH macro-conditioned risk
+  management and drawdown avoidance rather than broad cryptocurrency allocation alpha.

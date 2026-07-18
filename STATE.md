@@ -1,3 +1,30 @@
+# STATE — RUN 3 COMPLETE (see RUN 3 section below; Run 1/2 sections preserved as history)
+
+## RUN 3 — Perp DEX Farming Cost & Breakeven Model (2026-07-18, third session)
+
+**Status: complete.** Not a backtest, not a strategy search — a cost-accounting model for
+delta-neutral perp-DEX points farming, reusing Run 1/2's `src/engine.py`, `src/data.py`,
+`src/stats.py`. Deliverables: `venues.csv` (10 venues, primary-sources-only), `src/farm_cost.py`
+(cost grid + breakeven + speculative scenario grid), `RISKS.md`, `FARMING_COST.md`.
+
+Headline: base case (1,000 EUR, typical fees, 1x leverage, 50x monthly volume multiple) costs
+97.68 EUR/month (9.77% of capital); 3-month breakeven airdrop value is 307.04 EUR. At 3x leverage,
+empirical BTC/ETH volatility implies 32-65% monthly probability of at least one leg being
+liquidated. Only 1 of 10 researched venues (Variational/Omni) has a primary-sourced, currently-live,
+pre-TGE points program with an announced allocation %; 2 venues' programs have already concluded
+(Hyperliquid Nov 2024, Avantis Feb 2026); 2 venues (Nado, Reya) had the weakest verification quality
+(docs domains blocked direct fetch or gave contradictory signals). Payoff side never estimated as a
+forecast — only as a user-adjustable scenario grid (108 combinations, 12% show positive expected
+net at the illustrative inputs used).
+
+Research method note: used 3 parallel general-purpose research agents (one per venue group) with
+an identical, strict source-discipline brief (primary docs/blog/API only; blog-only facts marked
+UNVERIFIED and excluded from calculations; STATUS UNKNOWN when program liveness couldn't be
+confirmed). Synthesized their findings into `venues.csv` myself rather than trusting agent output
+verbatim.
+
+---
+
 # STATE — RUN 2 COMPLETE (see RUN 2 section below; Run 1 section preserved as history)
 
 ## RUN 2 — Crypto Edge Hunt v2 (2026-07-18, second session)

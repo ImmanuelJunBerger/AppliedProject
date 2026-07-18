@@ -1,0 +1,9 @@
+coin,leverage,liq_threshold_pct,p_long_leg_liq_pct,p_short_leg_liq_pct,p_either_leg_liq_pct,x99_worst_move_pct,x99_9_worst_move_pct,safe_leverage_for_1pct
+BTC,1,50.0,0.0,0.0,0.0,,,
+BTC,2,25.0,12.67,0.0,12.67,,,
+BTC,3,16.67,25.78,6.16,31.94,,,
+BTC,SAFE_L_FOR_<1%,,,,,37.03,38.12,1.35
+ETH,1,50.0,0.0,6.1,6.1,,,
+ETH,2,25.0,25.53,15.36,40.89,,,
+ETH,3,16.67,36.81,28.9,64.67,,,
+ETH,SAFE_L_FOR_<1%,,,,,61.85,74.0,0.81

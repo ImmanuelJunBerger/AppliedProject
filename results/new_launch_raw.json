@@ -1,0 +1,10 @@
+{
+  "n_profiled_tokens_in_feed": 30,
+  "n_unresolvable_or_dead_or_illiquid": 6,
+  "attrition_rate_pct_LOWER_BOUND": 20.0,
+  "n_surviving_with_liquidity": 24,
+  "survivors_median_priceChange_h24_pct_UNRELIABLE": 46.2,
+  "survivors_median_age_hours": 1.01,
+  "survivors_median_liquidity_usd": 10127.0,
+  "HONESTY_NOTE": "No backtest was run: no point-in-time historical panel exists in free data to backtest entry/exit rules against. Any price-change stats above describe only tokens still visible and liquid right now -- tokens that already rugged/delisted between being profiled and this query are excluded from the 'survivors' stats, biasing them strongly upward. Do not treat any number in this file as a tradeable edge."
+}

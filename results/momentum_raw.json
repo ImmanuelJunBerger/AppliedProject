@@ -1,0 +1,152 @@
+{
+  "universe_size": 50,
+  "symbols_with_near_full_history": 0,
+  "backtest_span": [
+    "2024-03-26 00:00:00+00:00",
+    "2026-07-18 00:00:00+00:00"
+  ],
+  "lookback7d_longshort": {
+    "gross": {
+      "total_return_pct": 209.6,
+      "sharpe_annualized": 1.15,
+      "max_drawdown_pct": -42.78,
+      "win_rate_pct": 47.9,
+      "n_periods": 845,
+      "trade_count": 106,
+      "turnover_eur": 236039.95,
+      "net_profit_eur_on_1000": 2096.01,
+      "final_equity_eur": 3096.01
+    },
+    "net": {
+      "total_return_pct": 20.19,
+      "sharpe_annualized": 0.43,
+      "max_drawdown_pct": -51.89,
+      "win_rate_pct": 45.0,
+      "n_periods": 845,
+      "trade_count": 106,
+      "turnover_eur": 236039.95,
+      "net_profit_eur_on_1000": 201.94,
+      "final_equity_eur": 1201.94
+    }
+  },
+  "lookback7d_longonly": {
+    "gross": {
+      "total_return_pct": 257.7,
+      "sharpe_annualized": 1.14,
+      "max_drawdown_pct": -55.79,
+      "win_rate_pct": 45.4,
+      "n_periods": 845,
+      "trade_count": 106,
+      "turnover_eur": 253203.01,
+      "net_profit_eur_on_1000": 2576.98,
+      "final_equity_eur": 3576.98
+    },
+    "net": {
+      "total_return_pct": 126.65,
+      "sharpe_annualized": 0.86,
+      "max_drawdown_pct": -60.64,
+      "win_rate_pct": 45.0,
+      "n_periods": 845,
+      "trade_count": 106,
+      "turnover_eur": 253203.01,
+      "net_profit_eur_on_1000": 1266.49,
+      "final_equity_eur": 2266.49
+    }
+  },
+  "lookback14d_longshort": {
+    "gross": {
+      "total_return_pct": 325.64,
+      "sharpe_annualized": 1.41,
+      "max_drawdown_pct": -54.75,
+      "win_rate_pct": 45.0,
+      "n_periods": 845,
+      "trade_count": 93,
+      "turnover_eur": 258468.27,
+      "net_profit_eur_on_1000": 3256.39,
+      "final_equity_eur": 4256.39
+    },
+    "net": {
+      "total_return_pct": 22.35,
+      "sharpe_annualized": 0.45,
+      "max_drawdown_pct": -55.22,
+      "win_rate_pct": 42.5,
+      "n_periods": 756,
+      "trade_count": 93,
+      "turnover_eur": 258468.27,
+      "net_profit_eur_on_1000": 223.52,
+      "final_equity_eur": 1223.52
+    }
+  },
+  "lookback14d_longonly": {
+    "gross": {
+      "total_return_pct": 140.38,
+      "sharpe_annualized": 0.89,
+      "max_drawdown_pct": -61.24,
+      "win_rate_pct": 46.3,
+      "n_periods": 845,
+      "trade_count": 93,
+      "turnover_eur": 139923.06,
+      "net_profit_eur_on_1000": 1403.76,
+      "final_equity_eur": 2403.76
+    },
+    "net": {
+      "total_return_pct": 13.41,
+      "sharpe_annualized": 0.44,
+      "max_drawdown_pct": -64.26,
+      "win_rate_pct": 44.0,
+      "n_periods": 756,
+      "trade_count": 93,
+      "turnover_eur": 139923.06,
+      "net_profit_eur_on_1000": 134.12,
+      "final_equity_eur": 1134.12
+    }
+  },
+  "lookback30d_longshort": {
+    "gross": {
+      "total_return_pct": 98.23,
+      "sharpe_annualized": 0.82,
+      "max_drawdown_pct": -51.39,
+      "win_rate_pct": 46.2,
+      "n_periods": 845,
+      "trade_count": 91,
+      "turnover_eur": 157547.89,
+      "net_profit_eur_on_1000": 982.31,
+      "final_equity_eur": 1982.31
+    },
+    "net": {
+      "total_return_pct": -7.72,
+      "sharpe_annualized": 0.21,
+      "max_drawdown_pct": -54.14,
+      "win_rate_pct": 44.2,
+      "n_periods": 756,
+      "trade_count": 91,
+      "turnover_eur": 157547.89,
+      "net_profit_eur_on_1000": -77.23,
+      "final_equity_eur": 922.77
+    }
+  },
+  "lookback30d_longonly": {
+    "gross": {
+      "total_return_pct": 60.87,
+      "sharpe_annualized": 0.64,
+      "max_drawdown_pct": -61.08,
+      "win_rate_pct": 42.9,
+      "n_periods": 845,
+      "trade_count": 98,
+      "turnover_eur": 95239.61,
+      "net_profit_eur_on_1000": 608.73,
+      "final_equity_eur": 1608.73
+    },
+    "net": {
+      "total_return_pct": 31.68,
+      "sharpe_annualized": 0.51,
+      "max_drawdown_pct": -64.21,
+      "win_rate_pct": 42.4,
+      "n_periods": 845,
+      "trade_count": 98,
+      "turnover_eur": 95239.61,
+      "net_profit_eur_on_1000": 316.81,
+      "final_equity_eur": 1316.81
+    }
+  }
+}

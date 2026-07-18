@@ -1,0 +1,4 @@
+pair,tradeable_folds,total_return_pct,sharpe_annualized,max_drawdown_pct,win_rate_pct,n_periods,trade_count,turnover_eur,net_profit_eur_on_1000,final_equity_eur
+PEPEUSDT/BONKUSDT,1,14.51,1.1,-2.23,2.9,750,3,0.0,145.07,1145.07
+BONKUSDT/PENGUUSDT,1,15.96,0.76,-7.7,2.3,750,5,0.0,159.59,1159.59
+DOGEUSDT/PENGUUSDT,1,-2.75,-0.24,-5.53,1.5,750,1,0.0,-27.5,972.5

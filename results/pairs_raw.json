@@ -1,0 +1,104 @@
+{
+  "L1": {
+    "n_pairs_total": 36,
+    "n_pairs_ever_cointegrated": 11,
+    "mean_sharpe_across_cointegrated_pairs": 0.19,
+    "median_sharpe_across_cointegrated_pairs": 0.04,
+    "pct_pairs_with_positive_net_pnl": 54.5,
+    "best_pair": {
+      "pair": "ADAUSDT/TRXUSDT",
+      "tradeable_folds": 1,
+      "total_return_pct": 9.33,
+      "sharpe_annualized": 0.98,
+      "max_drawdown_pct": -2.64,
+      "win_rate_pct": 0.9,
+      "n_periods": 750,
+      "trade_count": 1,
+      "turnover_eur": 0.0,
+      "net_profit_eur_on_1000": 93.3,
+      "final_equity_eur": 1093.3
+    },
+    "worst_pair": {
+      "pair": "ADAUSDT/DOTUSDT",
+      "tradeable_folds": 2,
+      "total_return_pct": -9.68,
+      "sharpe_annualized": -0.81,
+      "max_drawdown_pct": -11.26,
+      "win_rate_pct": 3.2,
+      "n_periods": 750,
+      "trade_count": 11,
+      "turnover_eur": 0.0,
+      "net_profit_eur_on_1000": -96.8,
+      "final_equity_eur": 903.2
+    },
+    "all_pairs_csv": "results/pairs_ETHUSDT_per_pair.csv"
+  },
+  "DeFi": {
+    "n_pairs_total": 15,
+    "n_pairs_ever_cointegrated": 7,
+    "mean_sharpe_across_cointegrated_pairs": -0.35,
+    "median_sharpe_across_cointegrated_pairs": -0.13,
+    "pct_pairs_with_positive_net_pnl": 42.9,
+    "best_pair": {
+      "pair": "LINKUSDT/ENAUSDT",
+      "tradeable_folds": 1,
+      "total_return_pct": 5.13,
+      "sharpe_annualized": 0.73,
+      "max_drawdown_pct": -5.23,
+      "win_rate_pct": 1.9,
+      "n_periods": 750,
+      "trade_count": 2,
+      "turnover_eur": 0.0,
+      "net_profit_eur_on_1000": 51.34,
+      "final_equity_eur": 1051.34
+    },
+    "worst_pair": {
+      "pair": "LDOUSDT/LINKUSDT",
+      "tradeable_folds": 3,
+      "total_return_pct": -34.63,
+      "sharpe_annualized": -1.83,
+      "max_drawdown_pct": -36.39,
+      "win_rate_pct": 4.1,
+      "n_periods": 750,
+      "trade_count": 59,
+      "turnover_eur": 0.0,
+      "net_profit_eur_on_1000": -346.29,
+      "final_equity_eur": 653.71
+    },
+    "all_pairs_csv": "results/pairs_UNIUSDT_per_pair.csv"
+  },
+  "Meme": {
+    "n_pairs_total": 6,
+    "n_pairs_ever_cointegrated": 3,
+    "mean_sharpe_across_cointegrated_pairs": 0.54,
+    "median_sharpe_across_cointegrated_pairs": 0.76,
+    "pct_pairs_with_positive_net_pnl": 66.7,
+    "best_pair": {
+      "pair": "PEPEUSDT/BONKUSDT",
+      "tradeable_folds": 1,
+      "total_return_pct": 14.51,
+      "sharpe_annualized": 1.1,
+      "max_drawdown_pct": -2.23,
+      "win_rate_pct": 2.9,
+      "n_periods": 750,
+      "trade_count": 3,
+      "turnover_eur": 0.0,
+      "net_profit_eur_on_1000": 145.07,
+      "final_equity_eur": 1145.07
+    },
+    "worst_pair": {
+      "pair": "DOGEUSDT/PENGUUSDT",
+      "tradeable_folds": 1,
+      "total_return_pct": -2.75,
+      "sharpe_annualized": -0.24,
+      "max_drawdown_pct": -5.53,
+      "win_rate_pct": 1.5,
+      "n_periods": 750,
+      "trade_count": 1,
+      "turnover_eur": 0.0,
+      "net_profit_eur_on_1000": -27.5,
+      "final_equity_eur": 972.5
+    },
+    "all_pairs_csv": "results/pairs_PEPEUSDT_per_pair.csv"
+  }
+}

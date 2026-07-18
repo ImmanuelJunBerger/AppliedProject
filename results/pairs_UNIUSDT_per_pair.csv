@@ -1,0 +1,8 @@
+pair,tradeable_folds,total_return_pct,sharpe_annualized,max_drawdown_pct,win_rate_pct,n_periods,trade_count,turnover_eur,net_profit_eur_on_1000,final_equity_eur
+LINKUSDT/ENAUSDT,1,5.13,0.73,-5.23,1.9,750,2,0.0,51.34,1051.34
+UNIUSDT/AAVEUSDT,1,0.56,0.43,-0.3,0.1,750,1,0.0,5.64,1005.64
+AAVEUSDT/ENAUSDT,1,0.24,0.05,-4.11,0.5,750,3,0.0,2.44,1002.44
+LDOUSDT/ENAUSDT,2,-1.75,-0.13,-6.54,1.6,750,1,0.0,-17.45,982.55
+UNIUSDT/ENAUSDT,1,-8.63,-0.51,-11.19,3.1,750,3,0.0,-86.33,913.67
+AAVEUSDT/LINKUSDT,2,-25.8,-1.22,-29.03,3.5,750,39,0.0,-258.02,741.98
+LDOUSDT/LINKUSDT,3,-34.63,-1.83,-36.39,4.1,750,59,0.0,-346.29,653.71

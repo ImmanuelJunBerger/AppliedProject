@@ -1,0 +1,77 @@
+{
+  "all": {
+    "n_trades": 94,
+    "mean_return_frac": -0.00428,
+    "win_rate_pct": 35.1,
+    "sharpe_rough_annualized": -0.28,
+    "p_value": 0.82665,
+    "total_pnl_eur": -401.86
+  },
+  "in_sample": {
+    "n_trades": 54,
+    "mean_return_frac": -0.00518,
+    "win_rate_pct": 27.8,
+    "sharpe_rough_annualized": -0.32,
+    "p_value": 0.78814,
+    "total_pnl_eur": -279.61
+  },
+  "holdout": {
+    "n_trades": 40,
+    "mean_return_frac": -0.00306,
+    "win_rate_pct": 45.0,
+    "sharpe_rough_annualized": -0.23,
+    "p_value": 0.68832,
+    "total_pnl_eur": -122.26
+  },
+  "sector_L1": {
+    "n_trades": 41,
+    "mean_return_frac": -0.00334,
+    "win_rate_pct": 48.8,
+    "sharpe_rough_annualized": -0.2,
+    "p_value": 0.67202,
+    "total_pnl_eur": -136.97
+  },
+  "sector_DeFi": {
+    "n_trades": 50,
+    "mean_return_frac": -0.01227,
+    "win_rate_pct": 20.0,
+    "sharpe_rough_annualized": -1.24,
+    "p_value": 0.99872,
+    "total_pnl_eur": -613.38
+  },
+  "sector_Meme": {
+    "n_trades": 3,
+    "mean_return_frac": 0.11616,
+    "win_rate_pct": 100.0,
+    "sharpe_rough_annualized": 15.39,
+    "p_value": 1.0,
+    "total_pnl_eur": 348.48
+  },
+  "ex_best_pair": {
+    "dropped": "BONKUSDT/PENGUUSDT",
+    "n_trades": 92,
+    "mean_return_frac": -0.00684,
+    "win_rate_pct": 33.7,
+    "sharpe_rough_annualized": -0.49,
+    "p_value": 0.94647,
+    "total_pnl_eur": -629.62
+  },
+  "ex_best_month": {
+    "dropped": "2025-09",
+    "n_trades": 92,
+    "mean_return_frac": -0.00606,
+    "win_rate_pct": 33.7,
+    "sharpe_rough_annualized": -0.41,
+    "p_value": 0.91306,
+    "total_pnl_eur": -557.59
+  },
+  "deflated_sharpe_is": {
+    "sr_per_period": -0.1089,
+    "sr0_expected_max_under_null": 0.1519,
+    "sigma_sr": 0.1444,
+    "z": -1.806,
+    "deflated_sharpe_prob": 0.0355,
+    "T": 54,
+    "n_trials": 4
+  }
+}

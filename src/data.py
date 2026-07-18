@@ -136,9 +136,17 @@ NON_CRYPTO_BASES = {
     "USDC", "USD1", "FDUSD", "RLUSD", "TUSD", "DAI", "USDP", "BUSD", "GUSD",
     "EURI", "EUR", "GBP", "USDE", "PYUSD", "XAUT", "PAXG",
 }
-# Binance's tokenized-equity spot pairs (base ticker + trailing "B", e.g. a
-# tokenized SpaceX/Micron/Circle share) -- not crypto, excluded explicitly.
-TOKENIZED_EQUITY_BASES = {"SPCXB", "SOXLB", "CRCLB", "SNDKB", "SKHYB"}
+# Binance's tokenized-equity/ETF spot pairs (base ticker + trailing "B", e.g. a
+# tokenized SpaceX/Micron/Circle/Nvidia/Tesla/S&P500-ETF share) -- not crypto,
+# excluded explicitly. Identified by matching well-known Nasdaq/NYSE tickers +
+# "B" suffix; found by inspecting the full 440-symbol Binance USDT pool
+# (Run 2, Track A1) after the original Run-1 list proved incomplete.
+TOKENIZED_EQUITY_BASES = {
+    "SPCXB", "SOXLB", "CRCLB", "SNDKB", "SKHYB",
+    "NVDAB", "TSLAB", "AMDB", "ARMB", "EWYB", "INTCB", "MSTRB", "METAB",
+    "MSFTB", "PLTRB", "QQQB", "COINB", "GLWB", "NBISB", "QCOMB", "SPYB",
+    "WDCB", "AAOIB", "DRAMB", "CBRSB",
+}
 
 
 def top_usdt_pairs_by_volume(n: int = 50, use_cache: bool = True) -> list[str]:
@@ -198,6 +206,48 @@ def fetch_okx_funding_history(inst_id: str, limit: int = 100, use_cache: bool = 
     df["instId"] = inst_id
     _save_cache(key, df)
     LOG.info("fetched OKX funding %s rows=%d", inst_id, len(df))
+    return df
+
+
+def fetch_okx_history_candles(inst_id: str, bar: str = "1H", target_days: float = 180,
+                               use_cache: bool = True) -> pd.DataFrame:
+    """Paginated fetch from OKX's longer-retention history-candles endpoint.
+    Pages backward in time via `after` (older-than), 100 candles/call."""
+    key = f"okx_history_candles_{inst_id}_{bar}_{int(target_days)}d"
+    if use_cache:
+        cached = _load_cache(key)
+        if cached is not None:
+            return cached
+    bar_hours = {"1H": 1, "4H": 4, "1D": 24}.get(bar, 1)
+    target_rows = int(target_days * 24 / bar_hours)
+    all_rows = []
+    after = None
+    for _ in range(max(1, target_rows // 100 + 2)):
+        params = {"instId": inst_id, "bar": bar, "limit": 100}
+        if after:
+            params["after"] = after
+        js = _get(f"{OKX}/api/v5/market/history-candles", params)
+        rows = js.get("data", [])
+        if not rows:
+            break
+        all_rows.extend(rows)
+        after = rows[-1][0]
+        time.sleep(0.15)
+        if len(all_rows) >= target_rows or len(rows) < 100:
+            break
+    if not all_rows:
+        return pd.DataFrame()
+    cols = ["ts", "o", "h", "l", "c", "vol", "volCcy", "volCcyQuote", "confirm"]
+    df = pd.DataFrame(all_rows, columns=cols).drop_duplicates(subset=["ts"])
+    df["timestamp"] = pd.to_datetime(df["ts"].astype(float), unit="ms", utc=True)
+    for c in ["o", "h", "l", "c", "vol"]:
+        df[c] = df[c].astype(float)
+    df = df.rename(columns={"o": "open", "h": "high", "l": "low", "c": "close", "vol": "volume"})
+    df = df.sort_values("timestamp")[["timestamp", "open", "high", "low", "close", "volume"]]
+    df["instId"] = inst_id
+    _save_cache(key, df)
+    LOG.info("fetched OKX history-candles %s %s rows=%d span_days=%.0f", inst_id, bar, len(df),
+              (df["timestamp"].max() - df["timestamp"].min()).days if len(df) else 0)
     return df
 
 

@@ -1,0 +1,62 @@
+{
+  "BTC_A_short_cover_hold1d": {
+    "n": 6,
+    "sharpe_rough": 6.54,
+    "p_value": 0.15663
+  },
+  "BTC_A_short_cover_hold3d": {
+    "n": 5,
+    "sharpe_rough": 7.73,
+    "p_value": 0.02961
+  },
+  "BTC_B_squeeze_continuation_hold1d": {
+    "n": 9,
+    "sharpe_rough": -10.11,
+    "p_value": 0.972
+  },
+  "BTC_B_squeeze_continuation_hold3d": {
+    "n": 8,
+    "sharpe_rough": -3.06,
+    "p_value": 0.82715
+  },
+  "ETH_A_short_cover_hold1d": {
+    "n": 46,
+    "sharpe_rough": -2.77,
+    "p_value": 0.88142
+  },
+  "ETH_A_short_cover_hold3d": {
+    "n": 45,
+    "sharpe_rough": -2.75,
+    "p_value": 0.97791
+  },
+  "ETH_B_squeeze_continuation_hold1d": {
+    "n": 54,
+    "sharpe_rough": -2.89,
+    "p_value": 0.90932
+  },
+  "ETH_B_squeeze_continuation_hold3d": {
+    "n": 54,
+    "sharpe_rough": -2.15,
+    "p_value": 0.95737
+  },
+  "SOL_A_short_cover_hold1d": {
+    "n": 41,
+    "sharpe_rough": -0.22,
+    "p_value": 0.53582
+  },
+  "SOL_A_short_cover_hold3d": {
+    "n": 41,
+    "sharpe_rough": -1.16,
+    "p_value": 0.79163
+  },
+  "SOL_B_squeeze_continuation_hold1d": {
+    "n": 48,
+    "sharpe_rough": -3.98,
+    "p_value": 0.95888
+  },
+  "SOL_B_squeeze_continuation_hold3d": {
+    "n": 48,
+    "sharpe_rough": -1.82,
+    "p_value": 0.91606
+  }
+}

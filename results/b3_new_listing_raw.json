@@ -1,0 +1,86 @@
+{
+  "n_coins_probed": 174,
+  "bucket_counts": {
+    "0-30d": 2,
+    "30-90d": 1,
+    "90d+": 171
+  },
+  "0-30d": {
+    "sample_coins": [
+      "GRAM",
+      "CASHCAT"
+    ],
+    "mean_abs_funding_ann_pct": 157.84
+  },
+  "30-90d": {
+    "sample_coins": [
+      "CHIP"
+    ],
+    "mean_abs_funding_ann_pct": 74.83
+  },
+  "90d+": {
+    "sample_coins": [
+      "BTC",
+      "ETH",
+      "ATOM",
+      "DYDX",
+      "SOL"
+    ],
+    "mean_abs_funding_ann_pct": 13.4
+  },
+  "carry_0-30d_GRAM": {
+    "total_return_pct": -3.74,
+    "sharpe_annualized": -5.8,
+    "max_drawdown_pct": -3.74,
+    "win_rate_pct": 82.0,
+    "n_periods": 395,
+    "trade_count": 2,
+    "turnover_eur": 4000.0,
+    "net_profit_eur_on_1000": -37.37,
+    "final_equity_eur": 962.63
+  },
+  "carry_0-30d_CASHCAT": {
+    "total_return_pct": 2.6,
+    "sharpe_annualized": 8.28,
+    "max_drawdown_pct": -2.12,
+    "win_rate_pct": 86.9,
+    "n_periods": 184,
+    "trade_count": 1,
+    "turnover_eur": 2000.0,
+    "net_profit_eur_on_1000": 25.95,
+    "final_equity_eur": 1025.95
+  },
+  "carry_90d+_BTC": {
+    "total_return_pct": 1.86,
+    "sharpe_annualized": 1.98,
+    "max_drawdown_pct": -0.63,
+    "win_rate_pct": 36.3,
+    "n_periods": 9600,
+    "trade_count": 13,
+    "turnover_eur": 26000.0,
+    "net_profit_eur_on_1000": 18.63,
+    "final_equity_eur": 1018.63
+  },
+  "carry_90d+_ETH": {
+    "total_return_pct": 0.65,
+    "sharpe_annualized": 0.72,
+    "max_drawdown_pct": -1.3,
+    "win_rate_pct": 20.9,
+    "n_periods": 9600,
+    "trade_count": 12,
+    "turnover_eur": 24000.0,
+    "net_profit_eur_on_1000": 6.49,
+    "final_equity_eur": 1006.49
+  },
+  "carry_90d+_ATOM": {
+    "total_return_pct": 0.0,
+    "sharpe_annualized": 0.0,
+    "max_drawdown_pct": 0.0,
+    "win_rate_pct": 0.0,
+    "n_periods": 4320,
+    "trade_count": 0,
+    "turnover_eur": 0.0,
+    "net_profit_eur_on_1000": 0.0,
+    "final_equity_eur": 1000.0
+  }
+}

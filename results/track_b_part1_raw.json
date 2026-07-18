@@ -1,0 +1,193 @@
+{
+  "B1": {
+    "status": "SKIPPED \u2014 insufficient data",
+    "probe_results": {
+      "defillama_emissions": 402,
+      "defillama_emission_btc": 402
+    },
+    "reason": "No free (non-paid) unlock/emissions calendar API found among reachable sources."
+  },
+  "B8": {
+    "status": "SKIPPED \u2014 insufficient data",
+    "reason": "Binance-vision/OKX/Hyperliquid/DexScreener are market-data APIs, not news/announcement feeds; no free announcement-timestamp source identified."
+  },
+  "B2": {
+    "BTC_buffer0bps": {
+      "total_return_pct": 0.0,
+      "sharpe_annualized": 0.0,
+      "max_drawdown_pct": 0.0,
+      "win_rate_pct": 0.0,
+      "n_periods": 285,
+      "trade_count": 0,
+      "turnover_eur": 0.0,
+      "net_profit_eur_on_1000": 0.0,
+      "final_equity_eur": 1000.0,
+      "p_value": 1.0
+    },
+    "BTC_buffer10bps": {
+      "total_return_pct": 0.0,
+      "sharpe_annualized": 0.0,
+      "max_drawdown_pct": 0.0,
+      "win_rate_pct": 0.0,
+      "n_periods": 285,
+      "trade_count": 0,
+      "turnover_eur": 0.0,
+      "net_profit_eur_on_1000": 0.0,
+      "final_equity_eur": 1000.0,
+      "p_value": 1.0
+    },
+    "ETH_buffer0bps": {
+      "total_return_pct": 0.0,
+      "sharpe_annualized": 0.0,
+      "max_drawdown_pct": 0.0,
+      "win_rate_pct": 0.0,
+      "n_periods": 285,
+      "trade_count": 0,
+      "turnover_eur": 0.0,
+      "net_profit_eur_on_1000": 0.0,
+      "final_equity_eur": 1000.0,
+      "p_value": 1.0
+    },
+    "ETH_buffer10bps": {
+      "total_return_pct": 0.0,
+      "sharpe_annualized": 0.0,
+      "max_drawdown_pct": 0.0,
+      "win_rate_pct": 0.0,
+      "n_periods": 285,
+      "trade_count": 0,
+      "turnover_eur": 0.0,
+      "net_profit_eur_on_1000": 0.0,
+      "final_equity_eur": 1000.0,
+      "p_value": 1.0
+    },
+    "SOL_buffer0bps": {
+      "total_return_pct": 0.0,
+      "sharpe_annualized": 0.0,
+      "max_drawdown_pct": 0.0,
+      "win_rate_pct": 0.0,
+      "n_periods": 285,
+      "trade_count": 0,
+      "turnover_eur": 0.0,
+      "net_profit_eur_on_1000": 0.0,
+      "final_equity_eur": 1000.0,
+      "p_value": 1.0
+    },
+    "SOL_buffer10bps": {
+      "total_return_pct": 0.0,
+      "sharpe_annualized": 0.0,
+      "max_drawdown_pct": 0.0,
+      "win_rate_pct": 0.0,
+      "n_periods": 285,
+      "trade_count": 0,
+      "turnover_eur": 0.0,
+      "net_profit_eur_on_1000": 0.0,
+      "final_equity_eur": 1000.0,
+      "p_value": 1.0
+    }
+  },
+  "B9": {
+    "USDCUSDT_buffer0bps": {
+      "n_trigger_events": 0,
+      "verdict": "too few/no events clearing cost threshold"
+    },
+    "USDCUSDT_buffer2bps": {
+      "n_trigger_events": 0,
+      "verdict": "too few/no events clearing cost threshold"
+    },
+    "FDUSDUSDT_buffer0bps": {
+      "n_trigger_events": 345,
+      "n_nonoverlapping_trades": 20,
+      "mean_ret_per_trade": -0.00191,
+      "win_rate_pct": 0.0,
+      "sharpe_per_trade_not_annualized": -7.483,
+      "p_value": 1.0
+    },
+    "FDUSDUSDT_buffer2bps": {
+      "n_trigger_events": 69,
+      "n_nonoverlapping_trades": 8,
+      "mean_ret_per_trade": -0.001788,
+      "win_rate_pct": 0.0,
+      "sharpe_per_trade_not_annualized": -4.805,
+      "p_value": 1.0
+    },
+    "TUSDUSDT_buffer0bps": {
+      "n_trigger_events": 17,
+      "n_nonoverlapping_trades": 3,
+      "verdict": "too few non-overlapping trades"
+    },
+    "TUSDUSDT_buffer2bps": {
+      "n_trigger_events": 7,
+      "n_nonoverlapping_trades": 0,
+      "verdict": "too few non-overlapping trades"
+    }
+  },
+  "B6": {
+    "OKX_pre_settlement_hour": {
+      "n": 1200,
+      "mean_ret_gross": -0.000142,
+      "mean_ret_net_of_2x_taker": -0.001142,
+      "sharpe_net_annualized": -21.31,
+      "p_value_net": 1.0,
+      "control_other_hours_mean": -2.4e-05
+    },
+    "OKX_post_settlement_hour": {
+      "n": 1200,
+      "mean_ret_gross": -4e-05,
+      "mean_ret_net_of_2x_taker": -0.00104,
+      "sharpe_net_annualized": -22.16,
+      "p_value_net": 1.0,
+      "control_other_hours_mean": -2.4e-05
+    },
+    "OKX_ETH_pre_settlement_hour": {
+      "n": 1200,
+      "mean_ret_gross": -0.000323,
+      "mean_ret_net_of_2x_taker": -0.001323,
+      "sharpe_net_annualized": -17.24,
+      "p_value_net": 1.0,
+      "control_other_hours_mean": 4.6e-05
+    },
+    "OKX_ETH_post_settlement_hour": {
+      "n": 1200,
+      "mean_ret_gross": -4e-05,
+      "mean_ret_net_of_2x_taker": -0.00104,
+      "sharpe_net_annualized": -14.6,
+      "p_value_net": 1.0,
+      "control_other_hours_mean": 4.6e-05
+    }
+  },
+  "B7": {
+    "BTC_hour_best_bucket22": {
+      "best_bucket_is": 22,
+      "mean_ret_is": 0.000626,
+      "n_buckets_tested_this_axis": 24,
+      "holdout_n": 120,
+      "holdout_sharpe_net": -20.98,
+      "holdout_p_net": 0.99297
+    },
+    "BTC_dow_best_bucket2": {
+      "best_bucket_is": 2,
+      "mean_ret_is": 0.000191,
+      "n_buckets_tested_this_axis": 7,
+      "holdout_n": 408,
+      "holdout_sharpe_net": -24.5,
+      "holdout_p_net": 1.0
+    },
+    "ETH_hour_best_bucket22": {
+      "best_bucket_is": 22,
+      "mean_ret_is": 0.001051,
+      "n_buckets_tested_this_axis": 24,
+      "holdout_n": 120,
+      "holdout_sharpe_net": -17.44,
+      "holdout_p_net": 0.97941
+    },
+    "ETH_dow_best_bucket2": {
+      "best_bucket_is": 2,
+      "mean_ret_is": 0.0004,
+      "n_buckets_tested_this_axis": 7,
+      "holdout_n": 408,
+      "holdout_sharpe_net": -17.95,
+      "holdout_p_net": 0.99995
+    },
+    "_total_bucket_comparisons_counted_in_N_TESTS": 62
+  }
+}

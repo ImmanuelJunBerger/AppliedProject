@@ -1,0 +1,121 @@
+test_id,hypothesis,variant,family,n_trades,sharpe_is,p_is,sharpe_holdout,p_holdout,note
+B4_cascade_hold1d_down_only,B4_cascade_reversion,hold1d_down_only,forced_flow,296,-2.851013515151765,0.9989988909965234,,,
+B4_cascade_hold1d_up_only,B4_cascade_reversion,hold1d_up_only,forced_flow,1330,-1.7830104866875525,0.9999789991849188,,,
+B4_cascade_hold1d_both,B4_cascade_reversion,hold1d_both,forced_flow,1626,-1.8512229488132848,0.9999987143367164,,,
+B4_cascade_hold3d_down_only,B4_cascade_reversion,hold3d_down_only,forced_flow,295,-6.086343620744859,1.0,,,
+B4_cascade_hold3d_up_only,B4_cascade_reversion,hold3d_up_only,forced_flow,1326,-1.5281886562757734,0.999999999367117,,,
+B4_cascade_hold3d_both,B4_cascade_reversion,hold3d_both,forced_flow,1621,-2.162305575734413,1.0,,,
+B3_meanfunding_0-30d,B3_new_listing_funding,bucket=0-30d,too_small_too_new,2,,,,,"descriptive pre-screen, not a scored finding"
+B3_meanfunding_30-90d,B3_new_listing_funding,bucket=30-90d,too_small_too_new,1,,,,,"descriptive pre-screen, not a scored finding"
+B3_meanfunding_90d+,B3_new_listing_funding,bucket=90d+,too_small_too_new,5,,,,,"descriptive pre-screen, not a scored finding"
+B3_carry_0-30d_GRAM,B3_new_listing_funding,"bucket=0-30d,coin=GRAM",too_small_too_new,2,-5.8,0.8905438859119803,,,
+B3_carry_0-30d_CASHCAT,B3_new_listing_funding,"bucket=0-30d,coin=CASHCAT",too_small_too_new,1,8.28,0.1157371393067736,,,
+B3_carry_90d+_BTC,B3_new_listing_funding,"bucket=90d+,coin=BTC",too_small_too_new,13,1.98,0.0193056955310912,,,
+B3_carry_90d+_ETH,B3_new_listing_funding,"bucket=90d+,coin=ETH",too_small_too_new,12,0.72,0.2251703102232076,,,
+B3_carry_90d+_ATOM,B3_new_listing_funding,"bucket=90d+,coin=ATOM",too_small_too_new,0,0.0,1.0,,,
+A2_pairs_pooled_all,A2_pairs_pooled,all_sectors_pooled,"none (stat-arb, thin edge expected)",94,-0.32,0.78814,-0.23,0.68832,
+A2_pairs_pooled_L1,A2_pairs_pooled,sector=L1,none,41,-0.2,0.67202,,,
+A2_pairs_pooled_DeFi,A2_pairs_pooled,sector=DeFi,none,50,-1.24,0.99872,,,
+A2_pairs_pooled_Meme,A2_pairs_pooled,sector=Meme,none,3,15.39,1.0,,,
+B1_unlock_cliffs,B1_unlock_cliffs,,forced_flow,0,,,,,SKIPPED: no free unlock calendar data source available
+B8_listing_announcements,B8_listing_announcements,,forced_flow_calendar,0,,,,,SKIPPED: no free historical listing-announcement timestamp source among reachable APIs
+B2_dispersion_BTC_buffer0bps,B2_cross_venue_dispersion,"coin=BTC,buffer=0bps",too_small_to_matter,0,0.0,1.0,,,
+B2_dispersion_BTC_buffer10bps,B2_cross_venue_dispersion,"coin=BTC,buffer=10bps",too_small_to_matter,0,0.0,1.0,,,
+B2_dispersion_ETH_buffer0bps,B2_cross_venue_dispersion,"coin=ETH,buffer=0bps",too_small_to_matter,0,0.0,1.0,,,
+B2_dispersion_ETH_buffer10bps,B2_cross_venue_dispersion,"coin=ETH,buffer=10bps",too_small_to_matter,0,0.0,1.0,,,
+B2_dispersion_SOL_buffer0bps,B2_cross_venue_dispersion,"coin=SOL,buffer=0bps",too_small_to_matter,0,0.0,1.0,,,
+B2_dispersion_SOL_buffer10bps,B2_cross_venue_dispersion,"coin=SOL,buffer=10bps",too_small_to_matter,0,0.0,1.0,,,
+B9_USDCUSDT_buffer0bps,B9_stablecoin_depeg,USDCUSDT_buffer0bps,too_small_to_matter,0,,,,,insufficient trigger events to backtest
+B9_USDCUSDT_buffer2bps,B9_stablecoin_depeg,USDCUSDT_buffer2bps,too_small_to_matter,0,,,,,insufficient trigger events to backtest
+B9_FDUSDUSDT_buffer0bps,B9_stablecoin_depeg,FDUSDUSDT_buffer0bps,too_small_to_matter,20,-7.4825537527214685,1.0,,,
+B9_FDUSDUSDT_buffer2bps,B9_stablecoin_depeg,FDUSDUSDT_buffer2bps,too_small_to_matter,8,-4.804953760980552,1.0,,,
+B9_TUSDUSDT_buffer0bps,B9_stablecoin_depeg,TUSDUSDT_buffer0bps,too_small_to_matter,3,,,,,too few non-overlapping trades
+B9_TUSDUSDT_buffer2bps,B9_stablecoin_depeg,TUSDUSDT_buffer2bps,too_small_to_matter,0,,,,,too few non-overlapping trades
+B6_OKX_pre_settlement_hour,B6_settlement_microstructure,OKX_pre_settlement_hour,calendar_predictable,1200,-21.30973309000533,0.9999999999999984,,,
+B6_OKX_post_settlement_hour,B6_settlement_microstructure,OKX_post_settlement_hour,calendar_predictable,1200,-22.163102677074257,1.0,,,
+B6_OKX_ETH_pre_settlement_hour,B6_settlement_microstructure,OKX_ETH_pre_settlement_hour,calendar_predictable,1200,-17.244393538004537,0.9999999999128538,,,
+B6_OKX_ETH_post_settlement_hour,B6_settlement_microstructure,OKX_ETH_post_settlement_hour,calendar_predictable,1200,-14.597700423193936,0.9999999672050884,,,
+B7_BTC_hour_best_bucket22,B7_seasonality,BTC_hour_best_bucket22,none (highest false-positive risk),120,,,-20.981466213471062,0.9929693754635426,selected from 24 in-sample buckets
+B7_BTC_dow_best_bucket2,B7_seasonality,BTC_dow_best_bucket2,none (highest false-positive risk),408,,,-24.50489577556017,0.999999938331604,selected from 7 in-sample buckets
+B7_ETH_hour_best_bucket22,B7_seasonality,ETH_hour_best_bucket22,none (highest false-positive risk),120,,,-17.444336452583997,0.9794096062162077,selected from 24 in-sample buckets
+B7_ETH_dow_best_bucket2,B7_seasonality,ETH_dow_best_bucket2,none (highest false-positive risk),408,,,-17.951265110205195,0.9999464947016794,selected from 7 in-sample buckets
+B7_bucket_scan_0,B7_seasonality_bucket_scan,bucket_0,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_1,B7_seasonality_bucket_scan,bucket_1,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_2,B7_seasonality_bucket_scan,bucket_2,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_3,B7_seasonality_bucket_scan,bucket_3,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_4,B7_seasonality_bucket_scan,bucket_4,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_5,B7_seasonality_bucket_scan,bucket_5,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_6,B7_seasonality_bucket_scan,bucket_6,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_7,B7_seasonality_bucket_scan,bucket_7,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_8,B7_seasonality_bucket_scan,bucket_8,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_9,B7_seasonality_bucket_scan,bucket_9,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_10,B7_seasonality_bucket_scan,bucket_10,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_11,B7_seasonality_bucket_scan,bucket_11,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_12,B7_seasonality_bucket_scan,bucket_12,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_13,B7_seasonality_bucket_scan,bucket_13,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_14,B7_seasonality_bucket_scan,bucket_14,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_15,B7_seasonality_bucket_scan,bucket_15,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_16,B7_seasonality_bucket_scan,bucket_16,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_17,B7_seasonality_bucket_scan,bucket_17,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_18,B7_seasonality_bucket_scan,bucket_18,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_19,B7_seasonality_bucket_scan,bucket_19,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_20,B7_seasonality_bucket_scan,bucket_20,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_21,B7_seasonality_bucket_scan,bucket_21,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_22,B7_seasonality_bucket_scan,bucket_22,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_23,B7_seasonality_bucket_scan,bucket_23,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_24,B7_seasonality_bucket_scan,bucket_24,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_25,B7_seasonality_bucket_scan,bucket_25,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_26,B7_seasonality_bucket_scan,bucket_26,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_27,B7_seasonality_bucket_scan,bucket_27,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_28,B7_seasonality_bucket_scan,bucket_28,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_29,B7_seasonality_bucket_scan,bucket_29,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_30,B7_seasonality_bucket_scan,bucket_30,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_31,B7_seasonality_bucket_scan,bucket_31,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_32,B7_seasonality_bucket_scan,bucket_32,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_33,B7_seasonality_bucket_scan,bucket_33,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_34,B7_seasonality_bucket_scan,bucket_34,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_35,B7_seasonality_bucket_scan,bucket_35,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_36,B7_seasonality_bucket_scan,bucket_36,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_37,B7_seasonality_bucket_scan,bucket_37,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_38,B7_seasonality_bucket_scan,bucket_38,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_39,B7_seasonality_bucket_scan,bucket_39,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_40,B7_seasonality_bucket_scan,bucket_40,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_41,B7_seasonality_bucket_scan,bucket_41,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_42,B7_seasonality_bucket_scan,bucket_42,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_43,B7_seasonality_bucket_scan,bucket_43,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_44,B7_seasonality_bucket_scan,bucket_44,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_45,B7_seasonality_bucket_scan,bucket_45,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_46,B7_seasonality_bucket_scan,bucket_46,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_47,B7_seasonality_bucket_scan,bucket_47,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_48,B7_seasonality_bucket_scan,bucket_48,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_49,B7_seasonality_bucket_scan,bucket_49,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_50,B7_seasonality_bucket_scan,bucket_50,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_51,B7_seasonality_bucket_scan,bucket_51,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_52,B7_seasonality_bucket_scan,bucket_52,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_53,B7_seasonality_bucket_scan,bucket_53,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_54,B7_seasonality_bucket_scan,bucket_54,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_55,B7_seasonality_bucket_scan,bucket_55,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_56,B7_seasonality_bucket_scan,bucket_56,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_57,B7_seasonality_bucket_scan,bucket_57,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_58,B7_seasonality_bucket_scan,bucket_58,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_59,B7_seasonality_bucket_scan,bucket_59,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_60,B7_seasonality_bucket_scan,bucket_60,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B7_bucket_scan_61,B7_seasonality_bucket_scan,bucket_61,none (highest false-positive risk),0,,,,,"in-sample bucket mean, not individually holdout-tested"
+B5_oi_BTC_A_short_cover_hold1d,B5_oi_price_divergence,BTC_A_short_cover_hold1d,forced_flow_adjacent,6,6.535140283101414,0.1566326669512581,,,
+B5_oi_BTC_A_short_cover_hold3d,B5_oi_price_divergence,BTC_A_short_cover_hold3d,forced_flow_adjacent,5,7.732477090797412,0.0296117014115044,,,
+B5_oi_BTC_B_squeeze_continuation_hold1d,B5_oi_price_divergence,BTC_B_squeeze_continuation_hold1d,forced_flow_adjacent,9,-10.11245031221044,0.9720024304405764,,,
+B5_oi_BTC_B_squeeze_continuation_hold3d,B5_oi_price_divergence,BTC_B_squeeze_continuation_hold3d,forced_flow_adjacent,8,-3.055570117907821,0.8271517252183038,,,
+B5_oi_ETH_A_short_cover_hold1d,B5_oi_price_divergence,ETH_A_short_cover_hold1d,forced_flow_adjacent,46,-2.766791519156716,0.8814174542578102,,,
+B5_oi_ETH_A_short_cover_hold3d,B5_oi_price_divergence,ETH_A_short_cover_hold3d,forced_flow_adjacent,45,-2.749324649938654,0.9779058174354374,,,
+B5_oi_ETH_B_squeeze_continuation_hold1d,B5_oi_price_divergence,ETH_B_squeeze_continuation_hold1d,forced_flow_adjacent,54,-2.8873520572281586,0.909320814226358,,,
+B5_oi_ETH_B_squeeze_continuation_hold3d,B5_oi_price_divergence,ETH_B_squeeze_continuation_hold3d,forced_flow_adjacent,54,-2.1463638692019176,0.9573672945982014,,,
+B5_oi_SOL_A_short_cover_hold1d,B5_oi_price_divergence,SOL_A_short_cover_hold1d,forced_flow_adjacent,41,-0.2228721568283565,0.5358156545339139,,,
+B5_oi_SOL_A_short_cover_hold3d,B5_oi_price_divergence,SOL_A_short_cover_hold3d,forced_flow_adjacent,41,-1.1623942104372778,0.7916308419084574,,,
+B5_oi_SOL_B_squeeze_continuation_hold1d,B5_oi_price_divergence,SOL_B_squeeze_continuation_hold1d,forced_flow_adjacent,48,-3.981945169531718,0.9588825523616844,,,
+B5_oi_SOL_B_squeeze_continuation_hold3d,B5_oi_price_divergence,SOL_B_squeeze_continuation_hold3d,forced_flow_adjacent,48,-1.824297107058414,0.91605863352074,,,
+pit_momentum_7d_ls,A1_pit_momentum,"lookback=7d,short=True",none (extra scrutiny),105,-1.1,0.7604481298858571,-2.17,0.9959996792845884,n_rebalances=107
+pit_momentum_7d_lo,A1_pit_momentum,"lookback=7d,short=False",none (extra scrutiny),105,-1.35,0.5755591697644569,-3.2,0.9462601907246996,n_rebalances=107
+pit_momentum_14d_ls,A1_pit_momentum,"lookback=14d,short=True",none (extra scrutiny),105,-0.4,0.935643459345032,-1.92,0.8751571900567343,n_rebalances=107
+pit_momentum_14d_lo,A1_pit_momentum,"lookback=14d,short=False",none (extra scrutiny),105,-1.2,0.8579397686593423,-3.01,0.812143429376021,n_rebalances=107
+pit_momentum_30d_ls,A1_pit_momentum,"lookback=30d,short=True",none (extra scrutiny),103,-0.77,0.765653630584524,-2.7,0.8500084776214778,n_rebalances=107
+pit_momentum_30d_lo,A1_pit_momentum,"lookback=30d,short=False",none (extra scrutiny),103,-0.8,0.4700522165089715,-3.37,0.7723046338195172,n_rebalances=107

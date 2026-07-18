@@ -1,0 +1,44 @@
+{
+  "hold1d_down_only": {
+    "n_trades": 296,
+    "mean_ret": -0.01635,
+    "sharpe_rough": -2.85,
+    "p_value": 0.999,
+    "win_rate_pct": 37.2
+  },
+  "hold1d_up_only": {
+    "n_trades": 1330,
+    "mean_ret": -0.02019,
+    "sharpe_rough": -1.78,
+    "p_value": 0.99998,
+    "win_rate_pct": 31.4
+  },
+  "hold1d_both": {
+    "n_trades": 1626,
+    "mean_ret": -0.01949,
+    "sharpe_rough": -1.85,
+    "p_value": 1.0,
+    "win_rate_pct": 32.5
+  },
+  "hold3d_down_only": {
+    "n_trades": 295,
+    "mean_ret": -0.10754,
+    "sharpe_rough": -6.09,
+    "p_value": 1.0,
+    "win_rate_pct": 21.0
+  },
+  "hold3d_up_only": {
+    "n_trades": 1326,
+    "mean_ret": -0.03526,
+    "sharpe_rough": -1.53,
+    "p_value": 1.0,
+    "win_rate_pct": 30.6
+  },
+  "hold3d_both": {
+    "n_trades": 1621,
+    "mean_ret": -0.04841,
+    "sharpe_rough": -2.16,
+    "p_value": 1.0,
+    "win_rate_pct": 28.9
+  }
+}

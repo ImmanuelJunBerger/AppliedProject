@@ -1,4 +1,31 @@
-# STATE — COMPLETE
+# STATE — RUN 2 COMPLETE (see RUN 2 section below; Run 1 section preserved as history)
+
+## RUN 2 — Crypto Edge Hunt v2 (2026-07-18, second session)
+
+**Status: complete.** `HYPOTHESES.md` pre-registered before any Run-2 data work. All Track A and
+Track B items executed or cleanly skipped. `RESULTS_V2.md` written. Headline: **120 hypothesis/
+variant tests run, 49 produced a p-value, 0 survived Benjamini-Hochberg FDR at q=0.10, 0 cleared
+the full minimum-evidence bar.** Run 1's 0.86 momentum Sharpe is confirmed dead (inverts to -1.80
+net Sharpe once the universe is point-in-time). Nothing found in Run 2 should be traded.
+
+New infra: `src/stats.py` (train/holdout split, BH-FDR, deflated Sharpe, N_TESTS registry at
+`results/n_tests_registry.csv`), `data.fetch_okx_history_candles` (paginated OKX history-candles,
+~400 days hourly vs. Run 1's single-call 300-candle cap).
+
+New strategy modules: `src/strategy_momentum_v2.py` (A1, point-in-time universe), 
+`src/strategy_pairs_v2.py` (A2, pooled pairs trades), `src/track_b.py` (B1-B9).
+
+Key numbers to remember if resuming further: N_TESTS=120, scored=49, BH survivors=0, raw
+p<0.05 survivors=2 (both below trade-count floor: B3 BTC carry n=13, B5 BTC OI n=5).
+
+Residual open items for a hypothetical Run 3: B1 (unlocks) and B8 (listing announcements) remain
+untestable without a paid data source. B2/B3's OKX-side depth is capped by OKX's free funding-
+history retention (~95-180 days observed this session). Everything else in Track A/B reached a
+statistically resolved (mostly negative) conclusion.
+
+---
+
+# STATE — RUN 1 (COMPLETE, preserved for history)
 
 ## Environment
 - venv at `./.venv`, deps: pandas numpy scipy statsmodels pyarrow requests ccxt — installed OK.

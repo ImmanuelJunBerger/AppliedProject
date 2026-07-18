@@ -1,0 +1,353 @@
+{
+  "universe_size_total_pool": 420,
+  "train_span": [
+    "2024-06-29 00:00:00+00:00",
+    "2025-12-05 00:00:00+00:00"
+  ],
+  "holdout_span": [
+    "2025-12-06 00:00:00+00:00",
+    "2026-07-18 00:00:00+00:00"
+  ],
+  "pit_momentum_7d_ls": {
+    "gross": {
+      "total_return_pct": -69.82,
+      "sharpe_annualized": -0.64,
+      "max_drawdown_pct": -72.62,
+      "win_rate_pct": 46.5,
+      "n_periods": 750,
+      "trade_count": 105,
+      "turnover_eur": 129459.98,
+      "net_profit_eur_on_1000": -698.21,
+      "final_equity_eur": 301.79
+    },
+    "net_full": {
+      "total_return_pct": -89.19,
+      "sharpe_annualized": -1.43,
+      "max_drawdown_pct": -89.6,
+      "win_rate_pct": 44.6,
+      "n_periods": 750,
+      "trade_count": 105,
+      "turnover_eur": 129459.98,
+      "net_profit_eur_on_1000": -891.86,
+      "final_equity_eur": 108.14
+    },
+    "net_is": {
+      "total_return_pct": -70.97,
+      "sharpe_annualized": -1.1,
+      "max_drawdown_pct": -80.68,
+      "win_rate_pct": 44.8,
+      "n_periods": 525,
+      "trade_count": 105,
+      "turnover_eur": 129459.98,
+      "net_profit_eur_on_1000": -709.67,
+      "final_equity_eur": 290.33
+    },
+    "net_holdout": {
+      "total_return_pct": -62.75,
+      "sharpe_annualized": -2.17,
+      "max_drawdown_pct": -64.04,
+      "win_rate_pct": 44.0,
+      "n_periods": 226,
+      "trade_count": 105,
+      "turnover_eur": 129459.98,
+      "net_profit_eur_on_1000": -627.52,
+      "final_equity_eur": 372.48
+    },
+    "p_is": 0.7604481298858571,
+    "p_holdout": 0.9959996792845883,
+    "dsr": {
+      "sr_per_period": -0.0823,
+      "sr0_expected_max_under_null": 0.1537,
+      "sigma_sr": 0.1182,
+      "z": -1.996,
+      "deflated_sharpe_prob": 0.023,
+      "T": 74,
+      "n_trials": 6
+    }
+  },
+  "pit_momentum_7d_lo": {
+    "gross": {
+      "total_return_pct": -96.15,
+      "sharpe_annualized": -1.5,
+      "max_drawdown_pct": -96.88,
+      "win_rate_pct": 44.7,
+      "n_periods": 750,
+      "trade_count": 105,
+      "turnover_eur": 54050.75,
+      "net_profit_eur_on_1000": -961.48,
+      "final_equity_eur": 38.52
+    },
+    "net_full": {
+      "total_return_pct": -97.73,
+      "sharpe_annualized": -1.8,
+      "max_drawdown_pct": -97.97,
+      "win_rate_pct": 43.0,
+      "n_periods": 750,
+      "trade_count": 105,
+      "turnover_eur": 54050.75,
+      "net_profit_eur_on_1000": -977.3,
+      "final_equity_eur": 22.7
+    },
+    "net_is": {
+      "total_return_pct": -89.64,
+      "sharpe_annualized": -1.35,
+      "max_drawdown_pct": -91.17,
+      "win_rate_pct": 44.3,
+      "n_periods": 525,
+      "trade_count": 105,
+      "turnover_eur": 54050.75,
+      "net_profit_eur_on_1000": -896.37,
+      "final_equity_eur": 103.63
+    },
+    "net_holdout": {
+      "total_return_pct": -78.09,
+      "sharpe_annualized": -3.2,
+      "max_drawdown_pct": -78.29,
+      "win_rate_pct": 40.0,
+      "n_periods": 226,
+      "trade_count": 105,
+      "turnover_eur": 54050.75,
+      "net_profit_eur_on_1000": -780.9,
+      "final_equity_eur": 219.1
+    },
+    "p_is": 0.5755591697644569,
+    "p_holdout": 0.9462601907246995,
+    "dsr": {
+      "sr_per_period": -0.0222,
+      "sr0_expected_max_under_null": 0.1513,
+      "sigma_sr": 0.1164,
+      "z": -1.49,
+      "deflated_sharpe_prob": 0.068,
+      "T": 74,
+      "n_trials": 6
+    }
+  },
+  "pit_momentum_14d_ls": {
+    "gross": {
+      "total_return_pct": -55.22,
+      "sharpe_annualized": -0.28,
+      "max_drawdown_pct": -58.06,
+      "win_rate_pct": 45.4,
+      "n_periods": 750,
+      "trade_count": 105,
+      "turnover_eur": 127488.74,
+      "net_profit_eur_on_1000": -552.23,
+      "final_equity_eur": 447.77
+    },
+    "net_full": {
+      "total_return_pct": -79.34,
+      "sharpe_annualized": -0.85,
+      "max_drawdown_pct": -79.88,
+      "win_rate_pct": 43.7,
+      "n_periods": 750,
+      "trade_count": 105,
+      "turnover_eur": 127488.74,
+      "net_profit_eur_on_1000": -793.41,
+      "final_equity_eur": 206.59
+    },
+    "net_is": {
+      "total_return_pct": -49.34,
+      "sharpe_annualized": -0.4,
+      "max_drawdown_pct": -65.83,
+      "win_rate_pct": 44.3,
+      "n_periods": 525,
+      "trade_count": 105,
+      "turnover_eur": 127488.74,
+      "net_profit_eur_on_1000": -493.36,
+      "final_equity_eur": 506.64
+    },
+    "net_holdout": {
+      "total_return_pct": -59.22,
+      "sharpe_annualized": -1.92,
+      "max_drawdown_pct": -60.31,
+      "win_rate_pct": 42.2,
+      "n_periods": 226,
+      "trade_count": 105,
+      "turnover_eur": 127488.74,
+      "net_profit_eur_on_1000": -592.23,
+      "final_equity_eur": 407.77
+    },
+    "p_is": 0.935643459345032,
+    "p_holdout": 0.8751571900567343,
+    "dsr": {
+      "sr_per_period": -0.1766,
+      "sr0_expected_max_under_null": 0.158,
+      "sigma_sr": 0.1215,
+      "z": -2.753,
+      "deflated_sharpe_prob": 0.003,
+      "T": 74,
+      "n_trials": 6
+    }
+  },
+  "pit_momentum_14d_lo": {
+    "gross": {
+      "total_return_pct": -95.58,
+      "sharpe_annualized": -1.41,
+      "max_drawdown_pct": -96.32,
+      "win_rate_pct": 44.2,
+      "n_periods": 750,
+      "trade_count": 105,
+      "turnover_eur": 44957.09,
+      "net_profit_eur_on_1000": -955.78,
+      "final_equity_eur": 44.22
+    },
+    "net_full": {
+      "total_return_pct": -97.03,
+      "sharpe_annualized": -1.64,
+      "max_drawdown_pct": -97.34,
+      "win_rate_pct": 43.0,
+      "n_periods": 750,
+      "trade_count": 105,
+      "turnover_eur": 44957.09,
+      "net_profit_eur_on_1000": -970.31,
+      "final_equity_eur": 29.69
+    },
+    "net_is": {
+      "total_return_pct": -87.74,
+      "sharpe_annualized": -1.2,
+      "max_drawdown_pct": -89.52,
+      "win_rate_pct": 45.0,
+      "n_periods": 525,
+      "trade_count": 105,
+      "turnover_eur": 44957.09,
+      "net_profit_eur_on_1000": -877.45,
+      "final_equity_eur": 122.55
+    },
+    "net_holdout": {
+      "total_return_pct": -75.77,
+      "sharpe_annualized": -3.01,
+      "max_drawdown_pct": -76.49,
+      "win_rate_pct": 38.2,
+      "n_periods": 226,
+      "trade_count": 105,
+      "turnover_eur": 44957.09,
+      "net_profit_eur_on_1000": -757.7,
+      "final_equity_eur": 242.3
+    },
+    "p_is": 0.8579397686593423,
+    "p_holdout": 0.812143429376021,
+    "dsr": {
+      "sr_per_period": -0.1245,
+      "sr0_expected_max_under_null": 0.146,
+      "sigma_sr": 0.1123,
+      "z": -2.409,
+      "deflated_sharpe_prob": 0.008,
+      "T": 74,
+      "n_trials": 6
+    }
+  },
+  "pit_momentum_30d_ls": {
+    "gross": {
+      "total_return_pct": -82.69,
+      "sharpe_annualized": -0.94,
+      "max_drawdown_pct": -85.89,
+      "win_rate_pct": 46.6,
+      "n_periods": 750,
+      "trade_count": 103,
+      "turnover_eur": 92898.92,
+      "net_profit_eur_on_1000": -826.88,
+      "final_equity_eur": 173.12
+    },
+    "net_full": {
+      "total_return_pct": -90.38,
+      "sharpe_annualized": -1.36,
+      "max_drawdown_pct": -91.25,
+      "win_rate_pct": 45.0,
+      "n_periods": 750,
+      "trade_count": 103,
+      "turnover_eur": 92898.92,
+      "net_profit_eur_on_1000": -903.82,
+      "final_equity_eur": 96.18
+    },
+    "net_is": {
+      "total_return_pct": -65.04,
+      "sharpe_annualized": -0.77,
+      "max_drawdown_pct": -72.82,
+      "win_rate_pct": 44.5,
+      "n_periods": 525,
+      "trade_count": 103,
+      "turnover_eur": 92898.92,
+      "net_profit_eur_on_1000": -650.37,
+      "final_equity_eur": 349.63
+    },
+    "net_holdout": {
+      "total_return_pct": -72.49,
+      "sharpe_annualized": -2.7,
+      "max_drawdown_pct": -73.3,
+      "win_rate_pct": 46.2,
+      "n_periods": 226,
+      "trade_count": 103,
+      "turnover_eur": 92898.92,
+      "net_profit_eur_on_1000": -724.9,
+      "final_equity_eur": 275.1
+    },
+    "p_is": 0.765653630584524,
+    "p_holdout": 0.8500084776214778,
+    "dsr": {
+      "sr_per_period": -0.0842,
+      "sr0_expected_max_under_null": 0.1521,
+      "sigma_sr": 0.117,
+      "z": -2.02,
+      "deflated_sharpe_prob": 0.0217,
+      "T": 74,
+      "n_trials": 6
+    }
+  },
+  "pit_momentum_30d_lo": {
+    "gross": {
+      "total_return_pct": -94.2,
+      "sharpe_annualized": -1.28,
+      "max_drawdown_pct": -97.18,
+      "win_rate_pct": 43.1,
+      "n_periods": 750,
+      "trade_count": 103,
+      "turnover_eur": 50405.42,
+      "net_profit_eur_on_1000": -942.0,
+      "final_equity_eur": 58.0
+    },
+    "net_full": {
+      "total_return_pct": -95.65,
+      "sharpe_annualized": -1.45,
+      "max_drawdown_pct": -97.77,
+      "win_rate_pct": 42.1,
+      "n_periods": 750,
+      "trade_count": 103,
+      "turnover_eur": 50405.42,
+      "net_profit_eur_on_1000": -956.52,
+      "final_equity_eur": 43.48
+    },
+    "net_is": {
+      "total_return_pct": -78.4,
+      "sharpe_annualized": -0.8,
+      "max_drawdown_pct": -89.05,
+      "win_rate_pct": 43.1,
+      "n_periods": 525,
+      "trade_count": 103,
+      "turnover_eur": 50405.42,
+      "net_profit_eur_on_1000": -784.02,
+      "final_equity_eur": 215.98
+    },
+    "net_holdout": {
+      "total_return_pct": -79.87,
+      "sharpe_annualized": -3.37,
+      "max_drawdown_pct": -79.94,
+      "win_rate_pct": 39.6,
+      "n_periods": 226,
+      "trade_count": 103,
+      "turnover_eur": 50405.42,
+      "net_profit_eur_on_1000": -798.69,
+      "final_equity_eur": 201.31
+    },
+    "p_is": 0.47005221650897155,
+    "p_holdout": 0.7723046338195172,
+    "dsr": {
+      "sr_per_period": 0.0087,
+      "sr0_expected_max_under_null": 0.152,
+      "sigma_sr": 0.1169,
+      "z": -1.225,
+      "deflated_sharpe_prob": 0.1102,
+      "T": 74,
+      "n_trials": 6
+    }
+  }
+}

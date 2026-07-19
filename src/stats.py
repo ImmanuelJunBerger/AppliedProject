@@ -16,6 +16,7 @@ import pandas as pd
 from scipy.stats import norm, skew, kurtosis
 
 REGISTRY_PATH = Path(__file__).resolve().parent.parent / "results" / "n_tests_registry.csv"
+REGISTRY_PATH_V5 = Path(__file__).resolve().parent.parent / "results" / "n_tests_registry_v5.csv"
 EULER_GAMMA = 0.5772156649015329
 
 
@@ -89,18 +90,22 @@ def benjamini_hochberg(pvalues: dict, q: float = 0.10) -> dict:
     return {"significant": significant, "m": m, "q": q, "table": table}
 
 
-def reset_registry():
-    REGISTRY_PATH.parent.mkdir(parents=True, exist_ok=True)
-    with open(REGISTRY_PATH, "w", newline="") as f:
+def reset_registry(registry_path: Path = REGISTRY_PATH):
+    registry_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(registry_path, "w", newline="") as f:
         csv.writer(f).writerow(["test_id", "hypothesis", "variant", "family", "n_trades",
                                  "sharpe_is", "p_is", "sharpe_holdout", "p_holdout", "note"])
 
 
 def register_test(test_id: str, hypothesis: str, variant: str, family: str, n_trades,
-                   sharpe_is=None, p_is=None, sharpe_holdout=None, p_holdout=None, note: str = ""):
-    REGISTRY_PATH.parent.mkdir(parents=True, exist_ok=True)
-    is_new = not REGISTRY_PATH.exists()
-    with open(REGISTRY_PATH, "a", newline="") as f:
+                   sharpe_is=None, p_is=None, sharpe_holdout=None, p_holdout=None, note: str = "",
+                   registry_path: Path = REGISTRY_PATH):
+    """registry_path lets independent hypothesis families (e.g. Run 2's crypto
+    tests vs. Run 5's TradFi tests) keep separate N_TESTS denominators --
+    mixing unrelated families into one FDR pool would misrepresent both."""
+    registry_path.parent.mkdir(parents=True, exist_ok=True)
+    is_new = not registry_path.exists()
+    with open(registry_path, "a", newline="") as f:
         w = csv.writer(f)
         if is_new:
             w.writerow(["test_id", "hypothesis", "variant", "family", "n_trades",
@@ -109,7 +114,7 @@ def register_test(test_id: str, hypothesis: str, variant: str, family: str, n_tr
                     sharpe_holdout, p_holdout, note])
 
 
-def load_registry() -> pd.DataFrame:
-    if not REGISTRY_PATH.exists():
+def load_registry(registry_path: Path = REGISTRY_PATH) -> pd.DataFrame:
+    if not registry_path.exists():
         return pd.DataFrame()
-    return pd.read_csv(REGISTRY_PATH)
+    return pd.read_csv(registry_path)

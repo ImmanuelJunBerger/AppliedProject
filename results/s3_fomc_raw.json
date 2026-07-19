@@ -1,0 +1,69 @@
+{
+  "full_sample": {
+    "gross": {
+      "sharpe_ann_8x_year": 0.574,
+      "mean_pct": 0.2367,
+      "win_rate_pct": 54.1,
+      "n": 255
+    },
+    "net": {
+      "sharpe_ann_8x_year": 0.55,
+      "mean_pct": 0.2267,
+      "win_rate_pct": 53.7,
+      "n": 255
+    },
+    "p_gross": 0.00059,
+    "p_net": 0.00095
+  },
+  "ex_2008_2009_crisis": {
+    "gross": {
+      "sharpe_ann_8x_year": 0.433,
+      "mean_pct": 0.1637,
+      "win_rate_pct": 52.7,
+      "n": 239
+    },
+    "net": {
+      "sharpe_ann_8x_year": 0.406,
+      "mean_pct": 0.1537,
+      "win_rate_pct": 52.3,
+      "n": 239
+    },
+    "p_gross": 0.00901,
+    "p_net": 0.01318
+  },
+  "ex_2020_covid": {
+    "gross": {
+      "sharpe_ann_8x_year": 0.543,
+      "mean_pct": 0.2234,
+      "win_rate_pct": 54.0,
+      "n": 248
+    },
+    "net": {
+      "sharpe_ann_8x_year": 0.519,
+      "mean_pct": 0.2134,
+      "win_rate_pct": 53.6,
+      "n": 248
+    },
+    "p_gross": 0.00124,
+    "p_net": 0.00193
+  },
+  "holdout_split": {
+    "is": {
+      "sharpe_ann_8x_year": 0.747,
+      "mean_pct": 0.3114,
+      "win_rate_pct": 58.4,
+      "n": 178
+    },
+    "holdout": {
+      "sharpe_ann_8x_year": 0.078,
+      "mean_pct": 0.0308,
+      "win_rate_pct": 42.9,
+      "n": 77
+    },
+    "p_is": 0.00021,
+    "p_holdout": 0.40443,
+    "split_date": "2016-01-27 00:00:00"
+  },
+  "n_meetings_matched": 255,
+  "n_meetings_parsed": 255
+}

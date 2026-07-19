@@ -1,0 +1,88 @@
+{
+  "PUT": {
+    "gross": {
+      "sharpe_ann": 0.7,
+      "total_return_pct": 1038.6,
+      "max_dd_pct": -37.1,
+      "skew": -0.727,
+      "excess_kurtosis": 27.519,
+      "worst_day_pct": -9.84,
+      "worst_month_pct": -17.65,
+      "n": 7527
+    },
+    "net": {
+      "sharpe_ann": 0.661,
+      "total_return_pct": 880.7,
+      "max_dd_pct": -37.3,
+      "skew": -0.727,
+      "excess_kurtosis": 27.519,
+      "worst_day_pct": -9.84,
+      "worst_month_pct": -17.69,
+      "n": 7527
+    },
+    "net_is": {
+      "sharpe_ann": 0.674,
+      "total_return_pct": 420.9,
+      "max_dd_pct": -37.3,
+      "skew": -0.567,
+      "excess_kurtosis": 25.912,
+      "worst_day_pct": -9.37,
+      "worst_month_pct": -17.69,
+      "n": 5268
+    },
+    "net_holdout": {
+      "sharpe_ann": 0.632,
+      "total_return_pct": 88.3,
+      "max_dd_pct": -29.0,
+      "skew": -1.155,
+      "excess_kurtosis": 31.817,
+      "worst_day_pct": -9.84,
+      "worst_month_pct": -13.45,
+      "n": 2259
+    },
+    "p_is": 0.00104,
+    "p_holdout": 0.02929,
+    "regimes": {
+      "pre_2008": {
+        "sharpe_ann": 0.949,
+        "total_return_pct": 208.4,
+        "max_dd_pct": -31.9,
+        "skew": -0.687,
+        "excess_kurtosis": 10.925,
+        "worst_day_pct": -5.81,
+        "worst_month_pct": -13.16,
+        "n": 2865
+      },
+      "2008_2015": {
+        "sharpe_ann": 0.383,
+        "total_return_pct": 47.2,
+        "max_dd_pct": -37.3,
+        "skew": -0.429,
+        "excess_kurtosis": 25.05,
+        "worst_day_pct": -9.37,
+        "worst_month_pct": -17.69,
+        "n": 2014
+      },
+      "post_2015": {
+        "sharpe_ann": 0.682,
+        "total_return_pct": 116.0,
+        "max_dd_pct": -29.0,
+        "skew": -1.194,
+        "excess_kurtosis": 33.932,
+        "worst_day_pct": -9.84,
+        "worst_month_pct": -13.45,
+        "n": 2648
+      }
+    }
+  },
+  "SVXY_cross_check_2011plus": {
+    "sharpe_ann": 0.564,
+    "total_return_pct": 437.8,
+    "max_dd_pct": -95.2,
+    "skew": -4.759,
+    "excess_kurtosis": 93.836,
+    "worst_day_pct": -82.96,
+    "worst_month_pct": -89.65,
+    "n": 3716
+  }
+}

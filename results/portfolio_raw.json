@@ -1,0 +1,136 @@
+{
+  "weight_schemes": {
+    "equal_weight": {
+      "S2_overnight_IXIC": 0.3333333333333333,
+      "S4_turn_of_month": 0.3333333333333333,
+      "S8_vol_premium": 0.3333333333333333
+    },
+    "inverse_vol": {
+      "S2_overnight_IXIC": 0.27159769339451817,
+      "S4_turn_of_month": 0.3776876434442602,
+      "S8_vol_premium": 0.3507146631612216
+    },
+    "simple_risk_parity": {
+      "S2_overnight_IXIC": 0.21733133811044317,
+      "S4_turn_of_month": 0.42027712477937046,
+      "S8_vol_premium": 0.36239153711018635
+    }
+  },
+  "per_strategy_stats": {
+    "S2_overnight_IXIC": {
+      "sharpe_ann": 0.56,
+      "sharpe_ci95_lo": 0.478,
+      "sharpe_ci95_hi": 0.641,
+      "ann_return_pct": 7.61,
+      "ann_vol_pct": 13.59,
+      "max_dd_pct": -60.39,
+      "longest_underwater_months": 164,
+      "n_months": 666
+    },
+    "S4_turn_of_month": {
+      "sharpe_ann": 0.743,
+      "sharpe_ci95_lo": 0.658,
+      "sharpe_ci95_hi": 0.828,
+      "ann_return_pct": 7.26,
+      "ann_vol_pct": 9.77,
+      "max_dd_pct": -23.04,
+      "longest_underwater_months": 82,
+      "n_months": 678
+    },
+    "S8_vol_premium": {
+      "sharpe_ann": 0.779,
+      "sharpe_ci95_lo": 0.661,
+      "sharpe_ci95_hi": 0.897,
+      "ann_return_pct": 8.2,
+      "ann_vol_pct": 10.53,
+      "max_dd_pct": -32.91,
+      "longest_underwater_months": 44,
+      "n_months": 360
+    }
+  },
+  "portfolios": {
+    "equal_weight": {
+      "raw": {
+        "sharpe_ann": 0.806,
+        "sharpe_ci95_lo": 0.719,
+        "sharpe_ci95_hi": 0.892,
+        "ann_return_pct": 7.4,
+        "ann_vol_pct": 9.19,
+        "max_dd_pct": -40.39,
+        "longest_underwater_months": 79,
+        "n_months": 678
+      },
+      "vol_targeted": {
+        "sharpe_ann": 0.922,
+        "sharpe_ci95_lo": 0.832,
+        "sharpe_ci95_hi": 1.012,
+        "ann_return_pct": 9.36,
+        "ann_vol_pct": 10.15,
+        "max_dd_pct": -32.53,
+        "longest_underwater_months": 84,
+        "n_months": 678
+      }
+    },
+    "inverse_vol": {
+      "raw": {
+        "sharpe_ann": 0.836,
+        "sharpe_ci95_lo": 0.749,
+        "sharpe_ci95_hi": 0.924,
+        "ann_return_pct": 7.41,
+        "ann_vol_pct": 8.86,
+        "max_dd_pct": -36.96,
+        "longest_underwater_months": 78,
+        "n_months": 678
+      },
+      "vol_targeted": {
+        "sharpe_ann": 0.915,
+        "sharpe_ci95_lo": 0.825,
+        "sharpe_ci95_hi": 1.005,
+        "ann_return_pct": 9.21,
+        "ann_vol_pct": 10.06,
+        "max_dd_pct": -31.16,
+        "longest_underwater_months": 83,
+        "n_months": 678
+      }
+    },
+    "simple_risk_parity": {
+      "raw": {
+        "sharpe_ann": 0.859,
+        "sharpe_ci95_lo": 0.771,
+        "sharpe_ci95_hi": 0.947,
+        "ann_return_pct": 7.42,
+        "ann_vol_pct": 8.64,
+        "max_dd_pct": -34.19,
+        "longest_underwater_months": 78,
+        "n_months": 678
+      },
+      "vol_targeted": {
+        "sharpe_ann": 0.899,
+        "sharpe_ci95_lo": 0.81,
+        "sharpe_ci95_hi": 0.989,
+        "ann_return_pct": 8.98,
+        "ann_vol_pct": 9.99,
+        "max_dd_pct": -29.73,
+        "longest_underwater_months": 83,
+        "n_months": 678
+      }
+    }
+  },
+  "ablation_risk_parity": {
+    "drop_S2_overnight_IXIC": {
+      "portfolio_sharpe_without": 0.791,
+      "full_portfolio_sharpe": 0.899,
+      "marginal_contribution": 0.108
+    },
+    "drop_S4_turn_of_month": {
+      "portfolio_sharpe_without": 0.771,
+      "full_portfolio_sharpe": 0.899,
+      "marginal_contribution": 0.128
+    },
+    "drop_S8_vol_premium": {
+      "portfolio_sharpe_without": 0.824,
+      "full_portfolio_sharpe": 0.899,
+      "marginal_contribution": 0.075
+    }
+  }
+}

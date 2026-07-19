@@ -1,0 +1,52 @@
+{
+  "base_portfolio": {
+    "sharpe_ann": 0.899,
+    "sharpe_ci95_lo": 0.81,
+    "sharpe_ci95_hi": 0.989,
+    "ann_return_pct": 8.98,
+    "ann_vol_pct": 9.99,
+    "max_dd_pct": -29.73,
+    "longest_underwater_months": 83,
+    "n_months": 678
+  },
+  "trend_200dma_floor0.0": {
+    "sharpe_ann": 1.07,
+    "sharpe_ci95_lo": 0.976,
+    "sharpe_ci95_hi": 1.164,
+    "ann_return_pct": 8.31,
+    "ann_vol_pct": 7.77,
+    "max_dd_pct": -14.02,
+    "longest_underwater_months": 50,
+    "n_months": 678
+  },
+  "trend_200dma_floor0.5": {
+    "sharpe_ann": 1.034,
+    "sharpe_ci95_lo": 0.941,
+    "sharpe_ci95_hi": 1.127,
+    "ann_return_pct": 8.65,
+    "ann_vol_pct": 8.36,
+    "max_dd_pct": -18.06,
+    "longest_underwater_months": 66,
+    "n_months": 678
+  },
+  "yield_curve_10y3m_floor0.0": {
+    "sharpe_ann": 1.032,
+    "sharpe_ci95_lo": 0.927,
+    "sharpe_ci95_hi": 1.137,
+    "ann_return_pct": 9.71,
+    "ann_vol_pct": 9.41,
+    "max_dd_pct": -21.1,
+    "longest_underwater_months": 61,
+    "n_months": 534
+  },
+  "yield_curve_10y3m_floor0.5": {
+    "sharpe_ann": 1.054,
+    "sharpe_ci95_lo": 0.948,
+    "sharpe_ci95_hi": 1.16,
+    "ann_return_pct": 10.07,
+    "ann_vol_pct": 9.55,
+    "max_dd_pct": -21.1,
+    "longest_underwater_months": 61,
+    "n_months": 534
+  }
+}

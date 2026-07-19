@@ -1,3 +1,56 @@
+# STATE — RUN 5 COMPLETE (see RUN 5 section below; Runs 1-3 sections preserved as history)
+
+## RUN 5 — Multi-Strategy Portfolio Research, Traditional Markets (2026-07-19, fourth session)
+
+**Status: complete.** Note: the task brief referenced "Runs 1-4" and `src/experiment_log.py`,
+neither of which exist in this repo's actual history (Runs 1-3 only; closest equivalent is
+`src/stats.py`) — corrected in `HYPOTHESES_V5.md` rather than silently fabricated or ignored.
+
+New data sources (all confirmed working, `src/data_tradfi.py`): Kenneth French Data Library, FRED
+(via curl subprocess — the `requests` library proved unreliable/hanging against this host through
+the environment's proxy in testing), CFTC Commitments of Traders (Socrata API), Yahoo Finance
+(requires a `User-Agent` header), Fed FOMC historical meeting-date archive (custom HTML parser,
+distinguishes real meeting/statement dates from minutes-release-date mentions and ad-hoc
+unscheduled conference calls). Stooq is blocked (JS proof-of-work challenge) and unused.
+
+Tested 9 strategies (S1-S9) + 2 cleanly-skipped (S5 carry, S10 microcap — insufficient free data)
++ 1 reference-only (S7 French factors). N_TESTS=60 (separate registry,
+`results/n_tests_registry_v5.csv`, kept independent from Run 2's crypto denominator). Two real
+data-quality bugs caught and fixed before publishing (S2's pre-2008 Yahoo `open`-field artifact;
+S8's 2020-03-13 PutWrite-index bad print) — both caught by cross-checking against an independent
+series, matching this run's own stated prior that "any Sharpe >1 is a bug until proven otherwise."
+
+**Final survivors** (BH-FDR q=0.10 AND positive Sharpe IS+holdout AND structural reason AND
+adequate power): **S4 turn-of-month** (Sharpe 0.74 IS / 0.76 holdout, 678 events) and **S2
+overnight Nasdaq drift** (0.64 IS / 0.60 holdout, ~14k daily obs). S8 (vol risk premium) is a
+near-miss, included flagged (fails strict BH by a small margin, 0.84 correlated with equity market
+beta per the correlation matrix, severe tail risk, no EU-retail-accessible instrument). S3
+(pre-FOMC drift) looked strong full-sample but its dedicated holdout split shows the effect decayed
+to insignificance post-2016 — excluded. S1 (trend) has no clean BH survivor; gold is a near-miss.
+
+**Portfolio**: simple risk parity, vol-targeted 8% ann. 3-strategy (incl. flagged S8): Sharpe 0.90
+[CI 0.81-0.99]. 2-strategy (S2+S4 only, the realistic retail version): Sharpe 0.82 [CI 0.74-0.91].
+Ablation confirms the run's core thesis empirically: S8 (best standalone Sharpe) contributes LEAST
+marginally (+0.075); S4 (weaker standalone Sharpe, much lower correlation) contributes MOST
+(+0.128). A trend/yield-curve defensive overlay on the 3-strategy portfolio improves Sharpe to
+1.03-1.07 and roughly halves max drawdown (-29.7% -> -14 to -21%).
+
+**Retail feasibility is the binding constraint, not the strategy math**: micro futures require
+~$250k-500k EUR for correctly-weighted, non-overleveraged implementation (1 MES+1 MNQ contract
+already = ~$94k notional against a strategy designed for ~1x notional exposure). UCITS ETFs solve
+this at every capital tier from ~3k EUR up and are the realistic vehicle — but S8 has no accessible
+EU retail proxy at all (PRIIPs-blocked), an independent reason (beyond weak diversification value
+and tail risk) to exclude it from a real implementation.
+
+Deliverables: `HYPOTHESES_V5.md`, `RESULTS_V5.md`, `src/data_tradfi.py`, `src/tradfi_costs.py`,
+`src/stats.py` (extended with a configurable `registry_path` so hypothesis families stay
+independent), `src/strategy_tsmom.py`, `src/strategy_overnight.py`, `src/strategy_fomc_drift.py`,
+`src/strategy_turn_of_month.py`, `src/strategy_cot.py`, `src/strategy_vol_premium.py`,
+`src/strategy_defensive_overlay.py`, `src/portfolio.py`, `results/s{1-9}_*` (raw JSON + summaries +
+CSVs), `results/retail_feasibility.md`.
+
+---
+
 # STATE — RUN 3 COMPLETE (see RUN 3 section below; Run 1/2 sections preserved as history)
 
 ## RUN 3 — Perp DEX Farming Cost & Breakeven Model (2026-07-18, third session)

@@ -1,0 +1,68 @@
+{
+  "equal_weight": {
+    "raw": {
+      "sharpe_ann": 0.798,
+      "sharpe_ci95_lo": 0.711,
+      "sharpe_ci95_hi": 0.884,
+      "ann_return_pct": 7.54,
+      "ann_vol_pct": 9.45,
+      "max_dd_pct": -40.39,
+      "longest_underwater_months": 79,
+      "n_months": 678
+    },
+    "vol_targeted": {
+      "sharpe_ann": 0.854,
+      "sharpe_ci95_lo": 0.766,
+      "sharpe_ci95_hi": 0.942,
+      "ann_return_pct": 8.55,
+      "ann_vol_pct": 10.0,
+      "max_dd_pct": -32.53,
+      "longest_underwater_months": 84,
+      "n_months": 678
+    }
+  },
+  "inverse_vol": {
+    "raw": {
+      "sharpe_ann": 0.821,
+      "sharpe_ci95_lo": 0.734,
+      "sharpe_ci95_hi": 0.908,
+      "ann_return_pct": 7.5,
+      "ann_vol_pct": 9.13,
+      "max_dd_pct": -36.96,
+      "longest_underwater_months": 78,
+      "n_months": 678
+    },
+    "vol_targeted": {
+      "sharpe_ann": 0.844,
+      "sharpe_ci95_lo": 0.756,
+      "sharpe_ci95_hi": 0.932,
+      "ann_return_pct": 8.33,
+      "ann_vol_pct": 9.87,
+      "max_dd_pct": -31.16,
+      "longest_underwater_months": 83,
+      "n_months": 678
+    }
+  },
+  "simple_risk_parity": {
+    "raw": {
+      "sharpe_ann": 0.832,
+      "sharpe_ci95_lo": 0.744,
+      "sharpe_ci95_hi": 0.919,
+      "ann_return_pct": 7.45,
+      "ann_vol_pct": 8.96,
+      "max_dd_pct": -34.19,
+      "longest_underwater_months": 78,
+      "n_months": 678
+    },
+    "vol_targeted": {
+      "sharpe_ann": 0.824,
+      "sharpe_ci95_lo": 0.737,
+      "sharpe_ci95_hi": 0.911,
+      "ann_return_pct": 8.06,
+      "ann_vol_pct": 9.79,
+      "max_dd_pct": -29.73,
+      "longest_underwater_months": 83,
+      "n_months": 678
+    }
+  }
+}

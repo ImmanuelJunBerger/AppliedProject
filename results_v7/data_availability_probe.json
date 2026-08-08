@@ -1,0 +1,58 @@
+{
+  "glassnode": {
+    "status_code": 401,
+    "usable": false,
+    "body_head": "<html>\r\n<head><title>401 Authorization Required</title></head>\r\n<body>\r\n<center><h1>401 Authorization Required</h1></center>\r\n<hr><center>nginx</center>\r\n<script>(function(){function c(){var b=a.conte",
+    "provides": "SOPR / MVRV / dormancy (F03-F05)",
+    "url": "https://api.glassnode.com/v1/metrics/indicators/sopr?a=BTC"
+  },
+  "cryptoquant": {
+    "status_code": 401,
+    "usable": false,
+    "body_head": "{\"result\":{},\"status\":{\"code\":401,\"message\":\"unauthorized\",\"description\":\"401 Unauthorized: Token does not exists. Unable to find token or please use 'Authorization: Bearer API_KEY' header.\"}}",
+    "provides": "exchange netflows (F01)",
+    "url": "https://api.cryptoquant.com/v1/btc/exchange-flows/netflow?window=hour"
+  },
+  "dune": {
+    "status_code": 401,
+    "usable": false,
+    "body_head": "{\"error\":\"invalid API Key\"}",
+    "provides": "arbitrary on-chain SQL (F01-F08)",
+    "url": "https://api.dune.com/api/v1/query/1/results"
+  },
+  "blockchain_info_charts": {
+    "status_code": 200,
+    "usable": true,
+    "body_head": "{\"status\":\"ok\",\"name\":\"Confirmed Transactions Per Day\",\"unit\":\"Transactions\",\"period\":\"day\",\"description\":\"The number of daily confirmed Bitcoin transactions.\",\"values\":[{\"x\":1628467200,\"y\":252660.0},",
+    "provides": "active addresses / tx count / fees (F07-F08)",
+    "url": "https://api.blockchain.info/charts/n-transactions?timespan=5years&format=json"
+  },
+  "mempool_space": {
+    "status_code": 200,
+    "usable": true,
+    "body_head": "{\"hashrates\":[{\"timestamp\":1754697600,\"avgHashrate\":867506624425118400000},{\"timestamp\":1754784000,\"avgHashrate\":741118854914175300000},{\"timestamp\":1754870400,\"avgHashrate\":868779190913236200000},{\"t",
+    "provides": "chain fees & hashrate (F07)",
+    "url": "https://mempool.space/api/v1/mining/hashrate/1y"
+  },
+  "defillama_stables": {
+    "status_code": 200,
+    "usable": true,
+    "body_head": "[{\"date\":\"1511913600\",\"totalCirculating\":{\"peggedUSD\":109970},\"totalCirculatingUSD\":{\"peggedUSD\":110105}},{\"date\":\"1512000000\",\"totalCirculating\":{\"peggedUSD\":109970},\"totalCirculatingUSD\":{\"peggedUSD",
+    "provides": "aggregate stablecoin supply (F02)",
+    "url": "https://stablecoins.llama.fi/stablecoincharts/all"
+  },
+  "defillama_unlocks": {
+    "status_code": 402,
+    "usable": false,
+    "body_head": "Upgrade to the paid API plan at https://defillama.com/subscription",
+    "provides": "token unlock calendar (H03)",
+    "url": "https://api.llama.fi/emissions"
+  },
+  "binance_announcements": {
+    "status_code": 200,
+    "usable": true,
+    "body_head": "{\"code\":\"000000\",\"message\":null,\"messageDetail\":null,\"data\":{\"catalogs\":[{\"catalogId\":48,\"parentCatalogId\":null,\"icon\":\"https://public.bnbstatic.com/image/cms/content/body/202505/d3201bf0be35bb246b65a",
+    "provides": "listing-announcement timestamps (H01)",
+    "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/list/query?type=1&catalogId=48&pageNo=1&pageSize=10"
+  }
+}

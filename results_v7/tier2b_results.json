@@ -1,0 +1,310 @@
+{
+  "F02_stablecoin_growth": {
+    "cost_levels": {
+      "optimistic": {
+        "net_bps_per_bar": 0.457,
+        "sharpe": 0.945,
+        "n_trades": 2453,
+        "gross_bps_per_bar": 0.4901,
+        "max_dd_pct": -42.78
+      },
+      "base": {
+        "net_bps_per_bar": 0.4404,
+        "sharpe": 0.911,
+        "n_trades": 2453,
+        "gross_bps_per_bar": 0.4901,
+        "max_dd_pct": -43.12
+      },
+      "pessimistic": {
+        "net_bps_per_bar": 0.4073,
+        "sharpe": 0.842,
+        "n_trades": 2453,
+        "gross_bps_per_bar": 0.4901,
+        "max_dd_pct": -43.81
+      }
+    },
+    "8.1_sample_size": {
+      "status": "PASS",
+      "n_trades": 2453
+    },
+    "walk_forward": {
+      "status": "FAIL",
+      "fold_sharpes": [
+        0.653,
+        3.158,
+        0.0,
+        0.0,
+        -2.745
+      ],
+      "mean": 0.213,
+      "fraction_positive": 0.4
+    },
+    "purged_kfold": {
+      "status": "FAIL",
+      "fold_sharpes": [
+        0.656,
+        2.691,
+        0.0,
+        -2.32,
+        -2.758
+      ],
+      "mean": -0.346,
+      "embargo_bars": 24
+    },
+    "regime": {
+      "bull": 1.964,
+      "bear": -1.017,
+      "chop": 0.087,
+      "n_positive_regimes": 2,
+      "status": "PASS"
+    },
+    "block_bootstrap": {
+      "status": "FAIL",
+      "sharpe_ci95": [
+        -0.701,
+        2.519
+      ],
+      "median": 0.899
+    },
+    "mc_drawdown": {
+      "status": "INFO",
+      "realized_max_dd_pct": -43.12,
+      "mc_median_pct": -34.65,
+      "mc_p05_pct": -48.15
+    },
+    "quarterly": {
+      "status": "PASS",
+      "n_quarters": 6,
+      "fraction_positive": 0.67,
+      "by_quarter_bps": {
+        "2024-06-30": 0.0,
+        "2024-09-30": 548.4,
+        "2024-12-31": 4292.5,
+        "2025-03-31": 555.3,
+        "2025-06-30": -879.8,
+        "2025-09-30": 874.3
+      }
+    },
+    "outlier": {
+      "full_mean_bps": 0.4404,
+      "trimmed_mean_bps": 0.7039,
+      "status": "PASS",
+      "note": "edge must survive removing top 5% of bars by |P&L|"
+    },
+    "market_alpha": {
+      "alpha_bps_per_bar": 0.4198,
+      "t_alpha": 1.17,
+      "beta_to_market": 0.284,
+      "status": "FAIL",
+      "note": "an edge that is only market beta has alpha ~ 0 regardless of its Sharpe"
+    },
+    "beats_buy_hold": {
+      "strategy_sharpe": 0.911,
+      "equal_weight_buyhold_sharpe": 0.088,
+      "status": "PASS",
+      "note": "buy-and-hold is costless here, which is generous to the benchmark on purpose"
+    },
+    "entry_shift": {
+      "actual": 0.911,
+      "delays": {
+        "delay_+1": 1.031,
+        "delay_+2": 1.01,
+        "delay_+3": 1.064
+      },
+      "status": "FAIL"
+    },
+    "parameter_plateau": {
+      "sweep_dev_net_bps": {
+        "0.5": -0.0102,
+        "0.75": -0.0008,
+        "1.0": 0.1017,
+        "1.25": 0.0454,
+        "1.5": 0.1358,
+        "2.0": 0.1973
+      },
+      "fraction_positive": 0.67,
+      "status": "PASS"
+    },
+    "cost_ratio": {
+      "gross_bps": 0.4901,
+      "cost_bps": 0.0497,
+      "gross_to_cost_ratio": 9.86,
+      "status": "PASS"
+    },
+    "random_entry": {
+      "strategy_sharpe": 0.911,
+      "random_median": -3.698,
+      "random_p95": -2.057,
+      "percentile": 100.0,
+      "status": "PASS"
+    },
+    "deflated_sharpe": {
+      "per_bar_sharpe": 0.009731,
+      "annualised": 0.911,
+      "expected_max_under_null": 0.023762,
+      "deflated_sharpe_prob": 0.0612,
+      "n_trials": 128,
+      "T": 12240,
+      "status": "FAIL"
+    }
+  },
+  "F08_active_address_growth": {
+    "cost_levels": {
+      "optimistic": {
+        "net_bps_per_bar": 0.5184,
+        "sharpe": 1.265,
+        "n_trades": 2084,
+        "gross_bps_per_bar": 0.5515,
+        "max_dd_pct": -22.33
+      },
+      "base": {
+        "net_bps_per_bar": 0.5019,
+        "sharpe": 1.224,
+        "n_trades": 2084,
+        "gross_bps_per_bar": 0.5515,
+        "max_dd_pct": -22.58
+      },
+      "pessimistic": {
+        "net_bps_per_bar": 0.4688,
+        "sharpe": 1.143,
+        "n_trades": 2084,
+        "gross_bps_per_bar": 0.5515,
+        "max_dd_pct": -23.52
+      }
+    },
+    "8.1_sample_size": {
+      "status": "PASS",
+      "n_trades": 2084
+    },
+    "walk_forward": {
+      "status": "PASS",
+      "fold_sharpes": [
+        -0.268,
+        3.462,
+        0.237,
+        -0.561,
+        1.323
+      ],
+      "mean": 0.838,
+      "fraction_positive": 0.6
+    },
+    "purged_kfold": {
+      "status": "PASS",
+      "fold_sharpes": [
+        1.839,
+        3.584,
+        0.238,
+        0.043,
+        -2.455
+      ],
+      "mean": 0.65,
+      "embargo_bars": 24
+    },
+    "regime": {
+      "bull": 1.453,
+      "bear": 0.316,
+      "chop": 0.174,
+      "n_positive_regimes": 3,
+      "status": "PASS"
+    },
+    "block_bootstrap": {
+      "status": "FAIL",
+      "sharpe_ci95": [
+        -0.316,
+        2.772
+      ],
+      "median": 1.238
+    },
+    "mc_drawdown": {
+      "status": "INFO",
+      "realized_max_dd_pct": -22.58,
+      "mc_median_pct": -27.5,
+      "mc_p05_pct": -39.43
+    },
+    "quarterly": {
+      "status": "FAIL",
+      "n_quarters": 6,
+      "fraction_positive": 0.5,
+      "by_quarter_bps": {
+        "2024-06-30": 0.0,
+        "2024-09-30": 2275.1,
+        "2024-12-31": 3725.7,
+        "2025-03-31": -963.5,
+        "2025-06-30": -779.1,
+        "2025-09-30": 1884.6
+      }
+    },
+    "outlier": {
+      "full_mean_bps": 0.5019,
+      "trimmed_mean_bps": 0.0451,
+      "status": "PASS",
+      "note": "edge must survive removing top 5% of bars by |P&L|"
+    },
+    "market_alpha": {
+      "alpha_bps_per_bar": 0.5003,
+      "t_alpha": 1.44,
+      "beta_to_market": 0.022,
+      "status": "FAIL",
+      "note": "an edge that is only market beta has alpha ~ 0 regardless of its Sharpe"
+    },
+    "beats_buy_hold": {
+      "strategy_sharpe": 1.224,
+      "equal_weight_buyhold_sharpe": 0.088,
+      "status": "PASS",
+      "note": "buy-and-hold is costless here, which is generous to the benchmark on purpose"
+    },
+    "entry_shift": {
+      "actual": 1.224,
+      "delays": {
+        "delay_+1": 1.154,
+        "delay_+2": 1.278,
+        "delay_+3": 1.29
+      },
+      "status": "FAIL"
+    },
+    "parameter_plateau": {
+      "sweep_dev_net_bps": {
+        "0.5": 0.4631,
+        "0.75": 0.3519,
+        "1.0": 0.3397,
+        "1.25": 0.2827,
+        "1.5": 0.1343,
+        "2.0": 0.006
+      },
+      "fraction_positive": 1.0,
+      "status": "PASS"
+    },
+    "cost_ratio": {
+      "gross_bps": 0.5515,
+      "cost_bps": 0.0496,
+      "gross_to_cost_ratio": 11.12,
+      "status": "PASS"
+    },
+    "random_entry": {
+      "strategy_sharpe": 1.224,
+      "random_median": -3.698,
+      "random_p95": -2.057,
+      "percentile": 100.0,
+      "status": "PASS"
+    },
+    "deflated_sharpe": {
+      "per_bar_sharpe": 0.01308,
+      "annualised": 1.224,
+      "expected_max_under_null": 0.023653,
+      "deflated_sharpe_prob": 0.1211,
+      "n_trials": 128,
+      "T": 12240,
+      "status": "FAIL"
+    }
+  },
+  "_correlation": {
+    "F02_stablecoin_growth": {
+      "F02_stablecoin_growth": 1.0,
+      "F08_active_address_growth": 0.198
+    },
+    "F08_active_address_growth": {
+      "F02_stablecoin_growth": 0.198,
+      "F08_active_address_growth": 1.0
+    }
+  }
+}

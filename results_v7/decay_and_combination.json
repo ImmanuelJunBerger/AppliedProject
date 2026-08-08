@@ -1,0 +1,307 @@
+{
+  "combination_stage": {
+    "status": "VOID",
+    "reason": "zero Tier-2 survivors; nothing eligible to combine",
+    "diagnostic_only": true,
+    "correlation_validation": {
+      "A12_z2.0": {
+        "A12_z2.0": 1.0,
+        "A12_z3.0": 0.586,
+        "F02_stablecoin_growth": -0.19,
+        "F08_active_address_growth": -0.086
+      },
+      "A12_z3.0": {
+        "A12_z2.0": 0.586,
+        "A12_z3.0": 1.0,
+        "F02_stablecoin_growth": -0.212,
+        "F08_active_address_growth": -0.056
+      },
+      "F02_stablecoin_growth": {
+        "A12_z2.0": -0.19,
+        "A12_z3.0": -0.212,
+        "F02_stablecoin_growth": 1.0,
+        "F08_active_address_growth": 0.198
+      },
+      "F08_active_address_growth": {
+        "A12_z2.0": -0.086,
+        "A12_z3.0": -0.056,
+        "F02_stablecoin_growth": 0.198,
+        "F08_active_address_growth": 1.0
+      }
+    },
+    "equal_weight": {
+      "sharpe": 0.455,
+      "net_bps_per_bar": 0.1678,
+      "bootstrap": {
+        "status": "FAIL",
+        "sharpe_ci95": [
+          -1.284,
+          2.181
+        ],
+        "median": 0.445
+      },
+      "deflated_sharpe": {
+        "per_bar_sharpe": 0.004866,
+        "annualised": 0.455,
+        "expected_max_under_null": 0.023683,
+        "deflated_sharpe_prob": 0.0186,
+        "n_trials": 130,
+        "T": 12240
+      },
+      "eligible_for_holdout": false,
+      "note": "diagnostic only -- a blend of rejected strategies is still rejected"
+    },
+    "inverse_vol": {
+      "sharpe": 0.846,
+      "net_bps_per_bar": 47.8195,
+      "bootstrap": {
+        "status": "FAIL",
+        "sharpe_ci95": [
+          -0.852,
+          2.554
+        ],
+        "median": 0.838
+      },
+      "deflated_sharpe": {
+        "per_bar_sharpe": 0.009037,
+        "annualised": 0.846,
+        "expected_max_under_null": 0.023695,
+        "deflated_sharpe_prob": 0.0524,
+        "n_trials": 130,
+        "T": 12240
+      },
+      "eligible_for_holdout": false,
+      "note": "diagnostic only -- a blend of rejected strategies is still rejected"
+    }
+  },
+  "decay": {
+    "A12_z2.0": {
+      "name": "A12_z2.0",
+      "development": {
+        "net_bps_per_bar": 1.2609,
+        "sharpe": 1.508,
+        "first_half_bps": 1.4294,
+        "second_half_bps": 1.0925,
+        "cum_pnl_slope_bps_per_bar": 1.47182,
+        "yearly_bps": {
+          "2021": 0.776,
+          "2022": 2.396,
+          "2023": 0.12,
+          "2024": 2.669
+        },
+        "rolling_90d_sharpe_frac_positive": 0.728
+      },
+      "validation": {
+        "net_bps_per_bar": -0.2762,
+        "sharpe": -0.351,
+        "first_half_bps": 0.3257,
+        "second_half_bps": -0.8781,
+        "cum_pnl_slope_bps_per_bar": -0.41619,
+        "yearly_bps": {
+          "2024": 0.056,
+          "2025": -0.569
+        },
+        "rolling_90d_sharpe_frac_positive": 0.291
+      },
+      "decay": {
+        "dev_to_val_sharpe_drop": 1.859,
+        "dev_to_val_net_bps_drop": 1.5371,
+        "retained_fraction": -0.219
+      },
+      "capacity": {
+        "adv_fraction_assumed": 0.05,
+        "capacity_usd_p10": 566049,
+        "capacity_usd_median": 3070860,
+        "note": "binding constraint is the least liquid asset held in a bar"
+      }
+    },
+    "A12_z3.0": {
+      "name": "A12_z3.0",
+      "development": {
+        "net_bps_per_bar": 1.2237,
+        "sharpe": 1.179,
+        "first_half_bps": 1.6037,
+        "second_half_bps": 0.8437,
+        "cum_pnl_slope_bps_per_bar": 1.37728,
+        "yearly_bps": {
+          "2021": 0.328,
+          "2022": 2.568,
+          "2023": 0.015,
+          "2024": 3.409
+        },
+        "rolling_90d_sharpe_frac_positive": 0.667
+      },
+      "validation": {
+        "net_bps_per_bar": 0.005,
+        "sharpe": 0.006,
+        "first_half_bps": 0.8882,
+        "second_half_bps": -0.8782,
+        "cum_pnl_slope_bps_per_bar": 0.14476,
+        "yearly_bps": {
+          "2024": 1.053,
+          "2025": -0.92
+        },
+        "rolling_90d_sharpe_frac_positive": 0.475
+      },
+      "decay": {
+        "dev_to_val_sharpe_drop": 1.173,
+        "dev_to_val_net_bps_drop": 1.2187,
+        "retained_fraction": 0.004
+      },
+      "capacity": {
+        "adv_fraction_assumed": 0.05,
+        "capacity_usd_p10": 260145,
+        "capacity_usd_median": 1584669,
+        "note": "binding constraint is the least liquid asset held in a bar"
+      }
+    },
+    "F02_stablecoin_growth": {
+      "name": "F02_stablecoin_growth",
+      "development": {
+        "net_bps_per_bar": 0.1284,
+        "sharpe": 0.202,
+        "first_half_bps": -0.4064,
+        "second_half_bps": 0.6632,
+        "cum_pnl_slope_bps_per_bar": 0.07177,
+        "yearly_bps": {
+          "2021": -0.971,
+          "2022": 0.355,
+          "2023": 0.89,
+          "2024": 0.452
+        },
+        "rolling_90d_sharpe_frac_positive": 0.425
+      },
+      "validation": {
+        "net_bps_per_bar": 0.4404,
+        "sharpe": 0.911,
+        "first_half_bps": 0.791,
+        "second_half_bps": 0.0898,
+        "cum_pnl_slope_bps_per_bar": 0.53022,
+        "yearly_bps": {
+          "2024": 0.844,
+          "2025": 0.085
+        },
+        "rolling_90d_sharpe_frac_positive": 0.582
+      },
+      "decay": {
+        "dev_to_val_sharpe_drop": -0.709,
+        "dev_to_val_net_bps_drop": -0.312,
+        "retained_fraction": 3.43
+      },
+      "capacity": {
+        "adv_fraction_assumed": 0.05,
+        "capacity_usd_p10": 0,
+        "capacity_usd_median": 0,
+        "note": "binding constraint is the least liquid asset held in a bar"
+      }
+    },
+    "F08_active_address_growth": {
+      "name": "F08_active_address_growth",
+      "development": {
+        "net_bps_per_bar": 0.3896,
+        "sharpe": 0.591,
+        "first_half_bps": 0.9197,
+        "second_half_bps": -0.1405,
+        "cum_pnl_slope_bps_per_bar": 0.48698,
+        "yearly_bps": {
+          "2021": 0.856,
+          "2022": 0.503,
+          "2023": -0.001,
+          "2024": -0.154
+        },
+        "rolling_90d_sharpe_frac_positive": 0.493
+      },
+      "validation": {
+        "net_bps_per_bar": 0.5019,
+        "sharpe": 1.224,
+        "first_half_bps": 0.7307,
+        "second_half_bps": 0.273,
+        "cum_pnl_slope_bps_per_bar": 0.56023,
+        "yearly_bps": {
+          "2024": 1.046,
+          "2025": 0.022
+        },
+        "rolling_90d_sharpe_frac_positive": 0.533
+      },
+      "decay": {
+        "dev_to_val_sharpe_drop": -0.633,
+        "dev_to_val_net_bps_drop": -0.1123,
+        "retained_fraction": 1.288
+      },
+      "capacity": {
+        "adv_fraction_assumed": 0.05,
+        "capacity_usd_p10": 0,
+        "capacity_usd_median": 0,
+        "note": "binding constraint is the least liquid asset held in a bar"
+      }
+    }
+  },
+  "graveyard": {
+    "by_family": {
+      "A": {
+        "n": 38,
+        "median_gross": -0.0003,
+        "median_net": -1.3503,
+        "best_net": 1.0595,
+        "advanced": 2
+      },
+      "B": {
+        "n": 26,
+        "median_gross": 0.177,
+        "median_net": -0.9406,
+        "best_net": 0.4259,
+        "advanced": 0
+      },
+      "C": {
+        "n": 7,
+        "median_gross": 0.1672,
+        "median_net": -8.6209,
+        "best_net": -3.2948,
+        "advanced": 0
+      },
+      "D": {
+        "n": 23,
+        "median_gross": 0.0568,
+        "median_net": -2.0256,
+        "best_net": 0.0766,
+        "advanced": 0
+      },
+      "E": {
+        "n": 9,
+        "median_gross": -0.1398,
+        "median_net": -3.8888,
+        "best_net": -1.2503,
+        "advanced": 0
+      },
+      "F": {
+        "n": 5,
+        "median_gross": 0.1318,
+        "median_net": -0.0102,
+        "best_net": 0.3397,
+        "advanced": 2
+      },
+      "H": {
+        "n": 13,
+        "median_gross": -0.0084,
+        "median_net": -0.0116,
+        "best_net": 1.1089,
+        "advanced": 0
+      }
+    },
+    "n_total_screened": 121,
+    "n_gross_positive": 72,
+    "n_gross_positive_but_cost_killed": 58,
+    "median_gross_of_cost_killed_bps": 0.1728,
+    "median_net_of_cost_killed_bps": -1.3596,
+    "cause_counts": {
+      "too few trades": 16,
+      "net-negative after costs": 3
+    }
+  },
+  "trial_accounting": {
+    "counted_trials_dsr_denominator": 130,
+    "ledger_rows": 141,
+    "holdout_touches_used": 0,
+    "holdout_touch_budget": 3
+  }
+}

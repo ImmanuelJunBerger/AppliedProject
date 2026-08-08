@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 *.log
 results_v6/plots/*.png.tmp
+data/cache_binance/

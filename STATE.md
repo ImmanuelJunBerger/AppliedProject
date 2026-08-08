@@ -1,3 +1,65 @@
+# STATE — RUN 7 COMPLETE (see RUN 7 section below; Runs 1-6 preserved as history)
+
+## RUN 7 — Crypto Strategy Discovery Program (2026-08-08, sixth session)
+
+**Status: complete. Verdict NOTHING PASSES — 130 counted trials, 0 survivors, holdout untouched (0/3).**
+Full write-up in `RESULTS_V7.md`; pre-registration in `HYPOTHESES_V7.md`.
+
+**Survivorship bias finally FIXED, not just disclosed.** `data.binance.vision` (the bulk archive) is
+NOT geo-blocked, unlike `fapi.binance.com` (451), and it retains delisted symbols. Universe = 135
+USD-M perps including 14 that died (LUNAUSDT, SRMUSDT, BZRXUSDT, TOMOUSDT, EOSUSDT, MATICUSDT,
+BTTUSDT, HNTUSDT, KEEPUSDT, AKROUSDT, BTSUSDT, DODOUSDT, SXPUSDT, YFIIUSDT). Three of the dead rank
+top-25 by volume, so it is material. Also unlocked funding back to 2020 (vs Run 6's OKX 95d) and
+5-min positioning metrics (OI, top-trader L/S, retail account L/S, taker ratio) for 25 symbols —
+family A was untestable in Run 6 and is testable here. S3 listing needs
+`s3-ap-northeast-1.amazonaws.com/data.binance.vision?delimiter=/&prefix=...`; the `?prefix=` form on
+the main host returns a JS shell. Watch the ms→µs timestamp switch mid-archive.
+
+**Partitions locked BEFORE idea generation** (`src/partitions.py`, `results_v7/partitions.json`):
+dev 2021-01-01→2024-05-07 (29,328 bars), val →2025-09-29 (12,240), holdout →2026-08-01 (most recent).
+`log_holdout_touch()` raises past 3 touches. Never called — `run_tier3.py` refuses to load the
+holdout and asserts the counter is 0.
+
+**Funnel:** 121 Tier-1 trials on development → 4 to Tier 2 on validation → 0 survivors → Tier 3 not run.
+- A12 retail-L/S fade: dev Sharpe +1.51 → val **−0.35**. Killed on regime (1/3), bootstrap CI
+  [−2.04,+1.31], quarterly 33%, outlier (drop top 5% ⇒ +0.005 → **−1.07** bps/bar), gross/cost 0.72,
+  DSR 0.0013. The outlier gate is what caught it; it passed random-entry at the 99th percentile.
+- F02/F08 on-chain tilts: val Sharpe 0.91/1.22 but **market-alpha t = 1.17/1.44** and both fail the
+  delay placebo. Added `market_alpha` + `beats_buy_hold` gates specifically because a market-wide
+  tilt would be flattered by the cross-sectional battery.
+- Combination stage VOID (no survivors); run as diagnostics only, inverse-vol Sharpe 0.85, CI
+  [−0.85,+2.55], DSR 0.052.
+
+**Headline finding: cost is the binding constraint, not signal quality.** 96 of 121 deaths (79%) were
+net-negative-after-costs. Of 72 gross-positive trials, 58 were cost-killed (median gross +0.17 →
+net −1.36 bps/bar). Family B long-only momentum is the clean case: gross +1.09/+1.08/+1.02 bps at
+7d/3d/1d → net +0.25/−0.02/−0.42. Edge is real and monotonically eaten by turnover. **Highest-value
+follow-up: rerun family B under a measured passive/maker execution cost model.**
+
+**Pre-declared skips were partly WRONG and were corrected by an actual probe.** Glassnode/CryptoQuant/
+Dune 401 and DeFiLlama emissions 402 (→ F01, F03–F06, H03, H08 genuinely SKIPPED_NO_DATA, excluded
+from the DSR denominator as unmeasured-not-falsified), but blockchain.info charts, DeFiLlama
+stablecoins and the Binance announcement CMS all return 200 with usable history — so F02/F07/F08/H01
+were tested rather than skipped. Daily on-chain series carry a mandatory +1-day availability lag
+(`data_onchain.to_hourly_lagged`); without it every one of them fabricates a day of lookahead.
+
+**Gate bug found and corrected mid-run:** the entry-shift placebo originally tested shifts −3…+3 and
+required the actual to beat all of them. Negative shifts are LOOKAHEAD, not placebos, and win by
+construction (Sharpe 4.10 vs −0.35). Corrected to delays-only, with advances kept as a separate
+informational sanity check. Flipped `entry_shift` FAIL→PASS for both A12 variants; **verdict
+unchanged**. Corrected re-run logged as two ADDITIONAL ledger rows (raises the DSR denominator =
+harder), not as an overwrite.
+
+**Ledger accounting:** `results_v7/trials_ledger.csv`, 141 rows, append-only, row written before each
+test. `total_trials()` = 130 and excludes `SKIPPED_NO_DATA` (7, never executed) and `SUPERSEDED`
+(4, placeholder skip rows the probe overturned; the real tests have their own ids).
+
+Deliverables: `RESULTS_V7.md`, `HYPOTHESES_V7.md`, `src/{partitions,data_binance,data_onchain,ledger,
+panel,signals_v7}.py`, `run_{tier1,skips,family_f,tier2,tier2b,decay,tier3}.py`, `results_v7/*`.
+Engine tests still 7/7.
+
+---
+
 # STATE — RUN 6 COMPLETE (see RUN 6 section below; Runs 1-5 preserved as history)
 
 ## RUN 6 — Crypto intraday (1h perp) strategy backtest (2026-08-08, fifth session)

@@ -1,0 +1,310 @@
+{
+  "A12_z2.0": {
+    "cost_levels": {
+      "optimistic": {
+        "net_bps_per_bar": 0.0519,
+        "sharpe": 0.066,
+        "n_trades": 1254,
+        "gross_bps_per_bar": 0.7081,
+        "max_dd_pct": -63.75
+      },
+      "base": {
+        "net_bps_per_bar": -0.2762,
+        "sharpe": -0.351,
+        "n_trades": 1254,
+        "gross_bps_per_bar": 0.7081,
+        "max_dd_pct": -72.48
+      },
+      "pessimistic": {
+        "net_bps_per_bar": -0.9324,
+        "sharpe": -1.183,
+        "n_trades": 1254,
+        "gross_bps_per_bar": 0.7081,
+        "max_dd_pct": -84.97
+      }
+    },
+    "8.1_sample_size": {
+      "status": "PASS",
+      "n_trades": 1254
+    },
+    "walk_forward": {
+      "status": "FAIL",
+      "fold_sharpes": [
+        2.841,
+        -0.012,
+        -0.078,
+        -3.638,
+        -0.592
+      ],
+      "mean": -0.296,
+      "fraction_positive": 0.2
+    },
+    "purged_kfold": {
+      "status": "FAIL",
+      "fold_sharpes": [
+        2.718,
+        -0.305,
+        0.091,
+        -3.344,
+        -1.102
+      ],
+      "mean": -0.389,
+      "embargo_bars": 24
+    },
+    "regime": {
+      "bull": -0.789,
+      "bear": 0.979,
+      "chop": -0.271,
+      "n_positive_regimes": 1,
+      "status": "FAIL"
+    },
+    "block_bootstrap": {
+      "status": "FAIL",
+      "sharpe_ci95": [
+        -2.044,
+        1.309
+      ],
+      "median": -0.358
+    },
+    "mc_drawdown": {
+      "status": "INFO",
+      "realized_max_dd_pct": -72.48,
+      "mc_median_pct": -70.41,
+      "mc_p05_pct": -81.48
+    },
+    "quarterly": {
+      "status": "FAIL",
+      "n_quarters": 6,
+      "fraction_positive": 0.33,
+      "by_quarter_bps": {
+        "2024-06-30": -981.8,
+        "2024-09-30": 3538.0,
+        "2024-12-31": -2236.5,
+        "2025-03-31": 546.6,
+        "2025-06-30": -3273.4,
+        "2025-09-30": -974.0
+      }
+    },
+    "outlier": {
+      "full_mean_bps": -0.2762,
+      "trimmed_mean_bps": -1.4713,
+      "status": "FAIL",
+      "note": "edge must survive removing top 5% of bars by |P&L|"
+    },
+    "entry_shift": {
+      "actual": -0.351,
+      "delays": {
+        "delay_+1": -0.769,
+        "delay_+2": -0.636,
+        "delay_+3": -0.78
+      },
+      "status": "PASS",
+      "note": "PASS only means the edge degrades when acted on late. It says nothing about whether the edge is positive."
+    },
+    "lookahead_sanity": {
+      "advances": {
+        "advance_-1": 1.874,
+        "advance_-2": 3.329,
+        "advance_-3": 4.095
+      },
+      "actual": -0.351,
+      "note": "INFORMATIONAL ONLY -- these are lookahead runs. Higher Sharpe here is expected and is not a result."
+    },
+    "parameter_plateau": {
+      "sweep_dev_net_bps": {
+        "1.0": 1.0662,
+        "1.5": 0.7665,
+        "2.0": 0.8612,
+        "2.5": 0.9858,
+        "3.0": 1.0595,
+        "3.5": 0.9875,
+        "4.0": 0.7922
+      },
+      "fraction_positive": 1.0,
+      "status": "PASS"
+    },
+    "cost_ratio": {
+      "gross_bps": 0.7081,
+      "cost_bps": 0.9843,
+      "cost_pct_of_gross": 139.0,
+      "gross_to_cost_ratio": 0.72,
+      "status": "FAIL",
+      "note": "cost-to-STOP is undefined for a continuous-weight strategy; gross-to-cost is reported as the honest analogue"
+    },
+    "random_entry": {
+      "strategy_sharpe": -0.351,
+      "random_median": -2.317,
+      "random_p95": -1.047,
+      "percentile": 99.4,
+      "status": "PASS"
+    },
+    "deflated_sharpe": {
+      "per_bar_sharpe": -0.003746,
+      "annualised": -0.351,
+      "expected_max_under_null": 0.023434,
+      "deflated_sharpe_prob": 0.0013,
+      "n_trials": 118,
+      "T": 12240,
+      "status": "FAIL"
+    }
+  },
+  "A12_z3.0": {
+    "cost_levels": {
+      "optimistic": {
+        "net_bps_per_bar": 0.1776,
+        "sharpe": 0.212,
+        "n_trades": 336,
+        "gross_bps_per_bar": 0.5229,
+        "max_dd_pct": -70.71
+      },
+      "base": {
+        "net_bps_per_bar": 0.005,
+        "sharpe": 0.006,
+        "n_trades": 336,
+        "gross_bps_per_bar": 0.5229,
+        "max_dd_pct": -74.3
+      },
+      "pessimistic": {
+        "net_bps_per_bar": -0.3403,
+        "sharpe": -0.405,
+        "n_trades": 336,
+        "gross_bps_per_bar": 0.5229,
+        "max_dd_pct": -80.38
+      }
+    },
+    "8.1_sample_size": {
+      "status": "PASS",
+      "n_trades": 336
+    },
+    "walk_forward": {
+      "status": "PASS",
+      "fold_sharpes": [
+        2.823,
+        1.844,
+        1.066,
+        -3.555,
+        -1.44
+      ],
+      "mean": 0.148,
+      "fraction_positive": 0.6
+    },
+    "purged_kfold": {
+      "status": "PASS",
+      "fold_sharpes": [
+        3.131,
+        1.893,
+        1.066,
+        -3.689,
+        -1.135
+      ],
+      "mean": 0.253,
+      "embargo_bars": 24
+    },
+    "regime": {
+      "bull": 1.692,
+      "bear": -0.02,
+      "chop": -0.622,
+      "n_positive_regimes": 1,
+      "status": "FAIL"
+    },
+    "block_bootstrap": {
+      "status": "FAIL",
+      "sharpe_ci95": [
+        -1.715,
+        1.755
+      ],
+      "median": -0.009
+    },
+    "mc_drawdown": {
+      "status": "INFO",
+      "realized_max_dd_pct": -74.3,
+      "mc_median_pct": -66.98,
+      "mc_p05_pct": -79.83
+    },
+    "quarterly": {
+      "status": "FAIL",
+      "n_quarters": 6,
+      "fraction_positive": 0.5,
+      "by_quarter_bps": {
+        "2024-06-30": -1620.1,
+        "2024-09-30": 5856.2,
+        "2024-12-31": 1806.2,
+        "2025-03-31": 1920.9,
+        "2025-06-30": -5260.7,
+        "2025-09-30": -2641.4
+      }
+    },
+    "outlier": {
+      "full_mean_bps": 0.005,
+      "trimmed_mean_bps": -1.0669,
+      "status": "FAIL",
+      "note": "edge must survive removing top 5% of bars by |P&L|"
+    },
+    "entry_shift": {
+      "actual": 0.006,
+      "delays": {
+        "delay_+1": -0.058,
+        "delay_+2": -0.375,
+        "delay_+3": -0.72
+      },
+      "status": "PASS",
+      "note": "PASS only means the edge degrades when acted on late. It says nothing about whether the edge is positive."
+    },
+    "lookahead_sanity": {
+      "advances": {
+        "advance_-1": 1.571,
+        "advance_-2": 3.048,
+        "advance_-3": 3.845
+      },
+      "actual": 0.006,
+      "note": "INFORMATIONAL ONLY -- these are lookahead runs. Higher Sharpe here is expected and is not a result."
+    },
+    "parameter_plateau": {
+      "sweep_dev_net_bps": {
+        "1.0": 1.0662,
+        "1.5": 0.7665,
+        "2.0": 0.8612,
+        "2.5": 0.9858,
+        "3.0": 1.0595,
+        "3.5": 0.9875,
+        "4.0": 0.7922
+      },
+      "fraction_positive": 1.0,
+      "status": "PASS"
+    },
+    "cost_ratio": {
+      "gross_bps": 0.5229,
+      "cost_bps": 0.5179,
+      "cost_pct_of_gross": 99.0,
+      "gross_to_cost_ratio": 1.01,
+      "status": "FAIL",
+      "note": "cost-to-STOP is undefined for a continuous-weight strategy; gross-to-cost is reported as the honest analogue"
+    },
+    "random_entry": {
+      "strategy_sharpe": 0.006,
+      "random_median": -2.317,
+      "random_p95": -1.047,
+      "percentile": 99.8,
+      "status": "PASS"
+    },
+    "deflated_sharpe": {
+      "per_bar_sharpe": 6.4e-05,
+      "annualised": 0.006,
+      "expected_max_under_null": 0.023396,
+      "deflated_sharpe_prob": 0.0049,
+      "n_trials": 118,
+      "T": 12240,
+      "status": "FAIL"
+    }
+  },
+  "_correlation": {
+    "A12_z2.0": {
+      "A12_z2.0": 1.0,
+      "A12_z3.0": 0.586
+    },
+    "A12_z3.0": {
+      "A12_z2.0": 0.586,
+      "A12_z3.0": 1.0
+    }
+  }
+}

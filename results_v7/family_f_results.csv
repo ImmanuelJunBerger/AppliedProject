@@ -1,0 +1,9 @@
+trial_id,family,hypothesis,n_trades,n_bars,gross_bps_per_bar,net_bps_per_bar,sharpe_net,sharpe_gross,max_dd_pct,total_net_return_pct,avg_turnover_per_bar,regime_bull,regime_bear,regime_chop,n_pos_regimes,outcome,cause_of_death
+F02_stablecoin_growth,F,Accelerating aggregate stablecoin supply precedes higher crypto returns,4505,29328,0.1684,0.1017,0.16,0.265,-84.38,-19.8,0.00265,0.638,1.398,-0.989,2,ADVANCE_TIER2,
+F02b_stablecoin_contraction,F,Contracting stablecoin supply precedes lower returns (short side of F02),5688,29328,0.0797,-0.0102,-0.013,0.101,-92.17,-56.6,0.00357,0.394,0.997,-0.849,2,KILLED,net-negative after costs (gross +0.080 -> net -0.010 bps)
+F07_fee_spike_fade,F,BTC chain-fee spikes mark urgency-driven flow and are followed by reversal,19693,29328,0.1318,-0.1602,-0.343,0.283,-71.37,-53.25,0.0116,-0.342,-0.648,0.236,1,KILLED,net-negative after costs (gross +0.132 -> net -0.160 bps)
+F08_active_address_growth,F,Growth in unique active addresses precedes higher returns,7405,29328,0.4645,0.3397,0.515,0.704,-52.38,54.95,0.00495,0.285,1.019,0.013,3,ADVANCE_TIER2,
+F08b_tx_count_growth,F,Growth in confirmed BTC transaction count precedes higher returns,5296,29328,0.0024,-0.088,-0.141,0.004,-76.26,-52.99,0.00359,0.555,-0.26,-0.465,1,KILLED,net-negative after costs (gross +0.002 -> net -0.088 bps)
+H01_announce_drift_24h,H,Long from the perp-listing announcement for 24h,2,29328,-0.0186,-0.0219,-0.195,-0.167,-26.09,-7.71,0.00014,0.0,0.007,-0.053,1,KILLED,too few trades (2<300)
+H01_announce_drift_72h,H,Long from the perp-listing announcement for 72h,2,29328,-0.0084,-0.0116,-0.069,-0.05,-41.27,-6.8,0.00014,0.0,0.007,-0.03,1,KILLED,too few trades (2<300)
+H01_announce_drift_168h,H,Long from the perp-listing announcement for 168h,2,29328,-0.0007,-0.0039,-0.018,-0.003,-48.76,-7.01,0.00014,0.0,0.007,-0.013,1,KILLED,too few trades (2<300)

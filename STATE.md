@@ -1,3 +1,48 @@
+# STATE — RUN 6 COMPLETE (see RUN 6 section below; Runs 1-5 preserved as history)
+
+## RUN 6 — Crypto intraday (1h perp) strategy backtest (2026-08-08, fifth session)
+
+**Status: complete. Verdict REJECT — 7 of 8 gates FAIL.**
+
+**Spec gap, handled explicitly:** Section 1 (STRATEGY SPEC) of the task prompt arrived as unfilled
+template placeholders -- no hypothesis, universe, or entry/exit rules. Implemented the prompt's own
+worked example (liquidation-cascade mean reversion) and isolated the signal behind
+`src/strategy.py::build_signal` so a real spec swaps in without touching engine/costs/gates.
+
+**Data:** OKX USDT perps, 20 crypto assets, 1H bars, 2023-08-04..2026-08-08 (26,400 bars/asset).
+Integrity: zero missing bars, zero dupes, zero zero-volume bars, zero OHLC violations across all 20.
+Filtered out tokenized equities (SNDK/SPCX/MU/XAU/SOXL/INTC...) now polluting OKX's perp volume
+rankings. Depth limits found: OKX funding ~95d (only 15% of trades covered -- flatters results),
+OKX OI 29d@1H / 179d@1D (so the hypothesis's OI-collapse leg is UNTESTABLE), HL 1h candles ~200d,
+Binance futures 451 / Bybit 403.
+
+**Cost-model bug caught before it drove the verdict:** Corwin-Schultz spread estimator returned a
+5.0bp median half-spread on BTC perp (~10x reality) because CS is calibrated for daily equity bars
+where high-low range is bid-ask bounce, not volatility. Replaced with liquidity-tiered half-spread;
+CS retained as pessimistic sensitivity. Verdict is negative under BOTH models at ALL cost levels.
+
+**Result:** 1,134 walk-forward OOS trades. Mean OOS Sharpe -3.74. Win rate 39.8% +/- 1.45%.
+Bootstrap Sharpe CI [-4.11, -0.70] entirely below zero. DSR probability 0.0000 on 602 trials.
+0/25 parameter-sweep points positive. 0/3 regimes profitable. Worse than 91.5% of random-entry
+portfolios. Costs 131% of gross -- but gross is itself negative, so the signal points the wrong way.
+
+**Most useful finding (event study, 14,931 events):** the hypothesis is HALF right. Fading
+down-cascades earns +18.06 bps gross (real overshoot, consistent with forced-seller story) but the
+~40bp round-trip cost floor is >2x that. Fading up-cascades is actively wrong-signed at -31.44 bps
+gross -- violent up moves continue, they don't revert. Not outlier-driven: dropping the top 5% of
+trades makes results worse.
+
+**Engine correctness:** 7/7 tests pass -- assert_no_lookahead (synthetic + real), next-bar-open
+fills, stop-wins-intrabar-ties, gap-through-stop-fills-at-open, monotonic cost levels,
+null-strategy cost identity, kill-switch engagement. Engine numpy-ised for a ~50x speedup
+(15s -> 0.31s per 20-asset/26,400-bar run) which made 1,000 random-entry iterations tractable.
+
+Deliverables: `report.md`, `src/{data_intraday,costs,backtest,strategy,validation}.py`,
+`run_backtest.py`, `event_study.py`, `make_plots.py`, `tests/test_engine.py`,
+`results_v6/` (trials_log.csv with all 633 trials, 8 plots, per-gate JSON).
+
+---
+
 # STATE — RUN 5 COMPLETE (see RUN 5 section below; Runs 1-3 sections preserved as history)
 
 ## RUN 5 — Multi-Strategy Portfolio Research, Traditional Markets (2026-07-19, fourth session)

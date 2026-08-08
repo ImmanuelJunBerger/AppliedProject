@@ -1,0 +1,506 @@
+{
+  "universe": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "XRP",
+    "DOGE",
+    "ADA",
+    "WLD",
+    "PEPE",
+    "SUI",
+    "UNI",
+    "AAVE",
+    "FIL",
+    "NEAR",
+    "LINK",
+    "AVAX",
+    "SHIB",
+    "LTC",
+    "BCH",
+    "XLM",
+    "DOT"
+  ],
+  "span": [
+    "2023-08-04 00:00:00+00:00",
+    "2026-08-08 00:00:00+00:00"
+  ],
+  "n_assets": 20,
+  "lookahead_check": {
+    "passed": true,
+    "n_problems": 0,
+    "problems": []
+  },
+  "n_trials_logged": 633,
+  "grid_best_by_sharpe": [
+    {
+      "k": 1,
+      "z": 3.0,
+      "v": 1.5,
+      "both_dir": false,
+      "cost_level": "optimistic",
+      "n_trades": 501,
+      "sharpe": 0.2943,
+      "net_pnl": -1036.18,
+      "cost_pct_of_gross": 103.9,
+      "win_rate_pct": 48.7
+    },
+    {
+      "k": 1,
+      "z": 3.0,
+      "v": 2.0,
+      "both_dir": false,
+      "cost_level": "optimistic",
+      "n_trades": 498,
+      "sharpe": 0.2875,
+      "net_pnl": -1740.49,
+      "cost_pct_of_gross": 106.8,
+      "win_rate_pct": 48.8
+    },
+    {
+      "k": 3,
+      "z": 3.0,
+      "v": 2.0,
+      "both_dir": false,
+      "cost_level": "optimistic",
+      "n_trades": 383,
+      "sharpe": 0.1602,
+      "net_pnl": -13251.97,
+      "cost_pct_of_gross": 265.2,
+      "win_rate_pct": 47.0
+    },
+    {
+      "k": 1,
+      "z": 4.0,
+      "v": 3.0,
+      "both_dir": true,
+      "cost_level": "optimistic",
+      "n_trades": 360,
+      "sharpe": 0.1339,
+      "net_pnl": -19791.19,
+      "cost_pct_of_gross": 642.0,
+      "win_rate_pct": 45.28
+    },
+    {
+      "k": 3,
+      "z": 3.0,
+      "v": 3.0,
+      "both_dir": false,
+      "cost_level": "optimistic",
+      "n_trades": 352,
+      "sharpe": 0.1205,
+      "net_pnl": -14650.98,
+      "cost_pct_of_gross": 437.8,
+      "win_rate_pct": 46.02
+    },
+    {
+      "k": 3,
+      "z": 3.0,
+      "v": 1.5,
+      "both_dir": false,
+      "cost_level": "optimistic",
+      "n_trades": 388,
+      "sharpe": 0.1057,
+      "net_pnl": -13855.97,
+      "cost_pct_of_gross": 282.3,
+      "win_rate_pct": 46.91
+    },
+    {
+      "k": 1,
+      "z": 4.0,
+      "v": 1.5,
+      "both_dir": true,
+      "cost_level": "optimistic",
+      "n_trades": 365,
+      "sharpe": 0.1012,
+      "net_pnl": -20865.62,
+      "cost_pct_of_gross": 461.4,
+      "win_rate_pct": 44.93
+    },
+    {
+      "k": 1,
+      "z": 4.0,
+      "v": 2.0,
+      "both_dir": true,
+      "cost_level": "optimistic",
+      "n_trades": 365,
+      "sharpe": 0.1012,
+      "net_pnl": -20865.62,
+      "cost_pct_of_gross": 461.4,
+      "win_rate_pct": 44.93
+    },
+    {
+      "k": 6,
+      "z": 3.0,
+      "v": 1.5,
+      "both_dir": false,
+      "cost_level": "optimistic",
+      "n_trades": 243,
+      "sharpe": 0.0351,
+      "net_pnl": -20516.89,
+      "cost_pct_of_gross": 137.8,
+      "win_rate_pct": 45.27
+    },
+    {
+      "k": 1,
+      "z": 3.0,
+      "v": 3.0,
+      "both_dir": false,
+      "cost_level": "optimistic",
+      "n_trades": 482,
+      "sharpe": 0.0056,
+      "net_pnl": -8812.85,
+      "cost_pct_of_gross": 154.9,
+      "win_rate_pct": 47.51
+    }
+  ],
+  "gates": {
+    "8.2_walk_forward": {
+      "gate": "8.2 walk-forward",
+      "status": "FAIL",
+      "n_folds": 8,
+      "mean_is_sharpe": -0.075,
+      "mean_oos_sharpe": -3.738,
+      "oos_to_is_ratio": null,
+      "n_oos_trades": 1134,
+      "folds": [
+        {
+          "train_start": "2023-08-04",
+          "train_end": "2024-08-04",
+          "test_end": "2024-11-04",
+          "chosen_params": "SignalParams(lookback_bars=1, z_threshold=3.0, vol_multiple=1.5, vol_window=336, both_directions=False)",
+          "is_sharpe": -0.107,
+          "oos_sharpe": -1.233,
+          "oos_trades": 135
+        },
+        {
+          "train_start": "2023-08-04",
+          "train_end": "2024-11-04",
+          "test_end": "2025-02-04",
+          "chosen_params": "SignalParams(lookback_bars=1, z_threshold=3.0, vol_multiple=1.5, vol_window=336, both_directions=False)",
+          "is_sharpe": -0.095,
+          "oos_sharpe": -1.124,
+          "oos_trades": 150
+        },
+        {
+          "train_start": "2023-08-04",
+          "train_end": "2025-02-04",
+          "test_end": "2025-05-04",
+          "chosen_params": "SignalParams(lookback_bars=1, z_threshold=3.0, vol_multiple=1.5, vol_window=336, both_directions=False)",
+          "is_sharpe": -0.087,
+          "oos_sharpe": 0.038,
+          "oos_trades": 144
+        },
+        {
+          "train_start": "2023-08-04",
+          "train_end": "2025-05-04",
+          "test_end": "2025-08-04",
+          "chosen_params": "SignalParams(lookback_bars=1, z_threshold=3.0, vol_multiple=1.5, vol_window=336, both_directions=False)",
+          "is_sharpe": -0.077,
+          "oos_sharpe": -2.514,
+          "oos_trades": 153
+        },
+        {
+          "train_start": "2023-08-04",
+          "train_end": "2025-08-04",
+          "test_end": "2025-11-04",
+          "chosen_params": "SignalParams(lookback_bars=1, z_threshold=3.0, vol_multiple=1.5, vol_window=336, both_directions=False)",
+          "is_sharpe": -0.061,
+          "oos_sharpe": -7.481,
+          "oos_trades": 107
+        },
+        {
+          "train_start": "2023-08-04",
+          "train_end": "2025-11-04",
+          "test_end": "2026-02-04",
+          "chosen_params": "SignalParams(lookback_bars=1, z_threshold=3.0, vol_multiple=1.5, vol_window=336, both_directions=False)",
+          "is_sharpe": -0.058,
+          "oos_sharpe": -7.485,
+          "oos_trades": 156
+        },
+        {
+          "train_start": "2023-08-04",
+          "train_end": "2026-02-04",
+          "test_end": "2026-05-04",
+          "chosen_params": "SignalParams(lookback_bars=1, z_threshold=3.0, vol_multiple=1.5, vol_window=336, both_directions=False)",
+          "is_sharpe": -0.055,
+          "oos_sharpe": -8.007,
+          "oos_trades": 116
+        },
+        {
+          "train_start": "2023-08-04",
+          "train_end": "2026-05-04",
+          "test_end": "2026-08-04",
+          "chosen_params": "SignalParams(lookback_bars=1, z_threshold=3.0, vol_multiple=1.5, vol_window=336, both_directions=False)",
+          "is_sharpe": -0.061,
+          "oos_sharpe": -2.097,
+          "oos_trades": 173
+        }
+      ],
+      "detail": "OOS Sharpe must be >=50% of IS Sharpe and positive"
+    },
+    "8.1_sample_size": {
+      "gate": "8.1 sample size",
+      "status": "PASS",
+      "n_trades": 1134,
+      "win_rate_pct": 39.77,
+      "win_rate_se_pct": 1.45,
+      "win_rate_ci95": [
+        36.92,
+        42.62
+      ],
+      "edge_inside_2se_of_coinflip": false,
+      "detail": "win rate is outside 2 SE of a coin flip"
+    },
+    "8.3_purged_kfold": {
+      "gate": "8.3 purged k-fold",
+      "status": "FAIL",
+      "k": 5,
+      "embargo_bars": 24,
+      "mean_fold_sharpe": -3.471,
+      "fraction_folds_positive": 0.0,
+      "folds": [
+        {
+          "n_test": 227,
+          "n_train_after_purge": 900,
+          "test_sharpe": -0.776,
+          "window": "2024-08-20..2025-01-10"
+        },
+        {
+          "n_test": 227,
+          "n_train_after_purge": 896,
+          "test_sharpe": -0.277,
+          "window": "2025-01-09..2025-05-18"
+        },
+        {
+          "n_test": 227,
+          "n_train_after_purge": 903,
+          "test_sharpe": -5.459,
+          "window": "2025-05-18..2025-10-12"
+        },
+        {
+          "n_test": 227,
+          "n_train_after_purge": 890,
+          "test_sharpe": -7.716,
+          "window": "2025-10-11..2026-03-27"
+        },
+        {
+          "n_test": 226,
+          "n_train_after_purge": 907,
+          "test_sharpe": -3.129,
+          "window": "2026-03-27..2026-08-03"
+        }
+      ]
+    },
+    "8.4_deflated_sharpe": {
+      "gate": "8.4 deflated Sharpe",
+      "status": "FAIL",
+      "threshold": 0.95,
+      "per_trade_sharpe": -0.11923,
+      "annualised_sharpe_raw": -2.314,
+      "expected_max_sharpe_under_null": 0.09629,
+      "deflated_sharpe_prob": 0.0,
+      "n_trials": 602,
+      "T": 1134,
+      "skew": 0.628,
+      "excess_kurtosis": 1.58
+    },
+    "8.5_parameter_stability": {
+      "gate": "8.5 parameter stability",
+      "status": "FAIL",
+      "n_points": 25,
+      "best_metric": -0.517,
+      "median_metric": -1.09,
+      "fraction_positive": 0.0,
+      "peak_zscore_vs_rest": 0.77,
+      "best_params": {
+        "k": 1.0,
+        "z": 3.0,
+        "v": 1.5,
+        "n_trades": 113.0
+      },
+      "detail": "surface is a PEAK not a plateau, and/or most neighbours lose money -- consistent with overfitting"
+    },
+    "8.6_regime_robustness": {
+      "gate": "8.6 regime robustness",
+      "status": "FAIL",
+      "fraction_dir_regimes_profitable": 0.0,
+      "by_direction_regime": {
+        "bear": {
+          "n": 240,
+          "mean_ret_bps": -46.84,
+          "win_rate_pct": 40.4,
+          "total_net_pnl": -23909.32,
+          "sharpe_per_trade": -0.1155
+        },
+        "bull": {
+          "n": 220,
+          "mean_ret_bps": -11.27,
+          "win_rate_pct": 43.6,
+          "total_net_pnl": -15013.35,
+          "sharpe_per_trade": -0.0247
+        },
+        "chop": {
+          "n": 674,
+          "mean_ret_bps": -57.46,
+          "win_rate_pct": 38.3,
+          "total_net_pnl": -69617.24,
+          "sharpe_per_trade": -0.1615
+        }
+      },
+      "by_vol_regime": {
+        "high_vol": {
+          "n": 467,
+          "mean_ret_bps": -28.56,
+          "win_rate_pct": 43.9,
+          "total_net_pnl": -28050.89,
+          "sharpe_per_trade": -0.0647
+        },
+        "low_vol": {
+          "n": 667,
+          "mean_ret_bps": -58.64,
+          "win_rate_pct": 36.9,
+          "total_net_pnl": -80489.02,
+          "sharpe_per_trade": -0.1697
+        }
+      },
+      "by_year": {
+        "2024": {
+          "n": 216,
+          "mean_ret_bps": -7.55,
+          "win_rate_pct": 45.8,
+          "total_net_pnl": -11889.35,
+          "sharpe_per_trade": -0.0175
+        },
+        "2025": {
+          "n": 547,
+          "mean_ret_bps": -47.96,
+          "win_rate_pct": 38.9,
+          "total_net_pnl": -56633.54,
+          "sharpe_per_trade": -0.1141
+        },
+        "2026": {
+          "n": 371,
+          "mean_ret_bps": -66.27,
+          "win_rate_pct": 37.5,
+          "total_net_pnl": -40017.01,
+          "sharpe_per_trade": -0.2207
+        }
+      },
+      "detail": "a strategy profitable in only one regime is a regime bet, not an edge"
+    },
+    "8.7_block_bootstrap": {
+      "gate": "8.7 block bootstrap",
+      "status": "FAIL",
+      "n_iter": 10000,
+      "block": 20,
+      "sharpe_ci95": [
+        -4.1113,
+        -0.6958
+      ],
+      "sharpe_median": -2.356,
+      "expectancy_ci95": [
+        -0.0079,
+        -0.0015
+      ],
+      "total_return_ci95": [
+        -0.9999,
+        -0.9263
+      ],
+      "max_dd_ci95": [
+        -1.0,
+        -0.9674
+      ],
+      "detail": "lower bound of Sharpe CI is below 0 -- strategy is NOT demonstrated"
+    },
+    "8.8_mc_drawdown": {
+      "gate": "8.8 MC drawdown",
+      "status": "INFO",
+      "n_iter": 10000,
+      "realized_max_dd_pct": -99.89,
+      "mc_max_dd_median_pct": -99.81,
+      "mc_max_dd_p95_pct": -99.87,
+      "mc_max_dd_worst_pct": -99.95,
+      "realized_longest_losing_streak": 15,
+      "mc_streak_median": 12,
+      "mc_streak_p95": 17,
+      "detail": "the realized backtest drawdown is ONE draw and is usually optimistic"
+    }
+  },
+  "benchmarks": {
+    "buy_hold_btc": {
+      "total_return_pct": 121.86,
+      "sharpe": 0.801
+    },
+    "random_entry": {
+      "n_iter": 1000,
+      "random_sharpe_median": -1.08,
+      "random_sharpe_p95": 0.594,
+      "strategy_oos_sharpe": -2.314,
+      "strategy_percentile_vs_random": 8.5,
+      "status": "FAIL"
+    },
+    "shifted_entry": {
+      "shift_-3": {
+        "n_trades": 50,
+        "sharpe": -3.528
+      },
+      "shift_-2": {
+        "n_trades": 50,
+        "sharpe": -3.302
+      },
+      "shift_-1": {
+        "n_trades": 36,
+        "sharpe": -3.432
+      },
+      "shift_1": {
+        "n_trades": 168,
+        "sharpe": -0.89
+      },
+      "shift_2": {
+        "n_trades": 102,
+        "sharpe": -1.627
+      },
+      "shift_3": {
+        "n_trades": 189,
+        "sharpe": -0.814
+      }
+    }
+  },
+  "cost_diagnostics": {
+    "median_stop_distance_bps": 231.85,
+    "median_round_trip_cost_bps": 22.5,
+    "stop_to_cost_ratio": 10.3,
+    "structurally_fee_bound": true,
+    "note": "FLAG: stop distance < 20x round-trip cost -- strategy is structurally fee-bound regardless of signal quality",
+    "slippage_k_sensitivity": {
+      "k=0.5": 2.0,
+      "k=1.0": 2.0,
+      "k=2.0": 2.632,
+      "k=4.0": 5.263
+    }
+  },
+  "full_sample_centre_params": {
+    "label": "centre_params|base",
+    "n_trades": 113,
+    "win_rate_pct": 36.28,
+    "gross_pnl": -8104.24,
+    "total_cost": 10634.07,
+    "net_pnl": -18738.31,
+    "cost_pct_of_gross": 131.2,
+    "mean_ret_bps": -28.78,
+    "fees": 3839.28,
+    "spread": 1944.14,
+    "slippage": 4850.64,
+    "funding": 0.0,
+    "sharpe": -1.309,
+    "sortino": -0.103,
+    "cagr_pct": -6.65,
+    "total_return_pct": -18.74,
+    "max_dd_pct": -20.2,
+    "calmar": -0.329,
+    "longest_underwater_bars": 26288,
+    "longest_underwater_days": 1095.3,
+    "n_bars": 26400
+  }
+}

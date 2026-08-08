@@ -1,0 +1,22 @@
+{
+  "no_lookahead": {
+    "passed": true,
+    "n_problems": 0,
+    "problems": []
+  },
+  "next_bar_open_fill": true,
+  "stop_precedence": true,
+  "gap_risk": true,
+  "cost_levels": {
+    "optimistic": 7.821320343559643,
+    "base": 11.731980515339465,
+    "pessimistic": 19.553300858899107
+  },
+  "null_strategy": {
+    "n_trades": 178,
+    "gross": 3587.604208902936,
+    "cost": 23558.2445067547,
+    "net": -19970.640297851765
+  },
+  "risk_limits": true
+}
